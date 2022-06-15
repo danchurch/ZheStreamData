@@ -1,0 +1,320 @@
+## the goal here is to see if we can uncover spatial
+## signatures in Zhe's nitrogen and sulfur metabolism data
+
+mv 'Normalized_For Dan.xlsx' 'Normalized_For_Dan.xlsx'
+mv 'water chemistry.xlsx' 'waterChemistry.xlsx'
+
+## read it into a df
+
+import pandas as pd
+import scipy.stats as ss
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+
+plt.ion()
+
+enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
+enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
+enz['enzyme'] = enz['enzyme'].str.replace(',','')
+enz.set_index('enzyme', inplace=True)
+enz.head()
+
+## hmm, a couple concerns... 
+## need to cut off environmental data (first several rows) 
+## first we need split this by nitrogen or sulphur, other metabolism
+## related enzymes, also by depth class, 
+
+## first step would be univariate linear models for each
+## but we are expecting a drop in the central region of 
+## so not linear by some definitions. Something like 
+## a negative and positive quadratic. 
+
+## Zhe just sent me an updated spreadsheet:
+waterChemistry = pd.read_excel("waterChemistry.xlsx")
+## so our spreadsheet is now very simple.
+waterChemistry = waterChemistry[['Section', 'NO3', 'SO4']]
+
+waterChemistry
+
+## according to our 
+
+## focus for a minute on nitrogen metabolism
+## use depth = 5
+
+enzEnv = pd.read_excel('enzymeEnv.xlsx')
+enzEnv.rename(columns = {'Unnamed: 0':'position'}, inplace='True')
+enzEnv.set_index('position', inplace=True)
+enzEnv.rename(index = {'Distance(m)(all distance to the upstream)':'Distance',
+                       'Depth(m)':'Depth'}, 
+                       inplace='True')
+enzEnv.head()
+
+Nenz = enz[enz.Function == "N metabolism"]
+
+Nshallow 
+
+Nshallow = enz[enz.Function == "N metabolism"][['Mid-A_5','Mid-B_5','Down_5','KU_5']]
+
+enzEnvShallow = enzEnv[['Mid-A_5','Mid-B_5','Down_5','KU_5']]
+
+enzEnvShallow
+
+Nshallow
+
+waterChemistry
+
+## we only have nitrate data for 
+
+## nitrogen levels for this:
+
+waterChemistry
+
+Nshallow
+
+## we want to test a correlation with stream Nitrate values
+## we expect nitrification rates to increase with 
+
+## we are focusing on the shallow depth (5 cm), so we have to 
+## throw out our upper stream sample site. 
+## and comparing to the confluence seems odd to me. 
+## so we are down to mid- and down- stream sections. 
+
+## that doesn't leave us much to work with....
+
+## Seems appropriate to use the mean our two 
+
+## also, not sure if amoA is of interest here.
+## we have almost none-existent ammonia levels
+## not sure if amoA
+
+## so drop Amo, average the mid columns, and the confluence site:
+
+ 
+Nenz = (enz[enz.Function == "N metabolism"][["Mid-A_5","Mid-B_5","Down_5"]]
+        .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
+
+## our mean gene count for the mid site is:
+
+N_Mid_5 = Nenz[['Mid-A_5','Mid-B_5']].mean(axis='columns')
+
+## a new, greatly simplified df:
+
+nRedu = pd.concat([N_Mid_5, Nenz['Down_5']], axis='columns') 
+nRedu.rename(columns = {0:'mid', 'Down_5':'down'}, inplace='True')
+nRedu
+
+## so every enzyme in the denitrification pathway shows lower counts
+## downstream?
+
+ss.ttest_rel(nRedu['mid'], nRedu['down'])
+
+## check in with Zhe, make sure these are all such genes (denitrifying)
+
+###### sulfate #######
+
+## repeat for sulfur. 
+## for sulfur oxidizing enzymes: we expect an increase
+## in sulfur oxidation, higher gene counts.
+## let's see: 
+
+Senz = enz[enz.Function == "S metabolism"][["Mid-A_5","Mid-B_5","Down_5"]]
+S_Mid_5 = Senz[['Mid-A_5','Mid-B_5']].mean(axis='columns')
+sRedu = pd.concat([S_Mid_5, Senz['Down_5']], axis='columns') 
+sRedu.rename(columns = {0:'mid', 'Down_5':'down'}, inplace='True')
+sRedu
+
+## yeah, that is not clear. I need to talk to Zhe about his expectations
+## fore these genes. I don't feel like reading about each of them. 
+
+## involve all samples, including upstream,
+## = all depth
+## break out the midstream samples
+## model all by distance along 
+
+
+
+############
+
+## where were we? 
+
+## more work on the nitrification pathway - do an RDA of of de-nitrification 
+## genes as a function of distance downstream 
+
+## run this for both depths. 
+
+## which means we need to parse out two matrices, one for each depth. 
+
+## also, how different are the two depths of the stream? 
+
+## run an nms, permanova, etc
+
+## then start thinking about sulfur.
+
+## step 1, separate out depths.
+
+## for the 15 cm samples:
+
+deepSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.15].index.to_list()
+shallowSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.05].index.to_list()[:-1]
+deepNenz = (enz[enz.Function == "N metabolism"][deepSamples]
+        .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
+shallowNenz = (enz[enz.Function == "N metabolism"][shallowSamples]
+        .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
+## let's just keep the abbreviations:
+aa = (deepNenz.reset_index()['enzyme']
+        .str.split(pat="(", n=1, expand=True)[1]
+        .str.replace(")","")
+    )
+aa.name = "enzyme"
+deepNenz.index = aa
+shallowNenz.index = aa
+
+## visualize 
+deepDist = enzEnv[deepSamples].loc['Distance']
+deepNenzT = deepNenz.transpose()
+deepNenzT.index = deepDist
+deepNenzT
+
+
+fig1, ax1 = plt.subplots()
+deepNenzT.plot.line(title='15cm N-reducing gene counts', ax=ax1)
+
+help(deepNenzT.plot.line)
+
+## jeezus this is frustrating, we need that missing 
+## nitrogen measurement. 
+
+## all the potential denitrification enzymes 
+## show the exact same spatial pattern, 
+## but we lack the solute level data
+
+## repeat with the shallow samples, how do they look?:
+
+fig2, ax2 = plt.subplots()
+shallowdist = enzEnv[shallowSamples].loc['Distance']
+shallowNenz
+shallowNenzT = shallowNenz.transpose()
+shallowNenzT.index = shallowdist
+shallowNenzT.plot.line(title='5cm N-reducing gene counts', ax=ax2)
+ax2.set_xlim(ax1.get_xlim())
+
+## let's put these together:
+
+fig, ax = plt.subplots(2,1, sharex=True)
+deepNenzT.plot.line(title='15cm N-reducing gene counts', ax=ax[0], legend=False)
+shallowNenzT.plot.line(title='5cm N-reducing gene counts', ax=ax[1])
+
+plt.close('all')
+
+## great
+
+## so, now what? try an RDA for both of these
+
+deepNenzT.to_csv("deepNenz.csv")
+shallowNenzT.to_csv("shallowNenz.csv")
+
+deepNenz
+
+## for that we need genes as columns, sites as rows?
+## same with the spatial data? 
+
+### R ###
+
+library("vegan")
+
+## let's try a simple RDA of the gene abundances 
+## against distance down-stream
+
+deepNenz <- read.csv('deepNenz.csv')
+
+shallowNenz <- read.csv('shallowNenz.csv')
+
+## first let's transform the gene abundances to 
+## approximately meet linear/euclidean requirenments
+deepNenz.hell <- decostand(deepNenz[-1], 'hellinger')
+distance <- deepNenz[[1]]
+deepNenz.hell.rda <- rda(deepNenz.hell ~ distance)
+plot(deepNenz.hell.rda)
+
+## and without transformation
+distance <- deepNenz[[1]]
+deepNenz.rda <- rda(deepNenz[-1] ~ distance)
+plot(deepNenz.rda)
+## the transformed model appears more informative. 
+## and this what legendre, borcard, etc, recommend
+
+coef(deepNenz.hell.rda)
+
+
+RsquareAdj(deepNenz.hell.rda)$adj.r.squared
+
+anova(deepNenz.hell.rda, permutations = how(nperm = 999)) ## p=0.1167
+
+## Tests of all canonical axes
+
+anova(deepNenz.hell.rda, by = "axis", permutations = how(nperm = 999))
+
+## points to the only obvious global trend, 
+## the increase in 
+
+## one interesting article that mentions this gene
+## as part of a general membrane bound nitrate 
+## reductase operon, in Pseudomonas aeruginosa
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3568144/
+
+## and even more interesting:
+https://journals.asm.org/doi/10.1128/JB.181.17.5303-5308.1999
+## in this article, this operon is proposed to be a
+## "high-substrate-induced" operon, in E. coli.
+## (= low-affinity system?)
+## as in, it is expressed when there is lots of 
+## nitrate
+
+## and so on. 
+
+## can we say there is a statistically significant 
+## increase with distance of this gene?
+
+### python ###
+
+## back to python:
+
+deepNenzT['narGHIJK'].reset_index()
+
+deepNenzT['narGHIJK'].reset_index(drop=True)
+
+deepNenzT['narGHIJK'].reset_index(drop=True).shape
+
+deepNenzT.reset_index()['Distance']
+
+deepNenzT.reset_index()['Distance'].shape
+
+narGHIJK_model = sm.GLM(
+                    deepNenzT['narGHIJK'].reset_index(drop=True), 
+                    deepNenzT.reset_index()['Distance'], 
+                    family=sm.families.NegativeBinomial())
+
+narGHIJK_results = narGHIJK_model.fit()
+
+print(narGHIJK_results.summary())
+
+## which gives us:
+
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:               narGHIJK   No. Observations:                    4
+Model:                            GLM   Df Residuals:                        3
+Model Family:        NegativeBinomial   Df Model:                            0
+Link Function:                    Log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1396.2
+Date:                Tue, 14 Jun 2022   Deviance:                       2722.8
+Time:                        16:48:55   Pearson chi2:                 1.94e+06
+No. Iterations:                    11   Pseudo R-squ. (CS):        -4.044e+295
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Distance       0.0223      0.001     15.627      0.000       0.020       0.025
+==============================================================================
+
+## wonder what organism(s) this operon belongs to?

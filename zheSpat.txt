@@ -10,6 +10,8 @@ import pandas as pd
 import scipy.stats as ss
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+from sklearn.linear_model import LinearRegression
+from scipy import stats
 
 plt.ion()
 
@@ -191,10 +193,12 @@ help(deepNenzT.plot.line)
 ## repeat with the shallow samples, how do they look?:
 
 fig2, ax2 = plt.subplots()
-shallowdist = enzEnv[shallowSamples].loc['Distance']
+
+shallowDist = enzEnv[shallowSamples].loc['Distance']
+
 shallowNenz
 shallowNenzT = shallowNenz.transpose()
-shallowNenzT.index = shallowdist
+shallowNenzT.index = shallowDist
 shallowNenzT.plot.line(title='5cm N-reducing gene counts', ax=ax2)
 ax2.set_xlim(ax1.get_xlim())
 
@@ -234,12 +238,18 @@ shallowNenz <- read.csv('shallowNenz.csv')
 deepNenz.hell <- decostand(deepNenz[-1], 'hellinger')
 distance <- deepNenz[[1]]
 deepNenz.hell.rda <- rda(deepNenz.hell ~ distance)
+
 plot(deepNenz.hell.rda)
+
+png(file = 'deepDenitrificationRDA.png', height=600, width=1200)
+plot(deepNenz.hell.rda)
+dev.off()
 
 ## and without transformation
 distance <- deepNenz[[1]]
 deepNenz.rda <- rda(deepNenz[-1] ~ distance)
 plot(deepNenz.rda)
+
 ## the transformed model appears more informative. 
 ## and this what legendre, borcard, etc, recommend
 
@@ -279,19 +289,12 @@ https://journals.asm.org/doi/10.1128/JB.181.17.5303-5308.1999
 
 ## back to python:
 
-deepNenzT['narGHIJK'].reset_index()
-
-deepNenzT['narGHIJK'].reset_index(drop=True)
-
-deepNenzT['narGHIJK'].reset_index(drop=True).shape
-
-deepNenzT.reset_index()['Distance']
-
-deepNenzT.reset_index()['Distance'].shape
+deepNARcounts = deepNenzT['narGHIJK'].reset_index(drop=True)
+deepDist = deepNenzT.reset_index()['Distance']
 
 narGHIJK_model = sm.GLM(
-                    deepNenzT['narGHIJK'].reset_index(drop=True), 
-                    deepNenzT.reset_index()['Distance'], 
+                    deepNARcounts, 
+                    deepDist, 
                     family=sm.families.NegativeBinomial())
 
 narGHIJK_results = narGHIJK_model.fit()
@@ -317,4 +320,191 @@ Covariance Type:            nonrobust
 Distance       0.0223      0.001     15.627      0.000       0.020       0.025
 ==============================================================================
 
+## hmm, I think I am reading that right, a very small p value. 
+
+## just to make sure, use a function I am a little more familiar with:
+
+deepNARcounts
+
+deepDist
+
+LinearRegression
+
+
+X = deepDist.values.reshape(-1,1)
+Y = deepNARcounts.values.reshape(-1,1)
+
+reg = LinearRegression()
+
+reg.fit(X,Y)
+
+reg.predict(X)
+
+reg.score()
+## forgot, no frequentist pvalues for the sklearn people
+## they can't be bothered with such dinosaurs
+
+## so use scipy stats:
+
+stats.linregress(deepDist, deepNARcounts) ## but can't fit negative binomial to this
+
 ## wonder what organism(s) this operon belongs to?
+
+
+#### meeting todo list, after talking to Zhe:
+
+## focus more on sulfur
+## = rda of sulfur genes
+## = look closely at dsrAB and soxYZAXB
+## look for correlations between sulfur genes and NarG
+## compare gene abundances by depth
+## add confluence site to all charts
+## model the change in slopes between depths at mid A and mid B 
+## look for genes of interest in Sulfuricurvum?
+## rerun the hellinger-transformed RDA of nitrogen as a dbRDA?
+
+
+#### graph all sulfur genes
+
+## probably a mess, but let's graph them all, and run an RDA on them
+## might help us pickout genes to focus on
+
+
+enzEnv
+
+Senz = enz[enz.Function == "S metabolism"]
+
+
+deepSamples
+
+shallowSamples
+
+deepSenz = (enz[enz.Function == "S metabolism"][deepSamples])
+shallowSenz = (enz[enz.Function == "S metabolism"][shallowSamples])
+
+## let's just keep the abbreviations:
+
+aa = (deepSenz.reset_index()['enzyme']
+        .str.split(pat="(", n=1, expand=True)[1]
+        .str.replace(")","")
+    )
+aa.name = "enzyme"
+deepSenz.index = aa
+shallowSenz.index = aa
+del(aa)
+
+deepDist
+
+deepSenzT = deepSenz.transpose()
+deepSenzT.index = deepDist
+
+shallowSenzT = shallowSenz.transpose()
+shallowSenzT.index = shallowDist
+
+
+fig1, ax1 = plt.subplots()
+deepSenzT.plot.line(title='15cm S-metabolism gene counts', ax=ax1)
+
+fig, ax = plt.subplots(2,1, sharex=True)
+deepSenzT.plot.line(title='15cm S-metabolism gene counts', ax=ax[0], legend=False)
+shallowSenzT.plot.line(title='5cm S-metabolism gene counts', ax=ax[1])
+
+## interesting. We see the same shapes in these enzymes. 
+
+## I really hope Zhe did his normalizations right. 
+
+## anyway, assuming he did...
+
+## in the simplest scenario, we would expect sulfur
+## oxidation in this system to be coupled with nitrate 
+## reduction. So the congruency between some of these
+## trends and the n-reducing genes is expected. 
+
+## Zhe was especially interested in dsrAB and soxYZAXB
+## soxYZAXB definitely shows a congruent trend as the
+## the 
+
+## according to wikipedia, dissimilatory sulfate reduction 
+## is a respiration process with sulfate as the final 
+## electron acceptor. 
+
+## one would therefore expect activity of this enzyme this to be in competition 
+## with reduction of nitrogen, no?
+
+## a plot with just the two genes that Zhe wanted to look at:
+
+
+plt.close('all')
+
+shallowSenzT[['soxYZAXB', 'dsrAB']]
+deepSenzT[['soxYZAXB', 'dsrAB']]
+
+fig, ax = plt.subplots(2,1, sharex=True)
+
+(deepSenzT[['soxYZAXB', 'dsrAB']]
+    .plot.line(title='15cm S-metabolism gene counts', 
+    ax=ax[0], legend=False))
+
+(shallowSenzT[['soxYZAXB', 'dsrAB']]
+    .plot.line(title='5cm S-metabolism gene counts', 
+    ax=ax[1]))
+
+## interestingm soxYZAXB behaves like we would expect.
+
+## can we isolate just the genes that show a dramatic 
+## difference between the two mid sites?
+
+plt.close('all')
+fig, ax = plt.subplots()
+(shallowSenzT[['soxYZAXB', 'sat', 'sqr', 'soxC']]
+    .plot.line(title='5cm S-metabolism gene counts', 
+    ax=ax))
+ax.set_xlim(0,550)
+ax.set_ylim(0,3000)
+
+
+## in the case of the 15cm depth, the genes that 
+## show congruence with the n-reducers are:
+## soxYZAXB', 'soxC', and 'sorAB'
+## for 15cm depth, the genes that 
+## show congruence with the n-reducers are:
+## soxYZAXB', 'soxC', and 'sorAB'
+## and for 5 cm:
+## 'soxYZAXB', 'sat', 'sqr', 'soxC'
+
+## we can also include dsrAB, a sulfur reducing 
+## enzyme that Zhe was interested in, though: 
+## 'dsrAB'
+
+## that adds up to:
+
+plt.close('all')
+fig, ax = plt.subplots(2,1, sharex=True)
+genes=['soxYZAXB', 'soxC', 'sat', 'sqr','dsrAB']
+(deepSenzT[genes]
+    .plot.line(title='15cm S-metabolism gene counts', 
+    ax=ax[0], legend=False))
+(shallowSenzT[genes]
+    .plot.line(title='5cm S-metabolism gene counts', 
+    ax=ax[1]))
+
+## the two best examples of this are the promoter 'soxYZAXB'
+## and the hydrogen sulfide ('sulfane') oxidizing enzyme 'soxC'
+
+## sqr is some sort of sulfar-related quinone electron shuttle thing,
+## I think. It also is probably bidirectional, as far as oxidation/reduction
+
+## it is highly congruent in the deeper sediment, but not on the shallow
+## sediments. 
+
+## SAT is an enzyme for adenylating sulfate, and can be linked to both 
+## oxidation and reducing pathways
+
+## today - redo old rdas, do new rdas, check specific correlations, especially
+## with NARG
+
+#### RDA for sulfur
+
+## seems like one approach here would be to run a general RDA with space 
+## and a reduction 
+

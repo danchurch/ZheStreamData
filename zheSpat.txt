@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from sklearn.linear_model import LinearRegression
 from scipy import stats
-
 plt.ion()
 
 enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
@@ -53,7 +52,6 @@ enzEnv.head()
 
 Nenz = enz[enz.Function == "N metabolism"]
 
-Nshallow 
 
 Nshallow = enz[enz.Function == "N metabolism"][['Mid-A_5','Mid-B_5','Down_5','KU_5']]
 
@@ -200,6 +198,7 @@ shallowNenz
 shallowNenzT = shallowNenz.transpose()
 shallowNenzT.index = shallowDist
 shallowNenzT.plot.line(title='5cm N-reducing gene counts', ax=ax2)
+
 ax2.set_xlim(ax1.get_xlim())
 
 ## let's put these together:
@@ -238,34 +237,68 @@ shallowNenz <- read.csv('shallowNenz.csv')
 deepNenz.hell <- decostand(deepNenz[-1], 'hellinger')
 distance <- deepNenz[[1]]
 deepNenz.hell.rda <- rda(deepNenz.hell ~ distance)
-
 plot(deepNenz.hell.rda)
+## points to the only obvious global trend, 
+## the increase in nar operon with distance
 
-png(file = 'deepDenitrificationRDA.png', height=600, width=1200)
-plot(deepNenz.hell.rda)
-dev.off()
+#$png(file = 'deepDenitrificationRDA.png', height=600, width=1200)
+#plot(deepNenz.hell.rda)
+#dev.off()
 
 ## and without transformation
 distance <- deepNenz[[1]]
 deepNenz.rda <- rda(deepNenz[-1] ~ distance)
 plot(deepNenz.rda)
-
 ## the transformed model appears more informative. 
 ## and this what legendre, borcard, etc, recommend
 
 coef(deepNenz.hell.rda)
 
 
-RsquareAdj(deepNenz.hell.rda)$adj.r.squared
+RsquareAdj(deepNenz.hell.rda)$adj.r.squared ## fairly large r2, but...
 
 anova(deepNenz.hell.rda, permutations = how(nperm = 999)) ## p=0.1167
+anova(deepNenz.hell.rda, by = "axis", permutations = how(nperm = 999)) ## p = 0.1667
 
-## Tests of all canonical axes
+## let's look at our sulfur matrix, that we created below?
+deepSenz <- read.csv('deepSenz.csv')
+shallowSenz <- read.csv('shallowSenz.csv')
 
-anova(deepNenz.hell.rda, by = "axis", permutations = how(nperm = 999))
+#deepNenz.sulf.rda <- rda(deepNenz.hell, deepSenz)
+#deepNenz.sulf.rda <- rda(deepNenz.hell ~  deepNenz$Distance)
+#deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepNenz$Distance + deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC)
+#deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC + deepNenz$Distance)
 
-## points to the only obvious global trend, 
-## the increase in 
+deepNenz.sulf.rda <- rda(deepNenz.hell ~ Distance + soxYZAXB + sat + sqr + soxC, data=deepSenz)
+
+anova(deepNenz.sulf.rda, permutations = how(nperm = 999)) ## 
+
+deepNenz.sulf.rda
+
+## plot this, scale type 1
+plot(deepNenz.sulf.rda,
+    scaling = 1,
+    display = c("sp", "lc", "cn"),
+    main = "deepN sulfur predictors")
+spe.sc1 <-
+    scores(deepNenz.sulf.rda,
+        choices = 1:2,
+        scaling = 1,
+        display = "sp"
+)
+arrows(0, 0,
+    spe.sc1[, 1] * 0.92,
+    spe.sc1[, 2] * 0.92,
+    length = 0,
+    lty = 1,
+    col = "red"
+)
+
+## borcard p217 for interpretation
+
+
+## try this on the shallow and combined shallow/deep matrices of sulfur and nitrogen. 
+
 
 ## one interesting article that mentions this gene
 ## as part of a general membrane bound nitrate 
@@ -282,8 +315,25 @@ https://journals.asm.org/doi/10.1128/JB.181.17.5303-5308.1999
 
 ## and so on. 
 
+## how about a dbRDA:
+
+
+
+
+deepNenz.cap <- capscale(deepNenz[-1] ~ deepNenz$Distance, dist="bray")
+
+deepNenz.cap
+
+plot(deepNenz.cap) ## similar as with hellinger transformed, but less informative
+anova(deepNenz.cap) ## nope nope nope 
+
+
+
+
+## taking a univariate approach
 ## can we say there is a statistically significant 
 ## increase with distance of this gene?
+## let's go back to...
 
 ### python ###
 
@@ -379,11 +429,10 @@ deepSamples
 
 shallowSamples
 
+
+## make sulphure gene matrix as above
 deepSenz = (enz[enz.Function == "S metabolism"][deepSamples])
 shallowSenz = (enz[enz.Function == "S metabolism"][shallowSamples])
-
-## let's just keep the abbreviations:
-
 aa = (deepSenz.reset_index()['enzyme']
         .str.split(pat="(", n=1, expand=True)[1]
         .str.replace(")","")
@@ -392,14 +441,17 @@ aa.name = "enzyme"
 deepSenz.index = aa
 shallowSenz.index = aa
 del(aa)
+deepSenzT = deepSenz.transpose()
+deepSenzT.index = deepDist
+shallowSenzT = shallowSenz.transpose()
+shallowSenzT.index = shallowDist
+#deepSenzT.to_csv('deepSenz.csv')
+#shallowSenzT.to_csv('shallowSenz.csv')
 
 deepDist
 
-deepSenzT = deepSenz.transpose()
-deepSenzT.index = deepDist
 
-shallowSenzT = shallowSenz.transpose()
-shallowSenzT.index = shallowDist
+
 
 
 fig1, ax1 = plt.subplots()
@@ -435,16 +487,12 @@ shallowSenzT.plot.line(title='5cm S-metabolism gene counts', ax=ax[1])
 
 
 plt.close('all')
-
 shallowSenzT[['soxYZAXB', 'dsrAB']]
 deepSenzT[['soxYZAXB', 'dsrAB']]
-
 fig, ax = plt.subplots(2,1, sharex=True)
-
 (deepSenzT[['soxYZAXB', 'dsrAB']]
     .plot.line(title='15cm S-metabolism gene counts', 
     ax=ax[0], legend=False))
-
 (shallowSenzT[['soxYZAXB', 'dsrAB']]
     .plot.line(title='5cm S-metabolism gene counts', 
     ax=ax[1]))

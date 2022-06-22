@@ -110,7 +110,6 @@ ss.ttest_rel(nRedu['mid'], nRedu['down'])
 
 ## check in with Zhe, make sure these are all such genes (denitrifying)
 
-###### sulfate #######
 
 ## repeat for sulfur. 
 ## for sulfur oxidizing enzymes: we expect an increase
@@ -269,11 +268,25 @@ shallowSenz <- read.csv('shallowSenz.csv')
 #deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepNenz$Distance + deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC)
 #deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC + deepNenz$Distance)
 
-deepNenz.sulf.rda <- rda(deepNenz.hell ~ Distance + soxYZAXB + sat + sqr + soxC, data=deepSenz)
+deepNenz.sulf.rda <- rda(deepNenz.hell ~ Distance + soxYZAXB, data=deepSenz)
 
-anova(deepNenz.sulf.rda, permutations = how(nperm = 999)) ## 
+anova.cca(deepNenz.sulf.rda)
+
+#anova.cca(deepNenz.sulf.rda, permutations = how(nperm = 999)) 
+## this doesn't return a pvalue after three explanatory terms, 
+## too few degrees of freedom
+
+anova.cca(deepNenz.sulf.rda, permutations = how(nperm = 999), by="term") ## same
+
+?anova.cca
 
 deepNenz.sulf.rda
+
+summary(deepNenz.sulf.rda)
+
+RsquareAdj(deepNenz.sulf.rda)$adj.r.squared 
+## fairly large r2 (0.537), but not enough statistical power 
+## to use as a model
 
 ## plot this, scale type 1
 plot(deepNenz.sulf.rda,
@@ -294,10 +307,64 @@ arrows(0, 0,
     col = "red"
 )
 
+## this is scaling type 1, basically look for projection 
+## of the nitrogen genes onto the predictor axes
 ## borcard p217 for interpretation
 
+## repeat this on the shallow sediments
 
-## try this on the shallow and combined shallow/deep matrices of sulfur and nitrogen. 
+
+shallowNenz
+
+shallowSenz
+
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance, data=shallowSenz) ## distance alone can't explain anything. Makes sense.
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxYZAXB, data=shallowSenz)
+
+### all of the genes showing the triangle shape are collinears:
+
+shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxYZAXB, data=shallowSenz)
+
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxC, data=shallowSenz)
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ soxYZAXB + soxC, data=shallowSenz)
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ soxYZAXB + sat, data=shallowSenz)
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ soxYZAXB + dsrAB, data=shallowSenz)
+###
+
+
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxYZAXB + sat + sqr + soxC, data=shallowSenz)
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxC + sat + sqr + soxYZAXB, data=shallowSenz)
+#shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + sat, data=shallowSenz)
+
+
+shallowNenz.sulf.rda
+
+vif.cca(shallowNenz.sulf.rda) ## meh, we are simply limited by our few samples. examined manually above
+
+anova.cca(shallowNenz.sulf.rda)
+
+## plot this, scale type 1
+
+par(mfrow=c(1,2))
+
+#par(mfrow=c(1,1))
+plot(shallowNenz.sulf.rda,
+    scaling = 1,
+    display = c("sp", "lc", "cn"),
+    main = "shallowN sulfur predictors")
+spe.sc1 <-
+    scores(shallowNenz.sulf.rda,
+        choices = 1:2,
+        scaling = 1,
+        display = "sp"
+)
+arrows(0, 0,
+    spe.sc1[, 1] * 0.92,
+    spe.sc1[, 2] * 0.92,
+    length = 0,
+    lty = 1,
+    col = "red"
+)
 
 
 ## one interesting article that mentions this gene
@@ -414,6 +481,12 @@ stats.linregress(deepDist, deepNARcounts) ## but can't fit negative binomial to 
 ## rerun the hellinger-transformed RDA of nitrogen as a dbRDA?
 
 
+###### sulfur metabolism #######
+
+## a good introduction is here:
+https://doi.org/10.1111/j.1574-6976.2009.00187.x
+## = Ghosh and Dam 2009
+
 #### graph all sulfur genes
 
 ## probably a mess, but let's graph them all, and run an RDA on them
@@ -461,7 +534,8 @@ fig, ax = plt.subplots(2,1, sharex=True)
 deepSenzT.plot.line(title='15cm S-metabolism gene counts', ax=ax[0], legend=False)
 shallowSenzT.plot.line(title='5cm S-metabolism gene counts', ax=ax[1])
 
-## interesting. We see the same shapes in these enzymes. 
+## interesting. We see the same shapes as with 
+## the N-reducers in some of these enzymes. 
 
 ## I really hope Zhe did his normalizations right. 
 
@@ -497,7 +571,7 @@ fig, ax = plt.subplots(2,1, sharex=True)
     .plot.line(title='5cm S-metabolism gene counts', 
     ax=ax[1]))
 
-## interestingm soxYZAXB behaves like we would expect.
+## interesting, soxYZAXB behaves like we would expect.
 
 ## can we isolate just the genes that show a dramatic 
 ## difference between the two mid sites?
@@ -548,11 +622,83 @@ genes=['soxYZAXB', 'soxC', 'sat', 'sqr','dsrAB']
 ## SAT is an enzyme for adenylating sulfate, and can be linked to both 
 ## oxidation and reducing pathways
 
-## today - redo old rdas, do new rdas, check specific correlations, especially
-## with NARG
+#### correlations ####
 
-#### RDA for sulfur
+## Zhe wanted to look for correlations between sulfur genes and NarG
+## I'd say let's mash the sulfur and nitrogen genes together and make
+## a correlation matrix. Again, broken up by depth.
 
-## seems like one approach here would be to run a general RDA with space 
-## and a reduction 
+## deep gene matrix, N + S  
+## in python
 
+deepSNcorr = (enz[(enz.Function == "S metabolism") | (enz.Function == "N metabolism")]
+            [deepSamples]
+            .transpose()
+            .corr()
+)
+
+deepSNcorr ## looks okay
+
+plt.close('all')
+fig, ax = plt.subplots(figsize=(8,8))
+im = ax.imshow(deepSNcorr)
+ax.set_xticks(range(deepSNcorr.shape[0]))
+ax.set_yticks(range(deepSNcorr.shape[0]))
+ax.set_yticklabels(deepSNcorr.columns.to_list())
+ax.set_xticklabels(deepSNcorr.columns.to_list(), rotation=90)
+ax.set_title('S/N correlations, deep (15cm)', fontsize=20)
+ax.vlines(x=8.5,
+          ymin=-0.5,
+          ymax=21.5,
+          colors='black',
+          linewidths=5
+)
+ax.hlines(y=8.5,
+          xmax=-0.5,
+          xmin=21.5,
+          colors='black',
+          linewidths=5
+)
+plt.tight_layout()
+
+## need to tweak colormap. green = 0, blue = -1, yellow = 1
+## good enough for now. 
+
+## repeat for shallow:
+
+shallowSNcorr = (enz[(enz.Function == "S metabolism") | (enz.Function == "N metabolism")]
+            [shallowSamples]
+            .transpose()
+            .corr()
+)
+
+
+plt.close('all')
+fig, ax = plt.subplots(figsize=(8,8))
+im = ax.imshow(shallowSNcorr)
+ax.set_xticks(range(shallowSNcorr.shape[0]))
+ax.set_yticks(range(shallowSNcorr.shape[0]))
+ax.set_yticklabels(shallowSNcorr.columns.to_list())
+ax.set_xticklabels(shallowSNcorr.columns.to_list(), rotation=90)
+ax.set_title('S/N correlations, shallow (5cm)', fontsize=20)
+ax.vlines(x=8.5,
+          ymin=-0.5,
+          ymax=21.5,
+          colors='black',
+          linewidths=5
+)
+ax.hlines(y=8.5,
+          xmax=-0.5,
+          xmin=21.5,
+          colors='black',
+          linewidths=5
+)
+plt.tight_layout()
+
+
+########## new homework ###########
+
+## still need confluence data
+## refine regression/correlation among N/S genes
+## can we get a housekeeping gene like rpoB?
+## explore Zhe's environmental data

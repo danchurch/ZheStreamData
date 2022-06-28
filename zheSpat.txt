@@ -10,6 +10,7 @@ import pandas as pd
 import scipy.stats as ss
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+import seaborn as sns
 from sklearn.linear_model import LinearRegression
 from scipy import stats
 plt.ion()
@@ -821,7 +822,154 @@ genes=['soxYZAXB', 'soxC']
 
 ## great, so adding the confluence made little difference
 
+##### univariate regressions ####
+
 ## let's build some univariate models of nitrogen gene counts 
 ## as a function of sulfur oxidation genes (or vice versa)
 
-## according to our RDAs, we 
+## according to our RDAs, narGHIJK is most heavily, positively
+## influenced by distance. 
+
+## but I have trouble believing this entirely, looking at the 
+## gene abundance charts. The same "lightning strike" shape 
+## is visible in the deep (15cm) charts in both genes,
+## and the same "upside-down check" in the shallow (5cm). 
+
+## check with a good old fashioned regression, neg binom,
+## as we did with distance above, @ "taking a univariate approach"
+
+## repeat, with sox operon:
+
+## back to python:
+
+## with just the sox operon:
+deepNARcounts = deepNenzT['narGHIJK'].reset_index(drop=True)
+sox = deepSenzT['soxYZAXB'].reset_index(drop=True)
+deep_narGHIJK_sox_model = sm.GLM(
+                    deepNARcounts, 
+                    sox, 
+                    family=sm.families.NegativeBinomial())
+
+deep_narGHIJK_sox_model_results = deep_narGHIJK_sox_model.fit()
+
+print(deep_narGHIJK_sox_model_results.summary())
+
+## multiple regression possible here? We just have 4 observations...
+
+sox_deepDist = deepSenzT.reset_index()[['Distance','soxYZAXB']]
+deepDist = deepNenzT.reset_index()['Distance']
+sox = deepSenzT['soxYZAXB'].reset_index(drop=True)
+deep_nar_by_soxDistance_model = sm.GLM(
+                    deepNARcounts, 
+                    sox_deepDist, 
+                    family=sm.families.NegativeBinomial())
+
+deep_nar_by_soxDistance_results = deep_nar_by_soxDistance_model.fit()
+
+print(deep_nar_by_soxDistance_results.summary())
+
+## both terms significant, but not much or any real coefficient, 
+## I assume because the overall trends are almost flat, and 
+## "slightly" opposite (slight positive vs. slight negative) 
+## overall
+
+## in general, somehow we need to focus our attention on the 
+## real trend in the data, which are the slopes between 
+## the two mid sites. I think this would be a comparison of 
+## slopes 
+
+## maybe get to that in a minute. 
+
+
+## that is just not that useful. Why do so few regression
+## functions include error families for count data? I must be
+## missing something. 
+
+## anyway, with shallow Nar operon
+
+shallowNARcounts = shallowNenzT['narGHIJK'].reset_index(drop=True)
+shallowDist = shallowNenzT.reset_index()['Distance']
+sox = shallowSenzT['soxYZAXB'].reset_index(drop=True)
+shallow_narGHIJK_sox_model = sm.GLM(
+                    shallowNARcounts, 
+                    sox, 
+                    family=sm.families.NegativeBinomial())
+
+shallow_narGHIJK_sox_model_results = shallow_narGHIJK_sox_model.fit()
+
+print(shallow_narGHIJK_sox_model_results.summary())
+
+## about the same. 
+
+## well, at least it agrees with the RDA
+
+## according to our RDA, narGHIJK should be mostly predicted by 
+## distance, and norBC, napAB and nrfAH should all be better 
+## predicted by the abundance of the sox operon.
+
+def regrShallowNgeneAgainstSox(Ngene):
+    shallowCounts = shallowNenzT[Ngene].reset_index(drop=True)
+    shallowDist = shallowNenzT.reset_index()['Distance']
+    sox = shallowSenzT['soxYZAXB'].reset_index(drop=True)
+    model = sm.GLM(
+                        shallowCounts, 
+                        sox, 
+                        family=sm.families.NegativeBinomial())
+    model_results = model.fit()
+    return(model_results.summary())
+
+regrShallowNgeneAgainstSox("napAB")
+
+regrShallowNgeneAgainstSox("nirBD")
+
+regrShallowNgeneAgainstSox("nrfAH")
+
+## none of this is convincing. I'm missing something here, I think
+## I'm not 
+## Let's look at some plots:
+## https://medium.com/analytics-vidhya/linear-regression-using-pandas-numpy-for-beginners-in-data-science-fe57157ed93d
+
+aa = (pd.concat([
+    shallowNenzT["narGHIJK"],
+    shallowNenzT["napAB"],
+    shallowNenzT["nrfAH"],
+    shallowNenzT["nirK"],
+    shallowNenzT["nosZ"],
+    shallowNenzT["nirS"],
+    shallowSenzT["soxYZAXB"],
+    ], 
+    axis = "columns")
+        .reset_index(drop=True)
+)
+aa['dist'] = shallowDist
+shallowCorrs = aa.corr()
+sns.pairplot(data=aa)
+
+bb = (pd.concat([
+    deepNenzT["narGHIJK"],
+    deepNenzT["napAB"],
+    deepNenzT["nrfAH"],
+    deepNenzT["nirK"],
+    deepNenzT["nosZ"],
+    deepNenzT["nirS"],
+    deepSenzT["soxYZAXB"],
+    ], 
+    axis = "columns")
+        .reset_index(drop=True)
+)
+bb['dist'] = deepDist
+deepCorrs = bb.corr()
+
+sns.pairplot(data=bb)
+
+deepCorrs
+
+sns.jointplot(x='napAB',y='nirS', data=deepNenzT)
+sns.jointplot(x='napAB',y='nirS', data=deepNenzT)
+
+## this is all too messy. 
+## we need to start attaching some confidence to these
+
+## tomorrow, get some models for assocatiations with sox operon
+
+

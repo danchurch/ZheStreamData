@@ -53,9 +53,9 @@ enzEnv.head()
 Nenz = enz[enz.Function == "N metabolism"]
 
 
-Nshallow = enz[enz.Function == "N metabolism"][['Mid-A_5','Mid-B_5','Down_5','KU_5']]
+##Nshallow = enz[enz.Function == "N metabolism"][['Mid-A_5','Mid-B_5','Down_5','KU_5']]
 
-enzEnvShallow = enzEnv[['Mid-A_5','Mid-B_5','Down_5','KU_5']]
+##enzEnvShallow = enzEnv[['Mid-A_5','Mid-B_5','Down_5','KU_5']]
 
 enzEnvShallow
 
@@ -155,6 +155,7 @@ sRedu
 
 deepSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.15].index.to_list()
 shallowSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.05].index.to_list()[:-1]
+
 deepNenz = (enz[enz.Function == "N metabolism"][deepSamples]
         .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
 shallowNenz = (enz[enz.Function == "N metabolism"][shallowSamples]
@@ -228,23 +229,37 @@ library("vegan")
 ## against distance down-stream
 
 deepNenz <- read.csv('deepNenz.csv')
-
 shallowNenz <- read.csv('shallowNenz.csv')
 
 ## first let's transform the gene abundances to 
 ## approximately meet linear/euclidean requirenments
 deepNenz.hell <- decostand(deepNenz[-1], 'hellinger')
+shallowNenz.hell <- decostand(shallowNenz[-1], 'hellinger')
 distance <- deepNenz[[1]]
 deepNenz.hell.rda <- rda(deepNenz.hell ~ distance)
 plot(deepNenz.hell.rda)
 ## points to the only obvious global trend, 
 ## the increase in nar operon with distance
 
+## and also the sulphur? I doubt the rda function
+## is built to accomodate any non-normal residuals,
+## and this is also count data, so...
+
+deepSenz.hell <- decostand(deepSenz[-1], 'hellinger')
+distance <- deepSenz[[1]]
+deepSenz.hell.rda <- rda(deepSenz.hell ~ distance)
+shallowSenz.hell <- decostand(shallowSenz[-1], 'hellinger')
+distance <- shallowSenz[[1]]
+shallowSenz.hell.rda <- rda(shallowSenz.hell ~ distance)
+
+plot(shallowSenz.hell.rda) ## no strong distance dependency in the sulfur, not a surprise
+
+
 #$png(file = 'deepDenitrificationRDA.png', height=600, width=1200)
 #plot(deepNenz.hell.rda)
 #dev.off()
 
-## and without transformation
+## and without N-hellinger transformation
 distance <- deepNenz[[1]]
 deepNenz.rda <- rda(deepNenz[-1] ~ distance)
 plot(deepNenz.rda)
@@ -263,12 +278,21 @@ anova(deepNenz.hell.rda, by = "axis", permutations = how(nperm = 999)) ## p = 0.
 deepSenz <- read.csv('deepSenz.csv')
 shallowSenz <- read.csv('shallowSenz.csv')
 
+## without the hellingar transformations of the sulphur data
 #deepNenz.sulf.rda <- rda(deepNenz.hell, deepSenz)
 #deepNenz.sulf.rda <- rda(deepNenz.hell ~  deepNenz$Distance)
 #deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepNenz$Distance + deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC)
 #deepNenz.sulf.rda <- rda(deepNenz.hell ~ deepSenz$soxYZAXB + deepSenz$sat + deepSenz$sqr + deepSenz$soxC + deepNenz$Distance)
+deepNenz.sulf.rda <- rda(deepNenz.hell ~ distance + soxYZAXB, data=deepSenz)
 
-deepNenz.sulf.rda <- rda(deepNenz.hell ~ Distance + soxYZAXB, data=deepSenz)
+
+## with the hellingar transformations of the sulphur data
+## I think these are better, fits the assumptions of the rda.
+deepNenz.sulf.rda <- rda(deepNenz.hell ~ distance + soxYZAXB, data=deepSenz.hell)
+
+## does order matter here?
+deepNenz.sulf.rda <- rda(deepNenz.hell ~ soxYZAXB + distance, data=deepSenz.hell)
+## not really
 
 anova.cca(deepNenz.sulf.rda)
 
@@ -288,11 +312,16 @@ RsquareAdj(deepNenz.sulf.rda)$adj.r.squared
 ## fairly large r2 (0.537), but not enough statistical power 
 ## to use as a model
 
+
+png(file='NreductionRDA.png', width=1000, height=600)
+
+par(mfrow=c(1,2))
+
 ## plot this, scale type 1
 plot(deepNenz.sulf.rda,
     scaling = 1,
     display = c("sp", "lc", "cn"),
-    main = "deepN sulfur predictors")
+    main = "deepN RDA, sulfur and distance predictors")
 spe.sc1 <-
     scores(deepNenz.sulf.rda,
         choices = 1:2,
@@ -336,6 +365,9 @@ shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxYZAXB, data=shallow
 #shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + soxC + sat + sqr + soxYZAXB, data=shallowSenz)
 #shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ Distance + sat, data=shallowSenz)
 
+## with the hellingar transformations of the sulphur data
+shallowNenz.sulf.rda <- rda(shallowNenz.hell ~ distance + soxYZAXB, data=shallowSenz.hell)
+
 
 shallowNenz.sulf.rda
 
@@ -345,13 +377,12 @@ anova.cca(shallowNenz.sulf.rda)
 
 ## plot this, scale type 1
 
-par(mfrow=c(1,2))
-
+#par(mfrow=c(1,2))
 #par(mfrow=c(1,1))
 plot(shallowNenz.sulf.rda,
     scaling = 1,
     display = c("sp", "lc", "cn"),
-    main = "shallowN sulfur predictors")
+    main = "shallowN RDA, sulfur and distance predictors")
 spe.sc1 <-
     scores(shallowNenz.sulf.rda,
         choices = 1:2,
@@ -366,6 +397,7 @@ arrows(0, 0,
     col = "red"
 )
 
+#dev.off()
 
 ## one interesting article that mentions this gene
 ## as part of a general membrane bound nitrate 
@@ -383,8 +415,6 @@ https://journals.asm.org/doi/10.1128/JB.181.17.5303-5308.1999
 ## and so on. 
 
 ## how about a dbRDA:
-
-
 
 
 deepNenz.cap <- capscale(deepNenz[-1] ~ deepNenz$Distance, dist="bray")
@@ -702,3 +732,96 @@ plt.tight_layout()
 ## refine regression/correlation among N/S genes
 ## can we get a housekeeping gene like rpoB?
 ## explore Zhe's environmental data
+
+##### confluence data ######
+ 
+## let's repeat the above and get N and S gene matrices
+## that include the confluence
+
+## for N
+deepSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.15].index.to_list()
+## that stays the same, we don't have confluence data for the deep
+## this is different, we dropped confluence before:
+shallowSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.05].index.to_list()
+deepDist = enzEnv[deepSamples].loc['Distance']
+shallowDist = enzEnv[shallowSamples].loc['Distance']
+deepNenz = (enz[enz.Function == "N metabolism"][deepSamples]
+        .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
+shallowNenz = (enz[enz.Function == "N metabolism"][shallowSamples]
+        .drop(axis='rows', labels='Ammonia monooxygenase (amoA)'))
+
+## let's just keep the abbreviations:
+aa = (deepNenz.reset_index()['enzyme']
+        .str.split(pat="(", n=1, expand=True)[1]
+        .str.replace(")","")
+    )
+aa.name = "enzyme"
+deepNenz.index = aa
+shallowNenz.index = aa
+
+deepDist = enzEnv[deepSamples].loc['Distance']
+deepNenzT = deepNenz.transpose()
+deepNenzT.index = deepDist
+deepNenzT
+
+shallowDist = enzEnv[shallowSamples].loc['Distance']
+shallowNenzT = shallowNenz.transpose()
+shallowNenzT.index = shallowDist
+shallowNenzT
+
+## plotting N 
+fig, ax = plt.subplots(2,1, sharex=True)
+deepNenzT.plot.line(title='15cm N-reducing gene counts', ax=ax[0], legend=False)
+shallowNenzT.plot.line(title='5cm N-reducing gene counts, including confluence', ax=ax[1])
+
+## for Sulphur
+
+## make sulphure gene matrix as above
+deepSenz = (enz[enz.Function == "S metabolism"][deepSamples])
+shallowSenz = (enz[enz.Function == "S metabolism"][shallowSamples])
+aa = (deepSenz.reset_index()['enzyme']
+        .str.split(pat="(", n=1, expand=True)[1]
+        .str.replace(")","")
+    )
+aa.name = "enzyme"
+deepSenz.index = aa
+shallowSenz.index = aa
+del(aa)
+deepSenzT = deepSenz.transpose()
+deepSenzT.index = deepDist
+shallowSenzT = shallowSenz.transpose()
+shallowSenzT.index = shallowDist
+
+plt.close('all')
+
+## plotting all sulphur related genes
+fig, ax = plt.subplots(2,1, sharex=True)
+deepSenzT.plot.line(title='15cm S-metabolism gene counts', ax=ax[0], legend=False)
+shallowSenzT.plot.line(title='5cm S-metabolism gene counts, including confluence', ax=ax[1])
+
+## subset to sulphur genes of interest:
+fig, ax = plt.subplots(2,1, sharex=True)
+genes=['soxYZAXB', 'soxC', 'sat', 'sqr','dsrAB']
+(deepSenzT[genes]
+    .plot.line(title='15cm S-metabolism gene counts', 
+    ax=ax[0], legend=False))
+(shallowSenzT[genes]
+    .plot.line(title='5cm S-metabolism gene counts', 
+    ax=ax[1]))
+
+## subset to two unambiguous sulphur oxidizing genes:
+fig, ax = plt.subplots(2,1, sharex=True)
+genes=['soxYZAXB', 'soxC']
+(deepSenzT[genes]
+    .plot.line(title='15cm Sox gene counts', 
+    ax=ax[0], legend=False))
+(shallowSenzT[genes]
+    .plot.line(title='5cm Sox gene counts', 
+    ax=ax[1]))
+
+## great, so adding the confluence made little difference
+
+## let's build some univariate models of nitrogen gene counts 
+## as a function of sulfur oxidation genes (or vice versa)
+
+## according to our RDAs, we 

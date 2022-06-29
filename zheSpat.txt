@@ -318,6 +318,9 @@ png(file='NreductionRDA.png', width=1000, height=600)
 
 par(mfrow=c(1,2))
 
+par(mfrow=c(1,1))
+
+pdf(file='deepN_rda_soxAndDist.pdf')
 ## plot this, scale type 1
 plot(deepNenz.sulf.rda,
     scaling = 1,
@@ -336,6 +339,7 @@ arrows(0, 0,
     lty = 1,
     col = "red"
 )
+dev.off()
 
 ## this is scaling type 1, basically look for projection 
 ## of the nitrogen genes onto the predictor axes
@@ -929,21 +933,32 @@ regrShallowNgeneAgainstSox("nrfAH")
 ## Let's look at some plots:
 ## https://medium.com/analytics-vidhya/linear-regression-using-pandas-numpy-for-beginners-in-data-science-fe57157ed93d
 
-aa = (pd.concat([
-    shallowNenzT["narGHIJK"],
-    shallowNenzT["napAB"],
-    shallowNenzT["nrfAH"],
-    shallowNenzT["nirK"],
-    shallowNenzT["nosZ"],
-    shallowNenzT["nirS"],
-    shallowSenzT["soxYZAXB"],
-    ], 
-    axis = "columns")
-        .reset_index(drop=True)
-)
-aa['dist'] = shallowDist
+## according to our RDA, genes likely coordinated with the sox operon are:
+
+genes = [
+    "nrfAH",
+    "napAB",
+    "nirK",
+    "norBC",
+        ]
+
+
+aa = (pd.concat([shallowNenzT[genes], shallowSenzT["soxYZAXB"]], axis="columns")
+        .reset_index())
+aa = aa[['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC', 'Distance']]
 shallowCorrs = aa.corr()
 sns.pairplot(data=aa)
+plt.gcf().suptitle('Shallow nitrogen/SOX operon correlations', fontsize=20)
+
+## after relocating image:
+plt.gcf().tight_layout()
+
+## that makes sense.
+
+## make some models out of these
+## uncouple the R diagrams of RDAs
+
+## repeat with the deep sediments:
 
 bb = (pd.concat([
     deepNenzT["narGHIJK"],

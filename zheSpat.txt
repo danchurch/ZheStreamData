@@ -159,6 +159,7 @@ sRedu
 ## for the 15 cm samples:
 
 deepSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.15].index.to_list()
+
 shallowSamples = enzEnv.loc["Depth"][enzEnv.loc["Depth"] == 0.05].index.to_list()[:-1]
 
 deepNenz = (enz[enz.Function == "N metabolism"][deepSamples]
@@ -1083,6 +1084,7 @@ print(nb2_results.summary())
 ###### mixed model of all nitrogen reduction genes predicted SOX operon ####
 
 
+
 data = sm.datasets.get_rdataset("dietox", "geepack").data
 md = smf.mixedlm("Weight ~ Time", data, groups=data["Pig"])
 mdf = md.fit()
@@ -1096,7 +1098,6 @@ print(mdf.summary())
 ## make a random example 
 
 import random
-
 j = range(90)
 obs = [ random.random() for i in j ]
 grp = ['zoop']*30 + ['poop']*30 + ['moop']*30
@@ -1129,8 +1130,10 @@ print(randModFit.summary())
 ## a random effect in the model later
 
 ## so our genes of interest are:
+genes = ['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC']
 
  
+## remake our all-enzyme matrix
 #enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
 enz = pd.read_csv("Normalized_OnlyEnzymes.csv") ## for old pandas on personal machine
 enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
@@ -1138,7 +1141,6 @@ enz['enzyme'] = enz['enzyme'].str.replace(',','')
 enz.set_index('enzyme', inplace=True)
 
 
-genes = ['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC']
 SNenz = enz
 aa = (SNenz.reset_index()['enzyme']
         .str.split(pat="(", n=1, expand=True)[1]
@@ -1146,8 +1148,94 @@ aa = (SNenz.reset_index()['enzyme']
     )
 aa.name = "enzyme"
 SNenz.index = aa
-SNenz = SNenz.loc[genes]
+SNenz = SNenz.loc[genes].drop(['Function','KU_5'], axis='columns')
+SNenz= SNenz.transpose()
 
 SNenz.head()
+
+## what does this look like, with the combined depths,
+## not taking distance into account?
+ 
+sns.pairplot(data=SNenz)
+
+## interesting. And can we build one large scatter, 
+## colored by type of Ngene?
+
+plt.close('all')
+fig, ax = plt.subplots()
+for i in SNenz[['nrfAH', 'napAB', 'nirK', 'norBC']].iteritems():
+    ax.scatter(SNenz['soxYZAXB'], i[1], label=i[0])
+
+handle, label = ax.get_legend_handles_labels()
+ax.legend(handle, label)
+ax.set_title('Selected N-reduction genes against SOX operon abundance, both depths', fontsize=20)
+ax.set_ylabel('N-reducing Genes', fontsize=15)
+ax.set_xlabel('soxYZAXB', fontsize=15)
+
+
+## so, to build a model? We need to melt and rebuild with enzyme as a categorical variable
+
+df = pd.DataFrame({'A': {0: 'a', 1: 'b', 2: 'c'},
+                   'B': {0: 1, 1: 3, 2: 5},
+                   'C': {0: 2, 1: 4, 2: 6}})
+
+pd.melt(df, id_vars=['A'], value_vars=['B'])
+
+df
+
+pd.melt(SNenz, id_vars=[''], value_vars=[''])
+
+pd.melt(SNenz, id_vars=[''], value_vars=[''])
+
+SNenz.head()
+
+SNenz.transpose().reset_index()
+
+help(SNenz.reset_index)
+
+SNenz.reset_index()
+
+
+## make our dataframe for the model:
+
+aa = (SNenz
+    .reset_index(drop=False)
+    .drop(axis="columns", labels="soxYZAXB")
+    .rename(columns={'index':'site'})
+)
+
+bb = pd.melt(aa, id_vars='site', value_name='geneCopyCount') 
+
+soxes = pd.concat([SNenz['soxYZAXB'],
+                   SNenz['soxYZAXB'],
+                   SNenz['soxYZAXB'],
+                   SNenz['soxYZAXB']])
+
+bb['soxYZAXB'] = soxes.values
+
+(bb.site == soxes.index).all() ## order looks okay
+
+## make a model
+
+help(smf.mixedlm)
+
+soxM = smf.mixedlm("geneCopyCount ~ soxYZAXB", bb, groups=bb["enzyme"])
+
+soxMfit = soxM.fit()
+
+soxMfit.summary()
+
+## somehow we have to fit a better family of errors to this. 
+## I hate complex frequentist linear models. All the terminology
+## becomes to specialized and complex quickly.
+
+## we made a simple glm  with count data above:
+nb2_results = sm.GLM(y, x, family=sm.families.NegativeBinomial(alpha=aux_olsr_results.params[0])).fit()
+
+
+
+
+
+##### make genomes searchable #########
 
 

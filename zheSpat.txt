@@ -320,7 +320,7 @@ par(mfrow=c(1,2))
 
 par(mfrow=c(1,1))
 
-pdf(file='deepN_rda_soxAndDist.pdf')
+#pdf(file='deepN_rda_soxAndDist.pdf')
 ## plot this, scale type 1
 plot(deepNenz.sulf.rda,
     scaling = 1,
@@ -339,7 +339,7 @@ arrows(0, 0,
     lty = 1,
     col = "red"
 )
-dev.off()
+#dev.off()
 
 ## this is scaling type 1, basically look for projection 
 ## of the nitrogen genes onto the predictor axes
@@ -384,6 +384,7 @@ anova.cca(shallowNenz.sulf.rda)
 
 #par(mfrow=c(1,2))
 #par(mfrow=c(1,1))
+pdf(file='shallowN_rda_soxAndDist.pdf')
 plot(shallowNenz.sulf.rda,
     scaling = 1,
     display = c("sp", "lc", "cn"),
@@ -401,8 +402,7 @@ arrows(0, 0,
     lty = 1,
     col = "red"
 )
-
-#dev.off()
+dev.off()
 
 ## one interesting article that mentions this gene
 ## as part of a general membrane bound nitrate 
@@ -933,19 +933,21 @@ regrShallowNgeneAgainstSox("nrfAH")
 ## Let's look at some plots:
 ## https://medium.com/analytics-vidhya/linear-regression-using-pandas-numpy-for-beginners-in-data-science-fe57157ed93d
 
-## according to our RDA, genes likely coordinated with the sox operon are:
+## according to our shallow and deep RDAs, 
+## seems like the N genes most likely correlated with the sox operon are:
 
 genes = [
     "nrfAH",
     "napAB",
     "nirK",
+    "nirS", ##
     "norBC",
         ]
 
 
 aa = (pd.concat([shallowNenzT[genes], shallowSenzT["soxYZAXB"]], axis="columns")
         .reset_index())
-aa = aa[['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC', 'Distance']]
+aa = aa[['soxYZAXB', "nirS", 'nrfAH', 'napAB', 'nirK', 'norBC', 'Distance']]
 shallowCorrs = aa.corr()
 sns.pairplot(data=aa)
 plt.gcf().suptitle('Shallow nitrogen/SOX operon correlations', fontsize=20)
@@ -953,38 +955,124 @@ plt.gcf().suptitle('Shallow nitrogen/SOX operon correlations', fontsize=20)
 ## after relocating image:
 plt.gcf().tight_layout()
 
+shallowCorrs
+
 ## that makes sense.
 
 ## make some models out of these
 ## uncouple the R diagrams of RDAs
 
-## repeat with the deep sediments:
+## repeat with the deep sediments.
+## the 
 
-bb = (pd.concat([
-    deepNenzT["narGHIJK"],
-    deepNenzT["napAB"],
-    deepNenzT["nrfAH"],
-    deepNenzT["nirK"],
-    deepNenzT["nosZ"],
-    deepNenzT["nirS"],
-    deepSenzT["soxYZAXB"],
-    ], 
-    axis = "columns")
-        .reset_index(drop=True)
-)
-bb['dist'] = deepDist
+
+bb = deepNenzT[genes]
+bb = (pd.concat([deepSenzT["soxYZAXB"], bb], axis="columns")
+        .reset_index())
+bb = bb[['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC','Distance' ]] 
 deepCorrs = bb.corr()
-
 sns.pairplot(data=bb)
+plt.gcf().suptitle('Deep nitrogen/SOX operon correlations', fontsize=20)
+
+plt.gcf().tight_layout()
 
 deepCorrs
 
-sns.jointplot(x='napAB',y='nirS', data=deepNenzT)
-sns.jointplot(x='napAB',y='nirS', data=deepNenzT)
+shallowCorrs
 
-## this is all too messy. 
-## we need to start attaching some confidence to these
+## okay, we gotta stop procrastinating and make some sort of
+## model for these. 
 
-## tomorrow, get some models for assocatiations with sox operon
+## following:
+https://timeseriesreasoning.com/contents/negative-binomial-regression-model/
+## which is a damn fine website that I should just study for 
+## a couple months
+## but life is too short/busy.
+
+## according to this fellow, we need two things to build
+## a good negative binomial model from our data. 
+
+## 1)  α, which is a coefficient that estimates our variance
+##     from our mean
+## 2)  λ, which is the background rate constant that 
+
+
+## we need to estimate both, then build a model of our 
+## so before we build our real model, we do some other
+## models to get these parameters
+
+import pandas as pd
+from patsy import dmatrices
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import statsmodels.formula.api as smf
+
+## start with, for example norBC
+expr = """ norBC ~ soxYZAXB + Distance """
+
+## use patsy to make experimental matrix (df), with intercept
+y, x = dmatrices(expr, aa, return_type='dataframe')
+
+## we start by trying to estimate λ, using a poisson regression
+
+poisson = sm.GLM(y, x, family=sm.families.Poisson()).fit()
+
+print(poisson.summary())
+
+## our rates for λ are here, one per observation
+print(poisson.mu)
+
+## store it
+aa['LAMBDA'] = poisson.mu
+
+## now we need α
+
+## we estimate with a quick OLS regression of the variance,
+## solved for α
+## we'll use the second order model of the variance (NB2),
+## just because this is what they do in the example.
+## really, I have no fucking clue. 
+## this part is over my head, I do not understand it totally. 
+
+## we apply the variance formula to all values of lambda
+## and run this auxillary model to fit a coefficient to it
+## using a quick-and-dirty ols
+
+aa['AUX_OLS_DEP'] = aa.apply(lambda x: ((x['norBC'] - x['LAMBDA'])**2 - x['LAMBDA']) / x['LAMBDA'], axis=1)
+
+## that's weird looking. Let's see if it works. 
+
+## make a patsy expression for this:
+
+ols_expr = """AUX_OLS_DEP ~ LAMBDA - 1"""
+
+aux_olsr_results = smf.ols(ols_expr, aa).fit()
+
+aux_olsr_results.params[0] ## this is our α value. very small
+
+aux_olsr_results.tvalues ## = 0.996688, p=.39, not statistically significant, could probably just use poisson regression?
+## oh well, go with it. Probably better than nothing.
+
+nb2_results = sm.GLM(y, x, family=sm.families.NegativeBinomial(alpha=aux_olsr_results.params[0])).fit()
+
+print(nb2_results.summary())
+
+
+####### zhe meeting ########
+
+## it looks like from Zhe's last slide that 
+## different organisms are contributing 
+## differentially with space (downstream)
+## to narG
+
+## give Zhe an example of searchable genome
+
+## finish individual models
+
+## try a mixed model (hierarchical) of 
+## all nitrogen genes against sox operon
+
+## water chemisty 
 
 

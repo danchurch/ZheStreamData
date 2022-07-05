@@ -8,14 +8,18 @@ mv 'water chemistry.xlsx' 'waterChemistry.xlsx'
 
 import pandas as pd
 import scipy.stats as ss
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt; plt.ion()
 import statsmodels.api as sm
+import statsmodels.formula.api as smf
 import seaborn as sns
 from sklearn.linear_model import LinearRegression
 from scipy import stats
-plt.ion()
 
-enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
+
+
+
+#enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
+enz = pd.read_csv("Normalized_OnlyEnzymes.csv")
 enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
 enz['enzyme'] = enz['enzyme'].str.replace(',','')
 enz.set_index('enzyme', inplace=True)
@@ -986,5 +990,76 @@ sns.jointplot(x='napAB',y='nirS', data=deepNenzT)
 ## we need to start attaching some confidence to these
 
 ## tomorrow, get some models for assocatiations with sox operon
+
+
+###### mixed model of all nitrogen reduction genes predicted SOX operon ####
+
+
+data = sm.datasets.get_rdataset("dietox", "geepack").data
+md = smf.mixedlm("Weight ~ Time", data, groups=data["Pig"])
+mdf = md.fit()
+
+print(mdf.summary())
+
+
+## I don't understand, why are pvalues always so low?
+## not complaining, but...am I using this correctly?
+
+## make a random example 
+
+import random
+
+j = range(90)
+obs = [ random.random() for i in j ]
+grp = ['zoop']*30 + ['poop']*30 + ['moop']*30
+predictor = [ random.random() for i in j ]
+randData = pd.DataFrame({'obs':obs,'grp':grp,'predictor':predictor})
+randMod = smf.mixedlm("obs ~ predictor", randData, groups=randData["grp"])
+randModFit = randMod.fit()
+print(randModFit.summary())
+
+## yeah, okay, so you can break the pvalues.
+
+## comforting. move on to our data
+
+## for the moment, ignore the count data aspect and format Zhe's 
+## gene counts
+
+## start with the nitrogen reduction genes that 
+## are suggested by our RDA, and the sox operon
+
+## not sure if it is meaningful to include the 
+## narg operon, the RDA suggests no effect by 
+## SOX operon
+ 
+## also, should we combine shallow and deep here?
+
+## let's try both together, without considering 
+## depth. Seems like the simplest solution.
+
+## we can break it up later or consider depth as 
+## a random effect in the model later
+
+## so our genes of interest are:
+
+ 
+#enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
+enz = pd.read_csv("Normalized_OnlyEnzymes.csv") ## for old pandas on personal machine
+enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
+enz['enzyme'] = enz['enzyme'].str.replace(',','')
+enz.set_index('enzyme', inplace=True)
+
+
+genes = ['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC']
+SNenz = enz
+aa = (SNenz.reset_index()['enzyme']
+        .str.split(pat="(", n=1, expand=True)[1]
+        .str.replace(")","")
+    )
+aa.name = "enzyme"
+SNenz.index = aa
+SNenz = SNenz.loc[genes]
+
+SNenz.head()
 
 

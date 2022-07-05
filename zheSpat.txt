@@ -1238,4 +1238,34 @@ nb2_results = sm.GLM(y, x, family=sm.families.NegativeBinomial(alpha=aux_olsr_re
 
 ##### make genomes searchable #########
 
+## let's grab one of the genomes that zhe gave us and take a look
+## see if we can make a database out of it:
+
+
+cd /home/daniel/Documents/analyses/zheSpat/refgenomes/ncbi_dataset/data/GCA_002742695.1
+
+
+makeblastdb -in GCA_002742695.1_ASM274269v1_genomic.fna -parse_seqids -dbtype nucl
+
+## works
+
+## genes of interest are here:
+
+cd /home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxB_SD_5
+
+
+## huh, this looks like Zhe took the genes from reference genomes and 
+## not his own data? not sure. 
+
+## anyway, to look for them in the first refgenome them:
+soxGenes="/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxB_SD_5/fasta.fna"
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/ncbi_dataset/data/GCA_002742695.1/GCA_002742695.1_ASM274269v1_genomic.fna"
+
+less $soxGenes
+
+blastn -db $localDB -query $soxGenes > testBlast.txt
+
+blastn -db $localDB -query $soxGenes -out testBlast.txt -perc_identity 50 -outfmt 6 
+
+
 

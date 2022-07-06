@@ -1,0 +1,6748 @@
+BLASTN 2.10.1+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: Paracoccus_combined.fasta
+           2 sequences; 3,774,098 total letters
+
+
+
+Query= Ga0495066_0870750_2_412
+
+Length=411
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1471881840
+
+
+Query= Ga0495066_7852691_41_217
+
+Length=177
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 592527106
+
+
+Query= Ga0495066_3052206_6_278
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_0714814_37_399
+
+Length=363
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  110     9e-25
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 110 bits (59),  Expect = 9e-25
+ Identities = 87/101 (86%), Gaps = 0/101 (0%)
+ Strand=Plus/Minus
+
+Query  22      ACCGTGATGGAAGACGTCGCCGACAACCTGTTCAACCCCGATCCGTACTACCAGCAGGGC  81
+               |||||| |||||||||| ||||||||| | |||||  ||||||| || ||||||||||||
+Sbjct  714639  ACCGTGCTGGAAGACGTGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGC  714580
+
+Query  82      GGCGACATGGTGCGCGTCGGTGGCCTGACCTACGCCATCGA  122
+               ||||||||||||||||| || || ||| |||| || |||||
+Sbjct  714579  GGCGACATGGTGCGCGTGGGCGGGCTGGCCTATGCGATCGA  714539
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1290727152
+
+
+Query= Ga0495066_7806786_3_218
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_7769517_1_219
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_7158192_5_226
+
+Length=222
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 758585256
+
+
+Query= Ga0495066_5476702_2_247
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_1011428_1_393
+
+Length=393
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1403948832
+
+
+Query= Ga0495066_2030520_2_316
+
+Length=315
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1109572464
+
+
+Query= Ga0495066_0467986_1_363
+
+Length=363
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1290727152
+
+
+Query= Ga0495066_4225976_3_263
+
+Length=261
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 905773440
+
+
+Query= Ga0495066_1104941_5_385
+
+Length=381
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1358660160
+
+
+Query= Ga0495066_1851829_2_325
+
+Length=324
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1143538968
+
+
+Query= Ga0495066_2412496_15_296
+
+Length=282
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 985028616
+
+
+Query= Ga0495066_0983455_212_397
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_2197821_41_274
+
+Length=234
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_0306343_2_577
+
+Length=576
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2090825916
+
+
+Query= Ga0495066_4361069_36_260
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_0952354_2_394
+
+Length=393
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1403948832
+
+
+Query= Ga0495066_6429739_7_237
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_3779672_15_257
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_1275076_21_224
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_7224269_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_7843968_2_217
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_0330950_2_562
+
+Length=561
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2034215106
+
+
+Query= Ga0495066_8517637_2_208
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_1453137_20_268
+
+Length=249
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 860484768
+
+
+Query= Ga0495066_1251253_2_367
+
+Length=366
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1302049320
+
+
+Query= Ga0495066_4052207_59_265
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_8098787_2_214
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_3079330_1_279
+
+Length=279
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 973706448
+
+
+Query= Ga0495066_6540441_1_234
+
+Length=234
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_5854801_2_241
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_3892224_24_266
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_3392319_187_273
+
+Length=87
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 256636080
+
+
+Query= Ga0495066_0163849_2_688
+
+Length=687
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2509745910
+
+
+Query= Ga0495066_4036468_2_250
+
+Length=249
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 860484768
+
+
+Query= Ga0495066_7015367_28_174
+
+Length=147
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 479305366
+
+
+Query= Ga0495066_0223282_3_644
+
+Length=642
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2339913480
+
+
+Query= Ga0495066_7764850_1_219
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_4937553_2_253
+
+Length=252
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  128     2e-30
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 128 bits (69),  Expect = 2e-30
+ Identities = 101/117 (86%), Gaps = 0/117 (0%)
+ Strand=Plus/Minus
+
+Query  73      GACGTGGCCGACAATCTGTTCAACCCCGATCCCTACTACCAGCAGGGCGGCGACATGGTG  132
+               ||||||||||||||  | |||||  |||||||||| ||||||||||||||||||||||||
+Sbjct  714627  GACGTGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTG  714568
+
+Query  133     CGCGTCGGCGGGCTCGCCTATGCGCTCGACATCGCCCAGCCGATGGGCCGGCGCATC  189
+               ||||| |||||||| ||||||||| ||||| |  || ||||||||||| | || |||
+Sbjct  714567  CGCGTGGGCGGGCTGGCCTATGCGATCGACGTGTCCAAGCCGATGGGCAGCCGGATC  714511
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_0916453_11_406
+
+Length=396
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1415271000
+
+
+Query= Ga0495066_6082585_1_237
+
+Length=237
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 815196096
+
+
+Query= Ga0495066_7149326_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_4454887_2_208
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_4938574_1_252
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_2175878_2_121
+
+Length=120
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 377405800
+
+
+Query= Ga0495066_1151122_2_154
+
+Length=153
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 501949714
+
+
+Query= Ga0495066_0019584_801_1676
+
+Length=876
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3223042116
+
+
+Query= Ga0495066_6324713_1_231
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_2167299_123_308
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_5003082_1_252
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_4767022_3_254
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_5146721_1_252
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_4923982_1_252
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_3896257_5_208
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_0201101_2_667
+
+Length=666
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2430490776
+
+
+Query= Ga0495066_6604602_3_233
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_2965836_1_246
+
+Length=246
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  113     5e-26
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 113 bits (61),  Expect = 5e-26
+ Identities = 117/142 (82%), Gaps = 12/142 (8%)
+ Strand=Plus/Minus
+
+Query  82      GTGGCCGACAACCTGTTCAACCCCGATCCCTACTACCAGCAGGGCGGCGACATGGTGCGC  141
+               |||||||||||| | |||||  |||||||||| |||||||||||||||||||||||||||
+Sbjct  714624  GTGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGC  714565
+
+Query  142     GTGGGCGGCCTGGCCTACAGCTGCGATCCGCGCG-CCA-G--GATGGGCGAG-CGCATCA  196
+               |||||||| ||||||||    |||||||  || | ||| |  ||||||| || || ||| 
+Sbjct  714564  GTGGGCGGGCTGGCCTA----TGCGATCGACGTGTCCAAGCCGATGGGC-AGCCGGATCG  714510
+
+Query  197     GCGACATG-CGCTTGGCCGGCA  217
+               ||| |||| |||| ||||| ||
+Sbjct  714509  GCGCCATGGCGCT-GGCCGACA  714489
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_5249470_1_249
+
+Length=249
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 860484768
+
+
+Query= Ga0495066_1265838_1_369
+
+Length=369
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  198     2e-51
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 198 bits (107),  Expect = 2e-51
+ Identities = 242/307 (79%), Gaps = 10/307 (3%)
+ Strand=Plus/Minus
+
+Query  4       CTGCTCTATCGTCGCGGCAATTTCAACGGCACGCT-CGACGACATGATCTGCGACGCGCT  62
+               |||||||| || |||||||||||||||||| | ||  |||||  ||||||| |||||  |
+Sbjct  714858  CTGCTCTACCGCCGCGGCAATTTCAACGGCTC-CTGGGACGATCTGATCTGTGACGCCAT  714800
+
+Query  63      TCTCGCGGAGCGCGACGCCGAGATCGCGCTGTCGCCGGGCTTCCGCTGGGGTAGCTCCG-  121
+                | | | ||||||||||   |||||||||||||||||||| | |||||||| | |  || 
+Sbjct  714799  CCGCACCGAGCGCGACGTGCAGATCGCGCTGTCGCCGGGCGTGCGCTGGGGCA-CCACGC  714741
+
+Query  122     TGCTGCCGAACACCGAGATCACGCGCGAGGATATCTACAACGCCACCGCCATCACCTATC  181
+               |  ||||   |  || ||||||||||||||| ||| |||||| |||| | || |||||| 
+Sbjct  714740  TCTTGCCCGGCGACGCGATCACGCGCGAGGACATCCACAACGTCACCTCGATGACCTAT-  714682
+
+Query  182     CGGC-C-GCCTACCGGCTCACC-ATGACCGGCGCGCGGCTCAAGGAGGTGCTCGAGGACG  238
+                ||| | | ||||| || |    |||||||||| |  ||| ||    ||||| || ||||
+Sbjct  714681  -GGCGCGGTCTACC-GCACCGAGATGACCGGCGAGACGCTGAAAACCGTGCTGGAAGACG  714624
+
+Query  239     TGGCCGACAACCTGTTCAACCCGGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCG  298
+               ||||||||||| | |||||  | |||||||||||||||||||||||||||||||||||||
+Sbjct  714623  TGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCG  714564
+
+Query  299     TGGGCGG  305
+               |||||||
+Sbjct  714563  TGGGCGG  714557
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1313371488
+
+
+Query= Ga0495066_2351983_15_299
+
+Length=285
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 996350784
+
+
+Query= Ga0495066_1046690_18_389
+
+Length=372
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1324693656
+
+
+Query= Ga0495066_6070640_1_156
+
+Length=156
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 513271888
+
+
+Query= Ga0495066_3947752_3_266
+
+Length=264
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 917095608
+
+
+Query= Ga0495066_1340611_1_363
+
+Length=363
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1290727152
+
+
+Query= Ga0495066_7291593_1_225
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_0599151_3_464
+
+Length=462
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1664358696
+
+
+Query= Ga0495066_5618163_3_245
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_1142844_3_380
+
+Length=378
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1347337992
+
+
+Query= Ga0495066_8256091_2_211
+
+Length=210
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  62.1    1e-10
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 62.1 bits (33),  Expect = 1e-10
+ Identities = 71/90 (79%), Gaps = 0/90 (0%)
+ Strand=Plus/Minus
+
+Query  121     CTGCTCTACCGCCGCGGCAATTTCAACGGCACCTTCGACCAGCTCATCTGCCAGGCGTTG  180
+               |||||||||||||||||||||||||||||| |||  ||| | || |||||  | ||  | 
+Sbjct  714858  CTGCTCTACCGCCGCGGCAATTTCAACGGCTCCTGGGACGATCTGATCTGTGACGCCATC  714799
+
+Query  181     CTGGCCGAACGCGACGCCGAGATCGCGCTG  210
+               |   |||| |||||||   |||||||||||
+Sbjct  714798  CGCACCGAGCGCGACGTGCAGATCGCGCTG  714769
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_8598346_3_206
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_2324701_3_299
+
+Length=297
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1041639456
+
+
+Query= Ga0495066_6611096_2_232
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_1530305_2_349
+
+Length=348
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1234116312
+
+
+Query= Ga0495066_3458548_1_273
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_2808891_1_285
+
+Length=285
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 996350784
+
+
+Query= Ga0495066_0019432_915_1688
+
+Length=774
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2838088608
+
+
+Query= Ga0495066_2879426_8_283
+
+Length=276
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 962384280
+
+
+Query= Ga0495066_2042292_2_202
+
+Length=201
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  73.1    7e-14
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 73.1 bits (39),  Expect = 7e-14
+ Identities = 81/102 (79%), Gaps = 0/102 (0%)
+ Strand=Plus/Minus
+
+Query  45      CGGCGAGCAGATCAAGACCATCCTCGAAGACATCGCCGACAACCTGTTCCACGAAGACCC  104
+               |||||||  | | || ||| | || |||||| | ||||||||| | ||| |    || ||
+Sbjct  714655  CGGCGAGACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAACATCTTCAATACCGATCC  714596
+
+Query  105     GTACTACCAGCAGGGCGGCGACATGGTGCGCGTCGGCGGGCT  146
+                || ||||||||||||||||||||||||||||| ||||||||
+Sbjct  714595  CTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGGGCT  714554
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_7161499_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_2423119_3_296
+
+Length=294
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1030317288
+
+
+Query= Ga0495066_4185849_2_262
+
+Length=261
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 905773440
+
+
+Query= Ga0495066_1729430_2_172
+
+Length=171
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 569882758
+
+
+Query= Ga0495066_4960727_3_254
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_8391789_1_93
+
+Length=93
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 279280440
+
+
+Query= Ga0495066_6279774_32_238
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_3857749_3_161
+
+Length=159
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 524594062
+
+
+Query= Ga0495066_7837213_1_216
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_0989794_19_396
+
+Length=378
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1347337992
+
+
+Query= Ga0495066_1536128_224_349
+
+Length=126
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 400050148
+
+
+Query= Ga0495066_0529466_74_475
+
+Length=402
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  128     3e-30
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 128 bits (69),  Expect = 3e-30
+ Identities = 91/102 (89%), Gaps = 0/102 (0%)
+ Strand=Plus/Minus
+
+Query  67      ACCGTGATGGAAGACGTGGCCGACAACCTGTTCAATCCCGACCCGTACTACCAGCAGGGC  126
+               |||||| |||||||||||||||||||| | |||||| |||| || || ||||||||||||
+Sbjct  714639  ACCGTGCTGGAAGACGTGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGC  714580
+
+Query  127     GGCGACATGGTGCGCGTGGGCGGCATGACCTACGCGATCGAC  168
+               |||||||||||||||||||||||  || |||| |||||||||
+Sbjct  714579  GGCGACATGGTGCGCGTGGGCGGGCTGGCCTATGCGATCGAC  714538
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1437915336
+
+
+Query= Ga0495066_4890370_8_244
+
+Length=237
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 815196096
+
+
+Query= Ga0495066_0743112_2_199
+
+Length=198
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 671782324
+
+
+Query= Ga0495066_8395557_1_210
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_8277693_2_187
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_0814291_1_408
+
+Length=408
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1460559672
+
+
+Query= Ga0495066_0100157_1_411
+
+Length=411
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1471881840
+
+
+Query= Ga0495066_6938206_1_228
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_3469675_1_273
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_0054213_7_570
+
+Length=564
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2045537268
+
+
+Query= Ga0495066_7231372_2_226
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_8308699_3_209
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_7037929_2_229
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_6626089_1_234
+
+Length=234
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  115     1e-26
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 115 bits (62),  Expect = 1e-26
+ Identities = 80/89 (90%), Gaps = 0/89 (0%)
+ Strand=Plus/Minus
+
+Query  61      GTGCTGGAGGACGTGGCCGACAATCTCTTCAACCCCGATCCCTACTACCAGCAGGGCGGC  120
+               |||||||| ||||||||||||||  |||||||  |||||||||| |||||||||||||||
+Sbjct  714636  GTGCTGGAAGACGTGGCCGACAACATCTTCAATACCGATCCCTATTACCAGCAGGGCGGC  714577
+
+Query  121     GACATGGTGCGCGCCGGCGGGCTCGCCTA  149
+               |||||||||||||  |||||||| |||||
+Sbjct  714576  GACATGGTGCGCGTGGGCGGGCTGGCCTA  714548
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_0747853_24_434
+
+Length=411
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1471881840
+
+
+Query= Ga0495066_4598838_98_256
+
+Length=159
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 524594062
+
+
+Query= Ga0495066_0696399_3_443
+
+Length=441
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1585103520
+
+
+Query= Ga0495066_7922795_2_217
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_2004917_3_317
+
+Length=315
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1109572464
+
+
+Query= Ga0495066_6641023_2_232
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_0279239_23_595
+
+Length=573
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2079503754
+
+
+Query= Ga0495066_2390355_31_297
+
+Length=267
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  102     1e-22
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 102 bits (55),  Expect = 1e-22
+ Identities = 96/116 (83%), Gaps = 1/116 (1%)
+ Strand=Plus/Minus
+
+Query  46      ACCGTCACGGACATGTCCGGGGAGACGATCAAGAGCATCCTCGAGGACGTGTGCGACAAC  105
+               |||| ||| || ||| |||| |||||| | || | | | || || ||||||  |||||||
+Sbjct  714671  ACCG-CACCGAGATGACCGGCGAGACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAAC  714613
+
+Query  106     CTGTTCAATCCGGATCCCTACTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGG  161
+                | |||||| | |||||||| |||||||||||||||||||||||||||||||||||
+Sbjct  714612  ATCTTCAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGG  714557
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_0042273_834_1211
+
+Length=378
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1347337992
+
+
+Query= Ga0495066_7138359_2_226
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_1032223_34_351
+
+Length=318
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1120894632
+
+
+Query= Ga0495066_2790368_2_226
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_1363185_3_344
+
+Length=342
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1211471976
+
+
+Query= Ga0495066_2068735_3_185
+
+Length=183
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 615171454
+
+
+Query= Ga0495066_2176838_3_305
+
+Length=303
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1064283792
+
+
+Query= Ga0495066_5585165_2_244
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_6989334_29_214
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_0301105_395_580
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_3812817_14_121
+
+Length=108
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 332117104
+
+
+Query= Ga0495066_1415144_158_358
+
+Length=201
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_4898951_2_253
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_2585266_3_290
+
+Length=288
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1007672952
+
+
+Query= Ga0495066_3195779_1_183
+
+Length=183
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 615171454
+
+
+Query= Ga0495066_2717327_106_279
+
+Length=174
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 581204932
+
+
+Query= Ga0495066_8011802_47_214
+
+Length=168
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 558560584
+
+
+Query= Ga0495066_2314854_2_118
+
+Length=117
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 366083626
+
+
+Query= Ga0495066_5254542_3_248
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_0294811_2_583
+
+Length=582
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2113470240
+
+
+Query= Ga0495066_8611622_3_206
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_1573683_3_344
+
+Length=342
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1211471976
+
+
+Query= Ga0495066_7813686_2_178
+
+Length=177
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 592527106
+
+
+Query= Ga0495066_3575465_9_269
+
+Length=261
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 905773440
+
+
+Query= Ga0495066_0593963_2_127
+
+Length=126
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 400050148
+
+
+Query= Ga0495066_2302759_2_295
+
+Length=294
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1030317288
+
+
+Query= Ga0495066_2684265_1_288
+
+Length=288
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1007672952
+
+
+Query= Ga0495066_0090314_3_899
+
+Length=897
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3302297250
+
+
+Query= Ga0495066_7061916_2_220
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_8623747_1_186
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_0495577_2_493
+
+Length=492
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1773805380
+
+
+Query= Ga0495066_0959108_1_336
+
+Length=336
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1188827640
+
+
+Query= Ga0495066_7199821_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_1347970_1_363
+
+Length=363
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1290727152
+
+
+Query= Ga0495066_4268787_3_203
+
+Length=201
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_1400311_26_358
+
+Length=333
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1177505472
+
+
+Query= Ga0495066_3055551_1_150
+
+Length=150
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 490627540
+
+
+Query= Ga0495066_7933483_19_216
+
+Length=198
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 671782324
+
+
+Query= Ga0495066_2053451_1_312
+
+Length=312
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1098250296
+
+
+Query= Ga0495066_7011177_1_228
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_4161567_1_186
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_8622769_1_111
+
+Length=111
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 343439278
+
+
+Query= Ga0495066_0055203_20_1099
+
+Length=1080
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3992949132
+
+
+Query= Ga0495066_1385596_32_358
+
+Length=327
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1154861136
+
+
+Query= Ga0495066_6957035_2_229
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_4070681_1_261
+
+Length=261
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 905773440
+
+
+Query= Ga0495066_4766426_3_254
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_1682143_1_336
+
+Length=336
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1188827640
+
+
+Query= Ga0495066_5550342_1_246
+
+Length=246
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  104     3e-23
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 104 bits (56),  Expect = 3e-23
+ Identities = 92/110 (84%), Gaps = 0/110 (0%)
+ Strand=Plus/Minus
+
+Query  130     ACCGAAATGACGGGCGAGACGGTCAAGTTTATCCTCGAAGACGTGAGCGACAACCTGTTC  189
+               ||||| ||||| ||||||||| | ||     | || |||||||||  ||||||| | |||
+Sbjct  714666  ACCGAGATGACCGGCGAGACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAACATCTTC  714607
+
+Query  190     AATCCCGATCCCTACTACCAACAGGGCGGCGACATGGTGCGCGTGGGCGG  239
+               ||| |||||||||| ||||| |||||||||||||||||||||||||||||
+Sbjct  714606  AATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGG  714557
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_0422445_1_519
+
+Length=519
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1875704838
+
+
+Query= Ga0495066_0444742_2_349
+
+Length=348
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1234116312
+
+
+Query= Ga0495066_7956319_2_214
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_5762139_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_3589843_2_268
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_0170196_3_146
+
+Length=144
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 467983192
+
+
+Query= Ga0495066_7906956_1_207
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_7166290_16_225
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_6234648_2_238
+
+Length=237
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 815196096
+
+
+Query= Ga0495066_2910070_3_281
+
+Length=279
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 973706448
+
+
+Query= Ga0495066_7382095_3_224
+
+Length=222
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 758585256
+
+
+Query= Ga0495066_2385210_1_288
+
+Length=288
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  110     7e-25
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 110 bits (59),  Expect = 7e-25
+ Identities = 167/219 (76%), Gaps = 8/219 (4%)
+ Strand=Plus/Minus
+
+Query  1       TTCAACCCCGATCCCTACTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGGCGTTCG-  59
+               |||||  |||||||||| ||||||||||||||||||||||||||||||||||| | | | 
+Sbjct  714609  TTCAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGG-GCTGGC  714551
+
+Query  60      CTACACGATCGACATCAGCAAGCCGATCGGCAGCCGCGTCTCGAATCTCACGCTGCTG-C  118
+               |||  |||||||| |   ||||||||| |||||||| |  |||   | || |  |||| |
+Sbjct  714550  CTATGCGATCGACGTGTCCAAGCCGATGGGCAGCCG-GA-TCGGCGC-CATGGCGCTGGC  714494
+
+Query  119     GGAC--GGGCAACCTGCTCGATCCCGCGAAAGAGTATGCCGTCGCCGGCTGGGCAAGCGT  176
+                |||  |||| |     |||| || ||||||   ||  | ||||||||||||||    ||
+Sbjct  714493  CGACACGGGCGAGGCCATCGAACCTGCGAAATCCTACACAGTCGCCGGCTGGGCTTCGGT  714434
+
+Query  177     CAACCAAGGCACGGAAGGCCCCCCGATCTGGGACGTGGT  215
+               |||| ||||||| || ||||| |  ||||||||||||||
+Sbjct  714433  CAACGAAGGCACCGAGGGCCCGCAAATCTGGGACGTGGT  714395
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1007672952
+
+
+Query= Ga0495066_0020889_3_578
+
+Length=576
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2090825916
+
+
+Query= Ga0495066_7725022_1_213
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_0912265_2_406
+
+Length=405
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1449237504
+
+
+Query= Ga0495066_0128345_1_786
+
+Length=786
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2883377256
+
+
+Query= Ga0495066_5276963_1_249
+
+Length=249
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 860484768
+
+
+Query= Ga0495066_0136127_585_770
+
+Length=186
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 626493628
+
+
+Query= Ga0495066_7371506_8_223
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_7493089_2_214
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_1634855_64_336
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_2265625_1_303
+
+Length=303
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1064283792
+
+
+Query= Ga0495066_5510227_2_247
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_0607746_3_461
+
+Length=459
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1653036528
+
+
+Query= Ga0495066_6932534_15_227
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_2462072_3_293
+
+Length=291
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1018995120
+
+
+Query= Ga0495066_5512592_1_246
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_4029788_2_253
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_6426718_1_228
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_0374369_384_539
+
+Length=156
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 513271888
+
+
+Query= Ga0495066_8293718_7_210
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_4801921_3_215
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_3138932_3_278
+
+Length=276
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 962384280
+
+
+Query= Ga0495066_5244108_2_244
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_8089600_1_213
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_1164281_1_378
+
+Length=378
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1347337992
+
+
+Query= Ga0495066_1710533_2_334
+
+Length=333
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1177505472
+
+
+Query= Ga0495066_5329181_118_249
+
+Length=132
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 422694496
+
+
+Query= Ga0495066_0282168_1_453
+
+Length=453
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1630392192
+
+
+Query= Ga0495066_8449916_2_208
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_6932363_92_229
+
+Length=138
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 445338844
+
+
+Query= Ga0495066_5888110_2_241
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_6827819_2_232
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_4651857_2_256
+
+Length=255
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 883129104
+
+
+Query= Ga0495066_6131125_1_168
+
+Length=168
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 558560584
+
+
+Query= Ga0495066_2479624_2_202
+
+Length=201
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_0013546_642_1961
+
+Length=1320
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4894945444
+
+
+Query= Ga0495066_7071298_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_2427424_3_296
+
+Length=294
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1030317288
+
+
+Query= Ga0495066_0463472_2_277
+
+Length=276
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 962384280
+
+
+Query= Ga0495066_4761882_2_256
+
+Length=255
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 883129104
+
+
+Query= Ga0495066_4029273_1_264
+
+Length=264
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 917095608
+
+
+Query= Ga0495066_3708013_2_268
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_6530368_10_234
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_3465065_3_272
+
+Length=270
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 939739944
+
+
+Query= Ga0495066_2468759_2_277
+
+Length=276
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 962384280
+
+
+Query= Ga0495066_1880232_2_325
+
+Length=324
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1143538968
+
+
+Query= Ga0495066_0369750_3_521
+
+Length=519
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1875704838
+
+
+Query= Ga0495066_5852913_60_242
+
+Length=183
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 615171454
+
+
+Query= Ga0495066_7057070_1_228
+
+Length=228
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 781229592
+
+
+Query= Ga0495066_1101756_1_321
+
+Length=321
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1132216800
+
+
+Query= Ga0495066_7881814_7_216
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_3551308_3_272
+
+Length=270
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 939739944
+
+
+Query= Ga0495066_0063123_759_1025
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_6095535_1_240
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_2181618_2_268
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_8353778_1_201
+
+Length=201
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_2224615_2_298
+
+Length=297
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1041639456
+
+
+Query= Ga0495066_8258448_1_210
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_1928355_2_322
+
+Length=321
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1132216800
+
+
+Query= Ga0495066_2791981_2_283
+
+Length=282
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 985028616
+
+
+Query= Ga0495066_2962765_1_279
+
+Length=279
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 973706448
+
+
+Query= Ga0495066_5250599_43_249
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_4436594_7_258
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_1431034_1_357
+
+Length=357
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  145     3e-35
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 145 bits (78),  Expect = 3e-35
+ Identities = 113/130 (87%), Gaps = 2/130 (2%)
+ Strand=Plus/Minus
+
+Query  223     ACCGAGATGAGCGGC-AGCACCATCAAGACCGTGCTGGAAGACGTCGCCGACAACCTGTT  281
+               |||||||||| |||| || ||  | || ||||||||||||||||| ||||||||| | ||
+Sbjct  714666  ACCGAGATGACCGGCGAG-ACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAACATCTT  714608
+
+Query  282     CAACACCGATCCGTATTACCAGCAGGGCGGCGACATGGTGCGGGTCGGCGGCATGACCTA  341
+               ||| |||||||| ||||||||||||||||||||||||||||| || |||||  || ||||
+Sbjct  714607  CAATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGGGCTGGCCTA  714548
+
+Query  342     TGCGATCGAC  351
+               ||||||||||
+Sbjct  714547  TGCGATCGAC  714538
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1268082816
+
+
+Query= Ga0495066_6699844_18_233
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_0451655_1_381
+
+Length=381
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1358660160
+
+
+Query= Ga0495066_2281777_122_301
+
+Length=180
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 603849280
+
+
+Query= Ga0495066_0999412_3_332
+
+Length=330
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1166183304
+
+
+Query= Ga0495066_0572455_1_471
+
+Length=471
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1698325200
+
+
+Query= Ga0495066_0363321_2_181
+
+Length=180
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 603849280
+
+
+Query= Ga0495066_5927956_2_241
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_2330072_1_300
+
+Length=300
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1052961624
+
+
+Query= Ga0495066_1578530_3_326
+
+Length=324
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1143538968
+
+
+Query= Ga0495066_7883055_1_216
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_2920410_2_280
+
+Length=279
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 973706448
+
+
+Query= Ga0495066_3134710_1_276
+
+Length=276
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 962384280
+
+
+Query= Ga0495066_1834567_3_326
+
+Length=324
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1143538968
+
+
+Query= Ga0495066_0123811_3_797
+
+Length=795
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2917343742
+
+
+Query= Ga0495066_1532323_90_347
+
+Length=258
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 894451272
+
+
+Query= Ga0495066_7437113_2_223
+
+Length=222
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 758585256
+
+
+Query= Ga0495066_8398191_45_209
+
+Length=165
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 547238410
+
+
+Query= Ga0495066_1829775_2_211
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_3258016_3_275
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_0115601_57_818
+
+Length=762
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2792799960
+
+
+Query= Ga0495066_8465244_20_196
+
+Length=177
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 592527106
+
+
+Query= Ga0495066_7654009_3_221
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_0015939_1_486
+
+Length=486
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  111     4e-25
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 111 bits (60),  Expect = 4e-25
+ Identities = 167/218 (77%), Gaps = 10/218 (5%)
+ Strand=Plus/Minus
+
+Query  1       TCGCCCGGCTTCCGCTGGGGCACCACGCTGCTGCCGGGCGACGCCATCACCATGGAACGC  60
+               ||||| ||| | |||||||||||||||||  |||| |||||||| |||||   |  | | 
+Sbjct  714768  TCGCCGGGCGTGCGCTGGGGCACCACGCTCTTGCCCGGCGACGCGATCAC-GCGCGAGGA  714710
+
+Query  61      CTGATGGACCA-G--ACCGCGATCACCTAT-CCGCAGACCA-CGCTGACCAACATGAGCG  115
+               |  ||  || | |  ||| |||| ||||||  ||| | | | |||  ||| | |||| ||
+Sbjct  714709  C--ATCCACAACGTCACCTCGATGACCTATGGCGCGGTCTACCGC--ACCGAGATGACCG  714654
+
+Query  116     GCGAAACCATCAAGACCATCATGGAGGACGTCGCCGACAACCTGTTCAACGCCGACCCCT  175
+               |||| ||  | || ||| |  |||| ||||| ||||||||| | |||||  |||| ||||
+Sbjct  714653  GCGAGACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAACATCTTCAATACCGATCCCT  714594
+
+Query  176     ACTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGGG  213
+               | ||||||||||||||||||||||||||||||||||||
+Sbjct  714593  ATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGGG  714556
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1751161056
+
+
+Query= Ga0495066_0901070_1_141
+
+Length=141
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 456661018
+
+
+Query= Ga0495066_0877667_2_412
+
+Length=411
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1471881840
+
+
+Query= Ga0495066_6607181_1_234
+
+Length=234
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_3771399_1_267
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_4938110_1_252
+
+Length=252
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 871806936
+
+
+Query= Ga0495066_6062511_2_241
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_7742053_2_214
+
+Length=213
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 728393194
+
+
+Query= Ga0495066_0974266_2_355
+
+Length=354
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1256760648
+
+
+Query= Ga0495066_6587830_144_233
+
+Length=90
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 267958260
+
+
+Query= Ga0495066_6829210_3_197
+
+Length=195
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 660460150
+
+
+Query= Ga0495066_5120213_78_251
+
+Length=174
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 581204932
+
+
+Query= Ga0495066_0012766_1212_2009
+
+Length=798
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2928665904
+
+
+Query= Ga0495066_5544289_2_247
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_6651344_3_233
+
+Length=231
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 792551760
+
+
+Query= Ga0495066_4356313_1_258
+
+Length=258
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 894451272
+
+
+Query= Ga0495066_8461784_18_209
+
+Length=192
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 649137976
+
+
+Query= Ga0495066_2347100_1_255
+
+Length=255
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 883129104
+
+
+Query= Ga0495066_0089537_1_903
+
+Length=903
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3324941574
+
+
+Query= Ga0495066_5400450_22_246
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_2308662_3_299
+
+Length=297
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1041639456
+
+
+Query= Ga0495066_2389163_3_287
+
+Length=285
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 996350784
+
+
+Query= Ga0495066_7721178_12_218
+
+Length=207
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 705748846
+
+
+Query= Ga0495066_1363757_1_360
+
+Length=360
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1279404984
+
+
+Query= Ga0495066_3324991_9_275
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_6169151_5_238
+
+Length=234
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_4907264_2_238
+
+Length=237
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 815196096
+
+
+Query= Ga0495066_7086938_2_226
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_7386303_6_224
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_8167179_2_211
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_2136710_1_309
+
+Length=309
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1086928128
+
+
+Query= Ga0495066_2826554_3_275
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_0649399_315_452
+
+Length=138
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 445338844
+
+
+Query= Ga0495066_7463917_3_200
+
+Length=198
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 671782324
+
+
+Query= Ga0495066_5542356_2_247
+
+Length=246
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 849162600
+
+
+Query= Ga0495066_3366879_3_275
+
+Length=273
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 951062112
+
+
+Query= Ga0495066_5243864_2_250
+
+Length=249
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 860484768
+
+
+Query= Ga0495066_3793219_1_267
+
+Length=267
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 928417776
+
+
+Query= Ga0495066_6208108_3_239
+
+Length=237
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 815196096
+
+
+Query= Ga0495066_1402130_212_349
+
+Length=138
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 445338844
+
+
+Query= Ga0495066_0559840_1_474
+
+Length=474
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  126     1e-29
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 126 bits (68),  Expect = 1e-29
+ Identities = 96/110 (87%), Gaps = 0/110 (0%)
+ Strand=Plus/Minus
+
+Query  358     ACCGAGATGACTGGCGCGACCATCAAGACGGTGATGGAAGACGTGGCCGACAACCTGTTC  417
+               ||||||||||| |||| |||  | || || ||| |||||||||||||||||||| | |||
+Sbjct  714666  ACCGAGATGACCGGCGAGACGCTGAAAACCGTGCTGGAAGACGTGGCCGACAACATCTTC  714607
+
+Query  418     AATCCCGACCCTTATTACCAGCAGGGCGGCGACATGGTGCGCGTCGGCGG  467
+               ||| |||| || |||||||||||||||||||||||||||||||| |||||
+Sbjct  714606  AATACCGATCCCTATTACCAGCAGGGCGGCGACATGGTGCGCGTGGGCGG  714557
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1705872408
+
+
+Query= Ga0495066_0966674_1_399
+
+Length=399
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1426593168
+
+
+Query= Ga0495066_3576987_11_271
+
+Length=261
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 905773440
+
+
+Query= Ga0495066_4367447_21_260
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_1805805_1_327
+
+Length=327
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1154861136
+
+
+Query= Ga0495066_8207146_1_204
+
+Length=204
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 694426672
+
+
+Query= Ga0495066_0438723_3_512
+
+Length=510
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1841738352
+
+
+Query= Ga0495066_0784376_9_425
+
+Length=417
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1494526176
+
+
+Query= Ga0495066_8345291_2_211
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_7197892_3_227
+
+Length=225
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 769907424
+
+
+Query= Ga0495066_8179699_3_212
+
+Length=210
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 717071020
+
+
+Query= Ga0495066_0753017_9_431
+
+Length=423
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1517170512
+
+
+Query= Ga0495066_4799729_2_256
+
+Length=255
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 883129104
+
+
+Query= Ga0495066_1090448_3_386
+
+Length=384
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1369982328
+
+
+Query= Ga0495066_5502903_3_245
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_7326211_8_223
+
+Length=216
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 735940920
+
+
+Query= Ga0495066_5159912_2_235
+
+Length=234
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 803873928
+
+
+Query= Ga0495066_7191878_27_227
+
+Length=201
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 683104498
+
+
+Query= Ga0495066_0602517_1_462
+
+Length=462
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1664358696
+
+
+Query= Ga0495066_2271428_3_113
+
+Length=111
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 343439278
+
+
+Query= Ga0495066_2396920_1_297
+
+Length=297
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1041639456
+
+
+Query= Ga0495066_6587830_138_233
+
+Length=96
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 290602620
+
+
+Query= Ga0495066_0009520_2_1132
+
+Length=1131
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 4181649616
+
+
+Query= Ga0495066_5894705_2_124
+
+Length=123
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 388727974
+
+
+Query= Ga0495066_1880169_3_323
+
+Length=321
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1132216800
+
+
+Query= Ga0495066_3980233_3_197
+
+Length=195
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 660460150
+
+
+Query= Ga0495066_1855385_86_325
+
+Length=240
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 826518264
+
+
+Query= Ga0495066_0591588_1_312
+
+Length=312
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1098250296
+
+
+Query= Ga0495066_3495807_143_271
+
+Length=129
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 411372322
+
+
+Query= Ga0495066_2554806_1_288
+
+Length=288
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 1007672952
+
+
+Query= Ga0495066_5782097_2_244
+
+Length=243
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 837840432
+
+
+Query= Ga0495066_0152482_2_736
+
+Length=735
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 2690900502
+
+
+Query= Ga0495066_3508838_2_271
+
+Length=270
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, ...  259     6e-70
+
+
+>CP044423.1 Paracoccus pantotrophus strain DSM 2944 chromosome 2, complete 
+sequence
+Length=1525820
+
+ Score = 259 bits (140),  Expect = 6e-70
+ Identities = 221/261 (85%), Gaps = 2/261 (1%)
+ Strand=Plus/Minus
+
+Query  4       CCCTTCCTTGGTGCCAACATCTTTGACGCCGAATGGGACGAACCGGCCTTCGAACCCTAC  63
+               |||||||| || || || ||||| ||||  || |||||||| ||||||||||| ||||||
+Sbjct  715419  CCCTTCCTGGGCGCAAATATCTTCGACGTGGAGTGGGACGAGCCGGCCTTCGAGCCCTAC  715360
+
+Query  64      AAGATCTTCGAGAAGGGTGGCTTGCGGATTGCCGTGATCGGGCAGGCGTTCCCCTATATG  123
+               ||||||||||||   || |||  ||| || | ||| ||||| ||||| |||||||| |||
+Sbjct  715359  AAGATCTTCGAGCGCGGCGGCCAGCGCATCGGCGTCATCGGCCAGGCCTTCCCCTACATG  715300
+
+Query  124     CCCATCGCCAACCCGAAATGGATGTTCCCCGAATACAGCTTTGGCATCCGCGACGAGCGG  183
+               ||||||||||||||||||||||||||||||||||||||||| ||||||||||| || |||
+Sbjct  715299  CCCATCGCCAACCCGAAATGGATGTTCCCCGAATACAGCTTCGGCATCCGCGAGGAACGG  715240
+
+Query  184     ATGCAGGAAGTGGTGGACGAAGTCCGCGCCGAGGGCGTCGATCTTGTCGTT-TGTCTGTC  242
+               |||||| | || ||||||||  | ||||||||||||||||| || |||||  || |||||
+Sbjct  715239  ATGCAGCAGGTCGTGGACGAGCTGCGCGCCGAGGGCGTCGACCTGGTCGTGGTG-CTGTC  715181
+
+Query  243     GCACAACGGCTTTGACGTCGA  263
+               ||| |||||||| ||||| ||
+Sbjct  715180  GCATAACGGCTTCGACGTGGA  715160
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 939739944
+
+
+Query= Ga0495066_4630864_125_256
+
+Length=132
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 422694496
+
+
+Query= Ga0495066_6524875_2_220
+
+Length=219
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 747263088
+
+
+Query= Ga0495066_0040991_234_1241
+
+Length=1008
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 3721217244
+
+
+Query= Ga0495066_6260974_3_179
+
+Length=177
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 592527106
+
+
+  Database: Paracoccus_combined.fasta
+    Posted date:  Jul 6, 2022  4:42 PM
+  Number of letters in database: 3,774,098
+  Number of sequences in database:  2
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

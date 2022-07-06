@@ -1263,9 +1263,67 @@ localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/ncbi_dataset/data/GC
 
 less $soxGenes
 
+
 blastn -db $localDB -query $soxGenes > testBlast.txt
 
 blastn -db $localDB -query $soxGenes -out testBlast.txt -perc_identity 50 -outfmt 6 
 
+## and nothing. Why? 
+
+## sample sequence we know is in there:
+
+tail $localDB > test.fasta
+
+blastn -db $localDB -query test.fasta -out testBlast.txt -perc_identity 50 -outfmt 6 
+
+blastn -db $localDB -query test.fasta ## yeah works
+
+head -n 2 $soxGenes
+
+blastn -db $localDB -query <(head -n 2 $soxGenes)
+
+## weird. 
+
+## well, I'm pretty sure the sox operon is in Paracoccus
 
 
+cd /home/daniel/Documents/analyses/zheSpat/refgenomes/Paraccocus
+
+## combine the genomes
+
+cat Paraccocus_pantotrophus_chromosome2.fasta  Paracoccus_pantotrophus_chromosome1.fasta > Paracoccus_combined.fasta
+
+makeblastdb -in Paracoccus_combined.fasta -parse_seqids -dbtype nucl
+
+
+soxGenes="/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxB_SD_5/fasta.fna"
+## change our db to paracoccus
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/Paraccocus/Paracoccus_combined.fasta"
+
+blastn -db $localDB -query $soxGenes -out testBlast.txt 
+
+blastn -db $localDB -query $soxGenes -out testBlast.txt -perc_identity 50 -outfmt 10
+
+blastn -db $localDB -query $soxGenes -out testBlast.csv -outfmt 10
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' testBlast.csv
+
+## we're going to have to fix the names of the queries
+
+
+sed 's/3300045504 assembled //g' $soxGenes > refgenomes/lookingForGenes/soxB_SD_5/fastaCleanedHeaders.fna
+
+soxBgenes=refgenomes/lookingForGenes/soxB_SD_5/fastaCleanedHeaders.fna
+
+blastn -db $localDB -query $soxBgenes -out paracoccusSoxBtestBlast.csv -outfmt 10
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' paracoccusSoxBtestBlast.csv
+
+## and a manual blast on the ncbi webapp of their whole nucleotide dbase 
+## yields lot of hits, some pretty close
+
+## saved as: Ga0495066_0870750_2_412_allNCBIblastmatches.txt
+
+## so these genes are out there. just not in the Sulfuricurvum genome?
+
+
+
+less $soxGenes

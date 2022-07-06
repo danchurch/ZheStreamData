@@ -1,0 +1,1017 @@
+RID: CBA67K4T013	
+Job Title:Nucleotide Sequence 				
+Program: BLASTN 
+Database: nt Nucleotide collection (nt)
+Query #1:  Query ID: lcl|Query_20973 Length: 411
+
+Sequences producing significant alignments:
+                                                                  Scientific      Common                     Max    Total Query   E   Per.   Acc.                        
+Description                                                       Name            Name            Taxid      Score  Score cover Value Ident  Len        Accession        
+Candidatus Desulfobacillus denitrificans DNA, complete genome     Candidatus D... NA              2608985    320    320   87%   9e-83 82.87  3145360    AP021857.1       
+Methyloversatilis sp. RAC08 chromosome, complete genome           Methyloversa... NA              1842540    302    302   87%   3e-77 81.92  3937190    CP016448.1       
+Cupriavidus sp. ISTL7 chromosome 1                                Cupriavidus ... NA              2771360    292    292   96%   2e-74 80.30  3539422    CP066227.1       
+Cupriavidus gilardii strain QJ1 chromosome 2, complete sequence   Cupriavidus ... NA              82541      281    281   96%   4e-71 79.80  3571181    CP098736.1       
+Thauera humireducens strain SgZ-1 chromosome, complete genome     Thauera humi... NA              1134435    270    270   88%   1e-67 80.43  4171754    CP014646.1       
+Cupriavidus malaysiensis strain USMAA1020 isolate pure...         Cupriavidus ... NA              367825     259    259   85%   2e-64 80.17  4383984    CP017754.1       
+Dechloromonas denitrificans strain G6 chromosome, complete genome Dechloromona... NA              281362     255    255   85%   3e-63 80.17  4580459    CP075186.1       
+Dechloromonas denitrificans strain 110 chromosome, complete...    Dechloromona... NA              281362     255    255   85%   3e-63 80.17  4619274    CP075185.1       
+Zoogloea oryzae strain NBRC 102407 chromosome, complete genome    Zoogloea oryzae NA              310767     254    254   89%   1e-62 79.41  626273     CP030061.1       
+Cupriavidus sp. USMAHM13 isolate pure chromosome 1, complete...   Cupriavidus ... NA              1389192    254    254   85%   1e-62 79.89  4181780    CP017751.1       
+Cupriavidus sp. USMAA2-4 isolate pure chromosome 1, complete...   Cupriavidus ... NA              876364     254    254   86%   1e-62 79.67  4493942    CP017748.1       
+Methylibium sp. Pch-M chromosome, complete genome                 Methylibium ... NA              2082386    252    252   94%   3e-62 78.83  3941137    CP029606.1       
+Methylibium petroleiphilum PM1, complete genome                   Methylibium ... NA              420662     228    228   87%   6e-55 78.36  4044195    CP000555.1       
+Pandoraea apista strain TF80G25 chromosome, complete genome       Pandoraea ap... NA              93218      222    222   83%   3e-53 78.75  5609637    CP011279.2       
+Pandoraea apista strain TF81F4, complete genome                   Pandoraea ap... NA              93218      222    222   83%   3e-53 78.75  5582097    CP010518.4       
+Pandoraea apista strain AU2161, complete genome                   Pandoraea ap... NA              93218      222    222   83%   3e-53 78.75  5574863    CP011501.1       
+Ferribacterium limneticum strain 132 chromosome, complete genome  Ferribacteri... NA              76259      219    219   95%   4e-52 77.25  4215942    CP075192.1       
+Ferribacterium limneticum strain 128 chromosome, complete genome  Ferribacteri... NA              76259      219    219   95%   4e-52 77.25  4215797    CP075191.1       
+Ramlibacter tataouinensis strain 5-10, complete genome            Ramlibacter ... NA              94132      215    215   87%   5e-51 77.87  4916630    CP010951.1       
+Pandoraea fibrosis strain 6399 chromosome, complete genome        Pandoraea fi... NA              1891094    200    200   83%   1e-46 77.75  5592065    CP047385.1       
+Pandoraea fibrosis strain 7641 chromosome, complete genome        Pandoraea fi... NA              1891094    200    200   83%   1e-46 77.75  5592064    CP047386.1       
+Pandoraea apista strain DSM 16535 chromosome, complete genome     Pandoraea ap... NA              93218      189    189   83%   3e-43 76.99  5493967    CP013481.2       
+Hydrogenophaga taeniospiralis strain LT2 chromosome, complete...  Hydrogenopha... NA              65656      176    176   88%   2e-39 75.75  5668326    CP075183.1       
+Sulfuritortus calidifontis J1A DNA, complete genome               Sulfuritortu... NA              1914471    156    156   83%   3e-33 75.42  2720636    AP018721.1       
+Thiothrix fructosivorans strain ATCC 49748 chromosome, complet... Thiothrix fr... NA              111770     78.7   78.7  63%   6e-10 72.66  4137062    CP072748.1       
+Thiocapsa sp. isolate M50B4 chromosome, complete genome           Thiocapsa sp.   NA              2024551    76.8   76.8  22%   2e-09 81.72  5726338    CP073760.1       
+Oricola thermophila strain MEBiC13590 chromosome, complete genome Oricola ther... NA              2742145    67.6   67.6  8%    1e-06 100.00 3998539    CP054836.1       
+Bradyrhizobium sp. TM102 DNA, complete genome                     Bradyrhizobi... NA              2599819    58.4   58.4  12%   8e-04 88.00  7363142    AP021855.1       
+Bradyrhizobium sp. SG09 DNA, complete genome                      Bradyrhizobi... NA              2599805    58.4   58.4  9%    8e-04 94.74  8442078    AP021854.1       
+Bradyrhizobium ottawaense strain OO99 chromosome, complete genome Bradyrhizobi... NA              931866     58.4   58.4  12%   8e-04 88.00  8606328    CP029425.1       
+
+
+Alignments:
+
+>Candidatus Desulfobacillus denitrificans DNA, complete genome
+Sequence ID: AP021857.1 Length: 3145360
+Range 1: 2376439 to 2376797
+
+Score:320 bits(173), Expect:9e-83, 
+Identities:300/362(83%),  Gaps:6/362(1%), Strand: Plus/Plus
+
+Query  46       TACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAG  105
+                ||||| || ||||||||||||||||||||| | ||||||||||| ||||||||||| |||
+Sbjct  2376439  TACGACCTCCCGCGCTTCGGCAACGTGCACTTCCTGCACTTCACCGACTGCCATGCCCAG  2376498
+
+Query  106      CTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGG  164
+                |||||||||||| | ||||||||||||||||| ||||||||| ||||  | || || |||
+Sbjct  2376499  CTGCTGCCGATCCATTTCCGCGAGCCGAGCGTGAACCTCGGCGTCGGCGCCGC-CGCCGG  2376557
+
+Query  165      CCAGCCGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAG-CA  223
+                | ||||||| || || ||||| || | ||||||||||  |||| |||||  | || |  |
+Sbjct  2376558  CAAGCCGCCGCATCTCGTCGGCGAGCCTCTGCTGAAGGCCTTCGGCATC-AG-GCCGAAA  2376615
+
+Query  224      CGCC-GGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCTACGGC  282
+                 |||  || |||||||| ||||| | ||||||||||| |||||||||||||  |||||||
+Sbjct  2376616  AGCCTCGAGGCGCACGCCTTCACCTGCCTCGACTTCGCCGAGGCGGCGAAGGTCTACGGC  2376675
+
+Query  283      AAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCC  342
+                ||||||||||| |||  ||||||  | || ||  |||||||| ||   |||   ||||||
+Sbjct  2376676  AAGGTCGGCGGGTTCAGTCACCTCGCCACGCTGGTCAAGCGCCTGCGCGCCTCGCGTCCC  2376735
+
+Query  343      GGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGACC  402
+                ||||||||||||||||||||||| |||||||||||||||||||| ||  ||||||||| |
+Sbjct  2376736  GGCGCGCTGCTGCTCGACGGCGGCGACACCTGGCAGGGTTCGGCCACCGCGCTGTGGAGC  2376795
+
+Query  403      AA  404
+                ||
+Sbjct  2376796  AA  2376797
+
+
+
+
+>Methyloversatilis sp. RAC08 chromosome, complete genome
+Sequence ID: CP016448.1 Length: 3937190
+Range 1: 1632718 to 1633078
+
+Score:302 bits(163), Expect:3e-77, 
+Identities:299/365(82%),  Gaps:8/365(2%), Strand: Plus/Plus
+
+Query  41       AGTTGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATG  100
+                || |||||||||||||||||||||||||||||  ||||||||| ||||| |||||||| |
+Sbjct  1632718  AGATGTACGAACTGCCGCGCTTCGGCAACGTGAGCCTGCTGCATTTCACCGACTGCCACG  1632777
+
+Query  101      CGCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCAC  160
+                |||||||| |||| ||| |||||||||| |||  ||| || || |||||||| | | || 
+Sbjct  1632778  CGCAGCTGATGCCCATCCACTTCCGCGAACCGGACGTGAATCTGGGCATCGG-CGA-CAT  1632835
+
+Query  161      GC-GGC-CAGCCGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCG  218
+                |  ||  | ||| || || |||||||| ||| | ||||||||||| ||| ||||||||| 
+Sbjct  1632836  GATGGGTCGGCCACCGCATCTGGTCGGCGAAAAGCTGCTGAAGCAGTTCGGCATCGCGCC  1632895
+
+Query  219      CAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCG-AGGCGGCGAAGACCT  277
+                  |||   || | |||||||| ||||| | |||||||||| ||| |||||||||||||||
+Sbjct  1632896  GGGCAGTGCGCAGGCGCACGCCTTCACCTGCCTCGACTTC-TCGCAGGCGGCGAAGACCT  1632954
+
+Query  278      ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+                | |||||||||||||||||||| |||||  | || ||  ||||||||||||||||  | |
+Sbjct  1632955  ATGGCAAGGTCGGCGGCTTCGCCCACCTCGCCACGCTGGTCAAGCGCATGAAGGCGAGCC  1633014
+
+Query  338      GTCCCGGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGCGACATCGCTG  396
+                | || |||||||||||||| |||||||| |||||||||||||| || |||    ||||||
+Sbjct  1633015  GGCCGGGCGCGCTGCTGCTTGACGGCGGCGACACCTGGCAGGGCTCCGGCCTG-TCGCTG  1633073
+
+Query  397      TGGAC  401
+                |||||
+Sbjct  1633074  TGGAC  1633078
+
+
+
+
+>Cupriavidus sp. ISTL7 chromosome 1
+Sequence ID: CP066227.1 Length: 3539422
+Range 1: 3282225 to 3282618
+
+Score:292 bits(158), Expect:2e-74, 
+Identities:322/401(80%),  Gaps:11/401(2%), Strand: Plus/Minus
+
+Query  5        CGCGCGATGCGCTGGCCGCAACGCCCGCCAGCGCGAAGTTGTACGAACTGCCGCGCTTCG  64
+                ||||||| |||| ||| |||  | ||||| || | | | |||||||  ||||||||||||
+Sbjct  3282618  CGCGCGACGCGCAGGCGGCACAGGCCGCC-GC-C-AGGCTGTACGACGTGCCGCGCTTCG  3282562
+
+Query  65       GCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTACTTCC  124
+                ||||||||||||||||||| ||||| |||||||||||||| ||||||||| || | ||||
+Sbjct  3282561  GCAACGTGCACCTGCTGCATTTCACCGACTGCCATGCGCAACTGCTGCCGGTCCATTTCC  3282502
+
+Query  125      GCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACCTGGTC  183
+                |||| || ||||||||||| |||||||| | |  | | |||| ||||||| || ||||||
+Sbjct  3282501  GCGAACCCAGCGTCAACCTGGGCATCGG-CGACTATGCCGGCAAGCCGCCGCATCTGGTC  3282443
+
+Query  184      GGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCA-CGCCGGAAGCGCACGCTTT  242
+                ||  |    ||||| ||||||| | ||||||| |   ||| |||| || ||||| || ||
+Sbjct  3282442  GGCCAGGCGCTGCTCAAGCACTACCGCATCGCACCGGGCAGCGCC-GAGGCGCATGCCTT  3282384
+
+Query  243      CACGTTCCTCGACTTCGTCGAGGCGGCGAAGAC-CTACGGCAAGGTCGGCGGCTTCGCTC  301
+                ||| |  |||||||||  |||||| |||  | | |||||||||||||||||||||||| |
+Sbjct  3282383  CACCTATCTCGACTTCACCGAGGCCGCGC-GCCGCTACGGCAAGGTCGGCGGCTTCGCCC  3282325
+
+Query  302      ACCTATCGACCCTTATCAAGC-GCATGAAGGCCGGTCGTCCCGGCGCGCTGCTGCTCGAC  360
+                | ||  | || ||  |||||| || |||||||| | || |||||||||||||||||||| 
+Sbjct  3282324  ATCTGGCCACGCTGGTCAAGCAGC-TGAAGGCCAGCCGCCCCGGCGCGCTGCTGCTCGAT  3282266
+
+Query  361      GGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGAC  401
+                ||||| ||||| |||||||| ||||| ||  ||||||||||
+Sbjct  3282265  GGCGGCGACACGTGGCAGGGCTCGGCCACCGCGCTGTGGAC  3282225
+
+
+
+
+>Cupriavidus gilardii strain QJ1 chromosome 2, complete sequence
+Sequence ID: CP098736.1 Length: 3571181
+Range 1: 289177 to 289570
+
+Score:281 bits(152), Expect:4e-71, 
+Identities:320/401(80%),  Gaps:11/401(2%), Strand: Plus/Plus
+
+Query  5       CGCGCGATGCGCTGGCCGCAACGCCCGCCAGCGCGAAGTTGTACGAACTGCCGCGCTTCG  64
+               ||||||| |||| ||| |||  | ||||| || | | | |||||||  ||||||||||||
+Sbjct  289177  CGCGCGACGCGCAGGCGGCACAGGCCGCC-GC-C-AGGCTGTACGACGTGCCGCGCTTCG  289233
+
+Query  65      GCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTACTTCC  124
+               ||||||||||||||||||| ||||| |||||||||||||| ||||||||| || | ||||
+Sbjct  289234  GCAACGTGCACCTGCTGCATTTCACCGACTGCCATGCGCAACTGCTGCCGGTCCATTTCC  289293
+
+Query  125     GCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACCTGGTC  183
+               |||| || ||||||||||| |||||||| | |  | | |||| ||||||| || ||||||
+Sbjct  289294  GCGAACCCAGCGTCAACCTGGGCATCGG-CGACTATGCCGGCAAGCCGCCGCATCTGGTC  289352
+
+Query  184     GGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCA-CGCCGGAAGCGCACGCTTT  242
+               ||  |    ||||| ||||||| | ||||||| | | ||| |||| || |||||||| ||
+Sbjct  289353  GGCCAGGCGCTGCTCAAGCACTACCGCATCGCACCCGGCAGCGCC-GAGGCGCACGCCTT  289411
+
+Query  243     CACGTTCCTCGACTTCGTCGAGGCGGCGAAGACC-TACGGCAAGGTCGGCGGCTTCGCTC  301
+               ||| |  || || |||  |||||| |||  | |  ||||||||||||||||||||||| |
+Sbjct  289412  CACCTATCTGGATTTCACCGAGGCCGCGC-GCCGTTACGGCAAGGTCGGCGGCTTCGCGC  289470
+
+Query  302     ACCTATCGACCCTTATCAAGC-GCATGAAGGCCGGTCGTCCCGGCGCGCTGCTGCTCGAC  360
+               | || || ||  |  |||||| || ||| |||| | |||||||||||| |||||||||||
+Sbjct  289471  ATCTGTCCACGTTGGTCAAGCAGC-TGAGGGCCAGCCGTCCCGGCGCGTTGCTGCTCGAC  289529
+
+Query  361     GGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGAC  401
+               ||||| || ||||||||||| || || ||  ||||||||||
+Sbjct  289530  GGCGGCGATACCTGGCAGGGCTCCGCAACCGCGCTGTGGAC  289570
+
+
+
+
+>Thauera humireducens strain SgZ-1 chromosome, complete genome
+Sequence ID: CP014646.1 Length: 4171754
+Range 1: 21589 to 21950
+
+Score:270 bits(146), Expect:1e-67, 
+Identities:296/368(80%),  Gaps:12/368(3%), Strand: Plus/Plus
+
+Query  44     TGTACGAACTGCCGCGCTTCGGCAACGTGCA-CCTGCTGCACTTCACGGACTGCCATGCG  102
+              |||||||  |||||   ||||||||||| || |||| ||||| | || ||||| ||||||
+Sbjct  21589  TGTACGACATGCCGAAGTTCGGCAACGT-CAGCCTGTTGCACATGACCGACTGTCATGCG  21647
+
+Query  103    CAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCA-CG  161
+              ||||||||||||||||||||||| ||||| | ||||||||| ||| | ||  | |||  |
+Sbjct  21648  CAGCTGCTGCCGATCTACTTCCGTGAGCCCAACGTCAACCTGGGCGT-GG-GCGGCATGG  21705
+
+Query  162    CGGCCAGC-CGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATC--G-CGC  217
+               ||  | | |||| ||| | ||||| || |   | |||||||||||| |||||  | || 
+Sbjct  21706  TGGGGAACGCGCCGCACATCGTCGGCGAGCGCTTCCTGAAGCACTTCGGCATCAAGCCGG  21765
+
+Query  218    GCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCT  277
+              ||||||   | || || || || ||||| |  ||||||||||||||||||||||||||||
+Sbjct  21766  GCAGCA--TC-GAGGCCCATGCCTTCACCTATCTCGACTTCGTCGAGGCGGCGAAGACCT  21822
+
+Query  278    ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+              |||||||||||||||| ||||| ||||| || || ||| |||||   ||||||||| | |
+Sbjct  21823  ACGGCAAGGTCGGCGGTTTCGCCCACCTGTCCACGCTTGTCAAGAAGATGAAGGCCAGCC  21882
+
+Query  338    GTCCCGGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGT  397
+              |||| ||||||||||||||||||||||| || ||||||||||| ||||  ||  ||||||
+Sbjct  21883  GTCCGGGCGCGCTGCTGCTCGACGGCGGCGATACCTGGCAGGGCTCGGGCACCGCGCTGT  21942
+
+Query  398    GGACCAAC  405
+              ||||||||
+Sbjct  21943  GGACCAAC  21950
+
+
+
+
+>Cupriavidus malaysiensis strain USMAA1020 isolate pure chromosome 1, complete sequence
+Sequence ID: CP017754.1 Length: 4383984
+Range 1: 35731 to 36080
+
+Score:259 bits(140), Expect:2e-64, 
+Identities:283/353(80%),  Gaps:6/353(1%), Strand: Plus/Minus
+
+Query  52     CTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTG  111
+              |||||||||||||||||||| ||||||||||||||||| |||||||| || |||||||  
+Sbjct  36080  CTGCCGCGCTTCGGCAACGTCCACCTGCTGCACTTCACCGACTGCCACGCCCAGCTGCGC  36021
+
+Query  112    CCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCC  170
+              ||| || | ||||||||||||  |||||| ||||| ||||| | |  ||| |||| ||||
+Sbjct  36020  CCGGTCCATTTCCGCGAGCCGGACGTCAATCTCGGTATCGG-CGACTACGCCGGCAAGCC  35962
+
+Query  171    GCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCACGC-CGG  229
+              ||| ||||||||||| |      |||||   |||| | ||||||||| | ||| || || 
+Sbjct  35961  GCCGCACCTGGTCGGCGCGGCCATGCTGCGCCACTACGGCATCGCGCCCGGCA-GCGCGC  35903
+
+Query  230    AAGCGCACGCTTTCACGTTCCTCGACTTCGTCG-AGGCGGCGAAGACCTACGGCAAGGTC  288
+              | ||  |||| ||||| |  |||||||||| || |||| |||  |  |||||||||||||
+Sbjct  35902  AGGCCTACGCCTTCACCTGTCTCGACTTCG-CGCAGGCCGCGCGGCGCTACGGCAAGGTC  35844
+
+Query  289    GGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCG  348
+              ||||||||||| |||||  | || ||  ||||||   | |||||||| ||||||||||||
+Sbjct  35843  GGCGGCTTCGCCCACCTGGCCACGCTGGTCAAGCAACTCAAGGCCGGGCGTCCCGGCGCG  35784
+
+Query  349    CTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGAC  401
+              ||||||||||||||||| || ||||||||||| ||||| ||  | ||||||||
+Sbjct  35783  CTGCTGCTCGACGGCGGCGATACCTGGCAGGGCTCGGCCACGGCCCTGTGGAC  35731
+
+
+
+
+>Dechloromonas denitrificans strain G6 chromosome, complete genome
+Sequence ID: CP075186.1 Length: 4580459
+Range 1: 2703218 to 2703568
+
+Score:255 bits(138), Expect:3e-63, 
+Identities:287/358(80%),  Gaps:14/358(3%), Strand: Plus/Minus
+
+Query  61       TTCGGCAACGTGCA-CCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTA  119
+                |||||||| || || |||||||||  |||| ||||||||||| |||||| ||||||||||
+Sbjct  2703568  TTCGGCAATGT-CAGCCTGCTGCATATCACCGACTGCCATGCCCAGCTGTTGCCGATCTA  2703510
+
+Query  120      CTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACC  178
+                 ||||||||||||| |||||| |||||| |||| | | ||   |||| ||  ||| || |
+Sbjct  2703509  TTTCCGCGAGCCGAACGTCAATCTCGGCTTCGG-CGACCAGTTCGGCAAGGTGCCGCATC  2703451
+
+Query  179      TGGTCGGTGAACATCTGCTGAAGCACTTCAGCATC--G-CGCGCAGCACGCCGGAAGCGC  235
+                ||||||| ||  ||||||||||||||||| || ||  | ||  |||||   | || ||||
+Sbjct  2703450  TGGTCGGCGACAATCTGCTGAAGCACTTCGGCTTCAAGCCGAACAGCA--TC-GAGGCGC  2703394
+
+Query  236      ACGCTTTCACGTTCCTCGACTTCG-TCGAGGCGGCGAAGACCTACGGCAAGGTCGGCGGC  294
+                |||| | ||| |  ||  | ||||    || || || |||||||||||||||||||||||
+Sbjct  2703393  ACGCCTACACCTATCTGAATTTCGAAAAAGCCGCCG-AGACCTACGGCAAGGTCGGCGGC  2703335
+
+Query  295      TTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCTG  354
+                |||||||||||  | || ||  |||||||||||||||||  |||||||||||||||||||
+Sbjct  2703334  TTCGCTCACCTGGCAACGCTGGTCAAGCGCATGAAGGCCAATCGTCCCGGCGCGCTGCTG  2703275
+
+Query  355      CTCGACGGCGGGGACACCTGGCAGGGTTC-GGCGACATCGCTGTGGACCAACTCGCAG  411
+                ||||||||||| || ||||||||||| || ||| ||  ||||||||| |||| | |||
+Sbjct  2703274  CTCGACGGCGGCGATACCTGGCAGGGCTCCGGC-ACGGCGCTGTGGAGCAACGCCCAG  2703218
+
+
+
+
+>Dechloromonas denitrificans strain 110 chromosome, complete genome
+Sequence ID: CP075185.1 Length: 4619274
+Range 1: 2687563 to 2687913
+
+Score:255 bits(138), Expect:3e-63, 
+Identities:287/358(80%),  Gaps:14/358(3%), Strand: Plus/Minus
+
+Query  61       TTCGGCAACGTGCA-CCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTA  119
+                |||||||| || || |||||||||  |||| ||||||||||| |||||| ||||||||||
+Sbjct  2687913  TTCGGCAATGT-CAGCCTGCTGCATATCACCGACTGCCATGCCCAGCTGTTGCCGATCTA  2687855
+
+Query  120      CTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACC  178
+                 ||||||||||||| |||||| |||||| |||| | | ||   |||| ||  ||| || |
+Sbjct  2687854  TTTCCGCGAGCCGAACGTCAATCTCGGCTTCGG-CGACCAGTTCGGCAAGGTGCCGCATC  2687796
+
+Query  179      TGGTCGGTGAACATCTGCTGAAGCACTTCAGCATC--G-CGCGCAGCACGCCGGAAGCGC  235
+                ||||||| ||  ||||||||||||||||| || ||  | ||  |||||   | || ||||
+Sbjct  2687795  TGGTCGGCGACAATCTGCTGAAGCACTTCGGCTTCAAGCCGAACAGCA--TC-GAGGCGC  2687739
+
+Query  236      ACGCTTTCACGTTCCTCGACTTCG-TCGAGGCGGCGAAGACCTACGGCAAGGTCGGCGGC  294
+                |||| | ||| |  ||  | ||||    || || || |||||||||||||||||||||||
+Sbjct  2687738  ACGCCTACACCTATCTGAATTTCGAAAAAGCCGCCG-AGACCTACGGCAAGGTCGGCGGC  2687680
+
+Query  295      TTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCTG  354
+                |||||||||||  | || ||  |||||||||||||||||  |||||||||||||||||||
+Sbjct  2687679  TTCGCTCACCTGGCAACGCTGGTCAAGCGCATGAAGGCCAATCGTCCCGGCGCGCTGCTG  2687620
+
+Query  355      CTCGACGGCGGGGACACCTGGCAGGGTTC-GGCGACATCGCTGTGGACCAACTCGCAG  411
+                ||||||||||| || ||||||||||| || ||| ||  ||||||||| |||| | |||
+Sbjct  2687619  CTCGACGGCGGCGATACCTGGCAGGGCTCCGGC-ACGGCGCTGTGGAGCAACGCCCAG  2687563
+
+
+
+
+>Zoogloea oryzae strain NBRC 102407 chromosome, complete genome
+Sequence ID: CP030061.1 Length: 626273
+Range 1: 170899 to 171266
+
+Score:254 bits(137), Expect:1e-62, 
+Identities:297/374(79%),  Gaps:12/374(3%), Strand: Plus/Minus
+
+Query  44      TGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGC  103
+               ||| ||| |||||||||||||||   |||  |||||| ||| | || |||||||| ||||
+Sbjct  171266  TGTTCGACCTGCCGCGCTTCGGCTCGGTGAGCCTGCTCCACATGACCGACTGCCACGCGC  171207
+
+Query  104     AGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-C  162
+               |||| ||||||||| ||||||||||||||  ||| ||||||||| |||| || |   | |
+Sbjct  171206  AGCTCCTGCCGATCCACTTCCGCGAGCCGGACGTGAACCTCGGCGTCGG-CCCGATGGCC  171148
+
+Query  163     GGCCAGCCGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCG-CGCAG  221
+               || |||  ||| |||||  ||||||| || ||||||   |||||| ||||| || | | |
+Sbjct  171147  GGGCAGGTGCCGCACCTCATCGGTGAGCACCTGCTGCGCCACTTCGGCATC-CGTCCCGG  171089
+
+Query  222     CACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCTACGG  281
+               ||||||||| || ||||| |||||||  || ||||||||  ||||  |||||||||||||
+Sbjct  171088  CACGCCGGAGGCCCACGCCTTCACGTATCTGGACTTCGTGAAGGCCTCGAAGACCTACGG  171029
+
+Query  282     CAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGC-GCATGAAGGCCGGTCGTC  340
+               ||||||||||||||| || |||||  | |||||  |||||| || | |||||| | || |
+Sbjct  171028  CAAGGTCGGCGGCTTTGCCCACCTCGCCACCCTCGTCAAGCAGC-TCAAGGCCAGCCG-C  170971
+
+Query  341     CCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGCGACATCGCTGT  397
+               |||| ||||  ||||||| || ||||| |||||||||||||| || |||  || | ||||
+Sbjct  170970  CCGG-GCGCATTGCTGCTGGATGGCGGCGACACCTGGCAGGGCTCCGGCCTCAGC-CTGT  170913
+
+Query  398     GGACCAACTCGCAG  411
+               |||||||| | |||
+Sbjct  170912  GGACCAACGCCCAG  170899
+
+
+
+
+>Cupriavidus sp. USMAHM13 isolate pure chromosome 1, complete sequence
+Sequence ID: CP017751.1 Length: 4181780
+Range 1: 166013 to 166362
+
+Score:254 bits(137), Expect:1e-62, 
+Identities:282/353(80%),  Gaps:6/353(1%), Strand: Plus/Minus
+
+Query  52      CTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTG  111
+               |||||||||||||||||||| ||||||||||||||||| |||||||| || |||||||  
+Sbjct  166362  CTGCCGCGCTTCGGCAACGTCCACCTGCTGCACTTCACCGACTGCCACGCCCAGCTGCGC  166303
+
+Query  112     CCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCC  170
+               ||| || | ||||||||||||   ||||| ||||| ||||| | |  ||| |||| ||||
+Sbjct  166302  CCGGTCCATTTCCGCGAGCCGGATGTCAATCTCGGTATCGG-CGACTACGCCGGCAAGCC  166244
+
+Query  171     GCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCACGC-CGG  229
+               ||| ||||||||||| |      |||||   |||| | ||||||||| | ||| || || 
+Sbjct  166243  GCCGCACCTGGTCGGCGCGGCCATGCTGCGCCACTACGGCATCGCGCCCGGCA-GCGCGC  166185
+
+Query  230     AAGCGCACGCTTTCACGTTCCTCGACTTCGTCG-AGGCGGCGAAGACCTACGGCAAGGTC  288
+               | ||  |||| ||||| |  |||||||||| || |||| |||  |  |||||||||||||
+Sbjct  166184  AGGCCTACGCCTTCACCTGTCTCGACTTCG-CGCAGGCCGCGCGGCGCTACGGCAAGGTC  166126
+
+Query  289     GGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCG  348
+               ||||||||||| |||||  | || ||  ||||||   | |||||||| ||||||||||||
+Sbjct  166125  GGCGGCTTCGCCCACCTGGCCACGCTGGTCAAGCAACTCAAGGCCGGGCGTCCCGGCGCG  166066
+
+Query  349     CTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGAC  401
+               ||||||||||||||||| || ||||||||||| ||||| ||  | ||||||||
+Sbjct  166065  CTGCTGCTCGACGGCGGCGATACCTGGCAGGGCTCGGCCACGGCCCTGTGGAC  166013
+
+
+
+
+>Cupriavidus sp. USMAA2-4 isolate pure chromosome 1, complete sequence
+Sequence ID: CP017748.1 Length: 4493942
+Range 1: 2737912 to 2738267
+
+Score:254 bits(137), Expect:1e-62, 
+Identities:286/359(80%),  Gaps:6/359(1%), Strand: Plus/Plus
+
+Query  46       TACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAG  105
+                ||||  |||||||||||||||||||| ||||||||||||||||| |||||||| || |||
+Sbjct  2737912  TACGCGCTGCCGCGCTTCGGCAACGTCCACCTGCTGCACTTCACCGACTGCCACGCCCAG  2737971
+
+Query  106      CTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGG  164
+                ||||  ||| || | ||||||||||||  |||||| ||||| ||||| | |  ||| |||
+Sbjct  2737972  CTGCGCCCGGTCCATTTCCGCGAGCCGGACGTCAATCTCGGTATCGG-CGACTACGCCGG  2738030
+
+Query  165      CCAGCCGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCAC  224
+                | ||||||| ||||||||||| |      |||||   |||| | ||||||||| | ||| 
+Sbjct  2738031  CAAGCCGCCGCACCTGGTCGGCGCGGCCATGCTGCGCCACTACGGCATCGCGCCCGGCA-  2738089
+
+Query  225      GC-CGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCG-AGGCGGCGAAGACCTACGGC  282
+                || || | ||  |||| ||||| |  |||||||||| || | || |||  |  |||||||
+Sbjct  2738090  GCGCGCAGGCCTACGCCTTCACCTGTCTCGACTTCG-CGCAAGCCGCGCGGCGCTACGGC  2738148
+
+Query  283      AAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCC  342
+                ||||||||||||||||| |||||  | || ||  ||||||   | |||||||| ||||||
+Sbjct  2738149  AAGGTCGGCGGCTTCGCCCACCTGGCCACGCTGGTCAAGCAACTCAAGGCCGGGCGTCCC  2738208
+
+Query  343      GGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGAC  401
+                ||||||||||||||||||||||| || ||||||||||| ||||| ||  | ||||||||
+Sbjct  2738209  GGCGCGCTGCTGCTCGACGGCGGCGATACCTGGCAGGGCTCGGCCACGGCCCTGTGGAC  2738267
+
+
+
+
+>Methylibium sp. Pch-M chromosome, complete genome
+Sequence ID: CP029606.1 Length: 3941137
+Range 1: 3297062 to 3297445
+
+Score:252 bits(136), Expect:3e-62, 
+Identities:309/392(79%),  Gaps:13/392(3%), Strand: Plus/Minus
+
+Query  19       GCCGCAACGCCCGCCAGCGCGAAGTTGTACGAACTGCCGCGCTTCGGCAACGTG-CACCT  77
+                ||||| ||| |||  ||||||  | | |||||  ||||||| |||||||||||| ||  |
+Sbjct  3297445  GCCGCCACGGCCG--AGCGCG-GGCTCTACGATGTGCCGCGTTTCGGCAACGTGTCA-TT  3297390
+
+Query  78       GCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGT  137
+                ||||||| | || ||||| ||||||||||||||||| ||| |||||||||||||||||||
+Sbjct  3297389  GCTGCACATGACCGACTGTCATGCGCAGCTGCTGCCCATCCACTTCCGCGAGCCGAGCGT  3297330
+
+Query  138      CAACCTCGGCATCGGTCC-AGCACGCGGCCAGCCGCCACACCTGGTCGGTGAACATCTGC  196
+                |||||||||| | ||| | |  | ||||||||  ||| |||| |||||| || || ||||
+Sbjct  3297329  CAACCTCGGCGTGGGTGCGATGA-GCGGCCAGTTGCCGCACCGGGTCGGCGAGCACCTGC  3297271
+
+Query  197      T-GAAGCACTTCAGCATCGC-GCGCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGA  254
+                | || || | || |  | || || | |||||  |   ||||| || | ||| || || ||
+Sbjct  3297270  TCGAGGC-CGTCGGGGT-GCGGCCCGGCACGTTGCTCGCGCATGCCTACACCTTTCTGGA  3297213
+
+Query  255      CTTCGTCGAGGCGGCGAAGAC-CTACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCC  313
+                 ||||   |||| |||  | | |||||||||||| ||||||||||| ||| |  |||| |
+Sbjct  3297212  TTTCGAGAAGGCTGCGC-GCCGCTACGGCAAGGTGGGCGGCTTCGCGCACATGGCGACGC  3297154
+
+Query  314      TTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCTGCTCGACGGCGGGGACACCT  373
+                |  |||||||| |||||||| | || |||||||||||||||||||| ||||| |||||||
+Sbjct  3297153  TGGTCAAGCGCCTGAAGGCCAGCCGCCCCGGCGCGCTGCTGCTCGATGGCGGCGACACCT  3297094
+
+Query  374      GGCAGGGTTCGGCGACATCGCTGTGGACCAAC  405
+                ||||||| ||||| || ||||||||||| |||
+Sbjct  3297093  GGCAGGGCTCGGCCACGTCGCTGTGGACGAAC  3297062
+
+
+
+
+>Methylibium petroleiphilum PM1, complete genome
+Sequence ID: CP000555.1 Length: 4044195
+Range 1: 2593782 to 2594141
+
+Score:228 bits(123), Expect:6e-55, 
+Identities:286/365(78%),  Gaps:10/365(2%), Strand: Plus/Minus
+
+Query  46       TACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAG  105
+                |||||  ||||||| ||||||||||||    |||||||| | || ||||| |||||||| 
+Sbjct  2594141  TACGAGGTGCCGCGTTTCGGCAACGTGTCGTTGCTGCACATGACCGACTGTCATGCGCAA  2594082
+
+Query  106      CTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCC-AGCACGCGG  164
+                 ||||||| ||| ||||||||||||||||||||||||||||| | ||| | |  | ||||
+Sbjct  2594081  TTGCTGCCCATCCACTTCCGCGAGCCGAGCGTCAACCTCGGCGTGGGTGCGATGA-GCGG  2594023
+
+Query  165      CCAGCCGCCACACCTGGTCGGTGAACATCTGCT-GAAGCACTTCAGCATCGC-GCGCAGC  222
+                ||||  ||| |||| |||||| || || ||||| || || | || |  | || || | ||
+Sbjct  2594022  CCAGTTGCCGCACCGGGTCGGCGAGCACCTGCTCGAGGC-CGTCGGGGT-GCGGCCCGGC  2593965
+
+Query  223      ACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGA-GGCGGCGAAGAC-CTACG  280
+                |||  |   ||||| || |  || || || || ||||  || ||| |||  | | |||||
+Sbjct  2593964  ACGTTGCTCGCGCATGCCTATACCTTTCTGGATTTCGA-GACGGCTGCGC-GCCGCTACG  2593907
+
+Query  281      GCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCGTC  340
+                ||||||| ||||||||||| ||| |  |||| ||  |||||||| |||||||| | || |
+Sbjct  2593906  GCAAGGTGGGCGGCTTCGCGCACATGGCGACGCTGGTCAAGCGCCTGAAGGCCAGCCGCC  2593847
+
+Query  341      CCGGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTGGA  400
+                ||||||||||||||||||| ||||| |||||||||||||| ||||| || ||||||||||
+Sbjct  2593846  CCGGCGCGCTGCTGCTCGATGGCGGCGACACCTGGCAGGGCTCGGCCACGTCGCTGTGGA  2593787
+
+Query  401      CCAAC  405
+                | |||
+Sbjct  2593786  CGAAC  2593782
+
+
+
+
+>Pandoraea apista strain TF80G25 chromosome, complete genome
+Sequence ID: CP011279.2 Length: 5609637
+Range 1: 3698814 to 3699159
+
+Score:222 bits(120), Expect:3e-53, 
+Identities:278/353(79%),  Gaps:15/353(4%), Strand: Plus/Minus
+
+Query  42       GTTGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGC  101
+                ||| ||||| ||||||   |||||||||||||| |||||||||||||| |||||||||||
+Sbjct  3699159  GTTCTACGATCTGCCGAAATTCGGCAACGTGCATCTGCTGCACTTCACCGACTGCCATGC  3699100
+
+Query  102      GCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG  161
+                |||| |||||||||||||||||||||||||||||||||| || ||| ||||| | ||| |
+Sbjct  3699099  GCAGTTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTGGGCCTCGGTGC-GCAAG  3699041
+
+Query  162      CGGCC-AGCCGCCACACCTGGTCGGTGAA-CATCTGCTGAA-GCACTTCAGCATCGCG-C  217
+                |   | ||||||| || ||||| |||||  ||| | ||||| || ||   || | ||| |
+Sbjct  3699040  CTAACAAGCCGCCGCATCTGGTGGGTGAGGCATTT-CTGAAAGC-CTATGGCCT-GCGTC  3698984
+
+Query  218      GCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCT  277
+                 | ||||||| || ||| |||| ||||| |  || || |||   | |||||||   ||||
+Sbjct  3698983  CCGGCACGCCTGATGCGTACGCATTCACCTATCTGGATTTCACTGCGGCGGCGCGCACCT  3698924
+
+Query  278      ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+                | |||||||||||||| ||||| || ||  | || ||  |||||||||||||||| | ||
+Sbjct  3698923  ATGGCAAGGTCGGCGGTTTCGCGCATCTGGCCACGCTGGTCAAGCGCATGAAGGC-G-TC  3698866
+
+Query  338      GT-CCCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+                |  ||||| | ||  || ||||||||||||| || |||||||| || || |||
+Sbjct  3698865  GCGCCCGG-GAGCATTGTTGCTCGACGGCGGCGATACCTGGCAAGGCTCCGGC  3698814
+
+
+
+
+>Pandoraea apista strain TF81F4, complete genome
+Sequence ID: CP010518.4 Length: 5582097
+Range 1: 3698816 to 3699161
+
+Score:222 bits(120), Expect:3e-53, 
+Identities:278/353(79%),  Gaps:15/353(4%), Strand: Plus/Minus
+
+Query  42       GTTGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGC  101
+                ||| ||||| ||||||   |||||||||||||| |||||||||||||| |||||||||||
+Sbjct  3699161  GTTCTACGATCTGCCGAAATTCGGCAACGTGCATCTGCTGCACTTCACCGACTGCCATGC  3699102
+
+Query  102      GCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG  161
+                |||| |||||||||||||||||||||||||||||||||| || ||| ||||| | ||| |
+Sbjct  3699101  GCAGTTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTGGGCCTCGGTGC-GCAAG  3699043
+
+Query  162      CGGCC-AGCCGCCACACCTGGTCGGTGAA-CATCTGCTGAA-GCACTTCAGCATCGCG-C  217
+                |   | ||||||| || ||||| |||||  ||| | ||||| || ||   || | ||| |
+Sbjct  3699042  CTAACAAGCCGCCGCATCTGGTGGGTGAGGCATTT-CTGAAAGC-CTATGGCCT-GCGTC  3698986
+
+Query  218      GCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCT  277
+                 | ||||||| || ||| |||| ||||| |  || || |||   | |||||||   ||||
+Sbjct  3698985  CCGGCACGCCTGATGCGTACGCATTCACCTATCTGGATTTCACTGCGGCGGCGCGCACCT  3698926
+
+Query  278      ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+                | |||||||||||||| ||||| || ||  | || ||  |||||||||||||||| | ||
+Sbjct  3698925  ATGGCAAGGTCGGCGGTTTCGCGCATCTGGCCACGCTGGTCAAGCGCATGAAGGC-G-TC  3698868
+
+Query  338      GT-CCCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+                |  ||||| | ||  || ||||||||||||| || |||||||| || || |||
+Sbjct  3698867  GCGCCCGG-GAGCATTGTTGCTCGACGGCGGCGATACCTGGCAAGGCTCCGGC  3698816
+
+
+
+
+>Pandoraea apista strain AU2161, complete genome
+Sequence ID: CP011501.1 Length: 5574863
+Range 1: 97395 to 97740
+
+Score:222 bits(120), Expect:3e-53, 
+Identities:278/353(79%),  Gaps:15/353(4%), Strand: Plus/Minus
+
+Query  42     GTTGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGC  101
+              ||| ||||| ||||||   |||||||||||||| |||||||||||||| |||||||||||
+Sbjct  97740  GTTCTACGATCTGCCGAAATTCGGCAACGTGCATCTGCTGCACTTCACCGACTGCCATGC  97681
+
+Query  102    GCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG  161
+              |||| |||||||||||||||||||||||||||||||||| || ||| ||||| | ||| |
+Sbjct  97680  GCAGTTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTGGGCCTCGGTGC-GCAAG  97622
+
+Query  162    CGGCC-AGCCGCCACACCTGGTCGGTGAA-CATCTGCTGAA-GCACTTCAGCATCGCG-C  217
+              |   | ||||||| || ||||| |||||  ||| | ||||| || ||   || | ||| |
+Sbjct  97621  CTAACAAGCCGCCGCATCTGGTGGGTGAGGCATTT-CTGAAAGC-CTATGGCCT-GCGTC  97565
+
+Query  218    GCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCT  277
+               | ||||||| || ||| |||| ||||| |  || || |||   | |||||||   ||||
+Sbjct  97564  CCGGCACGCCTGATGCGTACGCATTCACCTATCTGGATTTCACTGCGGCGGCGCGCACCT  97505
+
+Query  278    ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+              | |||||||||||||| ||||| || ||  | || ||  |||||||||||||||| | ||
+Sbjct  97504  ATGGCAAGGTCGGCGGTTTCGCGCATCTGGCCACGCTGGTCAAGCGCATGAAGGC-G-TC  97447
+
+Query  338    GT-CCCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+              |  ||||| | ||  || ||||||||||||| || |||||||| || || |||
+Sbjct  97446  GCGCCCGG-GAGCATTGTTGCTCGACGGCGGCGATACCTGGCAAGGCTCCGGC  97395
+
+
+
+
+>Ferribacterium limneticum strain 132 chromosome, complete genome
+Sequence ID: CP075192.1 Length: 4215942
+Range 1: 1121783 to 1122172
+
+Score:219 bits(118), Expect:4e-52, 
+Identities:309/400(77%),  Gaps:17/400(4%), Strand: Plus/Plus
+
+Query  13       GCGCTGGCCGCAACGCCCGCCAGCGCGAAGTTGTACGAACTGCCGCGCTTCGGCAACGTG  72
+                |||||||||| || |  |||| || | || || || || |||||    |||||||| || 
+Sbjct  1121783  GCGCTGGCCGAAAAGGGCGCC-GC-CAAACTT-TATGACCTGCCCAAATTCGGCAATGT-  1121838
+
+Query  73       CA-CCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTACTTCCGCGAGCC  131
+                || |||| ||||| |||| ||||||||||| ||| ||||||||||||||||||| || ||
+Sbjct  1121839  CAGCCTGTTGCACATCACCGACTGCCATGCCCAGTTGCTGCCGATCTACTTCCGTGAACC  1121898
+
+Query  132      GAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACCTGGTCGGTGAAC  190
+                || |||||| |||||| | || | | ||   |||| ||  ||| ||||| || || ||  
+Sbjct  1121899  GAACGTCAATCTCGGCTTTGG-CGACCAGTTCGGCAAGGTGCCGCACCTCGTTGGCGACA  1121957
+
+Query  191      ATCTGCTGAAGCACTTCAGCATC--G-CGCGCAGCACGCCGGAAGCGCACGCTTTCACGT  247
+                | ||||| ||||||||| || ||  | ||  |||||   | || |||||||| | ||| |
+Sbjct  1121958  ACCTGCTCAAGCACTTCGGCTTCAAGCCGAACAGCA--TC-GAGGCGCACGCCTACACCT  1122014
+
+Query  248      TCCTCGACTTCG-TCGAGGCGGCGAAGACCTACGGCAAGGTCGGCGGCTTCGCTCACCTA  306
+                  ||  | ||||    || || || |||||||||||||||||||||||||||| ||||| 
+Sbjct  1122015  ATCTGAATTTCGAAAAAGCCGCCG-AGACCTACGGCAAGGTCGGCGGCTTCGCCCACCTG  1122073
+
+Query  307      TCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCTGCTCGACGGCGGG  366
+                 |||| ||  ||||||||||||||||    || || ||||| ||||||||||||||||| 
+Sbjct  1122074  GCGACGCTGGTCAAGCGCATGAAGGCGACCCGCCCGGGCGCCCTGCTGCTCGACGGCGGC  1122133
+
+Query  367      GACACCTGGCAGGGTTC-GGCGACATCGCTGTGGACCAAC  405
+                ||||||||||||||||| ||| ||  ||||||||||||||
+Sbjct  1122134  GACACCTGGCAGGGTTCCGGC-ACGGCGCTGTGGACCAAC  1122172
+
+
+
+
+>Ferribacterium limneticum strain 128 chromosome, complete genome
+Sequence ID: CP075191.1 Length: 4215797
+Range 1: 1121783 to 1122172
+
+Score:219 bits(118), Expect:4e-52, 
+Identities:309/400(77%),  Gaps:17/400(4%), Strand: Plus/Plus
+
+Query  13       GCGCTGGCCGCAACGCCCGCCAGCGCGAAGTTGTACGAACTGCCGCGCTTCGGCAACGTG  72
+                |||||||||| || |  |||| || | || || || || |||||    |||||||| || 
+Sbjct  1121783  GCGCTGGCCGAAAAGGGCGCC-GC-CAAACTT-TATGACCTGCCCAAATTCGGCAATGT-  1121838
+
+Query  73       CA-CCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTACTTCCGCGAGCC  131
+                || |||| ||||| |||| ||||||||||| ||| ||||||||||||||||||| || ||
+Sbjct  1121839  CAGCCTGTTGCACATCACCGACTGCCATGCCCAGTTGCTGCCGATCTACTTCCGTGAACC  1121898
+
+Query  132      GAGCGTCAACCTCGGCATCGGTCCAGCACG-CGGCCAGCCGCCACACCTGGTCGGTGAAC  190
+                || |||||| |||||| | || | | ||   |||| ||  ||| ||||| || || ||  
+Sbjct  1121899  GAACGTCAATCTCGGCTTTGG-CGACCAGTTCGGCAAGGTGCCGCACCTCGTTGGCGACA  1121957
+
+Query  191      ATCTGCTGAAGCACTTCAGCATC--G-CGCGCAGCACGCCGGAAGCGCACGCTTTCACGT  247
+                | ||||| ||||||||| || ||  | ||  |||||   | || |||||||| | ||| |
+Sbjct  1121958  ACCTGCTCAAGCACTTCGGCTTCAAGCCGAACAGCA--TC-GAGGCGCACGCCTACACCT  1122014
+
+Query  248      TCCTCGACTTCG-TCGAGGCGGCGAAGACCTACGGCAAGGTCGGCGGCTTCGCTCACCTA  306
+                  ||  | ||||    || || || |||||||||||||||||||||||||||| ||||| 
+Sbjct  1122015  ATCTGAATTTCGAAAAAGCCGCCG-AGACCTACGGCAAGGTCGGCGGCTTCGCCCACCTG  1122073
+
+Query  307      TCGACCCTTATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCTGCTCGACGGCGGG  366
+                 |||| ||  ||||||||||||||||    || || ||||| ||||||||||||||||| 
+Sbjct  1122074  GCGACGCTGGTCAAGCGCATGAAGGCGACCCGCCCGGGCGCCCTGCTGCTCGACGGCGGC  1122133
+
+Query  367      GACACCTGGCAGGGTTC-GGCGACATCGCTGTGGACCAAC  405
+                ||||||||||||||||| ||| ||  ||||||||||||||
+Sbjct  1122134  GACACCTGGCAGGGTTCCGGC-ACGGCGCTGTGGACCAAC  1122172
+
+
+
+
+>Ramlibacter tataouinensis strain 5-10, complete genome
+Sequence ID: CP010951.1 Length: 4916630
+Range 1: 788602 to 788960
+
+Score:215 bits(116), Expect:5e-51, 
+Identities:285/366(78%),  Gaps:14/366(3%), Strand: Plus/Minus
+
+Query  46      TACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAG  105
+               |||||  ||||||| |||||||| |||   ||||||||| | || |||||||||||||||
+Sbjct  788960  TACGACGTGCCGCGGTTCGGCAATGTGTCGCTGCTGCACATGACCGACTGCCATGCGCAG  788901
+
+Query  106     CTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG-CGG  164
+               |||  ||||||  | ||||||||||| ||||||||||||||| |||  ||  || |  ||
+Sbjct  788900  CTGAAGCCGATTCATTTCCGCGAGCCCAGCGTCAACCTCGGCGTCG--CCGACATGAAGG  788843
+
+Query  165     CCAGCC-GCCACACCTGGTCGGTGAACATCTGCTGAAG-CACTTCAGCATCGCGCGCAGC  222
+                  ||| ||| |||||||| |||||||| ||||||||| |     ||   |  || | ||
+Sbjct  788842  GGCGCCTGCCGCACCTGGTTGGTGAACACCTGCTGAAGGCGGCCAAGGTGCCGGC-CGGC  788784
+
+Query  223     A-CGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGAC-CTACG  280
+               | |||| || ||||||||  | || | ||| |||||||   |||| ||| || | |||||
+Sbjct  788783  AGCGCC-GAGGCGCACGCGCTGACCTGCCTGGACTTCGAACAGGCCGCG-AGCCGCTACG  788726
+
+Query  281     GCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGC-GCATGAAGGCCGGTCGT  339
+               ||||||||||||| || || |||||  |||| ||  |||||| || | |||||  | |||
+Sbjct  788725  GCAAGGTCGGCGGATTTGCCCACCTGGCGACGCTGGTCAAGCAGC-TCAAGGCGAGCCGT  788667
+
+Query  340     CCCGGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGAC-ATCGCTGTG  398
+               |||||||||||||||||||||||||| |||||||||||||| ||||| || | | |||||
+Sbjct  788666  CCCGGCGCGCTGCTGCTCGACGGCGGCGACACCTGGCAGGGCTCGGCCACCAGC-CTGTG  788608
+
+Query  399     GACCAA  404
+               ||| ||
+Sbjct  788607  GACGAA  788602
+
+
+
+
+>Pandoraea fibrosis strain 6399 chromosome, complete genome
+Sequence ID: CP047385.1 Length: 5592065
+Range 1: 5346395 to 5346740
+
+Score:200 bits(108), Expect:1e-46, 
+Identities:276/355(78%),  Gaps:19/355(5%), Strand: Plus/Minus
+
+Query  42       GTTGTACGAACTGCCG-CGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATG  100
+                ||| ||||| |||||| || ||||||||||||||||||||||||||||| ||||||||||
+Sbjct  5346740  GTTCTACGATCTGCCGACG-TTCGGCAACGTGCACCTGCTGCACTTCACCGACTGCCATG  5346682
+
+Query  101      CGCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCAC  160
+                ||||| || ||||||||||||||||||||||||||||||| || ||||||||| | ||| 
+Sbjct  5346681  CGCAGTTGTTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTGGGCATCGGTGC-GCAG  5346623
+
+Query  161      GCGGCC-AGCCGCCACACCTGGTCGGTGAACATCTGCTGAA-GCACT-TCAGCATCG-CG  216
+                ||   | ||||||| || ||||| || ||   | | ||||| || || |   |  || | 
+Sbjct  5346622  GCCAACAAGCCGCCGCATCTGGTGGGCGAGGCTTTCCTGAAAGC-CTATGGTCTACGTCC  5346564
+
+Query  217      CGCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCG-GCGAAGAC  275
+                ||  ||||||| || ||| | || ||||| |  || || || |  | |||| ||    ||
+Sbjct  5346563  CG--GCACGCCTGATGCGTATGCGTTCACCTATCTGGATTTTGCGGCGGCGTGCCGC-AC  5346507
+
+Query  276      CTACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGG  335
+                |||||||||||||||||| ||||| ||  |  | || ||  |||||||||||||||| | 
+Sbjct  5346506  CTACGGCAAGGTCGGCGGTTTCGCGCATTTGGCTACGCTGGTCAAGCGCATGAAGGC-G-  5346449
+
+Query  336      TCGT-CCCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+                |||  ||||| | ||  || |||||||||| || |||||||||||||| || |||
+Sbjct  5346448  TCGCGCCCGG-GAGCATTGTTGCTCGACGGTGGCGACACCTGGCAGGGCTCCGGC  5346395
+
+
+
+
+>Pandoraea fibrosis strain 7641 chromosome, complete genome
+Sequence ID: CP047386.1 Length: 5592064
+Range 1: 5346394 to 5346739
+
+Score:200 bits(108), Expect:1e-46, 
+Identities:276/355(78%),  Gaps:19/355(5%), Strand: Plus/Minus
+
+Query  42       GTTGTACGAACTGCCG-CGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATG  100
+                ||| ||||| |||||| || ||||||||||||||||||||||||||||| ||||||||||
+Sbjct  5346739  GTTCTACGATCTGCCGACG-TTCGGCAACGTGCACCTGCTGCACTTCACCGACTGCCATG  5346681
+
+Query  101      CGCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCAC  160
+                ||||| || ||||||||||||||||||||||||||||||| || ||||||||| | ||| 
+Sbjct  5346680  CGCAGTTGTTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTGGGCATCGGTGC-GCAG  5346622
+
+Query  161      GCGGCC-AGCCGCCACACCTGGTCGGTGAACATCTGCTGAA-GCACT-TCAGCATCG-CG  216
+                ||   | ||||||| || ||||| || ||   | | ||||| || || |   |  || | 
+Sbjct  5346621  GCCAACAAGCCGCCGCATCTGGTGGGCGAGGCTTTCCTGAAAGC-CTATGGTCTACGTCC  5346563
+
+Query  217      CGCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCG-GCGAAGAC  275
+                ||  ||||||| || ||| | || ||||| |  || || || |  | |||| ||    ||
+Sbjct  5346562  CG--GCACGCCTGATGCGTATGCGTTCACCTATCTGGATTTTGCGGCGGCGTGCCGC-AC  5346506
+
+Query  276      CTACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGG  335
+                |||||||||||||||||| ||||| ||  |  | || ||  |||||||||||||||| | 
+Sbjct  5346505  CTACGGCAAGGTCGGCGGTTTCGCGCATTTGGCTACGCTGGTCAAGCGCATGAAGGC-G-  5346448
+
+Query  336      TCGT-CCCGGCGCGC--TGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+                |||  ||||| | ||  || |||||||||| || |||||||||||||| || |||
+Sbjct  5346447  TCGCGCCCGG-GAGCATTGTTGCTCGACGGTGGCGACACCTGGCAGGGCTCCGGC  5346394
+
+
+
+
+>Pandoraea apista strain DSM 16535 chromosome, complete genome
+Sequence ID: CP013481.2 Length: 5493967
+Range 1: 221521 to 221866
+
+Score:189 bits(102), Expect:3e-43, 
+Identities:271/352(77%),  Gaps:13/352(3%), Strand: Plus/Plus
+
+Query  42      GTTGTACGAACTGCCGCGCTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGC  101
+               ||| ||||| ||||||   ||||||||||||||||||||||||||||| |||||||| ||
+Sbjct  221521  GTTTTACGATCTGCCGAAGTTCGGCAACGTGCACCTGCTGCACTTCACCGACTGCCACGC  221580
+
+Query  102     GCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG  161
+               |||| || ||||||||||||||||||||||||||||||| || || || || |  ||| |
+Sbjct  221581  GCAGTTGTTGCCGATCTACTTCCGCGAGCCGAGCGTCAATCTTGGGATTGG-CGGGCAGG  221639
+
+Query  162     CGGCC-AGCCGCCACACCTGGTCGGTGAA-CATCTGCTGAA-GCACTTCAGCATCGCG-C  217
+               ||  | ||||||| || ||||| || ||  | | | || || ||   |  || | ||| |
+Sbjct  221640  CGAACAAGCCGCCGCATCTGGTGGGCGAGGCGT-TCCTCAAAGCGTATG-GCCT-GCGTC  221696
+
+Query  218     GCAGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCT  277
+                | ||||||| || ||  | || ||||| |  ||||||||||  |  ||| |    || |
+Sbjct  221697  CCGGCACGCCCGACGCCTATGCGTTCACCTATCTCGACTTCGCTGCCGCGTCCCGCACGT  221756
+
+Query  278     ACGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTC  337
+               |||||||||||||||| || || || ||  | || ||  |||||||||||||||| | ||
+Sbjct  221757  ACGGCAAGGTCGGCGGGTTTGCGCATCTGGCCACGCTGGTCAAGCGCATGAAGGC-G-TC  221814
+
+Query  338     GT-CCC-GGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC-GGC  386
+               |  ||| ||||||||  ||||||| ||||| ||||| ||||||||||| |||
+Sbjct  221815  GCGCCCGGGCGCGCTTTTGCTCGATGGCGGCGACACGTGGCAGGGTTCCGGC  221866
+
+
+
+
+>Hydrogenophaga taeniospiralis strain LT2 chromosome, complete genome
+Sequence ID: CP075183.1 Length: 5668326
+Range 1: 4235224 to 4235585
+
+Score:176 bits(95), Expect:2e-39, 
+Identities:278/367(76%),  Gaps:10/367(2%), Strand: Plus/Minus
+
+Query  44       TGTACGAACTGCCGCGCTTCGGCAACGTGCA-CCTGCTGCACTTCACGGACTGCCATGCG  102
+                ||||||| |||||    |||||||| || || | | ||||||||||| ||||||||||||
+Sbjct  4235585  TGTACGACCTGCCCAAGTTCGGCAATGT-CAGCTTCCTGCACTTCACCGACTGCCATGCG  4235527
+
+Query  103      CAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCC-AGCACG  161
+                |||||| |||||||||||||||||||||| |  || ||||| ||| | || |  ||| ||
+Sbjct  4235526  CAGCTGATGCCGATCTACTTCCGCGAGCCCAATGTGAACCTGGGCGT-GGCCGAAGC-CG  4235469
+
+Query  162      -CGGCCAGCCGCCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCAT-CGCGCGC  219
+                  ||||  ||||| ||| | || || ||    ||||| ||||||||||  || ||| | |
+Sbjct  4235468  TGGGCCGCCCGCCGCACATCGTGGGCGAGAGCCTGCTCAAGCACTTCAAGATCCGC-CCC  4235410
+
+Query  220      AGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAG-GCGGCGAAGACCTA  278
+                 | || || || || || || ||||| | |||  ||||||   || || || ||||||||
+Sbjct  4235409  GGGACCCCCGAGGCCCATGCCTTCACCTACCTGAACTTCG-AAAGTGCTGCCAAGACCTA  4235351
+
+Query  279      CGGCAAGGTCGGCGGCTTCGCTCACCTATCGACCCTTATCAAGCGCATGAAGGCCGGTCG  338
+                ||||||||||||||||||||| |||||  |  | || |||||||  |||   ||| | ||
+Sbjct  4235350  CGGCAAGGTCGGCGGCTTCGCGCACCTGGCCTCGCTGATCAAGCAGATGCGTGCCAGCCG  4235291
+
+Query  339      TCCCGGCGCGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTGTG  398
+                 |||  |||  ||||||||||||| || ||||||||||||||    || ||  |||| ||
+Sbjct  4235290  CCCCTACGCCATGCTGCTCGACGGTGGCGACACCTGGCAGGGCAGTGCCACCGCGCTCTG  4235231
+
+Query  399      GACCAAC  405
+                |||||||
+Sbjct  4235230  GACCAAC  4235224
+
+
+
+
+>Sulfuritortus calidifontis J1A DNA, complete genome
+Sequence ID: AP018721.1 Length: 2720636
+Range 1: 1651170 to 1651514
+
+Score:156 bits(84), Expect:3e-33, 
+Identities:267/354(75%),  Gaps:18/354(5%), Strand: Plus/Minus
+
+Query  60       CTTCGGCAACGTGCACCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTA  119
+                |||||||||||||   ||| ||||| |||| |||  |||||| |||||| |||| |||||
+Sbjct  1651514  CTTCGGCAACGTGTCGCTGATGCACATCACCGACACCCATGCCCAGCTGATGCCCATCTA  1651455
+
+Query  120      CTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCAC-G-CGGCCAGCCGCCACAC  177
+                |||||||||||| ||||||||  ||||  ||||    || | |  ||| ||  ||| |||
+Sbjct  1651454  CTTCCGCGAGCCCAGCGTCAATATCGGTGTCGG--AGGCGCGGTGGGCAAGGTGCCGCAC  1651397
+
+Query  178      CTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGCAGCACGC-CGGAAGCGCA  236
+                ||||| || ||  | ||||| |||||||||| |||||| |  | || ||   || || ||
+Sbjct  1651396  CTGGTTGGCGACAAGCTGCTCAAGCACTTCAACATCGCCCCGAACA-GCATCGACGCCCA  1651338
+
+Query  237      CGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCTACGGCAAGGTCGGCGGCTT  296
+                 || ||||| | |||  |||| |   ||||||| ||||||||||||||||||||||||||
+Sbjct  1651337  TGCCTTCACCTACCTGAACTTTGAGCAGGCGGCCAAGACCTACGGCAAGGTCGGCGGCTT  1651278
+
+Query  297      CGCTCACCTATCGACCCT--T-ATCAAGCGCATGAAGGCCGGTCGTCCCGGCGCGCTGCT  353
+                ||| |||||   ||||||  |   |||| |  ||   |||   || |||||| |||||||
+Sbjct  1651277  CGCCCACCTGAAGACCCTGGTCGACAAG-G--TGCGCGCCTCGCGCCCCGGCTCGCTGCT  1651221
+
+Query  354      GCTCGACGGCGGGGACACCTGGCAGGGTTC-GGCGACATCGC-T-GTGGACCAA  404
+                | | |||  ||| ||||||||||||||||| ||| ||  ||| | |||||||||
+Sbjct  1651220  GATGGACTCCGGCGACACCTGGCAGGGTTCCGGC-AC--CGCCTTGTGGACCAA  1651170
+
+
+
+
+>Thiothrix fructosivorans strain ATCC 49748 chromosome, complete genome
+Sequence ID: CP072748.1 Length: 4137062
+Range 1: 1746127 to 1746387
+
+Score:78.7 bits(42), Expect:6e-10, 
+Identities:194/267(73%),  Gaps:12/267(4%), Strand: Plus/Minus
+
+Query  45       GTACGAACTGCCGCGC-TTCGGCAACGTGCA-C-CTGCTGCACTTCACGGACTGCCATGC  101
+                ||| |||||||| ||| ||||||||  || | | ||| |||||| ||| |||||||| ||
+Sbjct  1746387  GTATGAACTGCC-CGCTTTCGGCAA--TGTATCGCTGATGCACTACACCGACTGCCACGC  1746331
+
+Query  102      GCAGCTGCTGCCGATCTACTTCCGCGAGCCGAGCGTCAACCTCGGCATCGGTCCAGCACG  161
+                 ||| |  | ||||| ||||||||||| || | ||| ||| | ||  || |   |||| |
+Sbjct  1746330  ACAGTTATTACCGATTTACTTCCGCGAACCCAACGTTAAC-TTGG-GTCTGAATAGCATG  1746273
+
+Query  162      CGGCCAGCCG--CCACACCTGGTCGGTGAACATCTGCTGAAGCACTTCAGCATCGCGCGC  219
+                      || |  || ||| | ||||| |||||  | |||||  | | | |||| ||  ||
+Sbjct  1746272  AAAGGTGCTGTACCGCACTTAGTCGGCGAACACTTCCTGAAAAAATACGGCATTGC-TGC  1746214
+
+Query  220      -AGCACGCCGGAAGCGCACGCTTTCACGTTCCTCGACTTCGTCGAGGCGGCGAAGACCTA  278
+                  ||||   ||| || ||||| ||||| | |||||| | ||| || || ||||| |  ||
+Sbjct  1746213  TGGCACAATGGATGCACACGCGTTCACCTACCTCGATTACGTTGAAGCCGCGAAAAAATA  1746154
+
+Query  279      CGGCAAGGTCGGCGGCTTCGCTCACCT  305
+                |||||||||||||||||||||||||||
+Sbjct  1746153  CGGCAAGGTCGGCGGCTTCGCTCACCT  1746127
+
+
+
+
+>MAG: Thiocapsa sp. isolate M50B4 chromosome, complete genome
+Sequence ID: CP073760.1 Length: 5726338
+Range 1: 984931 to 985022
+
+Score:76.8 bits(41), Expect:2e-09, 
+Identities:76/93(82%),  Gaps:2/93(2%), Strand: Plus/Plus
+
+Query  61      TTCGGCAACGTGCA-CCTGCTGCACTTCACGGACTGCCATGCGCAGCTGCTGCCGATCTA  119
+               |||||||| || || ||| |||||| |||| |||   || |||||  ||   ||| ||||
+Sbjct  984931  TTCGGCAATGT-CACCCTCCTGCACATCACCGACACACACGCGCAATTGAATCCGGTCTA  984989
+
+Query  120     CTTCCGCGAGCCGAGCGTCAACCTCGGCATCGG  152
+                ||||||||||||||||||||||||||||||||
+Sbjct  984990  TTTCCGCGAGCCGAGCGTCAACCTCGGCATCGG  985022
+
+
+
+
+>Oricola thermophila strain MEBiC13590 chromosome, complete genome
+Sequence ID: CP054836.1 Length: 3998539
+Range 1: 734426 to 734461
+
+Score:67.6 bits(36), Expect:1e-06, 
+Identities:36/36(100%),  Gaps:0/36(0%), Strand: Plus/Plus
+
+Query  348     GCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC  383
+               ||||||||||||||||||||||||||||||||||||
+Sbjct  734426  GCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTC  734461
+
+
+
+
+>Bradyrhizobium sp. TM102 DNA, complete genome
+Sequence ID: AP021855.1 Length: 7363142
+Range 1: 5283229 to 5283277
+
+Score:58.4 bits(31), Expect:8e-04, 
+Identities:44/50(88%),  Gaps:1/50(2%), Strand: Plus/Minus
+
+Query  347      CGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTG  396
+                ||| |||||||||||||||||||||||||||||| |||  | | ||||||
+Sbjct  5283277  CGC-GCTGCTCGACGGCGGGGACACCTGGCAGGGCTCGTGGTCTTCGCTG  5283229
+
+
+
+
+>Bradyrhizobium sp. SG09 DNA, complete genome
+Sequence ID: AP021854.1 Length: 8442078
+Range 1: 5035215 to 5035251
+
+Score:58.4 bits(31), Expect:8e-04, 
+Identities:36/38(95%),  Gaps:1/38(2%), Strand: Plus/Plus
+
+Query  347      CGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCG  384
+                ||| |||||||||||||||||||||||||||||| |||
+Sbjct  5035215  CGC-GCTGCTCGACGGCGGGGACACCTGGCAGGGCTCG  5035251
+
+
+
+
+>Bradyrhizobium ottawaense strain OO99 chromosome, complete genome
+Sequence ID: CP029425.1 Length: 8606328
+Range 1: 7604267 to 7604315
+
+Score:58.4 bits(31), Expect:8e-04, 
+Identities:44/50(88%),  Gaps:1/50(2%), Strand: Plus/Minus
+
+Query  347      CGCTGCTGCTCGACGGCGGGGACACCTGGCAGGGTTCGGCGACATCGCTG  396
+                ||| |||||||||||||||||||||||||||||| |||  | | ||||||
+Sbjct  7604315  CGC-GCTGCTCGACGGCGGGGACACCTGGCAGGGCTCGTGGTCTTCGCTG  7604267
+
+
+
+
+
+
+
+		
+
+

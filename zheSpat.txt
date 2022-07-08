@@ -1317,6 +1317,8 @@ soxBgenes=refgenomes/lookingForGenes/soxB_SD_5/fastaCleanedHeaders.fna
 blastn -db $localDB -query $soxBgenes -out paracoccusSoxBtestBlast.csv -outfmt 10
 sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' paracoccusSoxBtestBlast.csv
 
+blastn -db $localDB -query $soxBgenes > paracoccusSoxBtestBlast_longForm.txt  
+
 ## and a manual blast on the ncbi webapp of their whole nucleotide dbase 
 ## yields lot of hits, some pretty close
 
@@ -1324,6 +1326,178 @@ sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,
 
 ## so these genes are out there. just not in the Sulfuricurvum genome?
 
+## try this with the new genome that Zhe sent. Apparently the soxB genes are present 
+## in some Sulfuricurvum strains and not others??
+
+## try the other genome that zhe sent
+## try the other sox genes that zhe sent
+## try the "confirmed" S. kujiensis soxB gene that zhe sent
+
+#### look in s. kujinse GCF_000183725.1 for soxB
+
+cd /home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCF_000183725.1/
+
+makeblastdb -in GCF_000183725.1_ASM18372v1_genomic.fna -parse_seqids -dbtype nucl
+
+## change our db to S. kujinse GCF_000183725.1
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCF_000183725.1/GCF_000183725.1_ASM18372v1_genomic.fna"
+
+soxBgenes="/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxB_SD_5/fasta.fna"
+
+blastn -db $localDB -query $soxBgenes -out GCF_000183725.1_SoxB_Blast.csv -outfmt 10
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' GCF_000183725.1_SoxB_Blast.csv
+blastn -db $localDB -query $soxBgenes > GCF_000183725.1_SoxB_Blast_longForm.txt  
+
+## nope, nada
+
+## try the "known" gene that Zhe sent, that should be in S.kuj genomes
+
+kujSoxB="/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/SoxB_S.kujiense.fasta"
+
+#localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCA_002742695.1/GCA_002742695.1_ASM274269v1_genomic.fna"
+#genome="GCA_002742695.1"
+
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCF_000183725.1/GCF_000183725.1_ASM18372v1_genomic.fna"
+genome="GCF_000183725.1"
+
+blastn -db $localDB -query $kujSoxB -out $genome"_SoxB_Blast.csv" -outfmt 10
+
+blastn -db $localDB -query $kujSoxB 
+
+## okay, it's in the GCF_000183725.1 genome all the way
+## but don't find it in the GCA genome. Maybe if we lower the percent ID?
+
+blastn -db $localDB -query $kujSoxB -perc_identity 50 | less
+
+## nope. weird.
+## the gca genome is a MAG, anyway, not sure if it is relevant: 
+## https://www.ncbi.nlm.nih.gov/bioproject/PRJNA391989/
+## from this paper
+## https://pubmed.ncbi.nlm.nih.gov/28484436/
 
 
-less $soxGenes
+
+
+## for sanity checks, let's get the skuji genome that Zhe found this soxB gene, directly from ncbi
+
+cd /home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/DSM16994/
+makeblastdb -in sulfuricurvum_kujiense_DSM16994_genome.fasta -parse_seqids -dbtype nucl
+
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/DSM16994/sulfuricurvum_kujiense_DSM16994_genome.fasta"
+genome="DSM16994"
+blastn -db $localDB -query $kujSoxB -out $genome"_SoxB_Blast.csv" -outfmt 10
+blastn -db $localDB -query $kujSoxB > $genome"_SoxB_Blast_longForm.txt"  
+## yes, that works, hundred percent full match as expected
+## not sure why I can't find this soxB gene in the other sulfuricurvum genomes. or our version from zhe's data.
+
+## let's see if we can find the soxB genes from Zhe's data in this new skurv genome:
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/DSM16994/sulfuricurvum_kujiense_DSM16994_genome.fasta"
+genome="DSM16994"
+blastn -db $localDB -query $soxBgenes -out $genome"_SoxB_Blast.csv" -outfmt 10
+
+
+## nope. ab Odd. 
+
+## try the paracoccus genome, with this new soxB from skuj:
+
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/Paraccocus/Paracoccus_combined.fasta"
+genome="Paracoccus"
+blastn -db $localDB -query $kujSoxB > $genome"_kujSoxB_Blast_longForm.txt"  
+## nope. nada
+
+less $kujSoxB 
+
+## let's try a abbreviated sequence:
+shortKujSoxB="TGAGGGCGAAGCTTTGGTTAAAGAGCTCTATTCACCATATGATTCCGAACTTTCCGAAGTTTTGGGAATTACTAAAAATACGCTGTTTAAACGCGACACGTTCCATTCAACGTTCGATCAGTTGATCAATGACTCTATTATCGATGCGAT"
+
+## paracoccus
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/Paraccocus/Paracoccus_combined.fasta"
+genome="Paracoccus"
+query="shortKujSoxB"
+blastn -db $localDB -query <(echo $shortKujSoxB) > $genome"_"$query"_longForm.txt"  
+## nope. 
+
+## other non DSM skuj genomes with short kujsoxB
+
+## GCF_000183725.1
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCF_000183725.1/GCF_000183725.1_ASM18372v1_genomic.fna"
+genome="GCF_000183725.1"
+query="shortKujSoxB"
+#blastn -db $localDB -query <(echo $shortKujSoxB) > $genome"_"$query"_longForm.txt"  
+blastn -db $localDB -query <(echo $shortKujSoxB) 
+## ah, there it is. Same problem with the other non-DSM genome?
+
+
+
+
+## so what if we really relax the perc_identity cutoff? Not sure what the default is:
+
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/GCF_000183725.1/GCF_000183725.1_ASM18372v1_genomic.fna"
+genome="GCF_000183725.1"
+query="kujSoxB"
+
+blastn -db $localDB -query $kujSoxB | less
+
+blastn -db $localDB -query $kujSoxB -perc_identity 50 | less
+
+## sanity check
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/DSM16994/sulfuricurvum_kujiense_DSM16994_genome.fasta"
+genome="DSM16994"
+query="shortKujSoxB"
+blastn -db $localDB -query <(echo $shortKujSoxB) > $genome"_"$query"_longForm.txt"  
+##  works, of course. 
+
+## and can we find the SOXb
+
+## to do - combine all of Zhe's genes, run blast against all three skuj genomes
+
+## let's get all of Zhe's sox genes together, including soxB
+
+## we need to use tblastn for these faa files, I think?
+
+
+soxB='/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxB.fna'
+query="soxB"
+
+soxA='/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxA.faa'
+query="soxA"
+
+soxX='/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxX.faa'
+query="soxX"
+
+soxY='/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxY.faa'
+query="soxY"
+
+soxZ='/home/daniel/Documents/analyses/zheSpat/refgenomes/lookingForGenes/soxZ.faa'
+query="soxZ"
+
+localDB="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/data/DSM16994/sulfuricurvum_kujiense_DSM16994_genome.fasta"
+genome="DSM16994"
+
+blastn -db $localDB -query $soxB -out $genome"_"$query"_Blastn.csv" -outfmt 10  
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' $genome"_"$query"_Blastn.csv"
+
+tblastn -db $localDB -query $soxA | less
+
+tblastn -db $localDB -query $soxA  -out $genome"_"$query"_tBlast.csv" -outfmt 10 
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' $genome"_"$query"_tBlast.csv"
+## no strong matches.
+
+tblastn -db $localDB -query $soxX  -out $genome"_"$query"_tBlast.csv" -outfmt 10 
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' $genome"_"$query"_tBlast.csv"
+## no strong matches.
+
+tblastn -db $localDB -query $soxY  -out $genome"_"$query"_tBlast.csv" -outfmt 10 
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' $genome"_"$query"_tBlast.csv"
+
+tblastn -db $localDB -query $soxZ  -out $genome"_"$query"_tBlast.csv" -outfmt 10 
+sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' $genome"_"$query"_tBlast.csv"
+
+## I'm just not seeing a lot here...
+
+## a genome of interest is the colorado sulfuricurvum genome, because of the coupled sulfur/nitrate metabolism
+
+### to do ###
+
+## mixed model
+## search Zhe's mags for the Nreducing and Soxidizing genes

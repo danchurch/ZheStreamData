@@ -1501,3 +1501,4 @@ sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,
 
 ## mixed model
 ## search Zhe's mags for the Nreducing and Soxidizing genes
+## search Zhe's entire metagenome assembly for the unique Sulfuricurvum sox genes. 

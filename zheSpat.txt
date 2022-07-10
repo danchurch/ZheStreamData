@@ -1499,6 +1499,6 @@ sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,
 
 ### to do ###
 
-## mixed model
+## mixed model - found R function for mixed linear models lme4::glmer()
 ## search Zhe's mags for the Nreducing and Soxidizing genes
 ## search Zhe's entire metagenome assembly for the unique Sulfuricurvum sox genes. 

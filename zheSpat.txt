@@ -1588,4 +1588,7 @@ anova(simpModel, simpModelInter)
 ## of the nitrogen reducing gene abundances
 ## AIC values drop for the full model, also
 
+## to do
 
+## search Zhe's mags for the Nreducing and Soxidizing genes
+## search Zhe's entire metagenome assembly for the unique Sulfuricurvum sox genes. 

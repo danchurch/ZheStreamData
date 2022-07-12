@@ -16,8 +16,6 @@ from sklearn.linear_model import LinearRegression
 from scipy import stats
 
 
-
-
 #enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
 enz = pd.read_csv("Normalized_OnlyEnzymes.csv")
 enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
@@ -55,7 +53,7 @@ enzEnv.rename(index = {'Distance(m)(all distance to the upstream)':'Distance',
                        inplace='True')
 enzEnv.head()
 
-Nenz = enz[enz.Function == "N metabolism"]
+## Nenz = enz[enz.Function == "N metabolism"] ## better definition below
 
 
 ##Nshallow = enz[enz.Function == "N metabolism"][['Mid-A_5','Mid-B_5','Down_5','KU_5']]
@@ -1131,16 +1129,12 @@ print(randModFit.summary())
 
 ## so our genes of interest are:
 genes = ['soxYZAXB', 'nrfAH', 'napAB', 'nirK', 'norBC']
-
- 
 ## remake our all-enzyme matrix
 #enz = pd.read_excel("Normalized_OnlyEnzymes.xlsx")
 enz = pd.read_csv("Normalized_OnlyEnzymes.csv") ## for old pandas on personal machine
 enz.rename(columns = {'Unnamed: 0':'enzyme'}, inplace='True')
 enz['enzyme'] = enz['enzyme'].str.replace(',','')
 enz.set_index('enzyme', inplace=True)
-
-
 SNenz = enz
 aa = (SNenz.reset_index()['enzyme']
         .str.split(pat="(", n=1, expand=True)[1]
@@ -1153,6 +1147,9 @@ SNenz= SNenz.transpose()
 
 SNenz.head()
 
+## push this out for R:
+SNenz.to_csv('SNenz.csv')
+
 ## what does this look like, with the combined depths,
 ## not taking distance into account?
  
@@ -1162,15 +1159,18 @@ sns.pairplot(data=SNenz)
 ## colored by type of Ngene?
 
 plt.close('all')
+
 fig, ax = plt.subplots()
+
 for i in SNenz[['nrfAH', 'napAB', 'nirK', 'norBC']].iteritems():
     ax.scatter(SNenz['soxYZAXB'], i[1], label=i[0])
-
 handle, label = ax.get_legend_handles_labels()
 ax.legend(handle, label)
 ax.set_title('Selected N-reduction genes against SOX operon abundance, both depths', fontsize=20)
 ax.set_ylabel('N-reducing Genes', fontsize=15)
 ax.set_xlabel('soxYZAXB', fontsize=15)
+
+ax.set_aspect('equal', 'box')
 
 
 ## so, to build a model? We need to melt and rebuild with enzyme as a categorical variable
@@ -1214,6 +1214,9 @@ soxes = pd.concat([SNenz['soxYZAXB'],
 bb['soxYZAXB'] = soxes.values
 
 (bb.site == soxes.index).all() ## order looks okay
+
+## write out for R
+bb.to_csv('SNenzMelted.csv')
 
 ## make a model
 
@@ -1499,5 +1502,90 @@ sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,
 
 ### to do ###
 
-## mixed model
+## find the mags
 ## search Zhe's mags for the Nreducing and Soxidizing genes
+## build mixed model
+## rebuild denbi login
+## find Zhe's assembly, check it for SOX 
+
+
+#### mixed model with count data with neg binomial or poisson #####
+
+## a good example here: 
+## https://pages.stat.wisc.edu/~bates/UseR2008/WorkshopD.pdf
+
+## let's try lme4, with the glmm function 
+
+install.packages('nloptr')
+install.packages('lme4')
+
+library('lme4')
+
+SNenz <- read.csv('SNenz.csv', row.names=1)
+SNenzMelted <- read.csv('SNenzMelted.csv', row.names=1)
+
+## example from the package
+data('Dyestuff')
+
+fm1 <- lmer(Yield ~ 1 + (1 | Batch), Dyestuff)
+print(fm1)
+
+## so for us it would look like this:
+
+SNenzMelted
+
+head(SNenzMelted)
+
+simpModel <- lmer(soxYZAXB ~ 1 + (1 | enzyme) + (geneCopyCount), SNenzMelted)
+
+print(simpModel)
+
+## can test this against an intercept only model:
+
+simpModelInter <- lmer(soxYZAXB ~ 1 + (1 | enzyme), SNenzMelted)
+
+print(simpModelInter)
+
+anova(simpModel, simpModelInter) ## Nreducing gene counts are a statistically significant predictor
+
+## oops, we have that backwards. We've mostly been trying to predict the abundance 
+## of the multiple nitrogen reducing genes by the abundance of the sox operon
+
+## flip this in the next model
+
+## so we want to build a model of some denitrifying genes by SOX operon counts:
+
+soxByNgenesModels <-  glmer(geneCopyCount ~ 1 + (1 | enzyme) + (soxYZAXB), 
+                      data = SNenzMelted, 
+                      family = "poisson")
+
+print(soxByNgenesModels)
+
+
+exp(0.0006313)
+
+## lots of warnings for being non-integers. 
+## which raises some interesting questions. 
+
+## I've assumed that the normalized abundances
+## (which are not integers) still hold all the
+## other properties of count data. 
+
+## I really think they do. We could multiply 
+## all values by ten or something...
+
+## anyway, something to think about.
+
+## for now, carry on, intercept only model:
+
+soxByNgenesModels <-  glmer(geneCopyCount ~ 1 + (1 | enzyme), 
+                      data = SNenzMelted, 
+                      family = "poisson")
+
+anova(simpModel, simpModelInter) 
+
+## again, sox gene counts are a highly significant predictor
+## of the nitrogen reducing gene abundances
+## AIC values drop for the full model, also
+
+

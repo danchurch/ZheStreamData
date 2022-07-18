@@ -1588,7 +1588,20 @@ anova(simpModel, simpModelInter)
 ## of the nitrogen reducing gene abundances
 ## AIC values drop for the full model, also
 
-## to do
+## log into denbi
 
-## search Zhe's mags for the Nreducing and Soxidizing genes
-## search Zhe's entire metagenome assembly for the unique Sulfuricurvum sox genes. 
+
+#### Zhe meeting Jul 13 #####
+
+## Zhe needs a phylogenetic tree of MAGs
+## for example, fig.3 or 
+## https://www.nature.com/articles/s41467-021-27769-5.pdf
+## need genes, maybe ribosomal proteins
+## how to extract ribosomal protein seqs
+## is this the best gene for this?
+
+## look sulfuricurvum soxB gene in assembly
+
+## Zhe's mags and such are on emik in:
+
+/emic/Zhe/Assembly and MAGs

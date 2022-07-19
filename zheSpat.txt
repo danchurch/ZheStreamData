@@ -1604,4 +1604,154 @@ anova(simpModel, simpModelInter)
 
 ## Zhe's mags and such are on emik in:
 
-/emic/Zhe/Assembly and MAGs
+cd '/emic/Zhe/Assembly_MAGs'
+
+## we should grab this folder locally. It's not that big. 
+
+tar cvzf zheAssembliesMAGs.tar.gz Assembly_MAGs
+
+ssh -Y -i /home/daniel/.ssh/ssh_emic emic@134.176.27.78 -p 30022
+
+## get this, from back on home computer
+
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    emic@134.176.27.78:/emic/Zhe/zheAssembliesMAGs.tar.gz \
+    /home/daniel/Documents/analyses/zheSpat/bigFiles \
+    &> scplog.txt & 
+
+## big, 8.2 gig. Why?
+## to start, we have a few assenbly files that are bigger than 1 gig. 
+
+find . -type f -size +1G -exec ls {} -lh \;
+
+
+
+tar -xvf zheAssembliesMAGs.tar.gz
+
+## first task to is search these for the sulfuricurvum 
+## SOX gene
+
+## Zhe was interested in the soxB gene, maybe we look for the 
+## others also
+
+## the kujiense genome with annotations is here:
+https://www.ncbi.nlm.nih.gov/nuccore/CP002355.1
+## this has numerous sox gene protein sequences  
+
+## made an faa file from the genbank annotated genome,
+## that has five sox genes in it:
+
+kujiSoxes="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/kujiensis_allSox.faa"
+
+## put it on emik
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    $kujiSoxes \
+    emic@134.176.27.78:/home/emic/test/ 
+
+
+## looks like diamond doesn't handle nucleotide 
+## databases.
+## we have small data anyway, let's use good old blast?
+
+## make a searchable database of Zhe's assembly:
+
+ls /emic/Zhe/Assembly_MAGs/Assembly/
+
+## there are eight files in here, and they are kind of 
+## big. 
+
+## cycle through them:
+
+cd /emic/Zhe/Assembly_MAGs/Assembly/
+
+
+cd /emic/Zhe/Assembly_MAGs/Assembly
+kujiSoxes="/home/emic/test/kujiensis_allSox.faa"
+
+for i in *; do
+  echo "starting "$i
+  fastaFileName=${i%.gz}
+  ## unzip
+  gunzip $i
+  ## make db
+  echo "making blastdb"
+  makeblastdb -in $fastaFileName -parse_seqids -dbtype nucl
+  ## do searches, write out results long and short form
+  ## short
+  echo "running blast searches"
+  tblastn -db $fastaFileName  \
+      -query $kujiSoxes \
+      -out ${fastaFileName%.fasta}"_kujiSoxes_tBlast.csv" \
+      -outfmt 10 \
+      -num_threads 16
+  sed -i '1i qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore' ${fastaFileName%.fasta}"_kujiSoxes_tBlast.csv"
+  ## long form
+  tblastn -db $fastaFileName  \
+      -query $kujiSoxes \
+      -out ${fastaFileName%.fasta}"_kujiSoxes_tBlast.txt" \
+      -num_threads 16
+  echo "cleaning up, rezipping"
+  ## clean up indexing files
+  rm $fastaFileName.n*
+  ## zip file back up
+  gzip $fastaFileName
+  echo "done with "$fastaFileName
+  unset i
+  unset fastaFileName
+done
+
+## actually looks like that worked. 
+
+## to get it locally:
+
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    emic@134.176.27.78:/emic/Zhe/Assembly_MAGs/Assembly/blastSearches/kujiSoxAss.tar.gz .
+
+## if I find an interesting result, how do I get it out of the
+## the alignment?
+
+## for example, in S02 contigs, NODE_3791787_length_268_cov_0.901408
+## matches pretty strongly to SoxY from Sulfuricurvum
+
+cd ~/Documents/analyses/zheSpat/bigFiles/Assembly_MAGs/Assembly
+
+ls S02_contigs.fasta
+
+NODE_3791787_length_268_cov_0.901408
+
+grep NODE_3791787_length_268_cov_0.901408 S02_contigs.fasta -A 1
+
+## i know there must be one or more good command one-liners
+## for doing extracting individual sequences but I can't 
+## remember them. Use biopython
+
+python3
+
+import Bio, os
+
+from Bio import SeqIO
+
+for seq_record in SeqIO.parse("S02_contigs.fasta", "fasta"):
+    print(seq_record.id)
+    print(repr(seq_record.seq))
+    print(len(seq_record))
+
+
+aa = SeqIO.parse("S02_contigs.fasta", "fasta")
+
+    print(seq_record.id)
+
+[print(seq_record.seq) for seq_record in SeqIO.parse("S02_contigs.fasta", "fasta") ]
+
+[print(seq_record.seq) for seq_record in SeqIO.parse("S02_contigs.fasta", "fasta") if seq_record.id == "NODE_3791787_length_268_cov_0.901408" ]
+
+## gives us
+CGGTAATTTGTATGCTGCAGATGGAAGACTTTATGCGGCGTATGAAAAAACGCAATTACTGGATGCTTCGGGCAAGCCCATCAAAGCATCCATGCTTGAGCAAGAGGTGAATTATATTTTCAACTATCCGTATGCATCTACACCGTGTATATTGGTCAATTTGCCCAAGCCTACACAGCAGGATGTAGAATTAACTGCAGAGAATGGTGAAAAATACGTGTGGAAAAGCGGTGTCGGGAAAAATCGTACGATTGTGGCGTATGTGGCT
+
+## which gives us no reverse blast match on the ncbi data base.
+## odd. 
+
+## dive into this later.

@@ -1,0 +1,84 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.70.fa
+           344 sequences; 3,148,258 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_6329_length_11185_cov_5.304403                                   23.9    3.1  
+NODE_2071_length_18055_cov_4.965389                                   23.9    3.4  
+NODE_2812_length_15900_cov_7.134553                                   23.1    6.0  
+
+
+>NODE_6329_length_11185_cov_5.304403 
+Length=11185
+
+ Score = 23.9 bits (50),  Expect = 3.1, Method: Compositional matrix adjust.
+ Identities = 14/34 (41%), Positives = 21/34 (62%), Gaps = 3/34 (9%)
+ Frame = +1
+
+Query  15    GDIVKIDFMAMHPMETG--MRKN-KDTGALIPAE  45
+             G+ + I     +PM+ G  +R + +DTGA IPAE
+Sbjct  2953  GENISISAQDSYPMQEGDYLRISLRDTGAGIPAE  3054
+
+
+>NODE_2071_length_18055_cov_4.965389 
+Length=18055
+
+ Score = 23.9 bits (50),  Expect = 3.4, Method: Composition-based stats.
+ Identities = 15/48 (31%), Positives = 24/48 (50%), Gaps = 8/48 (17%)
+ Frame = -2
+
+Query  2     KTLIKIKPKDY--------KAGDIVKIDFMAMHPMETGMRKNKDTGAL  41
+             KTL ++KP+DY        KA + V+ D  A+   +   +K K   A+
+Sbjct  4788  KTLAEVKPEDYDILVLPGGKAPEAVRKDLKAVEIAKDFFKKGKPVAAI  4645
+
+
+>NODE_2812_length_15900_cov_7.134553 
+Length=15900
+
+ Score = 23.1 bits (48),  Expect = 6.0, Method: Composition-based stats.
+ Identities = 16/47 (34%), Positives = 24/47 (51%), Gaps = 4/47 (9%)
+ Frame = -2
+
+Query  10    KDYKAGDIVKIDFMAMHPMETGMRKNKDTGALI---PAE-YIDEVKF  52
+             KDY   DI +IDFM    ++T   K   + + +   PAE Y+   K+
+Sbjct  6152  KDYHQTDIKRIDFM*FMRLKTARHKKITSLSFMLK*PAENYLARFKY  6012
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 37924815
+
+
+  Database: SPAdesHybrid-SA.70.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,148,258
+  Number of sequences in database:  344
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S04.16.fa
+           459 sequences; 2,470,649 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_62_length_21086_cov_16.845419                                    23.5    3.7  
+NODE_2467_length_5867_cov_15.199415                                   23.1    5.2  
+
+
+>NODE_62_length_21086_cov_16.845419 
+Length=21086
+
+ Score = 23.5 bits (49),  Expect = 3.7, Method: Composition-based stats.
+ Identities = 11/33 (33%), Positives = 18/33 (55%), Gaps = 0/33 (0%)
+ Frame = -1
+
+Query  15    GDIVKIDFMAMHPMETGMRKNKDTGALIPAEYI  47
+             GD+++    A  P+    +K  DTGAL+  + I
+Sbjct  1775  GDMLRAAIAAGTPLGLAAKKVMDTGALVSDDII  1677
+
+
+>NODE_2467_length_5867_cov_15.199415 
+Length=5867
+
+ Score = 23.1 bits (48),  Expect = 5.2, Method: Composition-based stats.
+ Identities = 11/40 (28%), Positives = 16/40 (40%), Gaps = 0/40 (0%)
+ Frame = -2
+
+Query  67   SLSVNPLMSISFKVPGAGTLKVIAKDNKGQSVETTSAINP  106
+            + S  PL   S  + GAG L             + S++NP
+Sbjct  958  TFSTTPLSGFSNSIAGAGFLTKATTARGSNRRRSASSVNP  839
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 30883242
+
+
+  Database: SPAdes-S04.16.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,470,649
+  Number of sequences in database:  459
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

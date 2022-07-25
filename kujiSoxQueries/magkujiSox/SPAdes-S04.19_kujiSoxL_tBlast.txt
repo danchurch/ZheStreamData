@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S04.19.fa
+           328 sequences; 1,918,867 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_1888_length_6483_cov_12.158836                                   25.4    2.3  
+NODE_1354_length_7284_cov_15.401162                                   23.9    8.2  
+
+
+>NODE_1888_length_6483_cov_12.158836 
+Length=6483
+
+ Score = 25.4 bits (54),  Expect = 2.3, Method: Compositional matrix adjust.
+ Identities = 15/47 (32%), Positives = 25/47 (53%), Gaps = 4/47 (9%)
+ Frame = -3
+
+Query  191   ILGSDKFQDYFKSFRPELKEFYGGPAEAKKLVSISAKTVKLTEYSKE  237
+             ILG++ F+D+F S R    +  GG + A +     AK + L E  ++
+Sbjct  1861  ILGANIFRDFFASIR----DIVGGRSAAYEAELRKAKDIALGEMREQ  1733
+
+
+>NODE_1354_length_7284_cov_15.401162 
+Length=7284
+
+ Score = 23.9 bits (50),  Expect = 8.2, Method: Compositional matrix adjust.
+ Identities = 11/21 (52%), Positives = 11/21 (52%), Gaps = 0/21 (0%)
+ Frame = -1
+
+Query  172   PLNAVVLEHAADDTLWAVGIL  192
+             PL A VL     D  W VGIL
+Sbjct  1881  PLGAPVLRGCLGDFAWVVGIL  1819
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 100088194
+
+
+  Database: SPAdes-S04.19.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 1,918,867
+  Number of sequences in database:  328
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

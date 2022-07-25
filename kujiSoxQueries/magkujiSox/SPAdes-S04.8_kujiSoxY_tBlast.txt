@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S04.8.fa
+           731 sequences; 2,322,979 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_5185_length_4297_cov_5.038661                                    24.3    4.0  
+NODE_33596_length_1949_cov_5.142555                                   23.1    8.6  
+
+
+>NODE_5185_length_4297_cov_5.038661 
+Length=4297
+
+ Score = 24.3 bits (51),  Expect = 4.0, Method: Compositional matrix adjust.
+ Identities = 15/40 (38%), Positives = 18/40 (45%), Gaps = 0/40 (0%)
+ Frame = -1
+
+Query  20    LPHVASAAEEKKSGGPNEMNFETAVAAITGGKALTPSAKV  59
+             LPH ASA   K+  GP   +   A A    G A  P  K+
+Sbjct  1072  LPHAASATGAKRCRGPVCASRLQATARGFTGSARLPDCKL  953
+
+
+>NODE_33596_length_1949_cov_5.142555 
+Length=1949
+
+ Score = 23.1 bits (48),  Expect = 8.6, Method: Compositional matrix adjust.
+ Identities = 11/28 (39%), Positives = 16/28 (57%), Gaps = 0/28 (0%)
+ Frame = +1
+
+Query  75   VKVTVDSPMSAKEYVKAIHILASKNGNV  102
+            + VTV  P SAK  ++ IH L+   G +
+Sbjct  724  IVVTVPDPRSAKRILQNIHALSPAAGVI  807
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 59059024
+
+
+  Database: SPAdes-S04.8.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,322,979
+  Number of sequences in database:  731
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

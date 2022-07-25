@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S03.17.fa
+           883 sequences; 2,621,768 total letters
+
+
+
+Query= SoxB|gb|ADR33116.1
+
+Length=588
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_597_length_6485_cov_7.191135                                     26.6    5.2  
+NODE_2544_length_3606_cov_10.771332                                   26.2    6.3  
+
+
+>NODE_597_length_6485_cov_7.191135 
+Length=6485
+
+ Score = 26.6 bits (57),  Expect = 5.2, Method: Compositional matrix adjust.
+ Identities = 11/24 (46%), Positives = 16/24 (67%), Gaps = 0/24 (0%)
+ Frame = +1
+
+Query  288   DGFSVDQEVARQVKGIDFILSGHT  311
+             D  SVD+E  RQV+ +D  + GH+
+Sbjct  2374  DRPSVDREFHRQVRPVDIRIPGHS  2445
+
+
+>NODE_2544_length_3606_cov_10.771332 
+Length=3606
+
+ Score = 26.2 bits (56),  Expect = 6.3, Method: Compositional matrix adjust.
+ Identities = 14/37 (38%), Positives = 22/37 (59%), Gaps = 1/37 (3%)
+ Frame = +1
+
+Query  367   PEGEALVK-ELYSPYDSELSEVLGITKNTLFKRDTFH  402
+             PE  AL + EL +   +EL+E+LGI+   +  +  FH
+Sbjct  3205  PELAALPEAELLAMARNELAEILGISDKPVLAKAFFH  3315
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.414    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 398109000
+
+
+  Database: SPAdes-S03.17.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,621,768
+  Number of sequences in database:  883
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S06.11.fa
+           1,190 sequences; 4,078,494 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_11782_length_2591_cov_3.352524                                   23.9    4.2  
+NODE_15731_length_2317_cov_5.855880                                   23.1    8.0  
+
+
+>NODE_11782_length_2591_cov_3.352524 
+Length=2591
+
+ Score = 23.9 bits (50),  Expect = 4.2, Method: Compositional matrix adjust.
+ Identities = 12/40 (30%), Positives = 20/40 (50%), Gaps = 0/40 (0%)
+ Frame = +2
+
+Query  42    IPAEYIDEVKFMFNDTLITKMVIWESLSVNPLMSISFKVP  81
+             +P   I  + F F    +++ ++W   S+  L SIS  VP
+Sbjct  2246  LPCRAIGLI*FGF*PAALSRPMLWARPSIPRL*SISKPVP  2365
+
+
+>NODE_15731_length_2317_cov_5.855880 
+Length=2317
+
+ Score = 23.1 bits (48),  Expect = 8.0, Method: Composition-based stats.
+ Identities = 10/26 (38%), Positives = 16/26 (62%), Gaps = 0/26 (0%)
+ Frame = -1
+
+Query  77    SFKVPGAGTLKVIAKDNKGQSVETTS  102
+             +F++PG   L  IA   + +S+ TTS
+Sbjct  1702  AFRIPG*AALPAIASMPRVRSLSTTS  1625
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 45857448
+
+
+  Database: SPAdes-S06.11.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,078,494
+  Number of sequences in database:  1,190
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

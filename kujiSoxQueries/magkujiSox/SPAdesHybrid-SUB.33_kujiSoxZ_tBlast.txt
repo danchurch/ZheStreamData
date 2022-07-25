@@ -1,0 +1,88 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SUB.33.fa
+           1,102 sequences; 4,097,858 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_85488_length_1938_cov_4.412639                                   50.1    3e-09
+NODE_22264_length_3914_cov_2.806686                                   24.6    2.5  
+NODE_5259_length_6916_cov_4.162221                                    23.1    8.1  
+
+
+>NODE_85488_length_1938_cov_4.412639 
+Length=1938
+
+ Score = 50.1 bits (118),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 29/94 (31%), Positives = 49/94 (52%), Gaps = 5/94 (5%)
+ Frame = -2
+
+Query  15    GDIVKIDFMAMHPMETGMRKNKDTGALIPAEYIDEVKFMFNDTLITKMVIWESLSVNPLM  74
+             GD+  +  +  HPMETG+RK+  TG L+P  +I  +    N   + +    +++S NP +
+Sbjct  1367  GDVADVKILMFHPMETGLRKDGVTGELVPMHFIQTLTATHNGRTVLEAQWSQAVSKNPFL  1188
+
+Query  75    SISFKVPGAGT-LKVIAK--DNKGQSVETTSAIN  105
+               +F+V GA    K+I    DN+G      + +N
+Sbjct  1187  --NFRVRGAKPGDKIIVGWVDNRGDKASIDATLN  1092
+
+
+>NODE_22264_length_3914_cov_2.806686 
+Length=3914
+
+ Score = 24.6 bits (52),  Expect = 2.5, Method: Compositional matrix adjust.
+ Identities = 9/12 (75%), Positives = 10/12 (83%), Gaps = 0/12 (0%)
+ Frame = +2
+
+Query  14   AGDIVKIDFMAM  25
+            AGD  KIDF+AM
+Sbjct  248  AGDCQKIDFLAM  283
+
+
+>NODE_5259_length_6916_cov_4.162221 
+Length=6916
+
+ Score = 23.1 bits (48),  Expect = 8.1, Method: Composition-based stats.
+ Identities = 9/28 (32%), Positives = 17/28 (61%), Gaps = 0/28 (0%)
+ Frame = -1
+
+Query  58   LITKMVIWESLSVNPLMSISFKVPGAGT  85
+            ++  MVI ES + N +   ++++PG  T
+Sbjct  805  IMEDMVIGESWAQNEIERYTYRMPGQAT  722
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 46317888
+
+
+  Database: SPAdesHybrid-SUB.33.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,097,858
+  Number of sequences in database:  1,102
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,84 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.30.fa
+           500 sequences; 2,989,906 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_22672_length_6348_cov_4.125695                                   25.8    3.1  
+NODE_4301_length_13153_cov_3.296992                                   24.6    6.6  
+NODE_5773_length_11590_cov_3.591851                                   24.3    8.4  
+
+
+>NODE_22672_length_6348_cov_4.125695 
+Length=6348
+
+ Score = 25.8 bits (55),  Expect = 3.1, Method: Compositional matrix adjust.
+ Identities = 14/32 (44%), Positives = 17/32 (53%), Gaps = 4/32 (13%)
+ Frame = -3
+
+Query  5     NFLKVVAGATVIAVSPSLIRGNLYAADGMLFS  36
+              F + V GA VI V PS+   NL+    ML S
+Sbjct  3763  QFARKVGGAAVIEVQPSIEGRNLF----MLLS  3680
+
+
+>NODE_4301_length_13153_cov_3.296992 
+Length=13153
+
+ Score = 24.6 bits (52),  Expect = 6.6, Method: Compositional matrix adjust.
+ Identities = 10/27 (37%), Positives = 15/27 (56%), Gaps = 1/27 (4%)
+ Frame = -3
+
+Query  99    KSGVGK-ERTIVAYVAICTHQMTHPTP  124
+             + G G+ ERT   ++  C H + HP P
+Sbjct  8255  RGGAGRGERTDRLWMLTCVHILHHPVP  8175
+
+
+>NODE_5773_length_11590_cov_3.591851 
+Length=11590
+
+ Score = 24.3 bits (51),  Expect = 8.4, Method: Compositional matrix adjust.
+ Identities = 13/30 (43%), Positives = 18/30 (60%), Gaps = 0/30 (0%)
+ Frame = +1
+
+Query  12    GATVIAVSPSLIRGNLYAADGMLFSAYEKA  41
+             GAT +A +PSL      AAD +L++  E A
+Sbjct  5626  GATTLACAPSLNSDAARAADHLLYAPGEAA  5715
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 152981600
+
+
+  Database: SPAdesHybrid-SA.30.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,989,906
+  Number of sequences in database:  500
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

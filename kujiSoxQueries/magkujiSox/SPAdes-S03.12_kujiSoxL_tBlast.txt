@@ -1,0 +1,131 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S03.12.fa
+           884 sequences; 2,630,601 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_186_length_10355_cov_4.394466                                    31.6    0.035
+NODE_1227_length_4834_cov_5.241682                                    25.4    3.5  
+NODE_7745_length_2283_cov_6.070916                                    25.4    3.8  
+NODE_13272_length_1834_cov_4.278808                                   24.6    5.2  
+NODE_14159_length_1788_cov_2.412002                                   24.6    6.0  
+NODE_3007_length_3362_cov_4.091321                                    24.3    7.3  
+
+
+>NODE_186_length_10355_cov_4.394466 
+Length=10355
+
+ Score = 31.6 bits (70),  Expect = 0.035, Method: Compositional matrix adjust.
+ Identities = 12/32 (38%), Positives = 20/32 (63%), Gaps = 0/32 (0%)
+ Frame = +3
+
+Query  176  VVLEHAADDTLWAVGILGSDKFQDYFKSFRPE  207
+            + +E++ +DTLW VG+    K+     SFRP+
+Sbjct  660  IAVENSQNDTLWNVGVGLRRKYTTLSTSFRPQ  755
+
+
+>NODE_1227_length_4834_cov_5.241682 
+Length=4834
+
+ Score = 25.4 bits (54),  Expect = 3.5, Method: Compositional matrix adjust.
+ Identities = 11/21 (52%), Positives = 11/21 (52%), Gaps = 0/21 (0%)
+ Frame = +3
+
+Query  172  PLNAVVLEHAADDTLWAVGIL  192
+            PL  V   HAAD   WA G L
+Sbjct  84   PLENVADRHAADHGAWARGFL  146
+
+
+>NODE_7745_length_2283_cov_6.070916 
+Length=2283
+
+ Score = 25.4 bits (54),  Expect = 3.8, Method: Compositional matrix adjust.
+ Identities = 20/68 (29%), Positives = 32/68 (47%), Gaps = 2/68 (3%)
+ Frame = -2
+
+Query  1     MDRRNFLKVVAGATVIAVSPSLIRGNLYAADGML--FSAYEKAQLVDAAGKPIKASALQK  58
+             M RR F+KV+AG+ V     +  +       G+L   SA E A+++DA    +K S   +
+Sbjct  1097  MRRREFIKVIAGSAVTWPLAARAQQKPVPTIGLLGCTSADESARVLDALRAGLKESGFVE  918
+
+Query  59    EVTYIFNY  66
+                 I  +
+Sbjct  917   NQNVISRF  894
+
+
+>NODE_13272_length_1834_cov_4.278808 
+Length=1834
+
+ Score = 24.6 bits (52),  Expect = 5.2, Method: Compositional matrix adjust.
+ Identities = 8/18 (44%), Positives = 11/18 (61%), Gaps = 0/18 (0%)
+ Frame = +2
+
+Query  81    PTGKDVELTSESGEKYVW  98
+             PTG++VE    S  +Y W
+Sbjct  1076  PTGRNVEFLPRSRRRYRW  1129
+
+
+>NODE_14159_length_1788_cov_2.412002 
+Length=1788
+
+ Score = 24.6 bits (52),  Expect = 6.0, Method: Compositional matrix adjust.
+ Identities = 11/31 (35%), Positives = 16/31 (52%), Gaps = 3/31 (10%)
+ Frame = -2
+
+Query  68   YASTPCMLINLPKP---TGKDVELTSESGEK  95
+            Y STPC    +P+P    G+D   +  SG +
+Sbjct  170  YFSTPCRTTRIPRPAMRCGQDFLFSPASGLR  78
+
+
+>NODE_3007_length_3362_cov_4.091321 
+Length=3362
+
+ Score = 24.3 bits (51),  Expect = 7.3, Method: Compositional matrix adjust.
+ Identities = 17/74 (23%), Positives = 30/74 (41%), Gaps = 19/74 (26%)
+ Frame = +1
+
+Query  172  PLNAVVLEHAADDTLWA--VGILGSDKFQ-----------------DYFKSFRPELKEFY  212
+            P+   V+ +AA+   WA    + GS  F+                 +   + R +    Y
+Sbjct  196  PVGLSVMAYAAESIGWARAAQVFGSSFFKQSANPSGIVKMKRALSPEALVNLRADFMRLY  375
+
+Query  213  GGPAEAKKLVSISA  226
+            GGP+ + K+V + A
+Sbjct  376  GGPSNSNKVVFLDA  417
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 129789667
+
+
+  Database: SPAdes-S03.12.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,630,601
+  Number of sequences in database:  884
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

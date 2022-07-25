@@ -1,0 +1,75 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SD.34.fa
+           635 sequences; 4,238,445 total letters
+
+
+
+Query= SoxB|gb|ADR33116.1
+
+Length=588
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_5980_length_6014_cov_6.451250                                    26.9    5.5  
+NODE_45055_length_2350_cov_9.200871                                   26.6    7.8  
+
+
+>NODE_5980_length_6014_cov_6.451250 
+Length=6014
+
+ Score = 26.9 bits (58),  Expect = 5.5, Method: Compositional matrix adjust.
+ Identities = 11/28 (39%), Positives = 15/28 (54%), Gaps = 0/28 (0%)
+ Frame = +1
+
+Query  554   SAYIRRQKNVNISGNSNVRLVDYDCGCP  581
+             +A  R  +N   +GNS +R     CGCP
+Sbjct  3679  AAMGREARNAMAAGNSLIRKGQQPCGCP  3762
+
+
+>NODE_45055_length_2350_cov_9.200871 
+Length=2350
+
+ Score = 26.6 bits (57),  Expect = 7.8, Method: Compositional matrix adjust.
+ Identities = 23/76 (30%), Positives = 30/76 (39%), Gaps = 7/76 (9%)
+ Frame = -3
+
+Query  44    NARGNVTLLHICDMHAHLKPLYWREPSTLISAPNLTGTPGFLCGESFLKHYGMKGKSLDA  103
+             ++R NV +  +C   A      W E ST +SA  LT  PG LC  S L         +  
+Sbjct  1649  SSRANVPITLVCTKSAG----PWIERSTWLSAAKLTIAPG-LCSCSSLPTSSRSP--MSP  1491
+
+Query  104   YFDTYMNFDAMAHKFG  119
+                T+  F     KF 
+Sbjct  1490  RTKTWRVFSFRLEKFS  1443
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.414    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 673449910
+
+
+  Database: SPAdesHybrid-SD.34.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,238,445
+  Number of sequences in database:  635
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

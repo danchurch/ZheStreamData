@@ -1,0 +1,235 @@
+==> SPAdesHybrid-SA.104_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2223_length_17520_cov_5.578242,31.081,74,48,2,40,110,286,65,3.8,24.6
+
+==> SPAdesHybrid-SA.113_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1878_length_18885_cov_3.685767,34.483,29,19,0,103,131,16006,15920,1.8,25.4
+
+==> SPAdesHybrid-SA.114_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_81176_length_3155_cov_2.527097,50.000,26,13,0,79,104,1351,1428,1.1,27.3
+
+==> SPAdesHybrid-SA.125_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_45932_length_4429_cov_1.358253,48.000,25,13,0,38,62,4065,4139,3.6,24.6
+
+==> SPAdesHybrid-SA.126_kujiSoxY_tBlast.csv <==
+
+==> SPAdesHybrid-SA.137_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_168328_length_1848_cov_4.099833,35.556,45,29,0,35,79,1667,1533,0.026,31.2
+
+==> SPAdesHybrid-SA.17_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1012_length_25716_cov_4.601925,60.000,20,8,0,118,137,15022,15081,0.81,26.6
+
+==> SPAdesHybrid-SA.30_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2429_length_16910_cov_4.562266,56.250,16,7,0,100,115,5892,5939,2.2,25.4
+
+==> SPAdesHybrid-SA.32_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_793_length_28983_cov_7.838357,52.000,25,12,0,118,142,9983,10057,2.6,25.8
+
+==> SPAdesHybrid-SA.35_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1956_length_18561_cov_3.130228,43.220,118,66,1,39,156,14149,14499,1.79e-21,87.0
+
+==> SPAdesHybrid-SA.38_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_52713_length_4102_cov_4.663702,35.714,28,18,0,124,151,1704,1787,3.9,23.9
+
+==> SPAdesHybrid-SA.4_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_150_length_62782_cov_9.122483,38.710,31,18,1,127,156,34445,34537,2.0,26.2
+
+==> SPAdesHybrid-SA.53_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_481_length_36548_cov_8.353849,28.169,71,40,2,50,117,34462,34274,0.50,26.9
+
+==> SPAdesHybrid-SA.54_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_59_length_95294_cov_13.988219,35.185,54,24,3,81,124,6963,6805,0.18,28.9
+
+==> SPAdesHybrid-SA.55_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2662_length_16283_cov_4.185112,48.000,25,13,0,34,58,1107,1181,1.2,26.9
+
+==> SPAdesHybrid-SA.59_kujiSoxY_tBlast.csv <==
+
+==> SPAdesHybrid-SA.62_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_3800_length_13898_cov_7.950011,50.000,28,14,0,57,84,3968,4051,1.5,26.2
+
+==> SPAdesHybrid-SA.70_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_3618_length_14209_cov_5.964109,52.000,25,12,0,118,142,2188,2262,1.6,25.8
+
+==> SPAdesHybrid-SA.73_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_357_length_41642_cov_16.200038,32.727,55,36,1,20,73,33271,33435,0.82,27.7
+
+==> SPAdesHybrid-SA.74_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_3673_length_14128_cov_4.698288,28.358,67,47,1,81,147,10207,10404,0.043,31.6
+
+==> SPAdesHybrid-SA.79_kujiSoxY_tBlast.csv <==
+
+==> SPAdesHybrid-SA.82_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2389_length_17009_cov_3.826943,29.630,54,38,0,34,87,10591,10430,0.17,29.6
+
+==> SPAdesHybrid-SA.95_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_4_length_237011_cov_5.207882,23.776,143,98,4,21,154,76252,76674,1.1,26.9
+
+==> SPAdesHybrid-SD.13_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8472_length_5119_cov_3.498420,39.286,28,16,1,31,58,2623,2703,4.3,23.5
+
+==> SPAdesHybrid-SD.17_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_3921_length_7319_cov_8.984857,27.273,88,50,5,64,150,4276,4052,0.77,26.6
+
+==> SPAdesHybrid-SD.18_kujiSoxY_tBlast.csv <==
+
+==> SPAdesHybrid-SD.19_kujiSoxY_tBlast.csv <==
+
+==> SPAdesHybrid-SD.20_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_21771_length_3330_cov_4.684885,37.736,106,66,0,50,155,2080,1763,1.59e-17,75.9
+
+==> SPAdesHybrid-SD.29_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_6708_length_5696_cov_4.486261,32.673,101,62,4,58,155,3336,3629,1.50e-06,43.1
+
+==> SPAdesHybrid-SD.2_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_5212_length_6409_cov_3.741423,32.990,97,64,1,59,155,6365,6078,1.68e-13,62.8
+
+==> SPAdesHybrid-SD.32_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1500_length_11702_cov_6.879626,48.276,29,15,0,44,72,9835,9921,1.6,26.2
+
+==> SPAdesHybrid-SD.34_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_23470_length_3218_cov_7.543471,37.838,37,21,1,51,87,2445,2549,2.2,25.8
+
+==> SPAdesHybrid-SD.36_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_13319_length_4170_cov_3.836695,29.348,92,51,3,49,140,1050,817,4.1,24.6
+
+==> SPAdesHybrid-SD.37_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1785_length_10742_cov_6.675119,28.571,49,24,1,62,99,8266,8120,2.6,25.4
+
+==> SPAdesHybrid-SD.39_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_872_length_14866_cov_3.520897,48.485,33,16,1,121,153,14480,14385,1.5,26.9
+
+==> SPAdesHybrid-SD.41_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_6958_length_5602_cov_3.114116,33.333,42,18,1,94,135,3087,2992,0.50,26.2
+
+==> SPAdesHybrid-SD.43_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_14_length_62264_cov_8.678278,31.915,47,24,1,46,84,55720,55860,7.7,23.9
+
+==> SPAdesHybrid-SD.47_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_4472_length_6892_cov_3.675442,27.103,107,68,4,36,138,2839,3141,0.22,28.1
+
+==> SPAdesHybrid-SD.4_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_15756_length_3863_cov_5.515494,28.235,85,52,2,42,117,3758,3504,0.38,27.7
+
+==> SPAdesHybrid-SD.6_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_59904_length_2033_cov_7.514156,36.364,33,21,0,21,53,1253,1155,6.8,24.3
+
+==> SPAdesHybrid-SUB.10_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_405_length_15470_cov_4.162245,25.253,99,62,3,39,127,11880,12170,2.8,25.8
+
+==> SPAdesHybrid-SUB.25_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_4911_length_7081_cov_4.082835,32.500,40,27,0,109,148,4218,4099,1.2,26.6
+
+==> SPAdesHybrid-SUB.26_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_10305_length_5388_cov_6.195012,28.846,52,31,1,76,127,3246,3383,3.4,25.4
+
+==> SPAdesHybrid-SUB.29_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8228_length_5864_cov_5.568945,32.258,31,21,0,35,65,4659,4567,7.0,24.6
+
+==> SPAdesHybrid-SUB.33_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_85488_length_1938_cov_4.412639,35.032,157,91,6,1,156,1878,1438,1.51e-14,67.0
+
+==> SPAdesHybrid-SUB.35_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_40442_length_2957_cov_2.544452,41.718,163,88,3,1,156,1017,1505,6.39e-33,120
+
+==> SPAdesHybrid-SUB.37_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_16070_length_4502_cov_2.924893,52.000,25,12,0,118,142,821,895,2.1,25.8
+
+==> SPAdesHybrid-SUB.39_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_41902_length_2905_cov_4.853684,35.556,45,23,1,50,88,2387,2253,1.2,26.6
+
+==> SPAdesHybrid-SUB.40_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_5969_length_6612_cov_3.209242,37.037,54,23,4,81,124,1171,1329,1.1,26.2
+
+==> SPAdesHybrid-SUB.50_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_92166_length_1849_cov_1.125418,33.333,33,21,1,81,112,813,715,5.8,23.1
+
+==> SPAdesHybrid-SUB.53_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_992_length_11884_cov_3.054696,32.075,53,36,0,34,86,45,203,3.4,24.3
+
+==> SPAdesHybrid-SUB.64_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8980_length_5677_cov_19.558342,42.424,33,19,0,118,150,689,787,0.86,25.8
+
+==> SPAdesHybrid-SUB.9_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_12998_length_4915_cov_2.651029,24.390,41,31,0,27,67,3082,2960,5.0,25.0
+
+==> SPAdes-S02.12_kujiSoxY_tBlast.csv <==
+
+==> SPAdes-S03.12_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2200_length_3812_cov_5.269896,47.788,113,58,1,44,156,3018,3353,1.74e-27,103
+
+==> SPAdes-S03.17_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_156_length_10969_cov_8.399212,28.814,59,41,1,30,87,1041,865,1.2,25.8
+
+==> SPAdes-S03.21_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_723_length_5988_cov_14.417327,58.824,17,7,0,99,115,2218,2168,2.2,25.0
+
+==> SPAdes-S03.4_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8242_length_2228_cov_3.658537,41.379,29,17,0,74,102,2156,2070,0.24,27.3
+
+==> SPAdes-S03.5_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_16678_length_1677_cov_2.109125,19.753,81,65,0,75,155,991,1233,2.7,25.0
+
+==> SPAdes-S04.14_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1544_length_6955_cov_6.493043,28.916,83,51,3,34,114,2717,2947,2.5,24.3
+
+==> SPAdes-S04.16_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_5765_length_4121_cov_16.128136,36.792,106,60,3,47,152,1312,1608,2.75e-11,57.0
+
+==> SPAdes-S04.19_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_167_length_15221_cov_11.809442,22.642,53,41,0,71,123,12024,11866,0.89,25.8
+
+==> SPAdes-S04.1_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_20384_length_2408_cov_3.234594,36.667,30,19,0,75,104,1530,1619,6.4,23.5
+
+==> SPAdes-S04.22_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8594_length_3479_cov_5.117699,32.558,43,24,1,78,115,1180,1308,2.2,25.4
+
+==> SPAdes-S04.23_kujiSoxY_tBlast.csv <==
+
+==> SPAdes-S04.29_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_11888_length_3023_cov_12.102089,43.519,108,54,3,49,156,2060,2362,8.97e-17,73.2
+
+==> SPAdes-S04.30_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_35072_length_1913_cov_4.337460,27.273,55,39,1,70,123,1073,909,1.9,25.8
+
+==> SPAdes-S04.4_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_14599_length_2775_cov_6.248897,43.878,98,55,0,58,155,501,794,2.17e-23,92.8
+
+==> SPAdes-S04.5_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_36145_length_1890_cov_3.408174,43.243,37,19,1,75,111,587,483,0.12,28.5
+
+==> SPAdes-S04.8_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_5185_length_4297_cov_5.038661,37.500,40,25,0,20,59,1072,953,4.0,24.3
+
+==> SPAdes-S05.10_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_5338_length_2849_cov_6.026485,23.077,91,67,2,56,143,1442,1714,0.20,29.3
+
+==> SPAdes-S05.12_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_18698_length_1715_cov_9.374096,43.902,41,19,2,84,124,1224,1114,7.1,23.5
+
+==> SPAdes-S05.13_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2634_length_3746_cov_3.637768,47.788,113,58,1,44,156,1097,762,2.69e-27,103
+
+==> SPAdes-S05.14_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_14441_length_1910_cov_2.635040,31.683,101,63,3,59,156,981,688,1.28e-07,46.6
+
+==> SPAdes-S05.2_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_2118_length_4062_cov_3.304717,42.857,14,8,0,101,114,2541,2500,1.5,22.7
+
+==> SPAdes-S05.6_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_1984_length_4150_cov_6.384371,38.889,108,59,3,49,156,2353,2655,8.16e-13,62.0
+
+==> SPAdes-S06.11_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_640_length_7433_cov_9.680943,35.294,34,22,0,118,151,5459,5358,1.1,26.6
+
+==> SPAdes-S06.17_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_8804_length_2896_cov_11.645899,27.273,33,24,0,87,119,2753,2655,3.7,24.6
+
+==> SPAdes-S06.2_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_109_length_14620_cov_5.710951,29.268,41,29,0,86,126,13442,13320,8.2,22.7
+
+==> SPAdes-S06.5_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_9854_length_2778_cov_4.264781,35.417,48,28,1,94,138,1911,1768,6.5,24.3
+
+==> SPAdes-S06.6_kujiSoxY_tBlast.csv <==
+SoxY|gb|ADR33113.1,NODE_340_length_9411_cov_5.944955,36.792,106,60,3,47,152,7487,7191,2.49e-11,57.4

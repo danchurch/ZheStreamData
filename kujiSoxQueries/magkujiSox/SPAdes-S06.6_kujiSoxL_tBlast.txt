@@ -1,0 +1,75 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S06.6.fa
+           467 sequences; 2,648,258 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_185_length_11511_cov_6.404417                                    26.2    2.1  
+NODE_75_length_17715_cov_5.433126                                     24.3    7.3  
+
+
+>NODE_185_length_11511_cov_6.404417 
+Length=11511
+
+ Score = 26.2 bits (56),  Expect = 2.1, Method: Compositional matrix adjust.
+ Identities = 15/49 (31%), Positives = 21/49 (43%), Gaps = 4/49 (8%)
+ Frame = +1
+
+Query  188   AVGILGSDKFQDYFKSFRPELKEFYGGPAEA----KKLVSISAKTVKLT  232
+             A+G  G D    + + FR    E+   PAEA      L S +A  +  T
+Sbjct  9262  AIGSFGYDSIAAWIRCFRKASPEYLRAPAEACMMTGALTSCAASMMACT  9408
+
+
+>NODE_75_length_17715_cov_5.433126 
+Length=17715
+
+ Score = 24.3 bits (51),  Expect = 7.3, Method: Compositional matrix adjust.
+ Identities = 25/86 (29%), Positives = 35/86 (41%), Gaps = 5/86 (6%)
+ Frame = +2
+
+Query  68    YASTPCMLINLPKPTGKDVELTSESGEKYVWKSGVGKERTIVAYVAICTHQMTHPTPNDS  127
+             YAS PC  +  P    + V L+  +       S  G  +TI+A     T    H    + 
+Sbjct  1370  YASNPCQTVGTPA---EKVTLSDSNNSNSDLPSRCGPGKTILAPAIGAT*GRPHALT*NI  1540
+
+Query  128   FITYVPTAKKTM--AYEKSGIIVCSS  151
+               T   T++  M  A  K+  IVCSS
+Sbjct  1541  GTTGRITSRAEMLSASGKADAIVCSS  1618
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 136108112
+
+
+  Database: SPAdes-S06.6.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,648,258
+  Number of sequences in database:  467
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

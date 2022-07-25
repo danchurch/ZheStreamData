@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S04.8.fa
+           731 sequences; 2,322,979 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_2137_length_6173_cov_4.557372                                    28.1    0.087
+NODE_26055_length_2168_cov_3.100805                                   22.7    6.2  
+
+
+>NODE_2137_length_6173_cov_4.557372 
+Length=6173
+
+ Score = 28.1 bits (61),  Expect = 0.087, Method: Composition-based stats.
+ Identities = 9/28 (32%), Positives = 17/28 (61%), Gaps = 0/28 (0%)
+ Frame = -2
+
+Query  13    KAGDIVKIDFMAMHPMETGMRKNKDTGA  40
+             +A D++K+D + +HP++ G     D  A
+Sbjct  4756  RAVDVIKVDMVGLHPLQAGFAGGHDVLA  4673
+
+
+>NODE_26055_length_2168_cov_3.100805 
+Length=2168
+
+ Score = 22.7 bits (47),  Expect = 6.2, Method: Compositional matrix adjust.
+ Identities = 16/59 (27%), Positives = 29/59 (49%), Gaps = 4/59 (7%)
+ Frame = -1
+
+Query  37   DTGALIPAEYIDEVKFMFNDTLITKMVIWESLSVNPLMSISFKVPGAGTLKVIAKDNKG  95
+            DTG  IP+E +D+   +F     TK V+ +   +   +S+       G ++V ++  KG
+Sbjct  320  DTGCGIPSENLDK---LFEPFFTTK-VVGQGTGLGLAVSLGIVQRHGGRIRVQSEIGKG  156
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 28231593
+
+
+  Database: SPAdes-S04.8.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 2,322,979
+  Number of sequences in database:  731
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

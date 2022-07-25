@@ -1,0 +1,6 @@
+==> SPAdesHybrid-SA.35_kujiSoxB_tBlast.csv <==
+==> SPAdesHybrid-SD.4_kujiSoxB_tBlast.csv <==
+==> SPAdes-S04.16_kujiSoxB_tBlast.csv <==
+==> SPAdes-S04.4_kujiSoxB_tBlast.csv <==
+==> SPAdes-S06.11_kujiSoxB_tBlast.csv <==
+==> SPAdes-S06.6_kujiSoxB_tBlast.csv <==

@@ -1,0 +1,97 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S06.11.fa
+           1,190 sequences; 4,078,494 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_640_length_7433_cov_9.680943                                     26.6    1.1  
+NODE_459_length_8437_cov_11.324982                                    25.4    2.7  
+NODE_5648_length_3418_cov_12.097532                                   25.0    3.3  
+NODE_34890_length_1701_cov_10.566829                                  24.3    5.3  
+
+
+>NODE_640_length_7433_cov_9.680943 
+Length=7433
+
+ Score = 26.6 bits (57),  Expect = 1.1, Method: Compositional matrix adjust.
+ Identities = 12/34 (35%), Positives = 19/34 (56%), Gaps = 0/34 (0%)
+ Frame = -1
+
+Query  118   FGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKVT  151
+             +GT  +LG    +V  A+ SDGTFL    ++ + 
+Sbjct  5459  YGTNARLGAGDWMVVEADESDGTFLKLPADIAIV  5358
+
+
+>NODE_459_length_8437_cov_11.324982 
+Length=8437
+
+ Score = 25.4 bits (54),  Expect = 2.7, Method: Compositional matrix adjust.
+ Identities = 13/41 (32%), Positives = 19/41 (46%), Gaps = 0/41 (0%)
+ Frame = -1
+
+Query  112   ANGEAYFGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKVTI  152
+             A  E +FG   +L  + DVV +    D  F +  Q   VT+
+Sbjct  5638  ARREGHFGYDTRLDFSLDVVTVKMQRDRLFRTPTQFDDVTL  5516
+
+
+>NODE_5648_length_3418_cov_12.097532 
+Length=3418
+
+ Score = 25.0 bits (53),  Expect = 3.3, Method: Compositional matrix adjust.
+ Identities = 8/19 (42%), Positives = 14/19 (74%), Gaps = 0/19 (0%)
+ Frame = +2
+
+Query  123   KLGGTQDVVAIAEMSDGTF  141
+             ++GG QD+ A  + +DG+F
+Sbjct  3065  RVGGMQDIFAFQKATDGSF  3121
+
+
+>NODE_34890_length_1701_cov_10.566829 
+Length=1701
+
+ Score = 24.3 bits (51),  Expect = 5.3, Method: Compositional matrix adjust.
+ Identities = 14/35 (40%), Positives = 21/35 (60%), Gaps = 4/35 (11%)
+ Frame = +3
+
+Query  23    VASAAEEKKSGGPN----EMNFETAVAAITGGKAL  53
+             V   AEE ++G P     E+  + +VAA TGG+A+
+Sbjct  1278  VQRNAEETRAGKPRGGAAELRTDLSVAARTGGEAV  1382
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 98800884
+
+
+  Database: SPAdes-S06.11.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,078,494
+  Number of sequences in database:  1,190
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

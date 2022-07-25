@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SUB.37.fa
+           1,052 sequences; 4,259,338 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_16070_length_4502_cov_2.924893                                   25.8    2.1  
+NODE_5173_length_6953_cov_2.810670                                    24.6    5.4  
+
+
+>NODE_16070_length_4502_cov_2.924893 
+Length=4502
+
+ Score = 25.8 bits (55),  Expect = 2.1, Method: Compositional matrix adjust.
+ Identities = 13/25 (52%), Positives = 17/25 (68%), Gaps = 0/25 (0%)
+ Frame = +2
+
+Query  118  FGTRIKLGGTQDVVAIAEMSDGTFL  142
+            FG+  KLG    +VA A+ SDG+FL
+Sbjct  821  FGSNAKLGQGDLLVAEADESDGSFL  895
+
+
+>NODE_5173_length_6953_cov_2.810670 
+Length=6953
+
+ Score = 24.6 bits (52),  Expect = 5.4, Method: Compositional matrix adjust.
+ Identities = 10/28 (36%), Positives = 17/28 (61%), Gaps = 0/28 (0%)
+ Frame = -1
+
+Query  123   KLGGTQDVVAIAEMSDGTFLSAKQNVKV  150
+             ++GGT D+   A  SD    +A +N+K+
+Sbjct  5924  RIGGTTDIAKAASGSDFILEAATENIKI  5841
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 104342394
+
+
+  Database: SPAdesHybrid-SUB.37.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,259,338
+  Number of sequences in database:  1,052
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

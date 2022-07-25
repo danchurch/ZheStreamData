@@ -1,0 +1,84 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.54.fa
+           166 sequences; 3,480,147 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_59_length_95294_cov_13.988219                                    28.9    0.18 
+NODE_35_length_110056_cov_14.941119                                   24.6    4.5  
+NODE_219_length_53771_cov_17.295983                                   23.5    9.0  
+
+
+>NODE_59_length_95294_cov_13.988219 
+Length=95294
+
+ Score = 28.9 bits (63),  Expect = 0.18, Method: Compositional matrix adjust.
+ Identities = 19/54 (35%), Positives = 29/54 (54%), Gaps = 11/54 (20%)
+ Frame = -3
+
+Query  81    SPMSAKEYVKAIHILAS---------KNGNVRC-ANIYLTPANGEAYFGTRIKL  124
+             +P  A EY+K I  +           + G++RC AN+ + P  G+A FGTR +L
+Sbjct  6963  TPAEAVEYMKKIRAIVRYLGVCDGNMEQGSLRCDANVSVRP-EGQADFGTRAEL  6805
+
+
+>NODE_35_length_110056_cov_14.941119 
+Length=110056
+
+ Score = 24.6 bits (52),  Expect = 4.5, Method: Compositional matrix adjust.
+ Identities = 13/34 (38%), Positives = 19/34 (56%), Gaps = 0/34 (0%)
+ Frame = -3
+
+Query  118    FGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKVT  151
+               G+  KLG  + +VA A+ SDG+FL     + V 
+Sbjct  96386  LGSNAKLGEGEFLVAEADESDGSFLKLSPTIAVV  96285
+
+
+>NODE_219_length_53771_cov_17.295983 
+Length=53771
+
+ Score = 23.5 bits (49),  Expect = 9.0, Method: Compositional matrix adjust.
+ Identities = 14/55 (25%), Positives = 26/55 (47%), Gaps = 4/55 (7%)
+ Frame = -3
+
+Query  83     MSAKEYVKAIHILASKNGNVRCANIYLTPANG----EAYFGTRIKLGGTQDVVAI  133
+              +S K+Y+ ++  +  +    RC  I L   N     EAY G   +   T++ ++I
+Sbjct  11820  ISIKDYINSVIRVLQEWSGCRCIGIRLLDENSQIPYEAYTGFSDEFMQTENCLSI  11656
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 90634093
+
+
+  Database: SPAdesHybrid-SA.54.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,480,147
+  Number of sequences in database:  166
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

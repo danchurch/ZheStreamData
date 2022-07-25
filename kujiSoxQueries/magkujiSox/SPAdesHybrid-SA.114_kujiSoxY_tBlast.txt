@@ -1,0 +1,58 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.114.fa
+           1,400 sequences; 6,745,676 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_81176_length_3155_cov_2.527097                                   27.3    1.1  
+
+
+>NODE_81176_length_3155_cov_2.527097 
+Length=3155
+
+ Score = 27.3 bits (59),  Expect = 1.1, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 14/26 (54%), Gaps = 0/26 (0%)
+ Frame = +1
+
+Query  79    VDSPMSAKEYVKAIHILASKNGNVRC  104
+             V  P+S  EYVKA  IL S N    C
+Sbjct  1351  VICPLSCSEYVKATFILLSFNRQQIC  1428
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 160136850
+
+
+  Database: SPAdesHybrid-SA.114.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 6,745,676
+  Number of sequences in database:  1,400
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

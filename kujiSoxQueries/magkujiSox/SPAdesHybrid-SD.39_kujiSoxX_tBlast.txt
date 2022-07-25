@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SD.39.fa
+           1,493 sequences; 8,261,003 total letters
+
+
+
+Query= SoxX|gb|ADR33112.1
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_15696_length_3870_cov_4.337615                                   27.3    1.4  
+NODE_3520_length_7717_cov_3.046202                                    25.4    5.8  
+
+
+>NODE_15696_length_3870_cov_4.337615 
+Length=3870
+
+ Score = 27.3 bits (59),  Expect = 1.4, Method: Compositional matrix adjust.
+ Identities = 10/24 (42%), Positives = 15/24 (63%), Gaps = 0/24 (0%)
+ Frame = -2
+
+Query  80    TRLLPNGKEKQMGNCVACHNIEGA  103
+             TRLLP G+ +Q G  + C ++  A
+Sbjct  1325  TRLLPQGRSRQAGRHLHCRSVNRA  1254
+
+
+>NODE_3520_length_7717_cov_3.046202 
+Length=7717
+
+ Score = 25.4 bits (54),  Expect = 5.8, Method: Compositional matrix adjust.
+ Identities = 11/48 (23%), Positives = 20/48 (42%), Gaps = 0/48 (0%)
+ Frame = +1
+
+Query  53   PKAIARGSYIFHNLNGKDAKENPPEGLTRLLPNGKEKQMGNCVACHNI  100
+            P    R ++ FH   G+  ++  P G  R +P G  +     + C  +
+Sbjct  760  PSTPERPNWPFHRPGGRTRRDGYPSGSRRPVPGGAGRGRYPVIVCRPL  903
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 233914695
+
+
+  Database: SPAdesHybrid-SD.39.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 8,261,003
+  Number of sequences in database:  1,493
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

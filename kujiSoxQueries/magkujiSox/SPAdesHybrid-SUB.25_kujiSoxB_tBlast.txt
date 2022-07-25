@@ -1,0 +1,88 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SUB.25.fa
+           767 sequences; 4,030,172 total letters
+
+
+
+Query= SoxB|gb|ADR33116.1
+
+Length=588
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_77058_length_2066_cov_3.163103                                   29.6    0.77 
+NODE_125512_length_1504_cov_2.355418                                  28.9    1.1  
+NODE_2713_length_8708_cov_3.625563                                    26.9    6.5  
+
+
+>NODE_77058_length_2066_cov_3.163103 
+Length=2066
+
+ Score = 29.6 bits (65),  Expect = 0.77, Method: Compositional matrix adjust.
+ Identities = 21/58 (36%), Positives = 29/58 (50%), Gaps = 3/58 (5%)
+ Frame = -3
+
+Query  207  IIGDDSFAD-DFEELIFEPYTIMERGGAKIGII-GQSFPFTSTANPKEFTQGWSFGLR  262
+            ++GD S  D +  E  F P  I+     + G +   SF F+STA    FT GW+F  R
+Sbjct  885  LMGDSSVTDAESAEGYFVP-KILSPASPRPGRM*PMSFSFSSTAATYMFTSGWAFSTR  715
+
+
+>NODE_125512_length_1504_cov_2.355418 
+Length=1504
+
+ Score = 28.9 bits (63),  Expect = 1.1, Method: Compositional matrix adjust.
+ Identities = 13/35 (37%), Positives = 18/35 (51%), Gaps = 0/35 (0%)
+ Frame = +3
+
+Query  506   GKRITNIMVGGKPLSDTKVYKVSSWGGNLQNAGSN  540
+             GKR   I     P + TK  ++++WG   Q  GSN
+Sbjct  933   GKRSPAIGGMSSPFTRTKQRRITAWGAVFQQPGSN  1037
+
+
+>NODE_2713_length_8708_cov_3.625563 
+Length=8708
+
+ Score = 26.9 bits (58),  Expect = 6.5, Method: Compositional matrix adjust.
+ Identities = 16/62 (26%), Positives = 30/62 (48%), Gaps = 5/62 (8%)
+ Frame = +3
+
+Query  432   TVLEGDAITM--DHVYDMTAIT---YPNVYTFELTGKHIRTLLEDIADNVFNANPLYQQG  486
+             +V++G+ + +  D V++  + +   Y      +L G+H     EDI   VF     +QQ 
+Sbjct  6735  SVMDGEVVVLATDGVWEARSPSGGMYGKARVLDLIGRHAAMPAEDILQAVFTDLKGFQQA  6914
+
+Query  487   GD  488
+             G+
+Sbjct  6915  GE  6920
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.414    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 632975721
+
+
+  Database: SPAdesHybrid-SUB.25.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,030,172
+  Number of sequences in database:  767
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

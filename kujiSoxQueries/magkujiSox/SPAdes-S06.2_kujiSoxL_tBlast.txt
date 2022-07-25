@@ -1,0 +1,75 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S06.2.fa
+           307 sequences; 1,621,942 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_2141_length_4870_cov_5.371340                                    27.3    0.58 
+NODE_535_length_7941_cov_6.725209                                     25.4    2.2  
+
+
+>NODE_2141_length_4870_cov_5.371340 
+Length=4870
+
+ Score = 27.3 bits (59),  Expect = 0.58, Method: Compositional matrix adjust.
+ Identities = 17/75 (23%), Positives = 29/75 (39%), Gaps = 5/75 (7%)
+ Frame = -3
+
+Query  73   CMLINLPKP---TGKDVELTSESGEKYVWKSGVGKERTIVAYVAICTHQMTHPTPNDSFI  129
+            C     P P   +G    ++  S    VW  G        A  ++C  + T P+P  S  
+Sbjct  980  CRSRRAP*PARASGSSAAISPGSRTGVVW--GTTSSTRHSASCSVCCSRTTSPSPRRSVT  807
+
+Query  130  TYVPTAKKTMAYEKS  144
+             + PT  ++ A  ++
+Sbjct  806  GWTPTTCRSTAPSRT  762
+
+
+>NODE_535_length_7941_cov_6.725209 
+Length=7941
+
+ Score = 25.4 bits (54),  Expect = 2.2, Method: Compositional matrix adjust.
+ Identities = 10/17 (59%), Positives = 12/17 (71%), Gaps = 0/17 (0%)
+ Frame = -1
+
+Query  18   VSPSLIRGNLYAADGML  34
+            V P  IRG ++A DGML
+Sbjct  867  VVPDRIRGRIFAVDGML  817
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 84789312
+
+
+  Database: SPAdes-S06.2.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 1,621,942
+  Number of sequences in database:  307
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,123 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SD.37.fa
+           661 sequences; 3,588,565 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_1785_length_10742_cov_6.675119                                   25.4    2.6  
+NODE_630_length_16923_cov_6.133389                                    24.6    4.1  
+NODE_19371_length_3507_cov_5.300985                                   23.9    6.5  
+NODE_12508_length_4294_cov_5.049776                                   23.9    7.9  
+NODE_1491_length_11730_cov_5.502784                                   23.9    8.5  
+NODE_2748_length_8645_cov_5.950990                                    23.5    9.5  
+
+
+>NODE_1785_length_10742_cov_6.675119 
+Length=10742
+
+ Score = 25.4 bits (54),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 14/49 (29%), Positives = 23/49 (47%), Gaps = 11/49 (22%)
+ Frame = -2
+
+Query  62    EAPEIAENGAVVPVKVTVDSPMSAK-----------EYVKAIHILASKN  99
+             E  E+  N  +V V++   +P  A+            YVK IHIL +++
+Sbjct  8266  EIQELTRNRKLVFVRLVEKNPRDAEVDDLDFGLERNHYVKRIHILMNQH  8120
+
+
+>NODE_630_length_16923_cov_6.133389 
+Length=16923
+
+ Score = 24.6 bits (52),  Expect = 4.1, Method: Compositional matrix adjust.
+ Identities = 10/26 (38%), Positives = 15/26 (58%), Gaps = 3/26 (12%)
+ Frame = +1
+
+Query  92    IHILASKNGNVRCAN---IYLTPANG  114
+             +H+L S NG+  C +   +  TPA G
+Sbjct  4693  VHLLQSHNGHTHCPDDQFLAWTPACG  4770
+
+
+>NODE_19371_length_3507_cov_5.300985 
+Length=3507
+
+ Score = 23.9 bits (50),  Expect = 6.5, Method: Compositional matrix adjust.
+ Identities = 13/52 (25%), Positives = 23/52 (44%), Gaps = 3/52 (6%)
+ Frame = +2
+
+Query  104  CANIYLTPANGEAYFGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKVTIGGC  155
+            C ++++ P     Y G   K     ++V + +    T   A Q +  T+GGC
+Sbjct  449  CGHVHVVPRR---YVGREGKCANCGNIVKVPDADTRTDSLADQLIGRTVGGC  595
+
+
+>NODE_12508_length_4294_cov_5.049776 
+Length=4294
+
+ Score = 23.9 bits (50),  Expect = 7.9, Method: Compositional matrix adjust.
+ Identities = 18/35 (51%), Positives = 19/35 (54%), Gaps = 7/35 (20%)
+ Frame = +3
+
+Query  24    ASAAEEKKSGGPNEMNFETAVAAITGGKALTPSAK  58
+             A+A    K GGP    F  AV    GGKAL PSAK
+Sbjct  4095  AAAILHPKLGGP----FREAVG---GGKALIPSAK  4178
+
+
+>NODE_1491_length_11730_cov_5.502784 
+Length=11730
+
+ Score = 23.9 bits (50),  Expect = 8.5, Method: Compositional matrix adjust.
+ Identities = 14/35 (40%), Positives = 19/35 (54%), Gaps = 2/35 (6%)
+ Frame = -3
+
+Query  36    NEMNFETAVAA--ITGGKALTPSAKVKMEAPEIAE  68
+              EM +E    A  I GGK +T  ++  M+ PEI E
+Sbjct  5698  TEMVYEWMRLAQDIAGGKIITLPSESDMDNPEIGE  5594
+
+
+>NODE_2748_length_8645_cov_5.950990 
+Length=8645
+
+ Score = 23.5 bits (49),  Expect = 9.5, Method: Compositional matrix adjust.
+ Identities = 16/56 (29%), Positives = 24/56 (43%), Gaps = 0/56 (0%)
+ Frame = -3
+
+Query  46    AITGGKALTPSAKVKMEAPEIAENGAVVPVKVTVDSPMSAKEYVKAIHILASKNGN  101
+             A+  G ++T  A + MEA     N   +P+K T  SP        A+  L  +  N
+Sbjct  7098  AVDIGLSVTAIAPILMEA*YPMTNSGRLPIKSTTRSPFLTPTLTSALDSLFIERSN  6931
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 90477989
+
+
+  Database: SPAdesHybrid-SD.37.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,588,565
+  Number of sequences in database:  661
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

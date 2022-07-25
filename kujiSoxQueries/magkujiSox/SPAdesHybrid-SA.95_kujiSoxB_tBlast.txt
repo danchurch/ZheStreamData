@@ -1,0 +1,118 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.95.fa
+           161 sequences; 5,924,581 total letters
+
+
+
+Query= SoxB|gb|ADR33116.1
+
+Length=588
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_23_length_116443_cov_6.945433                                    30.0    0.88 
+NODE_6_length_205355_cov_5.204321                                     29.6    1.4  
+NODE_74_length_87299_cov_5.707315                                     28.5    2.6  
+NODE_562_length_34052_cov_5.262258                                    27.3    7.2  
+NODE_552_length_34334_cov_6.543044                                    26.6    9.9  
+
+
+>NODE_23_length_116443_cov_6.945433 
+Length=116443
+
+ Score = 30.0 bits (66),  Expect = 0.88, Method: Compositional matrix adjust.
+ Identities = 27/118 (23%), Positives = 52/118 (44%), Gaps = 23/118 (19%)
+ Frame = +1
+
+Query  199    NAKFVSQNIIGDDSFADDFEELIFEP----YTIMERGGAKIGIIGQSFPFTSTANPKEFT  254
+              N +++ Q       + D  E+L ++P    + +++RGG ++ + G      +  + +E  
+Sbjct  53143  NHEYIGQA----QGWVDHLEDLGWQPLRNRHIVVDRGGDRLIVAGVDD--VTARHSREPG  53304
+
+Query  255    QGWSFGLRLDTLQTYVDKLRKEEKVDCVVVLSHDGFSVDQEVARQVKGIDFILSGHTH  312
+               G            +   LR  + +  V++L+H    V Q V     G+D  +SGHTH
+Sbjct  53305  HG----------ADHATALRGADPLLPVLLLAHQPKQVLQSVE---HGVDLQVSGHTH  53439
+
+
+>NODE_6_length_205355_cov_5.204321 
+Length=205355
+
+ Score = 29.6 bits (65),  Expect = 1.4, Method: Compositional matrix adjust.
+ Identities = 18/59 (31%), Positives = 29/59 (49%), Gaps = 4/59 (7%)
+ Frame = +2
+
+Query  309   GHTHDPSPQPTVINGTV---IVIAGSHGKYIGRLDIDIKN-HKVKGYEYKLIPVAANLI  363
+             GH  D  P P  +N T+     +A +  KY+  L++D+     V GY  ++  V  NL+
+Sbjct  7847  GHPDDRDPTPVDLNATIQDTAAVARNEYKYVADLELDLSEVPPVLGYPSEMHQVVLNLV  8023
+
+
+>NODE_74_length_87299_cov_5.707315 
+Length=87299
+
+ Score = 28.5 bits (62),  Expect = 2.6, Method: Compositional matrix adjust.
+ Identities = 17/46 (37%), Positives = 23/46 (50%), Gaps = 1/46 (2%)
+ Frame = -1
+
+Query  196    EMLNAKFVSQNIIGDDSFADDFEELIFEPYTIMERGGAKIGIIGQS  241
+              EML A  VSQ   GD   A+D E ++    +   RG     I+G+S
+Sbjct  85172  EMLTANAVSQLSCGDKLNAEDIERMVVASLST-ARGQVAKCILGES  85038
+
+
+>NODE_562_length_34052_cov_5.262258 
+Length=34052
+
+ Score = 27.3 bits (59),  Expect = 7.2, Method: Compositional matrix adjust.
+ Identities = 20/77 (26%), Positives = 32/77 (42%), Gaps = 10/77 (13%)
+ Frame = +1
+
+Query  153    QGTGVALKTKGEAIVKAQNYLGVDVMVGHWEFTYGKTRVKELIEMLNAKFVSQNIIGDDS  212
+              Q TG+A +  GE + +  NY+GVD  +     T+       +++ L   F SQ       
+Sbjct  12109  QVTGLARRLSGETLEQRINYVGVDDEIAELARTF-----DAMLDRLATAFDSQR-----R  12258
+
+Query  213    FADDFEELIFEPYTIME  229
+              F  +    +  P  IM 
+Sbjct  12259  FVANASHELRTPLAIMR  12309
+
+
+>NODE_552_length_34334_cov_6.543044 
+Length=34334
+
+ Score = 26.6 bits (57),  Expect = 9.9, Method: Compositional matrix adjust.
+ Identities = 12/28 (43%), Positives = 15/28 (54%), Gaps = 0/28 (0%)
+ Frame = +3
+
+Query  59     AHLKPLYWREPSTLISAPNLTGTPGFLC  86
+              A   P+ WR P+   S P L+G  GFL 
+Sbjct  18609  ARRSPIRWRFPAPASSLPELSGRAGFLA  18692
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.414    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 968104644
+
+
+  Database: SPAdesHybrid-SA.95.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 5,924,581
+  Number of sequences in database:  161
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.55.fa
+           709 sequences; 5,565,446 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_1045_length_25288_cov_3.515872                                   24.6    3.4  
+NODE_115_length_72774_cov_4.489734                                    23.5    7.1  
+
+
+>NODE_1045_length_25288_cov_3.515872 
+Length=25288
+
+ Score = 24.6 bits (52),  Expect = 3.4, Method: Composition-based stats.
+ Identities = 13/48 (27%), Positives = 23/48 (48%), Gaps = 13/48 (27%)
+ Frame = +2
+
+Query  10     KDYKAGDIVKID-------------FMAMHPMETGMRKNKDTGALIPA  44
+              +D+ AGDI ++              F +  P    ++KN++T A +PA
+Sbjct  9968   RDHAAGDIQRLSEESGAAQGRLATLFASHPPSAERVQKNRETAATLPA  10111
+
+
+>NODE_115_length_72774_cov_4.489734 
+Length=72774
+
+ Score = 23.5 bits (49),  Expect = 7.1, Method: Composition-based stats.
+ Identities = 13/39 (33%), Positives = 19/39 (49%), Gaps = 0/39 (0%)
+ Frame = +3
+
+Query  31     GMRKNKDTGALIPAEYIDEVKFMFNDTLITKMVIWESLS  69
+              G+R  K    LI     D ++ MFN   I +M I  S++
+Sbjct  68667  GLRVYKTPDGLIGFRLTDHIRRMFNSAKIYRMKIPYSVA  68783
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 61291188
+
+
+  Database: SPAdesHybrid-SA.55.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 5,565,446
+  Number of sequences in database:  709
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,196 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.54.fa
+           166 sequences; 3,480,147 total letters
+
+
+
+Query= SoxX|gb|ADR33112.1
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_8050_length_10088_cov_17.672580                                  30.8    0.052
+NODE_46_length_102344_cov_16.160672                                   26.6    1.3  
+NODE_95163_length_2833_cov_16.777898                                  25.8    2.0  
+NODE_32_length_111631_cov_11.344967                                   25.8    2.3  
+NODE_80_length_85576_cov_15.050795                                    25.0    3.8  
+NODE_400_length_39978_cov_14.642687                                   25.0    4.1  
+NODE_98_length_78061_cov_16.132887                                    25.0    4.3  
+NODE_1106_length_24429_cov_14.209403                                  24.6    4.7  
+NODE_452_length_38034_cov_15.718687                                   24.6    5.4  
+NODE_45_length_103181_cov_12.951108                                   23.9    9.5  
+
+
+>NODE_8050_length_10088_cov_17.672580 
+Length=10088
+
+ Score = 30.8 bits (68),  Expect = 0.052, Method: Compositional matrix adjust.
+ Identities = 17/67 (25%), Positives = 33/67 (49%), Gaps = 0/67 (0%)
+ Frame = +1
+
+Query  105   GYGNIGPDLTNYKELYMDSGVRNPQFMYQKIADPRLDNPKSAMTVNLANGLMNEREVCDL  164
+             GYG     L N+K +   +  + P F YQ++ D   D+ +  +   +A     ER+  D+
+Sbjct  1303  GYGYR*GTLENHKIMIGHNTFQLPLFYYQQMVDVIADHLEQGLEAVIAGICFYERDTHDV  1482
+
+Query  165   VSYITAV  171
+             ++++  V
+Sbjct  1483  INFVLRV  1503
+
+
+>NODE_46_length_102344_cov_16.160672 
+Length=102344
+
+ Score = 26.6 bits (57),  Expect = 1.3, Method: Compositional matrix adjust.
+ Identities = 15/35 (43%), Positives = 17/35 (49%), Gaps = 0/35 (0%)
+ Frame = +2
+
+Query  55     AIARGSYIFHNLNGKDAKENPPEGLTRLLPNGKEK  89
+              AIA G  I H L+GKD        L RLL    +K
+Sbjct  30359  AIAEGDIIIHLLDGKDGLTPADMELARLLRTSGKK  30463
+
+
+>NODE_95163_length_2833_cov_16.777898 
+Length=2833
+
+ Score = 25.8 bits (55),  Expect = 2.0, Method: Compositional matrix adjust.
+ Identities = 20/52 (38%), Positives = 25/52 (48%), Gaps = 5/52 (10%)
+ Frame = +1
+
+Query  12    FLSAADLSQVIESPDATAILKKDAL---PAAKAYVMPEGCVSNDPKAIARGS  60
+              LSA+  +    SP+ +A   KDAL   PA      P  C S D  +I RGS
+Sbjct  1441  MLSASRTTDDFPSPNPSAPSTKDALRTSPAPTMTASPGTCSSQD--SILRGS  1590
+
+
+>NODE_32_length_111631_cov_11.344967 
+Length=111631
+
+ Score = 25.8 bits (55),  Expect = 2.3, Method: Compositional matrix adjust.
+ Identities = 15/56 (27%), Positives = 28/56 (50%), Gaps = 4/56 (7%)
+ Frame = +1
+
+Query  25     PDATAILKKDALPAAKAYVMPEGCVSNDPKAIARGSYIFHNLNGKDAKENPPEGLT  80
+              PD+  + K  A P+     +PE C S D   + R   +F+N   ++ ++  P+ L+
+Sbjct  94903  PDSREVYK--APPSP*RSRVPEACTSGDRSHLQRTPLLFNNSIPRETRQ--PDSLS  95058
+
+
+>NODE_80_length_85576_cov_15.050795 
+Length=85576
+
+ Score = 25.0 bits (53),  Expect = 3.8, Method: Compositional matrix adjust.
+ Identities = 9/13 (69%), Positives = 9/13 (69%), Gaps = 0/13 (0%)
+ Frame = -1
+
+Query  93     NCVACHNIEGAKG  105
+              NCV CH I  AKG
+Sbjct  31159  NCVGCHGIHTAKG  31121
+
+
+>NODE_400_length_39978_cov_14.642687 
+Length=39978
+
+ Score = 25.0 bits (53),  Expect = 4.1, Method: Compositional matrix adjust.
+ Identities = 19/68 (28%), Positives = 28/68 (41%), Gaps = 11/68 (16%)
+ Frame = -2
+
+Query  93     NCVACHNIEGAKGYGNIGPDLTNYKEL----YMDSGVRNPQFMYQKIADPRLDNPKSAMT  148
+              +C+ CH I G   Y    P+L    E     Y+   + NP     K  +P    PK  +T
+Sbjct  22547  DCIGCHTIFGNGSY--FAPELAKITEKKPKDYLKKFLMNP-----KAVNPNASMPKFDIT  22389
+
+Query  149    VNLANGLM  156
+                 A+ L+
+Sbjct  22388  SEEADQLL  22365
+
+
+>NODE_98_length_78061_cov_16.132887 
+Length=78061
+
+ Score = 25.0 bits (53),  Expect = 4.3, Method: Composition-based stats.
+ Identities = 16/62 (26%), Positives = 25/62 (40%), Gaps = 2/62 (3%)
+ Frame = +1
+
+Query  70     DAKENPPEGLTRLLPNGKEKQMGNCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQ  129
+              D  E P     +L P  +  Q   C  C N EG +       D T   ++  D+G+++  
+Sbjct  62527  DTMEFPAPEYIQLYPTTRCNQ--QCSFCFNPEGGRPADMTFKDATALLDILTDNGIKDID  62700
+
+Query  130    FM  131
+               M
+Sbjct  62701  IM  62706
+
+
+ Score = 23.9 bits (50),  Expect = 8.3, Method: Compositional matrix adjust.
+ Identities = 10/26 (38%), Positives = 14/26 (54%), Gaps = 0/26 (0%)
+ Frame = -3
+
+Query  47    GCVSNDPKAIARGSYIFHNLNGKDAK  72
+             GCV     A +  SY F +L+  +AK
+Sbjct  3035  GCVETKSSACSVFSYFFASLSMSEAK  2958
+
+
+>NODE_1106_length_24429_cov_14.209403 
+Length=24429
+
+ Score = 24.6 bits (52),  Expect = 4.7, Method: Compositional matrix adjust.
+ Identities = 14/37 (38%), Positives = 21/37 (57%), Gaps = 6/37 (16%)
+ Frame = +3
+
+Query  91     MGNCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRN  127
+              MGN  + H IE AKG   IGP      +L++ +G++ 
+Sbjct  16224  MGNVASEHPIECAKG---IGPQRA---KLFLRAGIKT  16316
+
+
+>NODE_452_length_38034_cov_15.718687 
+Length=38034
+
+ Score = 24.6 bits (52),  Expect = 5.4, Method: Compositional matrix adjust.
+ Identities = 10/27 (37%), Positives = 16/27 (59%), Gaps = 0/27 (0%)
+ Frame = +1
+
+Query  144    KSAMTVNLANGLMNEREVCDLVSYITA  170
+              K  +T+ ++   MNE E CD +S + A
+Sbjct  27619  KDNVTIFISTHFMNEAERCDRISLMHA  27699
+
+
+>NODE_45_length_103181_cov_12.951108 
+Length=103181
+
+ Score = 23.9 bits (50),  Expect = 9.5, Method: Compositional matrix adjust.
+ Identities = 9/20 (45%), Positives = 12/20 (60%), Gaps = 0/20 (0%)
+ Frame = +2
+
+Query  91     MGNCVACHNIEGAKGYGNIG  110
+               G+   CH  + A GYGN+G
+Sbjct  10682  FGHFCRCHRWQFAAGYGNVG  10741
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 108974595
+
+
+  Database: SPAdesHybrid-SA.54.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,480,147
+  Number of sequences in database:  166
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

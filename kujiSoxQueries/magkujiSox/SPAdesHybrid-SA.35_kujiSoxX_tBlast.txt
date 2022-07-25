@@ -1,0 +1,178 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.35.fa
+           372 sequences; 3,788,627 total letters
+
+
+
+Query= SoxX|gb|ADR33112.1
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_5863_length_11528_cov_2.968186                                   53.5    1e-09
+NODE_8866_length_9679_cov_2.710723                                    35.8    0.001
+NODE_3134_length_15102_cov_3.199109                                   29.6    0.12 
+NODE_5750_length_11602_cov_3.392916                                   28.5    0.27 
+NODE_4029_length_13529_cov_2.712632                                   25.8    2.4  
+NODE_1318_length_22235_cov_2.676014                                   25.0    3.6  
+NODE_6906_length_10794_cov_2.869541                                   25.0    4.0  
+NODE_2809_length_15907_cov_2.556271                                   24.6    4.8  
+NODE_1166_length_23778_cov_2.804831                                   23.9    9.6  
+
+
+>NODE_5863_length_11528_cov_2.968186 
+Length=11528
+
+ Score = 53.5 bits (127),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 28/80 (35%), Positives = 42/80 (53%), Gaps = 8/80 (10%)
+ Frame = +2
+
+Query  92    GNCVACHNIEG---AKGYGNIGPDLTNYKELYMDSGVRNPQFMYQKIADPRLDNPKSAMT  148
+             GNC+ACH I G   A    NIGP +   +E + D        + Q+I DP   NP++ M 
+Sbjct  6791  GNCLACHQIPGDPAAVSMANIGPPIVRMRERFPDRA-----ELRQQIWDPTRRNPETVMP  6955
+
+Query  149   VNLANGLMNEREVCDLVSYI  168
+                 +G++ ERE+  ++ YI
+Sbjct  6956  PFGKHGVLTEREIDRVLDYI  7015
+
+
+>NODE_8866_length_9679_cov_2.710723 
+Length=9679
+
+ Score = 35.8 bits (81),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 27/99 (27%), Positives = 45/99 (45%), Gaps = 10/99 (10%)
+ Frame = -2
+
+Query  74    NPPEGLTRLLPNGKEKQMGNCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQFMYQ  133
+             NP EG T L+P GK      C  CH  +  +  G    DL   K  Y D  +      Y 
+Sbjct  6966  NPYEGNTELVPEGKSLFNQYCSHCHGPDAIQ--GERPRDLRRLKRRYGDDAI---GVFYT  6802
+
+Query  134   KIADPRLDNPKSAMTVNLANGLMNEREVCDLVSYITAVK  172
+              I++ R+D     M V    G+++E  +  + +++++V+
+Sbjct  6801  TISNGRMDK---GMPV--WKGVLDEDTIWKIYTFLSSVQ  6700
+
+
+>NODE_3134_length_15102_cov_3.199109 
+Length=15102
+
+ Score = 29.6 bits (65),  Expect = 0.12, Method: Compositional matrix adjust.
+ Identities = 19/81 (23%), Positives = 40/81 (49%), Gaps = 12/81 (15%)
+ Frame = -1
+
+Query  92    GNCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQFMYQKIADPRLDNPKSAMTVNL  151
+             G C ACH ++G      + P L            ++P+++Y+++ + +    K+ +   +
+Sbjct  2838  GVCAACHGVDG-NSLVPVNPSLAG----------QHPEYLYKQLREYKSGARKNPIMAGM  2692
+
+Query  152   ANGLMNEREVCDLVSYITAVK  172
+             A GL +E ++ +L +Y  A K
+Sbjct  2691  AAGLSDE-DMRNLAAYFAAQK  2632
+
+
+>NODE_5750_length_11602_cov_3.392916 
+Length=11602
+
+ Score = 28.5 bits (62),  Expect = 0.27, Method: Compositional matrix adjust.
+ Identities = 10/28 (36%), Positives = 16/28 (57%), Gaps = 0/28 (0%)
+ Frame = -1
+
+Query  94     CVACHNIEGAKGYGNIGPDLTNYKELYM  121
+              C ACH++EGA+ YG        +  ++M
+Sbjct  10948  CCACHSLEGARDYGQARAGAHRHCSVHM  10865
+
+
+>NODE_4029_length_13529_cov_2.712632 
+Length=13529
+
+ Score = 25.8 bits (55),  Expect = 2.4, Method: Compositional matrix adjust.
+ Identities = 20/81 (25%), Positives = 36/81 (44%), Gaps = 16/81 (20%)
+ Frame = +3
+
+Query  93    NCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQF---MYQKIADPRLDNPKSAMTV  149
+             NCV CH  +  +  G         ++++   G RNP +   M+Q  + PR     S+ T 
+Sbjct  1359  NCVLCHGEDARRAAGG--------QQVFPPLGDRNPNWGAGMHQLTSPPR----SSSTTC  1502
+
+Query  150   NLANGLMNEREVCDLVSYITA  170
+               A     ++E  D+ +Y+ +
+Sbjct  1503  RWAPRDAYDQEA-DVAAYMNS  1562
+
+
+>NODE_1318_length_22235_cov_2.676014 
+Length=22235
+
+ Score = 25.0 bits (53),  Expect = 3.6, Method: Compositional matrix adjust.
+ Identities = 10/21 (48%), Positives = 16/21 (76%), Gaps = 2/21 (10%)
+ Frame = +2
+
+Query  83     LPNGKEKQM--GNCVACHNIE  101
+              L +G+ KQ+  GNCV CH+++
+Sbjct  17171  LKDGEGKQLVEGNCVMCHSLD  17233
+
+
+>NODE_6906_length_10794_cov_2.869541 
+Length=10794
+
+ Score = 25.0 bits (53),  Expect = 4.0, Method: Compositional matrix adjust.
+ Identities = 15/40 (38%), Positives = 24/40 (60%), Gaps = 2/40 (5%)
+ Frame = -3
+
+Query  133   QKIADPRLDNPKSAMTVNLANGLMNE-REVC-DLVSYITA  170
+             +KI+ PRL N K  MT+     L++  R  C D+V+++ A
+Sbjct  6901  KKISWPRLINDKVIMTIGSTRPLIDALRLACSDMVNWLVA  6782
+
+
+>NODE_2809_length_15907_cov_2.556271 
+Length=15907
+
+ Score = 24.6 bits (52),  Expect = 4.8, Method: Compositional matrix adjust.
+ Identities = 15/43 (35%), Positives = 23/43 (53%), Gaps = 5/43 (12%)
+ Frame = -3
+
+Query  131    MYQKIAD-PRLDNPKSAMTVNLANGLMNEREVCDLVSYITAVK  172
+               +Q + D  R DN    +T+ ++   MNE E CD +S + A K
+Sbjct  15482  FWQIMIDLARRDN----VTIFISTHFMNEAERCDRISLMHAGK  15366
+
+
+>NODE_1166_length_23778_cov_2.804831 
+Length=23778
+
+ Score = 23.9 bits (50),  Expect = 9.6, Method: Compositional matrix adjust.
+ Identities = 13/23 (57%), Positives = 15/23 (65%), Gaps = 1/23 (4%)
+ Frame = -3
+
+Query  131    MYQKIADPRLDNP-KSAMTVNLA  152
+              +YQ  A PRLD+P KSA T   A
+Sbjct  19483  LYQPNAVPRLDSPAKSATTARSA  19415
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 115947778
+
+
+  Database: SPAdesHybrid-SA.35.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,788,627
+  Number of sequences in database:  372
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

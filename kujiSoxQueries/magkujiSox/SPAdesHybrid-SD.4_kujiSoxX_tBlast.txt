@@ -1,0 +1,178 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SD.4.fa
+           550 sequences; 3,669,922 total letters
+
+
+
+Query= SoxX|gb|ADR33112.1
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_196_length_26909_cov_6.290162                                    37.4    4e-04
+NODE_71247_length_1859_cov_5.753880                                   34.7    0.002
+NODE_877_length_14818_cov_6.384407                                    28.9    0.19 
+NODE_22436_length_3285_cov_6.360062                                   27.3    0.76 
+NODE_1969_length_10226_cov_6.166454                                   25.0    3.9  
+NODE_291_length_23246_cov_5.941400                                    25.0    4.1  
+NODE_2668_length_8780_cov_3.678739                                    24.6    5.9  
+NODE_15215_length_3923_cov_4.584798                                   24.3    5.9  
+
+
+>NODE_196_length_26909_cov_6.290162 
+Length=26909
+
+ Score = 37.4 bits (85),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 26/86 (30%), Positives = 39/86 (45%), Gaps = 13/86 (15%)
+ Frame = +3
+
+Query  92     GNCVACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQFMYQKIADPR-----LDNPKSA  146
+              G C+ACH   GA G   +GPDLT          ++ P+++  KI +P         P   
+Sbjct  20145  GACIACHK-AGAIGASPVGPDLTQLAR------IQTPEYIMGKILNPAGMGTVAGYPAGV  20303
+
+Query  147    MTVNLANGLMNEREVCDLVSYITAVK  172
+              M       ++  RE  DLVS++  +K
+Sbjct  20304  MPPAFGQ-MLTAREYMDLVSFLLTLK  20378
+
+
+ Score = 25.4 bits (54),  Expect = 2.7, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 40/93 (43%), Gaps = 16/93 (17%)
+ Frame = +3
+
+Query  59     GSYIFHNLNGKDAKENPPEGLT---------RLLPNGKE--KQMGNCVACHNIEGAKGYG  107
+              GSY ++  +    +  PPE L+         +L+  G++  K+ G C  CH I G K  G
+Sbjct  19629  GSYTYYANSIPQVQSRPPEDLSLEGGSVTADQLVKAGEKIFKEKGTCEICHRI-GQK--G  19799
+
+Query  108    NIGPDLTNY--KELYMDSGVRNPQFMYQKIADP  138
+                 PDL           +G+    ++ + + DP
+Sbjct  19800  TRAPDLAGVGAGAAKRKAGMSGKAYIVESLLDP  19898
+
+
+>NODE_71247_length_1859_cov_5.753880 
+Length=1859
+
+ Score = 34.7 bits (78),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 25/82 (30%), Positives = 42/82 (51%), Gaps = 8/82 (10%)
+ Frame = +2
+
+Query  94    CVACHNIEGAKGYGNIGPDLTNY--KELYMDSGVR-NPQFMYQKIADPRLDNPKSAMTVN  150
+             CV CH I G    G++GPDLT++  ++ +  S V   P+ + + I +P    P + M  N
+Sbjct  1580  CVGCHTINGVS-VGHLGPDLTHFASRKTFAGSLVSTTPENLLKWIENPEHMKPGALMP-N  1753
+
+Query  151   LANGLMNEREVCDLVSYITAVK  172
+             L    M   +   L +Y+ ++K
+Sbjct  1754  LG---MKGEQSKSLTAYLLSLK  1810
+
+
+>NODE_877_length_14818_cov_6.384407 
+Length=14818
+
+ Score = 28.9 bits (63),  Expect = 0.19, Method: Compositional matrix adjust.
+ Identities = 15/35 (43%), Positives = 20/35 (57%), Gaps = 3/35 (9%)
+ Frame = +1
+
+Query  86    GKEKQMGNCVACHNIEGAKGYGNIGPDLTNYKELY  120
+             GK+     CV CH   G +G G IGP+LT+   L+
+Sbjct  5416  GKQMFAVRCVPCH---GPQGQGIIGPNLTDDYWLH  5511
+
+
+>NODE_22436_length_3285_cov_6.360062 
+Length=3285
+
+ Score = 27.3 bits (59),  Expect = 0.76, Method: Compositional matrix adjust.
+ Identities = 12/35 (34%), Positives = 18/35 (51%), Gaps = 0/35 (0%)
+ Frame = +3
+
+Query  76    PEGLTRLLPNGKEKQMGNCVACHNIEGAKGYGNIG  110
+             P  LTRLL  G  ++ G  + CH+ E      ++G
+Sbjct  2373  PSELTRLLDEGLVREFGPRLTCHDAEDPGQIADLG  2477
+
+
+>NODE_1969_length_10226_cov_6.166454 
+Length=10226
+
+ Score = 25.0 bits (53),  Expect = 3.9, Method: Compositional matrix adjust.
+ Identities = 13/37 (35%), Positives = 20/37 (54%), Gaps = 1/37 (3%)
+ Frame = -1
+
+Query  71    AKENPPEGLTRLLPNGKEKQMGNCVACHNIEGAKGYG  107
+             +K++P     ++   GK+    NCV+CH   G KG G
+Sbjct  2507  SKKSPIAASAKVAAQGKKLAQINCVSCHG-SGGKGDG  2400
+
+
+>NODE_291_length_23246_cov_5.941400 
+Length=23246
+
+ Score = 25.0 bits (53),  Expect = 4.1, Method: Compositional matrix adjust.
+ Identities = 20/67 (30%), Positives = 28/67 (42%), Gaps = 6/67 (9%)
+ Frame = -3
+
+Query  40    KAYVMPEGCVSNDPKAI-ARGSYIFHNLNGKDAKENPPEGLTRLLPNGKEKQMGNCVACH  98
+             +A+  P+    + P A+ +R     H L         PEGL RL P    +  G C    
+Sbjct  1236  RAHARPQ----SAPAAVQSRAHQGLHRLGSHGPPGRLPEGLRRLGPGRPAQVPGGCRG-R  1072
+
+Query  99    NIEGAKG  105
+               EGA+G
+Sbjct  1071  AREGARG  1051
+
+
+>NODE_2668_length_8780_cov_3.678739 
+Length=8780
+
+ Score = 24.6 bits (52),  Expect = 5.9, Method: Compositional matrix adjust.
+ Identities = 15/34 (44%), Positives = 19/34 (56%), Gaps = 7/34 (21%)
+ Frame = -2
+
+Query  78   GLTRLL-PNGKEKQMGNCVACHNIEGAKGYGNIG  110
+            G+T  L P GK     NC ACHN   + G+G+ G
+Sbjct  106  GITSTLNPTGKNA---NCAACHN---SHGFGSRG  23
+
+
+>NODE_15215_length_3923_cov_4.584798 
+Length=3923
+
+ Score = 24.3 bits (51),  Expect = 5.9, Method: Compositional matrix adjust.
+ Identities = 18/71 (25%), Positives = 28/71 (39%), Gaps = 3/71 (4%)
+ Frame = +3
+
+Query  96    ACHNIEGAKGYGNIGPDLTNYKELYMDSGVRNPQFMYQKIADPRLDNPKSAMTVNLANGL  155
+             AC + +   G     P +   +   +  G R    M  ++  P    P+S +   LANGL
+Sbjct  3462  ACASEQCVVGAMTPIPVVKTSQTYRLPVGQRREARMAPRMTSPHGRRPRSGVVCCLANGL  3641
+
+Query  156   ---MNEREVCD  163
+                +  RE  D
+Sbjct  3642  AAVLEHREAPD  3674
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.388    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 110906558
+
+
+  Database: SPAdesHybrid-SD.4.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,669,922
+  Number of sequences in database:  550
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.70.fa
+           344 sequences; 3,148,258 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_1988_length_18377_cov_4.564349                                   26.9    1.3  
+NODE_4263_length_13213_cov_6.139763                                   24.6    6.5  
+
+
+>NODE_1988_length_18377_cov_4.564349 
+Length=18377
+
+ Score = 26.9 bits (58),  Expect = 1.3, Method: Compositional matrix adjust.
+ Identities = 10/21 (48%), Positives = 12/21 (57%), Gaps = 0/21 (0%)
+ Frame = +2
+
+Query  193   GSDKFQDYFKSFRPELKEFYG  213
+             G D  +DYF   RP  + FYG
+Sbjct  5453  GEDPVRDYFSHIRPRSQLFYG  5515
+
+
+>NODE_4263_length_13213_cov_6.139763 
+Length=13213
+
+ Score = 24.6 bits (52),  Expect = 6.5, Method: Compositional matrix adjust.
+ Identities = 11/34 (32%), Positives = 18/34 (53%), Gaps = 0/34 (0%)
+ Frame = +1
+
+Query  117   HQMTHPTPNDSFITYVPTAKKTMAYEKSGIIVCS  150
+             H+M HP  + S    VP A   +  +  GI++C+
+Sbjct  3007  HEMDHPRKSKSRSCCVPLAY*KVRGQGRGILLCT  3108
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 163448800
+
+
+  Database: SPAdesHybrid-SA.70.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,148,258
+  Number of sequences in database:  344
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

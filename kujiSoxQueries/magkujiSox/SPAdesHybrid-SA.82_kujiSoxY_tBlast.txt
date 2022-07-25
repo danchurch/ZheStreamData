@@ -1,0 +1,88 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.82.fa
+           581 sequences; 6,008,140 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_2389_length_17009_cov_3.826943                                   29.6    0.17 
+NODE_1194_length_23501_cov_3.774162                                   27.7    0.65 
+NODE_8042_length_10093_cov_4.715282                                   27.3    0.99 
+
+
+>NODE_2389_length_17009_cov_3.826943 
+Length=17009
+
+ Score = 29.6 bits (65),  Expect = 0.17, Method: Compositional matrix adjust.
+ Identities = 16/54 (30%), Positives = 22/54 (41%), Gaps = 0/54 (0%)
+ Frame = -2
+
+Query  34     GPNEMNFETAVAAITGGKALTPSAKVKMEAPEIAENGAVVPVKVTVDSPMSAKE  87
+              GP E N  +   A   GKA + S   +  A   A+ G  V     +D P  A+ 
+Sbjct  10591  GPGECNQRSGAHAGRHGKAPSRSDHAEGHAGRAAQQGGHVRQHRRLDEPFQARH  10430
+
+
+>NODE_1194_length_23501_cov_3.774162 
+Length=23501
+
+ Score = 27.7 bits (60),  Expect = 0.65, Method: Composition-based stats.
+ Identities = 14/33 (42%), Positives = 20/33 (61%), Gaps = 0/33 (0%)
+ Frame = -1
+
+Query  118   FGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKV  150
+             FG+  KLG  + +VA A+ SDG+FL     + V
+Sbjct  3431  FGSNAKLGKGEFLVAEADESDGSFLKLSPTIAV  3333
+
+
+>NODE_8042_length_10093_cov_4.715282 
+Length=10093
+
+ Score = 27.3 bits (59),  Expect = 0.99, Method: Compositional matrix adjust.
+ Identities = 29/117 (25%), Positives = 49/117 (42%), Gaps = 19/117 (16%)
+ Frame = +3
+
+Query  55   PSAKVKMEAPEIAENGAVVPVKVTVDS--PMSAKEY----VKAIHILASK--NGNVRCAN  106
+            P+ +  + +P +    A+    +  ++  P S  ++       I++L +K    N   ++
+Sbjct  294  PTHRRPIASPNLVNTAAIATRSMMTNTNLPHSTSKW*WYKTHGIYVLGTKPQENNRYISH  473
+
+Query  107  IYLTPAN----------GEAYFGTRIKLGGTQDVVAIAEMSDGTFLSAKQNVKVTIG  153
+            +  TP N          GE+Y GT  KL     VVAIA+   G + S   NV    G
+Sbjct  474  LMHTPYNRRYANNKILTGESYPGTAAKLVKYGYVVAIADFR-GLYASYGHNVAFNRG  641
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 146673900
+
+
+  Database: SPAdesHybrid-SA.82.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 6,008,140
+  Number of sequences in database:  581
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

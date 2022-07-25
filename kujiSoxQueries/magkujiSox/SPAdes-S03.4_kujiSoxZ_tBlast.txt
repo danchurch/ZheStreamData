@@ -1,0 +1,136 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdes-S03.4.fa
+           626 sequences; 1,786,781 total letters
+
+
+
+Query= SoxZ|gb|ADR33114.1
+
+Length=108
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_714_length_6044_cov_4.238270                                     25.4    0.52 
+NODE_11157_length_1971_cov_3.122651                                   24.6    1.0  
+NODE_3274_length_3249_cov_3.385410                                    22.7    4.2  
+NODE_4221_length_2927_cov_4.004178                                    22.7    4.2  
+NODE_5922_length_2549_cov_4.403368                                    22.3    5.9  
+NODE_6961_length_2390_cov_4.280086                                    21.9    7.2  
+NODE_11857_length_1921_cov_4.291533                                   21.9    9.0  
+
+
+>NODE_714_length_6044_cov_4.238270 
+Length=6044
+
+ Score = 25.4 bits (54),  Expect = 0.52, Method: Composition-based stats.
+ Identities = 12/33 (36%), Positives = 19/33 (58%), Gaps = 3/33 (9%)
+ Frame = +1
+
+Query  63    VIWESLSVNPLM---SISFKVPGAGTLKVIAKD  92
+             ++W   +VN ++    +SF VPG  TL  I K+
+Sbjct  2437  LVWRRFTVNEIIHPEDVSFIVPGTTTLADIVKN  2535
+
+
+>NODE_11157_length_1971_cov_3.122651 
+Length=1971
+
+ Score = 24.6 bits (52),  Expect = 1.0, Method: Composition-based stats.
+ Identities = 18/60 (30%), Positives = 26/60 (43%), Gaps = 3/60 (5%)
+ Frame = -1
+
+Query  26    HPMETGMRKNK-DTGALIPAEYIDEVKFMFNDTL--ITKMVIWESLSVNPLMSISFKVPG  82
+             H    G+R+   D   L PAE++DEV     + L  I +   +      P+  I  K PG
+Sbjct  1401  HQQRNGLRREAGDRPLLGPAEFVDEVPAQKRNVLNPIAQGRNYNGDDFQPIKKIFSKRPG  1222
+
+
+>NODE_3274_length_3249_cov_3.385410 
+Length=3249
+
+ Score = 22.7 bits (47),  Expect = 4.2, Method: Compositional matrix adjust.
+ Identities = 9/22 (41%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+ Frame = +2
+
+Query  77   SFKVPGAGTLKVIAKDNKGQSV  98
+            +FK PG GT++V+  D  G+++
+Sbjct  161  TFKAPGNGTIRVV--DASGRTL  220
+
+
+>NODE_4221_length_2927_cov_4.004178 
+Length=2927
+
+ Score = 22.7 bits (47),  Expect = 4.2, Method: Composition-based stats.
+ Identities = 10/28 (36%), Positives = 14/28 (50%), Gaps = 0/28 (0%)
+ Frame = -1
+
+Query  22   FMAMHPMETGMRKNKDTGALIPAEYIDE  49
+            F   H M+TG       GAL+ A + D+
+Sbjct  389  FSDQHGMDTGFDPPPHIGALVNAAFADD  306
+
+
+>NODE_5922_length_2549_cov_4.403368 
+Length=2549
+
+ Score = 22.3 bits (46),  Expect = 5.9, Method: Composition-based stats.
+ Identities = 7/15 (47%), Positives = 13/15 (87%), Gaps = 0/15 (0%)
+ Frame = -3
+
+Query  36    KDTGALIPAEYIDEV  50
+             +DTG  IP+E++++V
+Sbjct  1794  RDTGPGIPSEFLEQV  1750
+
+
+>NODE_6961_length_2390_cov_4.280086 
+Length=2390
+
+ Score = 21.9 bits (45),  Expect = 7.2, Method: Compositional matrix adjust.
+ Identities = 5/19 (26%), Positives = 14/19 (74%), Gaps = 0/19 (0%)
+ Frame = +2
+
+Query  54   FNDTLITKMVIWESLSVNP  72
+            F+ +   K+V+W +++++P
+Sbjct  317  FHQSC*VKIVVWHAITLSP  373
+
+
+>NODE_11857_length_1921_cov_4.291533 
+Length=1921
+
+ Score = 21.9 bits (45),  Expect = 9.0, Method: Composition-based stats.
+ Identities = 9/27 (33%), Positives = 15/27 (56%), Gaps = 0/27 (0%)
+ Frame = +3
+
+Query  65   WESLSVNPLMSISFKVPGAGTLKVIAK  91
+            +E   +NP  SI   VPG   L+++ +
+Sbjct  792  FEGYRLNPAESIGAAVPGIRRLRLVPR  872
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.133    0.376    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 22699691
+
+
+  Database: SPAdes-S03.4.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 1,786,781
+  Number of sequences in database:  626
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

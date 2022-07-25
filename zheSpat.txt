@@ -1,3 +1,4 @@
+
 ## the goal here is to see if we can uncover spatial
 ## signatures in Zhe's nitrogen and sulfur metabolism data
 
@@ -1754,4 +1755,181 @@ CGGTAATTTGTATGCTGCAGATGGAAGACTTTATGCGGCGTATGAAAAAACGCAATTACTGGATGCTTCGGGCAAGCCCA
 ## which gives us no reverse blast match on the ncbi data base.
 ## odd. 
 
-## dive into this later.
+## interesting, maybe look more later. 
+
+## of most interest is the soxB gene
+
+## one of our better matches for S02 :
+
+[
+    print(seq_record.seq) for seq_record 
+    in SeqIO.parse("S02_contigs.fasta", "fasta") if 
+    seq_record.id == "NODE_6152945_length_241_cov_1.032258"
+]
+
+## yields a match to Sulfuriferula genome, but not the kujiensis soxB
+
+## check other assemblies 
+
+## great, so the plan would be to 
+## examine all strong matches to sulfuricurvum sox genes
+## especially sox B
+
+## so what would be the best way to search our mags for 
+## something related to sox genes from sulfuricurvum?
+
+## I want separate searches for each of the sulfuricurvum sox genes
+## this was a mess before, all together
+
+## so split up the sox query file we used before into 5 files, loop through them:
+
+
+## broken up queries are here:
+soxDir="/home/daniel/Documents/analyses/zheSpat/refgenomes/sulfuricurvum/soxIndividual"
+
+## locally the mags are here:
+magDir="/home/daniel/Documents/analyses/zheSpat/bigFiles/Assembly_MAGs/MAGs/S_15"
+
+## we need searchable MAG databases:
+
+cd $magDir
+for i in *.fa; do 
+    echo $i
+    makeblastdb -in $i -parse_seqids -dbtype nucl
+done
+
+for i in $magDir/*.fa; do 
+echo $i
+done
+
+## put our mag sulf sox search results here?
+magKujiSox="/home/daniel/Documents/analyses/zheSpat/kujiSoxQueries/magkujiSox"
+
+cd $magDir
+for i in *.fa; do 
+echo $i
+done
+
+for sox_i in $soxDir/*; do 
+echo $sox_i
+done
+
+cd $magDir
+for sox_i in $soxDir/*; do 
+    base_sox_i=$(basename $sox_i)
+    sox_i_name=${base_sox_i%.faa}
+    letter=${sox_i_name#kujiensis_sox}
+    for i in *.fa; do 
+      fileoutName=$magKujiSox"/"${i%.fa}"_kujiSox"$letter"_tBlast"
+      ## short form
+      tblastn -db $i  \
+          -query $sox_i \
+          -out $fileoutName".csv" \
+          -outfmt 10 \
+          -num_threads 5
+      ## long form
+      tblastn -db $i  \
+          -query $sox_i \
+          -out $fileoutName".txt" \
+          -num_threads 5
+    done
+done
+
+
+## to just get top hits to sulfuricurvum soxB among our MAGs:
+
+cd /home/daniel/Documents/analyses/zheSpat/kujiSoxQueries/magkujiSox
+
+
+head -n 1 -q *SoxB*csv > allMagSoxB_best.txt
+
+## better ways to do this, but we can find our way back with this:
+head -n 1 *SoxB*csv > allMagSoxB_best_fileinfo.txt
+
+## what is our best match, overall, according to bp match?
+cut -d , -f 3 allMagSoxB_best.txt | sort  
+## 64.706, corresponds to SPAdesHybrid-SD.17
+## but actually a really crappy match
+
+## what is our best match, overall, according to bitscore?
+cut -d , -f 12 allMagSoxB_best.txt | sort   ## 
+
+## because of formatting, escore is harder to parse
+cut -d , -f 2,11 allMagSoxB_best.txt | grep "e-" | wc -l 
+
+cut -d , -f 2,11 allMagSoxB_best.txt | grep "e-" 
+
+## if use just those matches that are < 10^2 we are down to six matches:
+
+cut -d , -f 2,11 allMagSoxB_best.txt | grep "e-[0-9]\{3\}" | wc -l
+
+cut -d , -f 2,11 allMagSoxB_best.txt | grep "e-[0-9]\{3\}" 
+
+cut -d , -f 2,11 allMagSoxB_best_fileinfo.txt | grep -B 1 "e-[0-9]\{3\}" | grep "==>" > kujiSoxBstrongMatchMAGs.txt
+
+## these are:
+
+SPAdesHybrid-SA.35
+SPAdesHybrid-SD.4
+SPAdes-S04.16
+SPAdes-S04.4
+SPAdes-S06.11
+SPAdes-S06.6
+
+## to look at these matches:
+
+less SPAdesHybrid-SA.35_kujiSoxB_tBlast.txt 
+less SPAdesHybrid-SD.4_kujiSoxB_tBlast.txt 
+less SPAdes-S04.16_kujiSoxB_tBlast.txt 
+less SPAdes-S04.4_kujiSoxB_tBlast.txt 
+less SPAdes-S06.11_kujiSoxB_tBlast.txt ## this one seems particularly convincing
+less SPAdes-S06.6_kujiSoxB_tBlast.txt  ## also not bad
+
+## can we back blast on of these?
+
+## SPAdes-S06.11_kujiSoxB_tBlast.txt 
+DLLKFDATGNVTLLHVADIHGQLMPIYFREPSVNLGVGEARGQPPHLTGKDFLKRFGIPE
+KSASAYALTDQGFEALAKSYGRIGGLDRLATVVKRVRAERGDDKVLFLDGGDTWQGSLGA
+NRSKGQDMVDCMALLKPDAMTGHWEFTYGEARVNELIKQLGFPFLALNIRDTEWN
+EPAFEPMKLFEKGGVKIAVLGQAFPYTPVANPRWLMPKWSFGIREEDVRANVEKARKA-G
+AQLVVLLSHNGFDVDRKLATRVKGIDVILTGHTHDALPEAIKVGQTLLVASGSHGKFISR
+LDLDIRDGAVKGFRYKLIPLFADVIKPDAEMTAAVTKARAPFARELSRVVGHAESLLYRR
+GNFNGTFDDLICATLLKERDAEIALSPGFRWGTSVLPGQAITVEDIHNATAITYPQAYRI
+SMTGERLKEVLEDVADNLFNPDPYYQQGGDMVRCGGLGYAINIVKPIGQRISAMTQLKSG
+KPIEPKKEYVVTGWASVNEGTEGPPVWDLVERYVAAEKTVRIAPNASVKI
+
+
+
+
+
+
+cut -d , -f 2,11 allMagSoxB_best.txt | grep "e-[0-9]\{2\}" 
+
+## 30 of our MAGs have a low enough escore that they need a negative exponent.
+
+
+## just according to the escores, some candidates for 
+## mags holding some version of the sulfuricurvum SoxB
+## gene would be:
+
+
+SPAdesHybrid-SA.104 ## acetobacteria, 80%, 1.4 contam
+SPAdesHybrid-SA.32 ## proteobacteria, probably delta, 72%, 2.0 contam 
+ ## this genome is really similar to Sub.37 (96.4% ANI) 
+SPAdesHybrid-SA.35 ## proteobacteria, 55%, 5% contam 
+SPAdesHybrid-SA.38 ## firmicutus, 70%, 1.4% contam
+SPAdesHybrid-SA.59 ## deltaproteo, 53% complete, 14% contam 
+SPAdesHybrid-SA.62 ## Firmicutus, Planococcocaeae, 73%, 5% contam
+SPAdesHybrid-SA.79 ## Candidate div, Zixibacteria, 67%, 0% contam 
+
+
+
+
+## soxY
+head -n 1 -q *SoxY*csv > allMagSoxY_best.txt
+
+head -n 1 *SoxY*csv > allMagSoxY_best_fileinfo.txt
+
+## meeting Jul 20 ##
+
+## can I find a mag that has a good match to all sulfuricurvum SOX genes

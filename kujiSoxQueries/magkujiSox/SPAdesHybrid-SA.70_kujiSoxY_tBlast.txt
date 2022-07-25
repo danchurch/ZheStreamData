@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SA.70.fa
+           344 sequences; 3,148,258 total letters
+
+
+
+Query= SoxY|gb|ADR33113.1
+
+Length=156
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_3618_length_14209_cov_5.964109                                   25.8    1.6  
+NODE_54866_length_4008_cov_3.414875                                   23.9    6.9  
+
+
+>NODE_3618_length_14209_cov_5.964109 
+Length=14209
+
+ Score = 25.8 bits (55),  Expect = 1.6, Method: Compositional matrix adjust.
+ Identities = 13/25 (52%), Positives = 17/25 (68%), Gaps = 0/25 (0%)
+ Frame = +1
+
+Query  118   FGTRIKLGGTQDVVAIAEMSDGTFL  142
+              GT  KLG  + +VA A+ SDG+FL
+Sbjct  2188  LGTNAKLGQGEFLVAEADESDGSFL  2262
+
+
+>NODE_54866_length_4008_cov_3.414875 
+Length=4008
+
+ Score = 23.9 bits (50),  Expect = 6.9, Method: Compositional matrix adjust.
+ Identities = 14/46 (30%), Positives = 20/46 (43%), Gaps = 0/46 (0%)
+ Frame = +3
+
+Query  42    TAVAAITGGKALTPSAKVKMEAPEIAENGAVVPVKVTVDSPMSAKE  87
+             T +   T GKA      V  E  E+ +   VVP  +T D  ++  E
+Sbjct  1749  TTLLRPTNGKAFVSGCDVSEEPAEVRKRIGVVPQAMTSDLDLTGHE  1886
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.129    0.361    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 81862000
+
+
+  Database: SPAdesHybrid-SA.70.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 3,148,258
+  Number of sequences in database:  344
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

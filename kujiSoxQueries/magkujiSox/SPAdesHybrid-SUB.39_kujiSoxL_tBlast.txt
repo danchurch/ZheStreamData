@@ -1,0 +1,71 @@
+TBLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: SPAdesHybrid-SUB.39.fa
+           937 sequences; 4,041,370 total letters
+
+
+
+Query= SoxL|gb|ADR33695.1
+
+Length=241
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+NODE_6560_length_6385_cov_4.998736                                    30.0    0.17 
+NODE_58567_length_2427_cov_6.546796                                   25.8    3.4  
+
+
+>NODE_6560_length_6385_cov_4.998736 
+Length=6385
+
+ Score = 30.0 bits (66),  Expect = 0.17, Method: Compositional matrix adjust.
+ Identities = 13/37 (35%), Positives = 18/37 (49%), Gaps = 0/37 (0%)
+ Frame = +1
+
+Query  177   VLEHAADDTLWAVGILGSDKFQDYFKSFRPELKEFYG  213
+             + +H   D L   G  G   F+D F SF    +EF+G
+Sbjct  1288  IYDHYGHDGLAGTGFRGFSGFEDIFSSFGDLFEEFFG  1398
+
+
+>NODE_58567_length_2427_cov_6.546796 
+Length=2427
+
+ Score = 25.8 bits (55),  Expect = 3.4, Method: Compositional matrix adjust.
+ Identities = 15/34 (44%), Positives = 20/34 (59%), Gaps = 1/34 (3%)
+ Frame = +1
+
+Query  198  QDYFKSFRPELKEFYGGPAEAKKLVSISAKTVKL  231
+            QD   +FRPE+ E  G   + KKLVS++ K   L
+Sbjct  769  QDLL-TFRPEMTEPEGTLEKEKKLVSMAKKIALL  867
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.131    0.381    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 200557616
+
+
+  Database: SPAdesHybrid-SUB.39.fa
+    Posted date:  Jul 20, 2022  12:08 PM
+  Number of letters in database: 4,041,370
+  Number of sequences in database:  937
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 13
+Window for multiple hits: 40

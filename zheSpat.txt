@@ -1933,3 +1933,18 @@ head -n 1 *SoxY*csv > allMagSoxY_best_fileinfo.txt
 ## meeting Jul 20 ##
 
 ## can I find a mag that has a good match to all sulfuricurvum SOX genes
+## dive into this later.
+
+
+
+################################
+
+### let's start working on Zhe's phylo tree
+## seems like he'll probably use SingleM to get the ribosomal proteins out
+## then we should make a tree, phyml or something
+## the output should a newick, therefore
+
+## so maybe we start from a newick file, work on the upstream
+## steps if Zhe wants us
+
+## we really want a circular tree. let's use d3js...

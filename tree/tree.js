@@ -14,7 +14,11 @@ function main(){
       return r}
     
     let zoop = parseNewick(d);
+
+    let poop = d3.hierarchy(zoop, d => d.branchset)
     
     console.log(zoop);
+
+    console.log(poop);
 
 })}

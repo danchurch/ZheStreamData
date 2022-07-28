@@ -1948,3 +1948,11 @@ head -n 1 *SoxY*csv > allMagSoxY_best_fileinfo.txt
 ## steps if Zhe wants us
 
 ## we really want a circular tree. let's use d3js...
+
+##############
+
+cd /emic/Zhe/Assembly_MAGs/Assembly/
+
+conda activate pplacerEnv
+
+singlem pipe --sequences SUB_contigs.fasta.gz --otu_table otu_table.csv --threads 24

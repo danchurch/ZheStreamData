@@ -1,0 +1,5 @@
+fasta file for each rp gene, each MAG is an entry 
+
+/emic/Zhe/Assembly_MAGs/MAGs/SingleM/otu_MAGs_diamond_example.csv
+
+

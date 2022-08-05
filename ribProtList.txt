@@ -1,0 +1,14 @@
+S1.10.ribosomal_protein_S7
+S1.11.ribosomal_protein_S10_rpsJ
+S1.12.ribosomal_protein_S12_S23
+S1.13.ribosomal_protein_S15P_S13e
+S1.14.ribosomal_protein_S19_rpsS
+S1.1.ribosomal_protein_L2_rplB
+S1.2.ribosomal_protein_L3_rplC
+S1.3.ribosomal_protein_L5_rplE
+S1.4.ribosomal_protein_L6_rplF
+S1.5.ribosomal_protein_L11_rplK
+S1.6.ribosomal_protein_L14b_L23e_rplN
+S1.7.ribosomal_protein_L16_L10E_rplP
+S1.8.ribosomal_protein_S2_rpsB
+S1.9.ribosomal_protein_S5

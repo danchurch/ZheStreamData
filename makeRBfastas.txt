@@ -1,0 +1,68 @@
+###### bash ######
+
+## get zhe a fasta file for each ribosomal protein,
+## with all the mags that have that sequence data for that
+##  ribosomal protein
+
+## let's get it locally:
+
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    emic@134.176.27.78:/emic/Zhe/Assembly_MAGs/MAGs/SingleM/otu_MAGs_diamond_example.csv .
+
+head otu_MAGs_diamond_example.csv
+## make a copy to work with to avoid destroying data
+cp otu_MAGs_diamond_example.csv ribProts.csv
+
+## we only need the first three columns
+
+## labels
+paste <(cut -f 1 ribProts.csv ) <(cut -f 2 ribProts.csv) -d ':' | tail -n +2 > labels.txt
+sed -i 's/^/>/' labels.txt
+## sequences
+cut -f 3 ribProts.csv | tail -n +2 > sequences.txt 
+paste -d '\n' labels.txt sequences.txt > zheAllMagsAllRibProts.fasta
+
+## while we're at it, let's make a set of the protein names:
+cut -f 1 ribProts.csv | tail -n +2  | sort -u > ribProtList.txt
+
+## great. let's use biopython to separate by protein?
+
+
+######## python #######
+
+from Bio import SeqIO
+
+fastaFolder='/home/daniel/Documents/analyses/zheSpat/ribProtFastas/'
+
+with open('ribProtList.txt', 'r') as list:
+    for i in list:
+        print('')
+        print(i.strip())
+        fileName = (fastaFolder + i.strip() + ".fasta")
+        recList = []
+        for seq_record in SeqIO.parse("zheAllMagsAllRibProts.fasta", "fasta"):
+             if seq_record.id.__contains__(i.strip()):
+                seq_record.description, seq_record.name = '',''
+                recList.append(seq_record)
+        SeqIO.write(recList, fileName, 'fasta')
+
+
+#### bash ####
+
+## put back onto denbi
+
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    -r ./ribProtFastas/ \
+    emic@134.176.27.78:/emic/Zhe/Assembly_MAGs/MAGs/ 
+
+## so on denbi the files are here:
+cd /emic/Zhe/Assembly_MAGs/MAGs/ribProtFastas
+
+## a little worried, because Zhe said there is missing data,
+## but I do not see anything missing... hmm...
+
+## let's put it up there and see if Zhe can do a few sanity checks on it.
+
+

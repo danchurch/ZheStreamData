@@ -1,0 +1,4159 @@
+                             _      _ _            _      _   _  _____ 
+                            | |    | | |          | |    | \ | |/ ____|
+         _ __ ___   ___   __| | ___| | |_ ___  ___| |_   |  \| | |  __ 
+        | '_ ` _ \ / _ \ / _` |/ _ \ | __/ _ \/ __| __|  | . ` | | |_ |
+        | | | | | | (_) | (_| |  __/ | ||  __/\__ \ |_   | |\  | |__| |
+        |_| |_| |_|\___/ \__,_|\___|_|\__\___||___/\__|  |_| \_|\_____|
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7 released on 17.03.2021 by The Exelixis Lab.
+Written by Diego Darriba.
+Contributors: Tomas Flouri, Alexey Kozlov, Benoit Morel, David Posada, 
+              Alexandros Stamatakis.
+Latest version: https://github.com/ddarriba/modeltest
+--------------------------------------------------------------------------------
+
+[dbg] guessing file format
+[dbg] Guessed FASTA file format
+Physical cores: 2
+Logical cores:  4
+Memory:         7.68GB
+Extensions:     AVX
+
+[dbg] Create modeltest instance
+WARNING: Partition DATA: Sequences S1.10.ribosomal_protein_S7:SPAdes-S06.6_2 and S1.10.ribosomal_protein_S7:SPAdes-S04.16 are identical
+WARNING: Partition DATA: Sequences S1.10.ribosomal_protein_S7:SPAdes-S04.8 and S1.10.ribosomal_protein_S7:SPAdesHybrid-SUB.25 are identical
+WARNING: Partition DATA: Sequences S1.10.ribosomal_protein_S7:SPAdesHybrid-SUB.10 and S1.10.ribosomal_protein_S7:SPAdesHybrid-SA.73 are identical
+[dbg] Creating starting tree
+[dbg] Ealuating checkpoint files
+Creating new checkpoint file: /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.ckp
+[dbg] New checkpoint file created
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7
+
+Input data:
+  MSA:        /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            57
+  #sites:           62
+  #patterns:        62
+  Max. thread mem:  1 MB
+
+Output:
+  Log:           /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.log
+  Starting tree: /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.tree
+  Results:       /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.out
+
+Selection options:
+  # dna schemes:      11
+  # dna models:       88
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     true
+    estimated freqs: true
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        high
+  threads:          3/2
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+modeltest-ng was called as follows: 
+>> modeltest-ng -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -d nt -o /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta -p 3 -v 
+
+
+Partition 1/1
+
+[dbg] ... ... build partition optimizer 
+[dbg] ... ... evaluate partition
+[dbg] Building parameters and computing initial lk score
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2537.95
+[dbg] Initial log likelihood: -2537.95
+[dbg] final parameter optimization: -2537.95
+[dbg] Initial score: -2536.05
+[dbg] Initial log likelihood: -2536.05
+[dbg] Building parameters and computing initial lk score
+[dbg] final parameter optimization: -2536.05
+[dbg] Initial score: -2518.58
+[dbg] Initial log likelihood: -2518.58
+[dbg] final parameter optimization: -2518.58
+[dbg] fix branches -2304.72
+[dbg] optimize BranchLengths: -2304.72
+[dbg] fix branches -2291.33
+[dbg] optimize BranchLengths: -2291.33
+[dbg] optimize P-inv: -2304.13
+[dbg] optimize P-inv: -2290.75
+[dbg] fix branches -2303.2
+[dbg] optimize BranchLengths: -2303.2
+[dbg] optimize P-inv: -2302.62
+[dbg] optimize OptFrequencies: -2292.28
+[dbg] optimize OptFrequencies: -2284.07
+[dbg] optimize Alpha: -2290.21
+[dbg] optimize Alpha: -2282.49
+[dbg] optimize OptFrequencies: -2291.14
+[dbg] optimize Alpha: -2289.27
+[dbg] optimize SubstRates: -2276.03
+[dbg] fix branches -2272.25
+[dbg] optimize BranchLengths: -2272.25
+[dbg] optimize SubstRates: -2271.13
+[dbg] optimize P-inv: -2272.25
+[dbg] fix branches -2268.43
+[dbg] optimize BranchLengths: -2268.43
+[dbg] optimize OptFrequencies: -2267.91
+[dbg] optimize Alpha: -2267.91
+[dbg] optimize P-inv: -2268.43
+[dbg] optimize SubstRates: -2274.84
+[dbg] fix branches -2270.94
+[dbg] optimize BranchLengths: -2270.94
+[dbg] optimize OptFrequencies: -2266.81
+[dbg] optimize P-inv: -2270.94
+[dbg] optimize SubstRates: -2264.56
+[dbg] optimize Alpha: -2266.67
+[dbg] fix branches -2262
+[dbg] optimize BranchLengths: -2262
+[dbg] optimize P-inv: -2262
+[dbg] optimize OptFrequencies: -2266.48
+[dbg] optimize Alpha: -2266.48
+[dbg] optimize OptFrequencies: -2259.78
+[dbg] optimize SubstRates: -2265.49
+[dbg] optimize Alpha: -2259.6
+[dbg] fix branches -2264.76
+[dbg] optimize BranchLengths: -2264.76
+[dbg] optimize P-inv: -2264.76
+[dbg] optimize SubstRates: -2256.93
+[dbg] optimize SubstRates: -2262.66
+[dbg] fix branches -2254.25
+[dbg] optimize BranchLengths: -2254.25
+[dbg] optimize OptFrequencies: -2263.99
+[dbg] optimize P-inv: -2254.25
+[dbg] optimize Alpha: -2263.89
+[dbg] fix branches -2259.76
+[dbg] optimize BranchLengths: -2259.76
+[dbg] optimize P-inv: -2259.76
+[dbg] optimize OptFrequencies: -2252.69
+[dbg] optimize Alpha: -2252.21
+[dbg] optimize OptFrequencies: -2257.39
+[dbg] optimize SubstRates: -2263.2
+[dbg] optimize Alpha: -2257.25
+[dbg] optimize SubstRates: -2250.2
+[dbg] fix branches -2262.66
+[dbg] optimize BranchLengths: -2262.66
+[dbg] optimize P-inv: -2262.66
+[dbg] fix branches -2248.71
+[dbg] optimize BranchLengths: -2248.71
+[dbg] optimize P-inv: -2248.71
+[dbg] optimize SubstRates: -2254.3
+[dbg] optimize OptFrequencies: -2248.13
+[dbg] optimize OptFrequencies: -2262.18
+[dbg] optimize Alpha: -2247.75
+[dbg] fix branches -2252.39
+[dbg] optimize BranchLengths: -2252.39
+[dbg] optimize Alpha: -2262.18
+[dbg] optimize P-inv: -2252.39
+[dbg] optimize SubstRates: -2247.16
+[dbg] optimize OptFrequencies: -2251.18
+[dbg] optimize SubstRates: -2261.69
+[dbg] fix branches -2246.59
+[dbg] optimize BranchLengths: -2246.59
+[dbg] optimize Alpha: -2250.75
+[dbg] optimize P-inv: -2246.59
+[dbg] fix branches -2261.21
+[dbg] optimize BranchLengths: -2261.21
+[dbg] optimize OptFrequencies: -2246.33
+[dbg] optimize P-inv: -2261.21
+[dbg] optimize Alpha: -2246.01
+[dbg] optimize OptFrequencies: -2260.88
+[dbg] optimize Alpha: -2260.88
+[dbg] optimize SubstRates: -2249.62
+[dbg] optimize SubstRates: -2245.78
+[dbg] fix branches -2245.08
+[dbg] optimize BranchLengths: -2245.08
+[dbg] fix branches -2249.05
+[dbg] optimize BranchLengths: -2249.05
+[dbg] optimize P-inv: -2245.08
+[dbg] optimize P-inv: -2249.05
+[dbg] optimize SubstRates: -2260.58
+[dbg] optimize OptFrequencies: -2244.97
+[dbg] optimize Alpha: -2244.81
+[dbg] fix branches -2260.27
+[dbg] optimize BranchLengths: -2260.27
+[dbg] optimize OptFrequencies: -2248.55
+[dbg] optimize Alpha: -2248.15
+[dbg] optimize P-inv: -2260.27
+[dbg] optimize SubstRates: -2244.72
+[dbg] optimize OptFrequencies: -2260.07
+[dbg] fix branches -2244.43
+[dbg] optimize BranchLengths: -2244.43
+[dbg] optimize Alpha: -2260
+[dbg] optimize P-inv: -2244.43
+[dbg] optimize OptFrequencies: -2244.41
+[dbg] optimize Alpha: -2244.41
+[dbg] optimize SubstRates: -2247.64
+[dbg] optimize SubstRates: -2259.77
+[dbg] fix branches -2247.2
+[dbg] optimize BranchLengths: -2247.2
+[dbg] optimize SubstRates: -2244.4
+[dbg] fix branches -2244.35
+[dbg] optimize BranchLengths: -2244.35
+[dbg] optimize P-inv: -2247.2
+[dbg] optimize P-inv: -2244.35
+[dbg] fix branches -2259.05
+[dbg] optimize BranchLengths: -2259.05
+[dbg] optimize OptFrequencies: -2244.35
+[dbg] optimize Alpha: -2244.35
+[dbg] optimize P-inv: -2259.05
+[dbg] optimize SubstRates: -2244.35
+[dbg] optimize OptFrequencies: -2246.95
+[dbg] fix branches -2244.34
+[dbg] optimize BranchLengths: -2244.34
+[dbg] optimize Alpha: -2246.65
+[dbg] optimize P-inv: -2244.34
+[dbg] optimize OptFrequencies: -2244.34
+[dbg] optimize Alpha: -2244.34
+[dbg] optimize OptFrequencies: -2258.9
+[dbg] optimize SubstRates: -2244.34
+[dbg] model done: [0.01/0.05]: -2244.34
+[dbg] Model optimization done: -2244.34
+[dbg] optimize Alpha: -2258.76
+    3/88   TVM+I+G4       0h:00:00   0h:00:00           -2244.3437  0.5832  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2520.52
+[dbg] Initial log likelihood: -2520.52
+[dbg] final parameter optimization: -2520.52
+[dbg] fix branches -2294.61
+[dbg] optimize BranchLengths: -2294.61
+[dbg] optimize SubstRates: -2258.6
+[dbg] optimize P-inv: -2294.02
+[dbg] fix branches -2258.2
+[dbg] optimize BranchLengths: -2258.2
+[dbg] optimize SubstRates: -2246.34
+[dbg] optimize OptFrequencies: -2284.66
+[dbg] optimize P-inv: -2258.2
+[dbg] optimize Alpha: -2282.85
+[dbg] fix branches -2245.63
+[dbg] optimize BranchLengths: -2245.63
+[dbg] optimize P-inv: -2245.63
+[dbg] optimize OptFrequencies: -2258.13
+[dbg] optimize Alpha: -2258.1
+[dbg] optimize SubstRates: -2269.52
+[dbg] optimize OptFrequencies: -2245.48
+[dbg] fix branches -2266.43
+[dbg] optimize BranchLengths: -2266.43
+[dbg] optimize Alpha: -2245.25
+[dbg] optimize P-inv: -2266.43
+[dbg] optimize SubstRates: -2258.02
+[dbg] optimize OptFrequencies: -2262.49
+[dbg] optimize Alpha: -2262.36
+[dbg] fix branches -2257.72
+[dbg] optimize BranchLengths: -2257.72
+[dbg] optimize P-inv: -2257.72
+[dbg] optimize SubstRates: -2259.26
+[dbg] fix branches -2256.48
+[dbg] optimize BranchLengths: -2256.48
+[dbg] optimize SubstRates: -2245.05
+[dbg] optimize P-inv: -2256.48
+[dbg] optimize OptFrequencies: -2257.69
+[dbg] optimize Alpha: -2257.69
+[dbg] fix branches -2244.68
+[dbg] optimize BranchLengths: -2244.68
+[dbg] optimize OptFrequencies: -2254.63
+[dbg] optimize P-inv: -2244.68
+[dbg] optimize Alpha: -2254.38
+[dbg] optimize SubstRates: -2257.66
+[dbg] optimize SubstRates: -2251.85
+[dbg] fix branches -2257.63
+[dbg] optimize BranchLengths: -2257.63
+[dbg] optimize OptFrequencies: -2244.6
+[dbg] optimize Alpha: -2244.59
+[dbg] optimize P-inv: -2257.63
+[dbg] fix branches -2250.33
+[dbg] optimize BranchLengths: -2250.33
+[dbg] optimize P-inv: -2250.33
+[dbg] optimize OptFrequencies: -2257.62
+[dbg] optimize Alpha: -2257.62
+[dbg] optimize OptFrequencies: -2249.79
+[dbg] optimize Alpha: -2249.31
+[dbg] optimize SubstRates: -2257.62
+[dbg] optimize SubstRates: -2248.92
+[dbg] fix branches -2257.59
+[dbg] optimize BranchLengths: -2257.59
+[dbg] fix branches -2248.73
+[dbg] optimize BranchLengths: -2248.73
+[dbg] optimize SubstRates: -2244.5
+[dbg] optimize P-inv: -2248.73
+[dbg] optimize P-inv: -2257.59
+[dbg] fix branches -2244.28
+[dbg] optimize BranchLengths: -2244.28
+[dbg] optimize OptFrequencies: -2248.64
+[dbg] optimize OptFrequencies: -2257.58
+[dbg] optimize P-inv: -2244.28
+[dbg] optimize Alpha: -2248.37
+[dbg] optimize Alpha: -2257.58
+[dbg] optimize SubstRates: -2248.28
+[dbg] optimize OptFrequencies: -2244.25
+[dbg] fix branches -2248.11
+[dbg] optimize BranchLengths: -2248.11
+[dbg] optimize SubstRates: -2257.58
+[dbg] optimize Alpha: -2244.25
+[dbg] optimize P-inv: -2248.11
+[dbg] fix branches -2257.2
+[dbg] optimize BranchLengths: -2257.2
+[dbg] optimize OptFrequencies: -2248.08
+[dbg] optimize Alpha: -2248.08
+[dbg] optimize P-inv: -2257.2
+[dbg] optimize SubstRates: -2244.24
+[dbg] fix branches -2244.22
+[dbg] optimize BranchLengths: -2244.22
+[dbg] optimize P-inv: -2244.22
+[dbg] optimize SubstRates: -2248.04
+[dbg] optimize OptFrequencies: -2257.11
+[dbg] fix branches -2247.86
+[dbg] optimize BranchLengths: -2247.86
+[dbg] optimize Alpha: -2257.11
+[dbg] optimize P-inv: -2247.86
+[dbg] optimize OptFrequencies: -2244.22
+[dbg] optimize Alpha: -2244.22
+[dbg] optimize OptFrequencies: -2247.84
+[dbg] optimize Alpha: -2247.84
+[dbg] optimize SubstRates: -2257.09
+[dbg] optimize SubstRates: -2247.83
+[dbg] fix branches -2247.81
+[dbg] optimize BranchLengths: -2247.81
+[dbg] optimize SubstRates: -2244.22
+[dbg] fix branches -2256.87
+[dbg] optimize BranchLengths: -2256.87
+[dbg] optimize P-inv: -2247.81
+[dbg] fix branches -2244.22
+[dbg] optimize BranchLengths: -2244.22
+[dbg] optimize P-inv: -2256.87
+[dbg] optimize OptFrequencies: -2247.81
+[dbg] optimize P-inv: -2244.22
+[dbg] optimize Alpha: -2247.81
+[dbg] optimize SubstRates: -2247.81
+[dbg] fix branches -2247.79
+[dbg] optimize BranchLengths: -2247.79
+[dbg] optimize OptFrequencies: -2256.85
+[dbg] optimize OptFrequencies: -2244.21
+[dbg] optimize P-inv: -2247.79
+[dbg] optimize Alpha: -2256.85
+[dbg] optimize Alpha: -2244.21
+[dbg] optimize OptFrequencies: -2247.79
+[dbg] optimize Alpha: -2247.79
+[dbg] optimize SubstRates: -2244.21
+[dbg] model done: [0.01/0.05]: -2244.21
+[dbg] Model optimization done: -2244.21
+    2/88   GTR+I+G4       0h:00:01   0h:00:01           -2244.2148  0.5748  0.0000
+[dbg] optimize SubstRates: -2247.79
+[dbg] fix branches -2247.77
+[dbg] optimize BranchLengths: -2247.77
+[dbg] optimize P-inv: -2247.77
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2502.59
+[dbg] Initial log likelihood: -2502.59
+[dbg] final parameter optimization: -2502.59
+[dbg] optimize OptFrequencies: -2247.77
+[dbg] optimize Alpha: -2247.77
+[dbg] optimize SubstRates: -2247.77
+[dbg] optimize SubstRates: -2256.84
+[dbg] fix branches -2247.76
+[dbg] optimize BranchLengths: -2247.76
+[dbg] optimize P-inv: -2247.76
+[dbg] fix branches -2281.73
+[dbg] optimize OptFrequencies: -2247.76
+[dbg] optimize BranchLengths: -2281.73
+[dbg] fix branches -2256.72
+[dbg] optimize BranchLengths: -2256.72
+[dbg] optimize Alpha: -2247.76
+[dbg] optimize P-inv: -2256.72
+[dbg] optimize SubstRates: -2247.76
+[dbg] optimize P-inv: -2281.15
+[dbg] fix branches -2247.74
+[dbg] optimize BranchLengths: -2247.74
+[dbg] optimize P-inv: -2247.74
+[dbg] optimize OptFrequencies: -2256.72
+[dbg] optimize OptFrequencies: -2247.74
+[dbg] optimize Alpha: -2247.74
+[dbg] optimize Alpha: -2256.72
+[dbg] optimize SubstRates: -2247.74
+[dbg] fix branches -2247.71
+[dbg] optimize BranchLengths: -2247.71
+[dbg] optimize OptFrequencies: -2276.81
+[dbg] optimize P-inv: -2247.71
+[dbg] optimize Alpha: -2275.24
+[dbg] optimize OptFrequencies: -2247.71
+[dbg] optimize Alpha: -2247.71
+[dbg] optimize SubstRates: -2247.71
+[dbg] fix branches -2247.61
+[dbg] optimize BranchLengths: -2247.61
+[dbg] optimize SubstRates: -2256.71
+[dbg] optimize P-inv: -2247.61
+[dbg] fix branches -2256.71
+[dbg] optimize BranchLengths: -2256.71
+[dbg] optimize OptFrequencies: -2247.6
+[dbg] optimize Alpha: -2247.6
+[dbg] optimize P-inv: -2256.71
+[dbg] optimize SubstRates: -2247.6
+[dbg] fix branches -2247.6
+[dbg] optimize BranchLengths: -2247.6
+[dbg] optimize OptFrequencies: -2256.71
+[dbg] optimize P-inv: -2247.6
+[dbg] optimize SubstRates: -2266.03
+[dbg] optimize Alpha: -2256.71
+[dbg] optimize OptFrequencies: -2247.6
+[dbg] optimize Alpha: -2247.6
+[dbg] optimize SubstRates: -2247.6
+[dbg] model done: [0.01/0.05]: -2247.6
+[dbg] Model optimization done: -2247.6
+    5/88   TIM2+I+G4      0h:00:01   0h:00:01           -2247.5957  0.6227  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2514.5
+[dbg] Initial log likelihood: -2514.5
+[dbg] final parameter optimization: -2514.5
+[dbg] optimize SubstRates: -2256.71
+[dbg] model done: [0.01/0.05]: -2256.71
+[dbg] Model optimization done: -2256.71
+    4/88   TIM3+I+G4      0h:00:01   0h:00:01           -2256.7088  0.6217  0.0000
+[dbg] fix branches -2263.54
+[dbg] optimize BranchLengths: -2263.54
+[dbg] fix branches -2289.91
+[dbg] optimize BranchLengths: -2289.91
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2501.24
+[dbg] Initial log likelihood: -2501.24
+[dbg] final parameter optimization: -2501.24
+[dbg] optimize P-inv: -2263.54
+[dbg] optimize P-inv: -2289.33
+[dbg] optimize OptFrequencies: -2283.81
+[dbg] fix branches -2280.52
+[dbg] optimize BranchLengths: -2280.52
+[dbg] optimize OptFrequencies: -2262.04
+[dbg] optimize Alpha: -2282.06
+[dbg] optimize Alpha: -2261.78
+[dbg] optimize P-inv: -2279.94
+[dbg] optimize SubstRates: -2270.64
+[dbg] optimize OptFrequencies: -2275.99
+[dbg] fix branches -2268
+[dbg] optimize BranchLengths: -2268
+[dbg] optimize Alpha: -2274.36
+[dbg] optimize SubstRates: -2260.85
+[dbg] optimize P-inv: -2268
+[dbg] fix branches -2259.98
+[dbg] optimize BranchLengths: -2259.98
+[dbg] optimize OptFrequencies: -2266.01
+[dbg] optimize Alpha: -2265.96
+[dbg] optimize P-inv: -2259.98
+[dbg] optimize SubstRates: -2265.8
+[dbg] optimize OptFrequencies: -2259.61
+[dbg] optimize SubstRates: -2264.51
+[dbg] optimize Alpha: -2259.38
+[dbg] fix branches -2263.42
+[dbg] optimize BranchLengths: -2263.42
+[dbg] fix branches -2263.62
+[dbg] optimize BranchLengths: -2263.62
+[dbg] optimize P-inv: -2263.42
+[dbg] optimize P-inv: -2263.62
+[dbg] optimize OptFrequencies: -2262.85
+[dbg] optimize Alpha: -2262.85
+[dbg] optimize OptFrequencies: -2262.68
+[dbg] optimize SubstRates: -2258.97
+[dbg] optimize Alpha: -2262.45
+[dbg] optimize SubstRates: -2262.25
+[dbg] fix branches -2257.68
+[dbg] optimize BranchLengths: -2257.68
+[dbg] fix branches -2261.96
+[dbg] optimize BranchLengths: -2261.96
+[dbg] optimize SubstRates: -2262.15
+[dbg] optimize P-inv: -2261.96
+[dbg] optimize P-inv: -2257.68
+[dbg] optimize OptFrequencies: -2261.72
+[dbg] fix branches -2261.67
+[dbg] optimize BranchLengths: -2261.67
+[dbg] optimize Alpha: -2261.68
+[dbg] optimize OptFrequencies: -2257.4
+[dbg] optimize P-inv: -2261.67
+[dbg] optimize Alpha: -2257.05
+[dbg] optimize SubstRates: -2261.48
+[dbg] optimize OptFrequencies: -2261.59
+[dbg] optimize Alpha: -2261.48
+[dbg] fix branches -2261.13
+[dbg] optimize BranchLengths: -2261.13
+[dbg] optimize P-inv: -2261.13
+[dbg] optimize SubstRates: -2256.68
+[dbg] optimize SubstRates: -2261.41
+[dbg] optimize OptFrequencies: -2261.02
+[dbg] optimize Alpha: -2261.02
+[dbg] fix branches -2255.34
+[dbg] optimize BranchLengths: -2255.34
+[dbg] fix branches -2261.08
+[dbg] optimize BranchLengths: -2261.08
+[dbg] optimize P-inv: -2255.34
+[dbg] optimize SubstRates: -2260.91
+[dbg] optimize P-inv: -2261.08
+[dbg] fix branches -2260.61
+[dbg] optimize BranchLengths: -2260.61
+[dbg] optimize P-inv: -2260.61
+[dbg] optimize OptFrequencies: -2261.05
+[dbg] optimize OptFrequencies: -2255.12
+[dbg] optimize Alpha: -2261.05
+[dbg] optimize Alpha: -2254.56
+[dbg] optimize OptFrequencies: -2260.52
+[dbg] optimize Alpha: -2260.52
+[dbg] optimize SubstRates: -2261.02
+[dbg] fix branches -2260.98
+[dbg] optimize BranchLengths: -2260.98
+[dbg] optimize SubstRates: -2260.4
+[dbg] optimize P-inv: -2260.98
+[dbg] fix branches -2259.79
+[dbg] optimize BranchLengths: -2259.79
+[dbg] optimize SubstRates: -2254.37
+[dbg] optimize OptFrequencies: -2260.97
+[dbg] optimize P-inv: -2259.79
+[dbg] optimize Alpha: -2260.97
+[dbg] fix branches -2253.76
+[dbg] optimize BranchLengths: -2253.76
+[dbg] optimize OptFrequencies: -2259.69
+[dbg] optimize Alpha: -2259.47
+[dbg] optimize SubstRates: -2260.97
+[dbg] optimize P-inv: -2253.76
+[dbg] fix branches -2260.93
+[dbg] optimize BranchLengths: -2260.93
+[dbg] optimize P-inv: -2260.93
+[dbg] optimize SubstRates: -2259.36
+[dbg] optimize OptFrequencies: -2253.69
+[dbg] optimize OptFrequencies: -2260.93
+[dbg] optimize Alpha: -2253.24
+[dbg] fix branches -2258.91
+[dbg] optimize BranchLengths: -2258.91
+[dbg] optimize Alpha: -2260.93
+[dbg] optimize P-inv: -2258.91
+[dbg] optimize SubstRates: -2260.93
+[dbg] optimize OptFrequencies: -2258.87
+[dbg] fix branches -2260.89
+[dbg] optimize BranchLengths: -2260.89
+[dbg] optimize Alpha: -2258.67
+[dbg] optimize P-inv: -2260.89
+[dbg] optimize OptFrequencies: -2260.89
+[dbg] optimize SubstRates: -2258.63
+[dbg] optimize SubstRates: -2253.15
+[dbg] optimize Alpha: -2260.89
+[dbg] fix branches -2257.94
+[dbg] optimize BranchLengths: -2257.94
+[dbg] fix branches -2252.75
+[dbg] optimize BranchLengths: -2252.75
+[dbg] optimize P-inv: -2257.94
+[dbg] optimize SubstRates: -2260.89
+[dbg] fix branches -2260.87
+[dbg] optimize BranchLengths: -2260.87
+[dbg] optimize P-inv: -2252.75
+[dbg] optimize OptFrequencies: -2257.9
+[dbg] optimize Alpha: -2257.77
+[dbg] optimize P-inv: -2260.87
+[dbg] optimize OptFrequencies: -2252.72
+[dbg] optimize OptFrequencies: -2260.87
+[dbg] optimize SubstRates: -2257.74
+[dbg] optimize Alpha: -2252.5
+[dbg] optimize Alpha: -2260.86
+[dbg] fix branches -2255.57
+[dbg] optimize BranchLengths: -2255.57
+[dbg] optimize SubstRates: -2260.86
+[dbg] optimize P-inv: -2255.57
+[dbg] fix branches -2260.45
+[dbg] optimize BranchLengths: -2260.45
+[dbg] optimize OptFrequencies: -2255.42
+[dbg] optimize Alpha: -2255.41
+[dbg] optimize SubstRates: -2252.45
+[dbg] optimize P-inv: -2260.45
+[dbg] fix branches -2252.19
+[dbg] optimize BranchLengths: -2252.19
+[dbg] optimize SubstRates: -2255.36
+[dbg] optimize P-inv: -2252.19
+[dbg] optimize OptFrequencies: -2260.43
+[dbg] fix branches -2254.9
+[dbg] optimize BranchLengths: -2254.9
+[dbg] optimize Alpha: -2260.43
+[dbg] optimize P-inv: -2254.9
+[dbg] optimize OptFrequencies: -2254.84
+[dbg] optimize OptFrequencies: -2252.18
+[dbg] optimize Alpha: -2254.84
+[dbg] optimize SubstRates: -2260.42
+[dbg] optimize Alpha: -2252.18
+[dbg] optimize SubstRates: -2254.82
+[dbg] fix branches -2254.81
+[dbg] optimize BranchLengths: -2254.81
+[dbg] fix branches -2260.07
+[dbg] optimize BranchLengths: -2260.07
+[dbg] optimize P-inv: -2254.81
+[dbg] optimize P-inv: -2260.07
+[dbg] optimize OptFrequencies: -2254.8
+[dbg] optimize Alpha: -2254.8
+[dbg] optimize SubstRates: -2252.15
+[dbg] fix branches -2252.13
+[dbg] optimize BranchLengths: -2252.13
+[dbg] optimize OptFrequencies: -2260.06
+[dbg] optimize Alpha: -2259.91
+[dbg] optimize P-inv: -2252.13
+[dbg] optimize SubstRates: -2254.8
+[dbg] fix branches -2254.8
+[dbg] optimize BranchLengths: -2254.8
+[dbg] optimize SubstRates: -2259.9
+[dbg] optimize P-inv: -2254.8
+[dbg] optimize OptFrequencies: -2252.12
+[dbg] optimize OptFrequencies: -2254.8
+[dbg] optimize Alpha: -2252.12
+[dbg] optimize Alpha: -2254.8
+[dbg] fix branches -2259.55
+[dbg] optimize BranchLengths: -2259.55
+[dbg] optimize SubstRates: -2254.8
+[dbg] model done: [0.01/0.05]: -2254.8
+[dbg] Model optimization done: -2254.8
+    7/88   TPM3uf+I+G4    0h:00:00   0h:00:01           -2254.7976  0.5846  0.0000
+[dbg] optimize P-inv: -2259.55
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2498.34
+[dbg] Initial log likelihood: -2498.34
+[dbg] final parameter optimization: -2498.34
+[dbg] optimize SubstRates: -2252.12
+[dbg] fix branches -2252.12
+[dbg] optimize BranchLengths: -2252.12
+[dbg] fix branches -2276.24
+[dbg] optimize BranchLengths: -2276.24
+[dbg] optimize OptFrequencies: -2259.54
+[dbg] optimize P-inv: -2252.12
+[dbg] optimize Alpha: -2259.52
+[dbg] optimize P-inv: -2275.65
+[dbg] optimize OptFrequencies: -2252.12
+[dbg] optimize SubstRates: -2259.5
+[dbg] optimize Alpha: -2252.12
+[dbg] optimize OptFrequencies: -2270.87
+[dbg] optimize Alpha: -2268.63
+[dbg] fix branches -2259.13
+[dbg] optimize BranchLengths: -2259.13
+[dbg] optimize SubstRates: -2252.11
+[dbg] model done: [0.01/0.05]: -2252.11
+[dbg] Model optimization done: -2252.11
+    6/88   TIM1+I+G4      0h:00:00   0h:00:01           -2252.1147  0.6002  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2497.71
+[dbg] Initial log likelihood: -2497.71
+[dbg] final parameter optimization: -2497.71
+[dbg] optimize P-inv: -2259.13
+[dbg] fix branches -2275.18
+[dbg] optimize OptFrequencies: -2259.11
+[dbg] optimize BranchLengths: -2275.18
+[dbg] optimize SubstRates: -2264.21
+[dbg] optimize Alpha: -2259.11
+[dbg] optimize P-inv: -2274.59
+[dbg] fix branches -2261.97
+[dbg] optimize BranchLengths: -2261.97
+[dbg] optimize P-inv: -2261.97
+[dbg] optimize SubstRates: -2259.08
+[dbg] fix branches -2259.05
+[dbg] optimize BranchLengths: -2259.05
+[dbg] optimize P-inv: -2259.05
+[dbg] optimize OptFrequencies: -2261.5
+[dbg] optimize OptFrequencies: -2269.71
+[dbg] optimize Alpha: -2260.95
+[dbg] optimize Alpha: -2267.68
+[dbg] optimize OptFrequencies: -2259.04
+[dbg] optimize Alpha: -2259.04
+[dbg] optimize SubstRates: -2260.55
+[dbg] optimize SubstRates: -2259.04
+[dbg] fix branches -2259.03
+[dbg] optimize BranchLengths: -2259.03
+[dbg] fix branches -2260
+[dbg] optimize BranchLengths: -2260
+[dbg] optimize P-inv: -2259.03
+[dbg] optimize P-inv: -2260
+[dbg] optimize SubstRates: -2263.23
+[dbg] optimize OptFrequencies: -2259.02
+[dbg] optimize Alpha: -2259.02
+[dbg] fix branches -2260.21
+[dbg] optimize BranchLengths: -2260.21
+[dbg] optimize OptFrequencies: -2259.82
+[dbg] optimize Alpha: -2259.57
+[dbg] optimize SubstRates: -2259.02
+[dbg] optimize P-inv: -2260.21
+[dbg] fix branches -2259.02
+[dbg] optimize BranchLengths: -2259.02
+[dbg] optimize P-inv: -2259.02
+[dbg] optimize SubstRates: -2259.37
+[dbg] optimize OptFrequencies: -2259.02
+[dbg] optimize OptFrequencies: -2258.53
+[dbg] optimize Alpha: -2259.02
+[dbg] fix branches -2258.29
+[dbg] optimize BranchLengths: -2258.29
+[dbg] optimize Alpha: -2257.79
+[dbg] optimize P-inv: -2258.29
+[dbg] optimize SubstRates: -2259.02
+[dbg] model done: [0.01/0.05]: -2259.02
+[dbg] Model optimization done: -2259.02
+    8/88   TrN+I+G4       0h:00:00   0h:00:01           -2259.0174  0.6298  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2518.02
+[dbg] Initial log likelihood: -2518.02
+[dbg] final parameter optimization: -2518.02
+[dbg] optimize OptFrequencies: -2258.07
+[dbg] optimize Alpha: -2257.81
+[dbg] optimize SubstRates: -2255.68
+[dbg] fix branches -2291.7
+[dbg] optimize BranchLengths: -2291.7
+[dbg] optimize SubstRates: -2257.48
+[dbg] optimize P-inv: -2291.11
+[dbg] optimize FixedFrequencies: -2291.11
+[dbg] fix branches -2252.72
+[dbg] optimize BranchLengths: -2252.72
+[dbg] optimize Alpha: -2290.54
+[dbg] fix branches -2255.44
+[dbg] optimize BranchLengths: -2255.44
+[dbg] optimize P-inv: -2252.72
+[dbg] optimize P-inv: -2255.44
+[dbg] optimize OptFrequencies: -2255.23
+[dbg] optimize Alpha: -2254.53
+[dbg] optimize OptFrequencies: -2251.69
+[dbg] optimize Alpha: -2251.23
+[dbg] optimize SubstRates: -2254.35
+[dbg] optimize SubstRates: -2283.75
+[dbg] fix branches -2253.03
+[dbg] optimize BranchLengths: -2253.03
+[dbg] optimize P-inv: -2253.03
+[dbg] optimize SubstRates: -2250.08
+[dbg] fix branches -2282.45
+[dbg] optimize BranchLengths: -2282.45
+[dbg] optimize P-inv: -2282.45
+[dbg] optimize FixedFrequencies: -2282.45
+[dbg] optimize OptFrequencies: -2252.95
+[dbg] fix branches -2249.6
+[dbg] optimize BranchLengths: -2249.6
+[dbg] optimize Alpha: -2252.71
+[dbg] optimize Alpha: -2282.45
+[dbg] optimize P-inv: -2249.6
+[dbg] optimize SubstRates: -2252.6
+[dbg] fix branches -2252.19
+[dbg] optimize BranchLengths: -2252.19
+[dbg] optimize OptFrequencies: -2249.35
+[dbg] optimize P-inv: -2252.19
+[dbg] optimize Alpha: -2248.9
+[dbg] optimize SubstRates: -2282.35
+[dbg] optimize OptFrequencies: -2252.17
+[dbg] fix branches -2282.32
+[dbg] optimize BranchLengths: -2282.32
+[dbg] optimize Alpha: -2252.17
+[dbg] optimize P-inv: -2282.32
+[dbg] optimize FixedFrequencies: -2282.32
+[dbg] optimize SubstRates: -2248.74
+[dbg] optimize Alpha: -2282.32
+[dbg] fix branches -2248.57
+[dbg] optimize BranchLengths: -2248.57
+[dbg] optimize SubstRates: -2252.14
+[dbg] fix branches -2252.13
+[dbg] optimize BranchLengths: -2252.13
+[dbg] optimize SubstRates: -2282.32
+[dbg] optimize P-inv: -2248.57
+[dbg] optimize P-inv: -2252.13
+[dbg] fix branches -2282.31
+[dbg] optimize BranchLengths: -2282.31
+[dbg] optimize OptFrequencies: -2252.13
+[dbg] optimize P-inv: -2282.31
+[dbg] optimize FixedFrequencies: -2282.31
+[dbg] optimize Alpha: -2252.13
+[dbg] optimize Alpha: -2282.31
+[dbg] optimize OptFrequencies: -2248.52
+[dbg] optimize Alpha: -2248.33
+[dbg] optimize SubstRates: -2252.13
+[dbg] optimize SubstRates: -2282.31
+[dbg] fix branches -2251.89
+[dbg] optimize BranchLengths: -2251.89
+[dbg] fix branches -2282.3
+[dbg] optimize BranchLengths: -2282.3
+[dbg] optimize P-inv: -2251.89
+[dbg] optimize P-inv: -2282.3
+[dbg] optimize FixedFrequencies: -2282.3
+[dbg] optimize SubstRates: -2248.29
+[dbg] optimize OptFrequencies: -2251.89
+[dbg] optimize Alpha: -2282.3
+[dbg] optimize Alpha: -2251.89
+[dbg] fix branches -2248.13
+[dbg] optimize BranchLengths: -2248.13
+[dbg] optimize SubstRates: -2282.3
+[dbg] model done: [0.01/0.05]: -2282.3
+[dbg] Model optimization done: -2282.3
+   11/88   SYM+I+G4       0h:00:00   0h:00:01           -2282.3036  0.8772  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2519.37
+[dbg] Initial log likelihood: -2519.37
+[dbg] final parameter optimization: -2519.37
+[dbg] optimize SubstRates: -2251.88
+[dbg] optimize P-inv: -2248.13
+[dbg] fix branches -2251.87
+[dbg] optimize BranchLengths: -2251.87
+[dbg] optimize P-inv: -2251.87
+[dbg] optimize OptFrequencies: -2251.87
+[dbg] optimize OptFrequencies: -2248.11
+[dbg] optimize Alpha: -2251.87
+[dbg] fix branches -2293.13
+[dbg] optimize BranchLengths: -2293.13
+[dbg] optimize Alpha: -2248.11
+[dbg] optimize SubstRates: -2251.87
+[dbg] optimize P-inv: -2292.54
+[dbg] optimize FixedFrequencies: -2292.54
+[dbg] fix branches -2251.87
+[dbg] optimize BranchLengths: -2251.87
+[dbg] optimize P-inv: -2251.87
+[dbg] optimize Alpha: -2291.81
+[dbg] optimize OptFrequencies: -2251.87
+[dbg] optimize Alpha: -2251.87
+[dbg] optimize SubstRates: -2248.1
+[dbg] fix branches -2248.08
+[dbg] optimize BranchLengths: -2248.08
+[dbg] optimize SubstRates: -2251.87
+[dbg] model done: [0.01/0.05]: -2251.87
+[dbg] Model optimization done: -2251.87
+    9/88   TPM1uf+I+G4    0h:00:00   0h:00:01           -2251.8664  0.5663  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2510.59
+[dbg] Initial log likelihood: -2510.59
+[dbg] final parameter optimization: -2510.59
+[dbg] optimize P-inv: -2248.08
+[dbg] fix branches -2289.36
+[dbg] optimize BranchLengths: -2289.36
+[dbg] optimize OptFrequencies: -2248.08
+[dbg] optimize Alpha: -2248.08
+[dbg] optimize SubstRates: -2285.2
+[dbg] optimize P-inv: -2288.77
+[dbg] optimize SubstRates: -2248.08
+[dbg] fix branches -2248.06
+[dbg] optimize BranchLengths: -2248.06
+[dbg] fix branches -2283.86
+[dbg] optimize BranchLengths: -2283.86
+[dbg] optimize OptFrequencies: -2282.58
+[dbg] optimize P-inv: -2248.06
+[dbg] optimize Alpha: -2280.57
+[dbg] optimize P-inv: -2283.86
+[dbg] optimize FixedFrequencies: -2283.86
+[dbg] optimize Alpha: -2283.86
+[dbg] optimize OptFrequencies: -2248.06
+[dbg] optimize Alpha: -2248.06
+[dbg] optimize SubstRates: -2248.06
+[dbg] optimize SubstRates: -2266.92
+[dbg] fix branches -2248.04
+[dbg] optimize BranchLengths: -2248.04
+[dbg] optimize P-inv: -2248.04
+[dbg] fix branches -2264.55
+[dbg] optimize BranchLengths: -2264.55
+[dbg] optimize P-inv: -2264.55
+[dbg] optimize OptFrequencies: -2248.04
+[dbg] optimize Alpha: -2248.04
+[dbg] optimize SubstRates: -2283.79
+[dbg] optimize SubstRates: -2248.04
+[dbg] fix branches -2283.77
+[dbg] optimize BranchLengths: -2283.77
+[dbg] optimize OptFrequencies: -2263.63
+[dbg] fix branches -2248.02
+[dbg] optimize BranchLengths: -2248.02
+[dbg] optimize Alpha: -2263.19
+[dbg] optimize P-inv: -2283.77
+[dbg] optimize FixedFrequencies: -2283.77
+[dbg] optimize P-inv: -2248.02
+[dbg] optimize Alpha: -2283.77
+[dbg] optimize SubstRates: -2262.88
+[dbg] optimize OptFrequencies: -2248.02
+[dbg] fix branches -2262.49
+[dbg] optimize BranchLengths: -2262.49
+[dbg] optimize Alpha: -2248.02
+[dbg] optimize SubstRates: -2283.77
+[dbg] optimize P-inv: -2262.49
+[dbg] fix branches -2283.77
+[dbg] optimize BranchLengths: -2283.77
+[dbg] optimize SubstRates: -2248.02
+[dbg] fix branches -2248
+[dbg] optimize BranchLengths: -2248
+[dbg] optimize P-inv: -2283.77
+[dbg] optimize FixedFrequencies: -2283.77
+[dbg] optimize OptFrequencies: -2262.42
+[dbg] optimize Alpha: -2283.77
+[dbg] optimize P-inv: -2248
+[dbg] optimize Alpha: -2262.25
+[dbg] optimize OptFrequencies: -2248
+[dbg] optimize SubstRates: -2283.77
+[dbg] model done: [0.01/0.05]: -2283.77
+[dbg] Model optimization done: -2283.77
+   12/88   TVMef+I+G4     0h:00:00   0h:00:01           -2283.7657  0.8626  0.0000
+[dbg] optimize SubstRates: -2262.2
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2517.93
+[dbg] Initial log likelihood: -2517.93
+[dbg] final parameter optimization: -2517.93
+[dbg] optimize Alpha: -2248
+[dbg] fix branches -2262.04
+[dbg] optimize BranchLengths: -2262.04
+[dbg] optimize SubstRates: -2248
+[dbg] optimize P-inv: -2262.04
+[dbg] fix branches -2247.95
+[dbg] optimize BranchLengths: -2247.95
+[dbg] optimize P-inv: -2247.95
+[dbg] optimize OptFrequencies: -2262.02
+[dbg] optimize Alpha: -2262.02
+[dbg] fix branches -2295.91
+[dbg] optimize BranchLengths: -2295.91
+[dbg] optimize OptFrequencies: -2247.95
+[dbg] optimize SubstRates: -2262.02
+[dbg] optimize Alpha: -2247.95
+[dbg] optimize SubstRates: -2247.95
+[dbg] fix branches -2261.97
+[dbg] optimize BranchLengths: -2261.97
+[dbg] optimize P-inv: -2295.32
+[dbg] optimize FixedFrequencies: -2295.32
+[dbg] optimize P-inv: -2261.97
+[dbg] fix branches -2247.88
+[dbg] optimize BranchLengths: -2247.88
+[dbg] optimize Alpha: -2294.85
+[dbg] optimize OptFrequencies: -2261.97
+[dbg] optimize P-inv: -2247.88
+[dbg] optimize Alpha: -2261.97
+[dbg] optimize SubstRates: -2261.97
+[dbg] fix branches -2261.93
+[dbg] optimize BranchLengths: -2261.93
+[dbg] optimize OptFrequencies: -2247.88
+[dbg] optimize P-inv: -2261.93
+[dbg] optimize Alpha: -2247.88
+[dbg] optimize SubstRates: -2247.88
+[dbg] optimize OptFrequencies: -2261.93
+[dbg] fix branches -2247.87
+[dbg] optimize BranchLengths: -2247.87
+[dbg] optimize Alpha: -2261.93
+[dbg] optimize P-inv: -2247.87
+[dbg] optimize SubstRates: -2261.93
+[dbg] fix branches -2261.9
+[dbg] optimize BranchLengths: -2261.9
+[dbg] optimize SubstRates: -2289.25
+[dbg] optimize OptFrequencies: -2247.87
+[dbg] optimize P-inv: -2261.9
+[dbg] optimize Alpha: -2247.87
+[dbg] optimize OptFrequencies: -2261.9
+[dbg] optimize Alpha: -2261.9
+[dbg] fix branches -2288.19
+[dbg] optimize BranchLengths: -2288.19
+[dbg] optimize SubstRates: -2261.9
+[dbg] optimize SubstRates: -2247.87
+[dbg] model done: [0.01/0.05]: -2247.87
+[dbg] Model optimization done: -2247.87
+   10/88   TPM2uf+I+G4    0h:00:00   0h:00:01           -2247.8731  0.6304  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] fix branches -2261.87
+[dbg] optimize BranchLengths: -2261.87
+[dbg] Initial score: -2511.32
+[dbg] Initial log likelihood: -2511.32
+[dbg] final parameter optimization: -2511.32
+[dbg] optimize P-inv: -2288.19
+[dbg] optimize FixedFrequencies: -2288.19
+[dbg] optimize P-inv: -2261.87
+[dbg] optimize Alpha: -2288.19
+[dbg] optimize OptFrequencies: -2261.87
+[dbg] optimize Alpha: -2261.87
+[dbg] optimize SubstRates: -2261.87
+[dbg] fix branches -2261.85
+[dbg] optimize BranchLengths: -2261.85
+[dbg] fix branches -2291.89
+[dbg] optimize BranchLengths: -2291.89
+[dbg] optimize P-inv: -2261.85
+[dbg] optimize OptFrequencies: -2261.85
+[dbg] optimize P-inv: -2291.3
+[dbg] optimize FixedFrequencies: -2291.3
+[dbg] optimize Alpha: -2261.84
+[dbg] optimize SubstRates: -2288.12
+[dbg] optimize Alpha: -2290.91
+[dbg] fix branches -2288.07
+[dbg] optimize BranchLengths: -2288.07
+[dbg] optimize SubstRates: -2261.84
+[dbg] fix branches -2261.72
+[dbg] optimize P-inv: -2288.07
+[dbg] optimize BranchLengths: -2261.72
+[dbg] optimize FixedFrequencies: -2288.07
+[dbg] optimize P-inv: -2261.72
+[dbg] optimize Alpha: -2288.07
+[dbg] optimize OptFrequencies: -2261.72
+[dbg] optimize Alpha: -2261.72
+[dbg] optimize SubstRates: -2261.71
+[dbg] optimize SubstRates: -2288.07
+[dbg] fix branches -2261.69
+[dbg] optimize BranchLengths: -2261.69
+[dbg] fix branches -2288.04
+[dbg] optimize BranchLengths: -2288.04
+[dbg] optimize P-inv: -2261.69
+[dbg] optimize SubstRates: -2287.03
+[dbg] optimize P-inv: -2288.04
+[dbg] optimize FixedFrequencies: -2288.04
+[dbg] optimize OptFrequencies: -2261.69
+[dbg] optimize Alpha: -2261.69
+[dbg] optimize Alpha: -2288.03
+[dbg] optimize SubstRates: -2261.69
+[dbg] fix branches -2261.66
+[dbg] optimize BranchLengths: -2261.66
+[dbg] fix branches -2286.15
+[dbg] optimize BranchLengths: -2286.15
+[dbg] optimize P-inv: -2261.66
+[dbg] optimize SubstRates: -2288.03
+[dbg] optimize OptFrequencies: -2261.66
+[dbg] optimize P-inv: -2286.15
+[dbg] optimize FixedFrequencies: -2286.15
+[dbg] optimize Alpha: -2261.66
+[dbg] optimize Alpha: -2286.13
+[dbg] fix branches -2287.95
+[dbg] optimize BranchLengths: -2287.95
+[dbg] optimize SubstRates: -2261.66
+[dbg] fix branches -2261.65
+[dbg] optimize BranchLengths: -2261.65
+[dbg] optimize P-inv: -2287.95
+[dbg] optimize FixedFrequencies: -2287.95
+[dbg] optimize P-inv: -2261.65
+[dbg] optimize Alpha: -2287.95
+[dbg] optimize OptFrequencies: -2261.65
+[dbg] optimize Alpha: -2261.65
+[dbg] optimize SubstRates: -2286.11
+[dbg] optimize SubstRates: -2261.65
+[dbg] fix branches -2261.64
+[dbg] optimize BranchLengths: -2261.64
+[dbg] fix branches -2286.03
+[dbg] optimize BranchLengths: -2286.03
+[dbg] optimize SubstRates: -2287.95
+[dbg] optimize P-inv: -2261.64
+[dbg] fix branches -2287.95
+[dbg] optimize BranchLengths: -2287.95
+[dbg] optimize OptFrequencies: -2261.64
+[dbg] optimize P-inv: -2286.03
+[dbg] optimize FixedFrequencies: -2286.03
+[dbg] optimize Alpha: -2261.64
+[dbg] optimize P-inv: -2287.95
+[dbg] optimize FixedFrequencies: -2287.95
+[dbg] optimize Alpha: -2286.03
+[dbg] optimize SubstRates: -2261.64
+[dbg] model done: [0.01/0.05]: -2261.64
+[dbg] optimize Alpha: -2287.95
+[dbg] Model optimization done: -2261.64
+   13/88   HKY+I+G4       0h:00:01   0h:00:02           -2261.6367  0.7084  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2514.37
+[dbg] Initial log likelihood: -2514.37
+[dbg] final parameter optimization: -2514.37
+[dbg] optimize SubstRates: -2286.03
+[dbg] fix branches -2286.02
+[dbg] optimize BranchLengths: -2286.02
+[dbg] optimize SubstRates: -2287.95
+[dbg] model done: [0.01/0.05]: -2287.95
+[dbg] Model optimization done: -2287.95
+   14/88   TIM2ef+I+G4    0h:00:01   0h:00:02           -2287.9469  0.8408  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2501.5
+[dbg] Initial log likelihood: -2501.5
+[dbg] final parameter optimization: -2501.5
+[dbg] fix branches -2290.93
+[dbg] optimize BranchLengths: -2290.93
+[dbg] optimize P-inv: -2286.02
+[dbg] optimize FixedFrequencies: -2286.02
+[dbg] optimize P-inv: -2290.34
+[dbg] optimize FixedFrequencies: -2290.34
+[dbg] optimize Alpha: -2286.02
+[dbg] optimize Alpha: -2289.82
+[dbg] optimize SubstRates: -2286.02
+[dbg] model done: [0.01/0.05]: -2286.02
+[dbg] Model optimization done: -2286.02
+   15/88   TIM1ef+I+G4    0h:00:01   0h:00:02           -2286.0221  0.8484  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2512.99
+[dbg] Initial log likelihood: -2512.99
+[dbg] final parameter optimization: -2512.99
+[dbg] fix branches -2280.22
+[dbg] optimize BranchLengths: -2280.22
+[dbg] optimize P-inv: -2279.63
+[dbg] optimize SubstRates: -2284.29
+[dbg] fix branches -2291.47
+[dbg] optimize BranchLengths: -2291.47
+[dbg] fix branches -2283.21
+[dbg] optimize BranchLengths: -2283.21
+[dbg] optimize P-inv: -2290.88
+[dbg] optimize FixedFrequencies: -2290.88
+[dbg] optimize P-inv: -2283.21
+[dbg] optimize FixedFrequencies: -2283.21
+[dbg] optimize Alpha: -2283.21
+[dbg] optimize Alpha: -2290.29
+[dbg] optimize OptFrequencies: -2274.23
+[dbg] optimize Alpha: -2272.29
+[dbg] optimize SubstRates: -2272.29
+[dbg] optimize SubstRates: -2283.17
+[dbg] fix branches -2283.15
+[dbg] optimize BranchLengths: -2283.15
+[dbg] optimize P-inv: -2283.15
+[dbg] optimize FixedFrequencies: -2283.15
+[dbg] fix branches -2270.86
+[dbg] optimize BranchLengths: -2270.86
+[dbg] optimize Alpha: -2283.15
+[dbg] optimize SubstRates: -2285.51
+[dbg] optimize P-inv: -2270.86
+[dbg] optimize SubstRates: -2283.15
+[dbg] fix branches -2283.14
+[dbg] optimize BranchLengths: -2283.14
+[dbg] optimize P-inv: -2283.14
+[dbg] optimize FixedFrequencies: -2283.14
+[dbg] fix branches -2284.64
+[dbg] optimize BranchLengths: -2284.64
+[dbg] optimize Alpha: -2283.14
+[dbg] optimize SubstRates: -2283.14
+[dbg] model done: [0.01/0.05]: -2283.14
+[dbg] Model optimization done: -2283.14
+   16/88   TIM3ef+I+G4    0h:00:00   0h:00:02           -2283.1446  0.8805  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2513.49
+[dbg] Initial log likelihood: -2513.49
+[dbg] final parameter optimization: -2513.49
+[dbg] optimize OptFrequencies: -2270.8
+[dbg] optimize P-inv: -2284.64
+[dbg] optimize FixedFrequencies: -2284.64
+[dbg] optimize Alpha: -2270.46
+[dbg] optimize SubstRates: -2270.46
+[dbg] optimize Alpha: -2284.62
+[dbg] fix branches -2291.85
+[dbg] optimize BranchLengths: -2291.85
+[dbg] fix branches -2270.34
+[dbg] optimize BranchLengths: -2270.34
+[dbg] optimize P-inv: -2291.26
+[dbg] optimize FixedFrequencies: -2291.26
+[dbg] optimize Alpha: -2290.59
+[dbg] optimize P-inv: -2270.34
+[dbg] optimize SubstRates: -2284.6
+[dbg] fix branches -2284.57
+[dbg] optimize BranchLengths: -2284.57
+[dbg] optimize OptFrequencies: -2270.33
+[dbg] optimize SubstRates: -2290.46
+[dbg] optimize P-inv: -2284.57
+[dbg] optimize FixedFrequencies: -2284.57
+[dbg] optimize Alpha: -2270.23
+[dbg] optimize SubstRates: -2270.23
+[dbg] optimize Alpha: -2284.57
+[dbg] fix branches -2289.68
+[dbg] optimize BranchLengths: -2289.68
+[dbg] fix branches -2270.16
+[dbg] optimize BranchLengths: -2270.16
+[dbg] optimize P-inv: -2289.68
+[dbg] optimize FixedFrequencies: -2289.68
+[dbg] optimize Alpha: -2289.66
+[dbg] optimize SubstRates: -2284.57
+[dbg] optimize P-inv: -2270.16
+[dbg] fix branches -2284.56
+[dbg] optimize BranchLengths: -2284.56
+[dbg] optimize SubstRates: -2289.66
+[dbg] fix branches -2289.64
+[dbg] optimize BranchLengths: -2289.64
+[dbg] optimize P-inv: -2284.56
+[dbg] optimize FixedFrequencies: -2284.56
+[dbg] optimize OptFrequencies: -2270.16
+[dbg] optimize P-inv: -2289.64
+[dbg] optimize FixedFrequencies: -2289.64
+[dbg] optimize Alpha: -2284.56
+[dbg] optimize Alpha: -2270.16
+[dbg] optimize SubstRates: -2270.16
+[dbg] optimize Alpha: -2289.64
+[dbg] fix branches -2270.15
+[dbg] optimize BranchLengths: -2270.15
+[dbg] optimize SubstRates: -2289.64
+[dbg] optimize SubstRates: -2284.56
+[dbg] model done: [0.01/0.05]: -2284.56
+[dbg] Model optimization done: -2284.56
+   18/88   TPM3+I+G4      0h:00:00   0h:00:02           -2284.5607  0.8277  0.0000
+[dbg] optimize P-inv: -2270.15
+[dbg] fix branches -2289.64
+[dbg] optimize BranchLengths: -2289.64
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2517.51
+[dbg] Initial log likelihood: -2517.51
+[dbg] final parameter optimization: -2517.51
+[dbg] optimize OptFrequencies: -2270.15
+[dbg] optimize P-inv: -2289.64
+[dbg] optimize FixedFrequencies: -2289.64
+[dbg] optimize Alpha: -2270.15
+[dbg] optimize SubstRates: -2270.15
+[dbg] model done: [0.01/0.05]: -2270.15
+[dbg] Model optimization done: -2270.15
+   17/88   F81+I+G4       0h:00:00   0h:00:02           -2270.1512  0.7552  0.0000
+[dbg] optimize Alpha: -2289.64
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize SubstRates: -2289.64
+[dbg] model done: [0.01/0.05]: -2289.64
+[dbg] Model optimization done: -2289.64
+   19/88   TPM2+I+G4      0h:00:00   0h:00:02           -2289.6387  0.8240  0.0000
+[dbg] Initial score: -2512.83
+[dbg] Initial log likelihood: -2512.83
+[dbg] final parameter optimization: -2512.83
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2518.7
+[dbg] Initial log likelihood: -2518.7
+[dbg] final parameter optimization: -2518.7
+[dbg] fix branches -2295.63
+[dbg] optimize BranchLengths: -2295.63
+[dbg] fix branches -2298.77
+[dbg] optimize BranchLengths: -2298.77
+[dbg] optimize P-inv: -2295.03
+[dbg] optimize FixedFrequencies: -2295.03
+[dbg] fix branches -2293.09
+[dbg] optimize BranchLengths: -2293.09
+[dbg] optimize P-inv: -2298.18
+[dbg] optimize FixedFrequencies: -2298.18
+[dbg] optimize Alpha: -2297.61
+[dbg] optimize Alpha: -2294.31
+[dbg] optimize P-inv: -2292.5
+[dbg] optimize FixedFrequencies: -2292.5
+[dbg] optimize Alpha: -2292.09
+[dbg] optimize SubstRates: -2291.01
+[dbg] fix branches -2289.89
+[dbg] optimize BranchLengths: -2289.89
+[dbg] optimize P-inv: -2289.89
+[dbg] optimize FixedFrequencies: -2289.89
+[dbg] optimize Alpha: -2289.86
+[dbg] optimize SubstRates: -2289.18
+[dbg] optimize SubstRates: -2289.82
+[dbg] optimize SubstRates: -2288.87
+[dbg] fix branches -2289.78
+[dbg] optimize BranchLengths: -2289.78
+[dbg] optimize P-inv: -2289.78
+[dbg] optimize FixedFrequencies: -2289.78
+[dbg] optimize Alpha: -2289.78
+[dbg] fix branches -2287.85
+[dbg] optimize BranchLengths: -2287.85
+[dbg] fix branches -2288.29
+[dbg] optimize BranchLengths: -2288.29
+[dbg] optimize SubstRates: -2289.78
+[dbg] optimize P-inv: -2287.85
+[dbg] optimize FixedFrequencies: -2287.85
+[dbg] fix branches -2289.78
+[dbg] optimize BranchLengths: -2289.78
+[dbg] optimize P-inv: -2288.29
+[dbg] optimize FixedFrequencies: -2288.29
+[dbg] optimize Alpha: -2287.85
+[dbg] optimize P-inv: -2289.78
+[dbg] optimize FixedFrequencies: -2289.78
+[dbg] optimize Alpha: -2289.78
+[dbg] optimize Alpha: -2288.26
+[dbg] optimize SubstRates: -2289.78
+[dbg] model done: [0.01/0.05]: -2289.78
+[dbg] Model optimization done: -2289.78
+   22/88   K80+I+G4       0h:00:00   0h:00:02           -2289.7770  0.8301  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2513.69
+[dbg] Initial log likelihood: -2513.69
+[dbg] final parameter optimization: -2513.69
+[dbg] optimize SubstRates: -2288.24
+[dbg] optimize SubstRates: -2287.83
+[dbg] fix branches -2293.41
+[dbg] optimize BranchLengths: -2293.41
+[dbg] fix branches -2287.82
+[dbg] optimize BranchLengths: -2287.82
+[dbg] fix branches -2288.16
+[dbg] optimize BranchLengths: -2288.16
+[dbg] optimize P-inv: -2292.82
+[dbg] optimize FixedFrequencies: -2292.82
+[dbg] optimize P-inv: -2287.82
+[dbg] optimize FixedFrequencies: -2287.82
+[dbg] optimize Alpha: -2292.23
+[dbg] optimize SubstRates: -2292.23
+[dbg] optimize P-inv: -2288.16
+[dbg] optimize FixedFrequencies: -2288.16
+[dbg] optimize Alpha: -2287.82
+[dbg] optimize Alpha: -2288.16
+[dbg] fix branches -2291.52
+[dbg] optimize BranchLengths: -2291.52
+[dbg] optimize P-inv: -2291.52
+[dbg] optimize FixedFrequencies: -2291.52
+[dbg] optimize SubstRates: -2287.82
+[dbg] model done: [0.01/0.05]: -2287.82
+[dbg] Model optimization done: -2287.82
+   20/88   TPM1+I+G4      0h:00:00   0h:00:02           -2287.8188  0.8640  0.0000
+[dbg] optimize Alpha: -2291.52
+[dbg] optimize SubstRates: -2291.52
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize SubstRates: -2288.16
+[dbg] Initial score: -2535.6
+[dbg] Initial log likelihood: -2535.6
+[dbg] final parameter optimization: -2535.6
+[dbg] fix branches -2291.49
+[dbg] optimize BranchLengths: -2291.49
+[dbg] fix branches -2288.15
+[dbg] optimize BranchLengths: -2288.15
+[dbg] optimize P-inv: -2291.49
+[dbg] optimize FixedFrequencies: -2291.49
+[dbg] optimize Alpha: -2291.49
+[dbg] optimize SubstRates: -2291.49
+[dbg] optimize P-inv: -2288.15
+[dbg] optimize FixedFrequencies: -2288.15
+[dbg] fix branches -2291.48
+[dbg] optimize BranchLengths: -2291.48
+[dbg] optimize Alpha: -2288.15
+[dbg] optimize P-inv: -2291.48
+[dbg] optimize FixedFrequencies: -2291.48
+[dbg] fix branches -2302.6
+[dbg] optimize BranchLengths: -2302.6
+[dbg] optimize Alpha: -2291.48
+[dbg] optimize SubstRates: -2291.48
+[dbg] model done: [0.01/0.05]: -2291.48
+[dbg] Model optimization done: -2291.48
+   23/88   JC+I+G4        0h:00:00   0h:00:02           -2291.4847  0.8290  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2537.52
+[dbg] Initial log likelihood: -2537.52
+[dbg] final parameter optimization: -2537.52
+[dbg] optimize SubstRates: -2288.15
+[dbg] model done: [0.01/0.05]: -2288.15
+[dbg] Model optimization done: -2288.15
+   21/88   TrNef+I+G4     0h:00:00   0h:00:02           -2288.1535  0.8463  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2518.14
+[dbg] Initial log likelihood: -2518.14
+[dbg] final parameter optimization: -2518.14
+[dbg] fix branches -2304.12
+[dbg] optimize BranchLengths: -2304.12
+[dbg] optimize OptFrequencies: -2291.23
+[dbg] fix branches -2290.73
+[dbg] optimize BranchLengths: -2290.73
+[dbg] optimize Alpha: -2289.33
+[dbg] optimize OptFrequencies: -2292.37
+[dbg] optimize Alpha: -2290.28
+[dbg] optimize OptFrequencies: -2284.12
+[dbg] optimize Alpha: -2282.51
+[dbg] optimize SubstRates: -2275.98
+[dbg] fix branches -2272.16
+[dbg] optimize BranchLengths: -2272.16
+[dbg] optimize SubstRates: -2274.74
+[dbg] optimize OptFrequencies: -2267.77
+[dbg] optimize Alpha: -2267.77
+[dbg] fix branches -2270.83
+[dbg] optimize BranchLengths: -2270.83
+[dbg] optimize SubstRates: -2271.05
+[dbg] fix branches -2268.37
+[dbg] optimize BranchLengths: -2268.37
+[dbg] optimize OptFrequencies: -2266.33
+[dbg] optimize SubstRates: -2264.4
+[dbg] optimize Alpha: -2266.33
+[dbg] fix branches -2261.85
+[dbg] optimize BranchLengths: -2261.85
+[dbg] optimize OptFrequencies: -2266.75
+[dbg] optimize OptFrequencies: -2259.64
+[dbg] optimize Alpha: -2259.47
+[dbg] optimize Alpha: -2266.61
+[dbg] optimize SubstRates: -2262.5
+[dbg] optimize SubstRates: -2256.83
+[dbg] optimize SubstRates: -2265.45
+[dbg] fix branches -2259.6
+[dbg] optimize BranchLengths: -2259.6
+[dbg] fix branches -2254.16
+[dbg] optimize BranchLengths: -2254.16
+[dbg] fix branches -2264.72
+[dbg] optimize BranchLengths: -2264.72
+[dbg] optimize OptFrequencies: -2252.6
+[dbg] optimize Alpha: -2252.12
+[dbg] optimize OptFrequencies: -2257.23
+[dbg] optimize Alpha: -2257.08
+[dbg] optimize OptFrequencies: -2263.95
+[dbg] optimize Alpha: -2263.86
+[dbg] optimize SubstRates: -2250.13
+[dbg] fix branches -2248.65
+[dbg] optimize BranchLengths: -2248.65
+[dbg] optimize SubstRates: -2254.16
+[dbg] optimize OptFrequencies: -2248.07
+[dbg] fix branches -2252.31
+[dbg] optimize BranchLengths: -2252.31
+[dbg] optimize SubstRates: -2263.18
+[dbg] optimize Alpha: -2247.7
+[dbg] fix branches -2262.64
+[dbg] optimize BranchLengths: -2262.64
+[dbg] optimize OptFrequencies: -2251.12
+[dbg] optimize Alpha: -2250.68
+[dbg] optimize OptFrequencies: -2262.16
+[dbg] optimize SubstRates: -2247.12
+[dbg] optimize Alpha: -2262.16
+[dbg] fix branches -2246.54
+[dbg] optimize BranchLengths: -2246.54
+[dbg] optimize OptFrequencies: -2246.28
+[dbg] optimize Alpha: -2245.97
+[dbg] optimize SubstRates: -2261.69
+[dbg] fix branches -2261.45
+[dbg] optimize BranchLengths: -2261.45
+[dbg] optimize SubstRates: -2249.57
+[dbg] optimize SubstRates: -2245.74
+[dbg] fix branches -2249.01
+[dbg] optimize BranchLengths: -2249.01
+[dbg] fix branches -2245.04
+[dbg] optimize BranchLengths: -2245.04
+[dbg] optimize OptFrequencies: -2261.18
+[dbg] optimize Alpha: -2261.05
+[dbg] optimize OptFrequencies: -2244.94
+[dbg] optimize Alpha: -2244.79
+[dbg] optimize OptFrequencies: -2248.52
+[dbg] optimize Alpha: -2248.12
+[dbg] optimize SubstRates: -2244.7
+[dbg] optimize SubstRates: -2260.81
+[dbg] fix branches -2244.41
+[dbg] optimize BranchLengths: -2244.41
+[dbg] fix branches -2260.41
+[dbg] optimize BranchLengths: -2260.41
+[dbg] optimize OptFrequencies: -2244.39
+[dbg] optimize Alpha: -2244.39
+[dbg] optimize OptFrequencies: -2260.23
+[dbg] optimize SubstRates: -2247.62
+[dbg] optimize Alpha: -2260.23
+[dbg] optimize SubstRates: -2244.38
+[dbg] fix branches -2244.34
+[dbg] optimize BranchLengths: -2244.34
+[dbg] fix branches -2247.16
+[dbg] optimize BranchLengths: -2247.16
+[dbg] optimize OptFrequencies: -2244.34
+[dbg] optimize Alpha: -2244.34
+[dbg] optimize SubstRates: -2244.34
+[dbg] fix branches -2244.34
+[dbg] optimize BranchLengths: -2244.34
+[dbg] optimize OptFrequencies: -2244.34
+[dbg] optimize OptFrequencies: -2246.9
+[dbg] optimize Alpha: -2244.34
+[dbg] optimize Alpha: -2246.59
+[dbg] optimize SubstRates: -2260.04
+[dbg] optimize SubstRates: -2244.34
+[dbg] model done: [0.01/0.05]: -2244.34
+[dbg] Model optimization done: -2244.34
+   25/88   TVM+G4         0h:00:00   0h:00:02           -2244.3351  0.5820       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2520.06
+[dbg] Initial log likelihood: -2520.06
+[dbg] final parameter optimization: -2520.06
+[dbg] fix branches -2294.01
+[dbg] optimize BranchLengths: -2294.01
+[dbg] fix branches -2259.71
+[dbg] optimize BranchLengths: -2259.71
+[dbg] optimize OptFrequencies: -2284.69
+[dbg] optimize Alpha: -2282.84
+[dbg] optimize OptFrequencies: -2259.58
+[dbg] optimize Alpha: -2259.31
+[dbg] optimize SubstRates: -2246.3
+[dbg] optimize SubstRates: -2269.44
+[dbg] fix branches -2245.6
+[dbg] optimize BranchLengths: -2245.6
+[dbg] optimize SubstRates: -2259.17
+[dbg] fix branches -2266.35
+[dbg] optimize BranchLengths: -2266.35
+[dbg] fix branches -2258.75
+[dbg] optimize BranchLengths: -2258.75
+[dbg] optimize OptFrequencies: -2245.46
+[dbg] optimize OptFrequencies: -2262.37
+[dbg] optimize Alpha: -2262.25
+[dbg] optimize Alpha: -2245.23
+[dbg] optimize OptFrequencies: -2258.66
+[dbg] optimize SubstRates: -2259.13
+[dbg] optimize Alpha: -2258.43
+[dbg] fix branches -2256.33
+[dbg] optimize BranchLengths: -2256.33
+[dbg] optimize OptFrequencies: -2254.48
+[dbg] optimize Alpha: -2254.22
+[dbg] optimize SubstRates: -2245.03
+[dbg] optimize SubstRates: -2258.36
+[dbg] optimize SubstRates: -2251.72
+[dbg] fix branches -2244.67
+[dbg] optimize BranchLengths: -2244.67
+[dbg] fix branches -2258.08
+[dbg] optimize BranchLengths: -2258.08
+[dbg] fix branches -2250.27
+[dbg] optimize BranchLengths: -2250.27
+[dbg] optimize OptFrequencies: -2244.59
+[dbg] optimize OptFrequencies: -2258.02
+[dbg] optimize OptFrequencies: -2249.75
+[dbg] optimize Alpha: -2244.58
+[dbg] optimize Alpha: -2257.99
+[dbg] optimize Alpha: -2249.27
+[dbg] optimize SubstRates: -2248.9
+[dbg] optimize SubstRates: -2257.95
+[dbg] fix branches -2248.71
+[dbg] optimize BranchLengths: -2248.71
+[dbg] fix branches -2257.7
+[dbg] optimize BranchLengths: -2257.7
+[dbg] optimize SubstRates: -2244.5
+[dbg] optimize OptFrequencies: -2248.62
+[dbg] fix branches -2244.28
+[dbg] optimize BranchLengths: -2244.28
+[dbg] optimize Alpha: -2248.35
+[dbg] optimize OptFrequencies: -2257.68
+[dbg] optimize OptFrequencies: -2244.25
+[dbg] optimize Alpha: -2244.25
+[dbg] optimize SubstRates: -2248.27
+[dbg] fix branches -2248.1
+[dbg] optimize BranchLengths: -2248.1
+[dbg] optimize Alpha: -2257.68
+[dbg] optimize SubstRates: -2244.23
+[dbg] fix branches -2244.22
+[dbg] optimize BranchLengths: -2244.22
+[dbg] optimize OptFrequencies: -2248.07
+[dbg] optimize OptFrequencies: -2244.22
+[dbg] optimize Alpha: -2248.07
+[dbg] optimize SubstRates: -2257.66
+[dbg] optimize Alpha: -2244.22
+[dbg] fix branches -2257.64
+[dbg] optimize BranchLengths: -2257.64
+[dbg] optimize SubstRates: -2244.22
+[dbg] fix branches -2244.21
+[dbg] optimize BranchLengths: -2244.21
+[dbg] optimize SubstRates: -2248.05
+[dbg] fix branches -2248.03
+[dbg] optimize BranchLengths: -2248.03
+[dbg] optimize OptFrequencies: -2244.21
+[dbg] optimize Alpha: -2244.21
+[dbg] optimize OptFrequencies: -2248.03
+[dbg] optimize OptFrequencies: -2257.63
+[dbg] optimize Alpha: -2247.99
+[dbg] optimize Alpha: -2257.63
+[dbg] optimize SubstRates: -2244.21
+[dbg] model done: [0.01/0.05]: -2244.21
+[dbg] Model optimization done: -2244.21
+   24/88   GTR+G4         0h:00:00   0h:00:02           -2244.2129  0.5743       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2502.13
+[dbg] Initial log likelihood: -2502.13
+[dbg] final parameter optimization: -2502.13
+[dbg] optimize SubstRates: -2247.98
+[dbg] fix branches -2247.83
+[dbg] optimize BranchLengths: -2247.83
+[dbg] optimize SubstRates: -2257.63
+[dbg] fix branches -2257.61
+[dbg] optimize BranchLengths: -2257.61
+[dbg] fix branches -2281.13
+[dbg] optimize BranchLengths: -2281.13
+[dbg] optimize OptFrequencies: -2247.82
+[dbg] optimize Alpha: -2247.82
+[dbg] optimize OptFrequencies: -2257.61
+[dbg] optimize Alpha: -2257.61
+[dbg] optimize SubstRates: -2247.81
+[dbg] fix branches -2247.79
+[dbg] optimize BranchLengths: -2247.79
+[dbg] optimize OptFrequencies: -2276.8
+[dbg] optimize OptFrequencies: -2247.79
+[dbg] optimize Alpha: -2275.19
+[dbg] optimize Alpha: -2247.79
+[dbg] optimize SubstRates: -2247.79
+[dbg] optimize SubstRates: -2257.61
+[dbg] fix branches -2247.77
+[dbg] optimize BranchLengths: -2247.77
+[dbg] fix branches -2257.59
+[dbg] optimize BranchLengths: -2257.59
+[dbg] optimize OptFrequencies: -2247.77
+[dbg] optimize Alpha: -2247.77
+[dbg] optimize OptFrequencies: -2257.58
+[dbg] optimize SubstRates: -2247.77
+[dbg] fix branches -2247.75
+[dbg] optimize BranchLengths: -2247.75
+[dbg] optimize Alpha: -2257.58
+[dbg] optimize OptFrequencies: -2247.75
+[dbg] optimize Alpha: -2247.75
+[dbg] optimize SubstRates: -2247.75
+[dbg] fix branches -2247.73
+[dbg] optimize BranchLengths: -2247.73
+[dbg] optimize SubstRates: -2257.58
+[dbg] optimize SubstRates: -2265.93
+[dbg] fix branches -2257.54
+[dbg] optimize BranchLengths: -2257.54
+[dbg] optimize OptFrequencies: -2247.73
+[dbg] optimize Alpha: -2247.73
+[dbg] optimize SubstRates: -2247.73
+[dbg] fix branches -2247.7
+[dbg] optimize BranchLengths: -2247.7
+[dbg] optimize OptFrequencies: -2257.54
+[dbg] fix branches -2263.49
+[dbg] optimize BranchLengths: -2263.49
+[dbg] optimize Alpha: -2257.54
+[dbg] optimize OptFrequencies: -2247.7
+[dbg] optimize Alpha: -2247.7
+[dbg] optimize SubstRates: -2257.54
+[dbg] optimize SubstRates: -2247.7
+[dbg] fix branches -2247.6
+[dbg] optimize BranchLengths: -2247.6
+[dbg] optimize OptFrequencies: -2261.99
+[dbg] fix branches -2257.19
+[dbg] optimize BranchLengths: -2257.19
+[dbg] optimize Alpha: -2261.73
+[dbg] optimize OptFrequencies: -2247.6
+[dbg] optimize Alpha: -2247.6
+[dbg] optimize SubstRates: -2247.6
+[dbg] fix branches -2247.59
+[dbg] optimize BranchLengths: -2247.59
+[dbg] optimize OptFrequencies: -2257.11
+[dbg] optimize OptFrequencies: -2247.59
+[dbg] optimize Alpha: -2247.59
+[dbg] optimize Alpha: -2257.11
+[dbg] optimize SubstRates: -2247.59
+[dbg] model done: [0.01/0.05]: -2247.59
+[dbg] Model optimization done: -2247.59
+   27/88   TIM2+G4        0h:00:00   0h:00:02           -2247.5905  0.6218       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2514.05
+[dbg] Initial log likelihood: -2514.05
+[dbg] final parameter optimization: -2514.05
+[dbg] optimize SubstRates: -2260.8
+[dbg] fix branches -2289.31
+[dbg] optimize BranchLengths: -2289.31
+[dbg] optimize SubstRates: -2257.1
+[dbg] fix branches -2256.98
+[dbg] optimize BranchLengths: -2256.98
+[dbg] fix branches -2259.94
+[dbg] optimize BranchLengths: -2259.94
+[dbg] optimize OptFrequencies: -2283.84
+[dbg] optimize Alpha: -2282.09
+[dbg] optimize OptFrequencies: -2256.97
+[dbg] optimize Alpha: -2256.97
+[dbg] optimize OptFrequencies: -2259.56
+[dbg] optimize Alpha: -2259.33
+[dbg] optimize SubstRates: -2270.59
+[dbg] fix branches -2267.94
+[dbg] optimize BranchLengths: -2267.94
+[dbg] optimize SubstRates: -2256.96
+[dbg] fix branches -2256.92
+[dbg] optimize BranchLengths: -2256.92
+[dbg] optimize OptFrequencies: -2265.95
+[dbg] optimize SubstRates: -2258.93
+[dbg] optimize OptFrequencies: -2256.92
+[dbg] optimize Alpha: -2265.9
+[dbg] optimize Alpha: -2256.92
+[dbg] fix branches -2257.62
+[dbg] optimize BranchLengths: -2257.62
+[dbg] optimize SubstRates: -2256.92
+[dbg] optimize SubstRates: -2264.46
+[dbg] fix branches -2256.88
+[dbg] optimize BranchLengths: -2256.88
+[dbg] optimize OptFrequencies: -2257.34
+[dbg] fix branches -2263.59
+[dbg] optimize BranchLengths: -2263.59
+[dbg] optimize Alpha: -2256.98
+[dbg] optimize OptFrequencies: -2256.88
+[dbg] optimize Alpha: -2256.88
+[dbg] optimize OptFrequencies: -2262.82
+[dbg] optimize Alpha: -2262.82
+[dbg] optimize SubstRates: -2256.88
+[dbg] fix branches -2256.74
+[dbg] optimize BranchLengths: -2256.74
+[dbg] optimize SubstRates: -2256.61
+[dbg] optimize OptFrequencies: -2256.74
+[dbg] optimize SubstRates: -2262.23
+[dbg] optimize Alpha: -2256.74
+[dbg] fix branches -2255.3
+[dbg] optimize BranchLengths: -2255.3
+[dbg] fix branches -2261.95
+[dbg] optimize BranchLengths: -2261.95
+[dbg] optimize SubstRates: -2256.74
+[dbg] fix branches -2256.74
+[dbg] optimize BranchLengths: -2256.74
+[dbg] optimize OptFrequencies: -2261.7
+[dbg] optimize Alpha: -2261.67
+[dbg] optimize OptFrequencies: -2256.74
+[dbg] optimize OptFrequencies: -2255.08
+[dbg] optimize Alpha: -2256.74
+[dbg] optimize Alpha: -2254.51
+[dbg] optimize SubstRates: -2261.47
+[dbg] optimize SubstRates: -2256.74
+[dbg] model done: [0.01/0.05]: -2256.74
+[dbg] Model optimization done: -2256.74
+   26/88   TIM3+G4        0h:00:00   0h:00:02           -2256.7358  0.6209       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2500.79
+[dbg] Initial log likelihood: -2500.79
+[dbg] final parameter optimization: -2500.79
+[dbg] fix branches -2261.12
+[dbg] optimize BranchLengths: -2261.12
+[dbg] optimize OptFrequencies: -2261.01
+[dbg] fix branches -2279.92
+[dbg] optimize BranchLengths: -2279.92
+[dbg] optimize Alpha: -2261.01
+[dbg] optimize SubstRates: -2254.33
+[dbg] optimize SubstRates: -2260.9
+[dbg] fix branches -2253.73
+[dbg] optimize BranchLengths: -2253.73
+[dbg] optimize OptFrequencies: -2275.99
+[dbg] fix branches -2260.59
+[dbg] optimize BranchLengths: -2260.59
+[dbg] optimize Alpha: -2274.31
+[dbg] optimize OptFrequencies: -2253.66
+[dbg] optimize OptFrequencies: -2260.5
+[dbg] optimize Alpha: -2260.5
+[dbg] optimize Alpha: -2253.22
+[dbg] optimize SubstRates: -2260.38
+[dbg] optimize SubstRates: -2265.71
+[dbg] fix branches -2259.77
+[dbg] optimize BranchLengths: -2259.77
+[dbg] fix branches -2263.38
+[dbg] optimize BranchLengths: -2263.38
+[dbg] optimize SubstRates: -2253.13
+[dbg] optimize OptFrequencies: -2259.68
+[dbg] optimize Alpha: -2259.45
+[dbg] fix branches -2252.73
+[dbg] optimize BranchLengths: -2252.73
+[dbg] optimize OptFrequencies: -2262.65
+[dbg] optimize SubstRates: -2259.34
+[dbg] optimize Alpha: -2262.41
+[dbg] fix branches -2258.9
+[dbg] optimize BranchLengths: -2258.9
+[dbg] optimize OptFrequencies: -2252.71
+[dbg] optimize Alpha: -2252.49
+[dbg] optimize OptFrequencies: -2258.86
+[dbg] optimize SubstRates: -2262.12
+[dbg] optimize Alpha: -2258.66
+[dbg] fix branches -2261.65
+[dbg] optimize BranchLengths: -2261.65
+[dbg] optimize SubstRates: -2258.62
+[dbg] optimize SubstRates: -2252.44
+[dbg] fix branches -2257.91
+[dbg] optimize BranchLengths: -2257.91
+[dbg] fix branches -2252.18
+[dbg] optimize BranchLengths: -2252.18
+[dbg] optimize OptFrequencies: -2261.57
+[dbg] optimize Alpha: -2261.46
+[dbg] optimize OptFrequencies: -2257.87
+[dbg] optimize Alpha: -2257.74
+[dbg] optimize OptFrequencies: -2252.17
+[dbg] optimize SubstRates: -2261.39
+[dbg] optimize Alpha: -2252.17
+[dbg] optimize SubstRates: -2257.71
+[dbg] fix branches -2255.56
+[dbg] optimize BranchLengths: -2255.56
+[dbg] fix branches -2261.07
+[dbg] optimize BranchLengths: -2261.07
+[dbg] optimize OptFrequencies: -2255.4
+[dbg] optimize Alpha: -2255.39
+[dbg] optimize OptFrequencies: -2261.04
+[dbg] optimize SubstRates: -2252.14
+[dbg] optimize Alpha: -2261.04
+[dbg] fix branches -2252.12
+[dbg] optimize BranchLengths: -2252.12
+[dbg] optimize SubstRates: -2255.35
+[dbg] fix branches -2254.9
+[dbg] optimize BranchLengths: -2254.9
+[dbg] optimize SubstRates: -2261.01
+[dbg] optimize OptFrequencies: -2252.12
+[dbg] fix branches -2260.97
+[dbg] optimize BranchLengths: -2260.97
+[dbg] optimize OptFrequencies: -2254.84
+[dbg] optimize Alpha: -2252.12
+[dbg] optimize Alpha: -2254.84
+[dbg] optimize OptFrequencies: -2260.96
+[dbg] optimize Alpha: -2260.96
+[dbg] optimize SubstRates: -2254.82
+[dbg] optimize SubstRates: -2252.11
+[dbg] fix branches -2254.8
+[dbg] optimize BranchLengths: -2254.8
+[dbg] fix branches -2252.11
+[dbg] optimize BranchLengths: -2252.11
+[dbg] optimize OptFrequencies: -2254.8
+[dbg] optimize SubstRates: -2260.96
+[dbg] optimize Alpha: -2254.8
+[dbg] optimize OptFrequencies: -2252.11
+[dbg] fix branches -2260.92
+[dbg] optimize BranchLengths: -2260.92
+[dbg] optimize Alpha: -2252.11
+[dbg] optimize SubstRates: -2254.8
+[dbg] fix branches -2254.8
+[dbg] optimize BranchLengths: -2254.8
+[dbg] optimize OptFrequencies: -2260.92
+[dbg] optimize SubstRates: -2252.11
+[dbg] model done: [0.01/0.05]: -2252.11
+[dbg] Model optimization done: -2252.11
+   28/88   TIM1+G4        0h:00:01   0h:00:03           -2252.1070  0.5996       -
+[dbg] optimize OptFrequencies: -2254.8
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize Alpha: -2260.92
+[dbg] Initial score: -2497.92
+[dbg] Initial log likelihood: -2497.92
+[dbg] final parameter optimization: -2497.92
+[dbg] optimize Alpha: -2254.8
+[dbg] optimize SubstRates: -2254.8
+[dbg] model done: [0.01/0.05]: -2254.8
+[dbg] Model optimization done: -2254.8
+   29/88   TPM3uf+G4      0h:00:01   0h:00:03           -2254.7958  0.5842       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2497.27
+[dbg] Initial log likelihood: -2497.27
+[dbg] final parameter optimization: -2497.27
+[dbg] optimize SubstRates: -2260.92
+[dbg] fix branches -2260.89
+[dbg] optimize BranchLengths: -2260.89
+[dbg] fix branches -2275.64
+[dbg] optimize BranchLengths: -2275.64
+[dbg] fix branches -2274.58
+[dbg] optimize BranchLengths: -2274.58
+[dbg] optimize OptFrequencies: -2260.89
+[dbg] optimize Alpha: -2260.89
+[dbg] optimize OptFrequencies: -2269.71
+[dbg] optimize Alpha: -2267.64
+[dbg] optimize SubstRates: -2260.88
+[dbg] fix branches -2260.86
+[dbg] optimize BranchLengths: -2260.86
+[dbg] optimize OptFrequencies: -2270.86
+[dbg] optimize Alpha: -2268.58
+[dbg] optimize OptFrequencies: -2260.86
+[dbg] optimize SubstRates: -2263.1
+[dbg] optimize Alpha: -2260.86
+[dbg] fix branches -2260.14
+[dbg] optimize BranchLengths: -2260.14
+[dbg] optimize SubstRates: -2260.85
+[dbg] optimize OptFrequencies: -2258.43
+[dbg] optimize SubstRates: -2264.12
+[dbg] fix branches -2260.43
+[dbg] optimize BranchLengths: -2260.43
+[dbg] optimize Alpha: -2257.68
+[dbg] fix branches -2261.94
+[dbg] optimize BranchLengths: -2261.94
+[dbg] optimize OptFrequencies: -2260.41
+[dbg] optimize SubstRates: -2255.58
+[dbg] optimize Alpha: -2260.41
+[dbg] fix branches -2252.64
+[dbg] optimize BranchLengths: -2252.64
+[dbg] optimize OptFrequencies: -2261.47
+[dbg] optimize SubstRates: -2260.4
+[dbg] optimize OptFrequencies: -2251.62
+[dbg] optimize Alpha: -2260.91
+[dbg] optimize Alpha: -2251.15
+[dbg] fix branches -2260.06
+[dbg] optimize BranchLengths: -2260.06
+[dbg] optimize SubstRates: -2250.04
+[dbg] optimize OptFrequencies: -2260.05
+[dbg] fix branches -2249.57
+[dbg] optimize BranchLengths: -2249.57
+[dbg] optimize Alpha: -2259.9
+[dbg] optimize SubstRates: -2260.53
+[dbg] optimize OptFrequencies: -2249.33
+[dbg] optimize SubstRates: -2259.88
+[dbg] optimize Alpha: -2248.88
+[dbg] fix branches -2259.98
+[dbg] optimize BranchLengths: -2259.98
+[dbg] fix branches -2259.53
+[dbg] optimize BranchLengths: -2259.53
+[dbg] optimize SubstRates: -2248.73
+[dbg] fix branches -2248.56
+[dbg] optimize BranchLengths: -2248.56
+[dbg] optimize OptFrequencies: -2259.52
+[dbg] optimize OptFrequencies: -2248.51
+[dbg] optimize OptFrequencies: -2259.8
+[dbg] optimize Alpha: -2248.33
+[dbg] optimize Alpha: -2259.51
+[dbg] optimize Alpha: -2259.55
+[dbg] optimize SubstRates: -2248.28
+[dbg] optimize SubstRates: -2259.48
+[dbg] fix branches -2248.12
+[dbg] optimize BranchLengths: -2248.12
+[dbg] fix branches -2259.12
+[dbg] optimize BranchLengths: -2259.12
+[dbg] optimize OptFrequencies: -2248.11
+[dbg] optimize Alpha: -2248.11
+[dbg] optimize SubstRates: -2259.34
+[dbg] optimize OptFrequencies: -2259.1
+[dbg] optimize SubstRates: -2248.1
+[dbg] fix branches -2258.24
+[dbg] optimize BranchLengths: -2258.24
+[dbg] fix branches -2248.08
+[dbg] optimize BranchLengths: -2248.08
+[dbg] optimize Alpha: -2259.1
+[dbg] optimize OptFrequencies: -2248.08
+[dbg] optimize Alpha: -2248.08
+[dbg] optimize SubstRates: -2248.08
+[dbg] optimize SubstRates: -2259.07
+[dbg] fix branches -2248.06
+[dbg] optimize BranchLengths: -2248.06
+[dbg] fix branches -2259.04
+[dbg] optimize BranchLengths: -2259.04
+[dbg] optimize OptFrequencies: -2258.02
+[dbg] optimize OptFrequencies: -2248.06
+[dbg] optimize Alpha: -2257.75
+[dbg] optimize Alpha: -2248.06
+[dbg] optimize SubstRates: -2248.06
+[dbg] fix branches -2248.04
+[dbg] optimize BranchLengths: -2248.04
+[dbg] optimize OptFrequencies: -2259.04
+[dbg] optimize OptFrequencies: -2248.04
+[dbg] optimize Alpha: -2259.04
+[dbg] optimize Alpha: -2248.04
+[dbg] optimize SubstRates: -2248.04
+[dbg] fix branches -2248.02
+[dbg] optimize BranchLengths: -2248.02
+[dbg] optimize OptFrequencies: -2248.02
+[dbg] optimize SubstRates: -2259.03
+[dbg] optimize Alpha: -2248.02
+[dbg] fix branches -2259.02
+[dbg] optimize BranchLengths: -2259.02
+[dbg] optimize SubstRates: -2257.41
+[dbg] optimize SubstRates: -2248.02
+[dbg] fix branches -2248
+[dbg] optimize BranchLengths: -2248
+[dbg] optimize OptFrequencies: -2259.02
+[dbg] optimize OptFrequencies: -2247.99
+[dbg] optimize Alpha: -2247.99
+[dbg] optimize Alpha: -2259.02
+[dbg] optimize SubstRates: -2247.99
+[dbg] fix branches -2255.41
+[dbg] optimize BranchLengths: -2255.41
+[dbg] fix branches -2247.95
+[dbg] optimize BranchLengths: -2247.95
+[dbg] optimize OptFrequencies: -2247.95
+[dbg] optimize Alpha: -2247.95
+[dbg] optimize SubstRates: -2259.02
+[dbg] optimize SubstRates: -2247.95
+[dbg] fix branches -2259.01
+[dbg] optimize BranchLengths: -2259.01
+[dbg] fix branches -2247.87
+[dbg] optimize BranchLengths: -2247.87
+[dbg] optimize OptFrequencies: -2247.87
+[dbg] optimize OptFrequencies: -2259.01
+[dbg] optimize OptFrequencies: -2255.19
+[dbg] optimize Alpha: -2247.87
+[dbg] optimize SubstRates: -2247.87
+[dbg] optimize Alpha: -2259.01
+[dbg] fix branches -2247.87
+[dbg] optimize BranchLengths: -2247.87
+[dbg] optimize Alpha: -2254.49
+[dbg] optimize OptFrequencies: -2247.87
+[dbg] optimize Alpha: -2247.87
+[dbg] optimize SubstRates: -2259.01
+[dbg] model done: [0.01/0.05]: -2259.01
+[dbg] Model optimization done: -2259.01
+   30/88   TrN+G4         0h:00:01   0h:00:03           -2259.0130  0.6292       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2517.37
+[dbg] Initial log likelihood: -2517.37
+[dbg] final parameter optimization: -2517.37
+[dbg] optimize SubstRates: -2247.87
+[dbg] model done: [0.01/0.05]: -2247.87
+[dbg] Model optimization done: -2247.87
+   32/88   TPM2uf+G4      0h:00:00   0h:00:03           -2247.8699  0.6300       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2518.72
+[dbg] Initial log likelihood: -2518.72
+[dbg] final parameter optimization: -2518.72
+[dbg] fix branches -2292.54
+[dbg] optimize BranchLengths: -2292.54
+[dbg] optimize FixedFrequencies: -2292.54
+[dbg] optimize SubstRates: -2254.31
+[dbg] optimize Alpha: -2291.81
+[dbg] fix branches -2291.11
+[dbg] optimize BranchLengths: -2291.11
+[dbg] optimize FixedFrequencies: -2291.11
+[dbg] optimize Alpha: -2290.53
+[dbg] fix branches -2253.01
+[dbg] optimize BranchLengths: -2253.01
+[dbg] optimize SubstRates: -2285.17
+[dbg] fix branches -2283.86
+[dbg] optimize BranchLengths: -2283.86
+[dbg] optimize FixedFrequencies: -2283.86
+[dbg] optimize OptFrequencies: -2252.94
+[dbg] optimize Alpha: -2283.86
+[dbg] optimize Alpha: -2252.7
+[dbg] optimize SubstRates: -2283.69
+[dbg] optimize SubstRates: -2283.79
+[dbg] fix branches -2283.77
+[dbg] optimize BranchLengths: -2283.77
+[dbg] optimize FixedFrequencies: -2283.77
+[dbg] optimize Alpha: -2283.77
+[dbg] optimize SubstRates: -2252.59
+[dbg] fix branches -2282.44
+[dbg] optimize BranchLengths: -2282.44
+[dbg] optimize FixedFrequencies: -2282.44
+[dbg] optimize Alpha: -2282.44
+[dbg] optimize SubstRates: -2283.77
+[dbg] fix branches -2283.77
+[dbg] optimize BranchLengths: -2283.77
+[dbg] optimize FixedFrequencies: -2283.77
+[dbg] fix branches -2252.18
+[dbg] optimize BranchLengths: -2252.18
+[dbg] optimize Alpha: -2283.77
+[dbg] optimize SubstRates: -2283.77
+[dbg] model done: [0.01/0.05]: -2283.77
+[dbg] Model optimization done: -2283.77
+   34/88   TVMef+G4       0h:00:00   0h:00:03           -2283.7661  0.8632       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2510.15
+[dbg] Initial log likelihood: -2510.15
+[dbg] final parameter optimization: -2510.15
+[dbg] optimize OptFrequencies: -2252.17
+[dbg] fix branches -2288.76
+[dbg] optimize BranchLengths: -2288.76
+[dbg] optimize Alpha: -2252.17
+[dbg] optimize SubstRates: -2282.35
+[dbg] optimize OptFrequencies: -2282.59
+[dbg] fix branches -2282.32
+[dbg] optimize BranchLengths: -2282.32
+[dbg] optimize FixedFrequencies: -2282.32
+[dbg] optimize Alpha: -2280.55
+[dbg] optimize Alpha: -2282.32
+[dbg] optimize SubstRates: -2252.14
+[dbg] fix branches -2252.13
+[dbg] optimize BranchLengths: -2252.13
+[dbg] optimize SubstRates: -2282.32
+[dbg] fix branches -2282.31
+[dbg] optimize BranchLengths: -2282.31
+[dbg] optimize FixedFrequencies: -2282.31
+[dbg] optimize SubstRates: -2266.85
+[dbg] optimize Alpha: -2282.31
+[dbg] optimize OptFrequencies: -2252.13
+[dbg] optimize Alpha: -2252.13
+[dbg] fix branches -2264.51
+[dbg] optimize BranchLengths: -2264.51
+[dbg] optimize SubstRates: -2282.31
+[dbg] fix branches -2282.3
+[dbg] optimize BranchLengths: -2282.3
+[dbg] optimize FixedFrequencies: -2282.3
+[dbg] optimize Alpha: -2282.3
+[dbg] optimize SubstRates: -2252.12
+[dbg] optimize OptFrequencies: -2263.61
+[dbg] fix branches -2252.12
+[dbg] optimize BranchLengths: -2252.12
+[dbg] optimize Alpha: -2263.17
+[dbg] optimize SubstRates: -2282.3
+[dbg] model done: [0.01/0.05]: -2282.3
+[dbg] Model optimization done: -2282.3
+   33/88   SYM+G4         0h:00:00   0h:00:03           -2282.3038  0.8777       -
+[dbg] optimize OptFrequencies: -2252.12
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2517.3
+[dbg] Initial log likelihood: -2517.3
+[dbg] final parameter optimization: -2517.3
+[dbg] optimize Alpha: -2252.11
+[dbg] optimize SubstRates: -2262.86
+[dbg] fix branches -2262.48
+[dbg] optimize BranchLengths: -2262.48
+[dbg] optimize SubstRates: -2252.11
+[dbg] fix branches -2295.32
+[dbg] optimize BranchLengths: -2295.32
+[dbg] optimize FixedFrequencies: -2295.32
+[dbg] fix branches -2251.88
+[dbg] optimize BranchLengths: -2251.88
+[dbg] optimize OptFrequencies: -2262.41
+[dbg] optimize Alpha: -2294.84
+[dbg] optimize Alpha: -2262.24
+[dbg] optimize OptFrequencies: -2251.88
+[dbg] optimize SubstRates: -2262.2
+[dbg] optimize Alpha: -2251.88
+[dbg] fix branches -2262.04
+[dbg] optimize BranchLengths: -2262.04
+[dbg] optimize OptFrequencies: -2262.02
+[dbg] optimize Alpha: -2262.02
+[dbg] optimize SubstRates: -2251.88
+[dbg] fix branches -2251.87
+[dbg] optimize BranchLengths: -2251.87
+[dbg] optimize SubstRates: -2262.01
+[dbg] optimize SubstRates: -2289.2
+[dbg] fix branches -2261.97
+[dbg] optimize BranchLengths: -2261.97
+[dbg] optimize OptFrequencies: -2251.87
+[dbg] optimize OptFrequencies: -2261.97
+[dbg] optimize Alpha: -2251.87
+[dbg] optimize Alpha: -2261.97
+[dbg] fix branches -2288.19
+[dbg] optimize BranchLengths: -2288.19
+[dbg] optimize FixedFrequencies: -2288.19
+[dbg] optimize SubstRates: -2261.97
+[dbg] optimize Alpha: -2288.19
+[dbg] fix branches -2261.93
+[dbg] optimize BranchLengths: -2261.93
+[dbg] optimize SubstRates: -2251.87
+[dbg] model done: [0.01/0.05]: -2251.87
+[dbg] Model optimization done: -2251.87
+   31/88   TPM1uf+G4      0h:00:00   0h:00:03           -2251.8673  0.5660       -
+[dbg] optimize OptFrequencies: -2261.93
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2510.7
+[dbg] Initial log likelihood: -2510.7
+[dbg] final parameter optimization: -2510.7
+[dbg] optimize Alpha: -2261.93
+[dbg] optimize SubstRates: -2261.93
+[dbg] fix branches -2261.9
+[dbg] optimize BranchLengths: -2261.9
+[dbg] optimize OptFrequencies: -2261.9
+[dbg] fix branches -2291.29
+[dbg] optimize BranchLengths: -2291.29
+[dbg] optimize FixedFrequencies: -2291.29
+[dbg] optimize Alpha: -2261.9
+[dbg] optimize SubstRates: -2288.12
+[dbg] optimize Alpha: -2290.89
+[dbg] fix branches -2288.07
+[dbg] optimize BranchLengths: -2288.07
+[dbg] optimize FixedFrequencies: -2288.07
+[dbg] optimize SubstRates: -2261.9
+[dbg] fix branches -2261.87
+[dbg] optimize BranchLengths: -2261.87
+[dbg] optimize Alpha: -2288.07
+[dbg] optimize OptFrequencies: -2261.87
+[dbg] optimize Alpha: -2261.87
+[dbg] optimize SubstRates: -2261.87
+[dbg] fix branches -2261.85
+[dbg] optimize BranchLengths: -2261.85
+[dbg] optimize SubstRates: -2288.07
+[dbg] fix branches -2288.04
+[dbg] optimize BranchLengths: -2288.04
+[dbg] optimize OptFrequencies: -2261.85
+[dbg] optimize FixedFrequencies: -2288.04
+[dbg] optimize Alpha: -2261.84
+[dbg] optimize Alpha: -2288.03
+[dbg] optimize SubstRates: -2261.84
+[dbg] fix branches -2261.72
+[dbg] optimize BranchLengths: -2261.72
+[dbg] optimize SubstRates: -2287
+[dbg] optimize SubstRates: -2288.03
+[dbg] optimize OptFrequencies: -2261.72
+[dbg] optimize Alpha: -2261.72
+[dbg] fix branches -2287.95
+[dbg] optimize BranchLengths: -2287.95
+[dbg] optimize FixedFrequencies: -2287.95
+[dbg] fix branches -2286.14
+[dbg] optimize BranchLengths: -2286.14
+[dbg] optimize FixedFrequencies: -2286.14
+[dbg] optimize SubstRates: -2261.71
+[dbg] optimize Alpha: -2287.95
+[dbg] fix branches -2261.69
+[dbg] optimize BranchLengths: -2261.69
+[dbg] optimize Alpha: -2286.13
+[dbg] optimize OptFrequencies: -2261.69
+[dbg] optimize Alpha: -2261.69
+[dbg] optimize SubstRates: -2287.95
+[dbg] optimize SubstRates: -2261.69
+[dbg] fix branches -2261.66
+[dbg] optimize BranchLengths: -2261.66
+[dbg] fix branches -2287.95
+[dbg] optimize BranchLengths: -2287.95
+[dbg] optimize FixedFrequencies: -2287.95
+[dbg] optimize SubstRates: -2286.11
+[dbg] optimize OptFrequencies: -2261.66
+[dbg] optimize Alpha: -2287.95
+[dbg] optimize Alpha: -2261.66
+[dbg] fix branches -2286.02
+[dbg] optimize BranchLengths: -2286.02
+[dbg] optimize FixedFrequencies: -2286.02
+[dbg] optimize SubstRates: -2261.66
+[dbg] optimize Alpha: -2286.02
+[dbg] fix branches -2261.65
+[dbg] optimize BranchLengths: -2261.65
+[dbg] optimize SubstRates: -2287.95
+[dbg] model done: [0.01/0.05]: -2287.95
+[dbg] Model optimization done: -2287.95
+   36/88   TIM2ef+G4      0h:00:00   0h:00:03           -2287.9463  0.8411       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2513.74
+[dbg] Initial log likelihood: -2513.74
+[dbg] final parameter optimization: -2513.74
+[dbg] optimize OptFrequencies: -2261.65
+[dbg] optimize Alpha: -2261.65
+[dbg] Reset branches :( -2513.74 ~= -2513.74
+[dbg] optimize BranchLengths: -2513.74
+[dbg] optimize FixedFrequencies: -2513.74
+[dbg] optimize SubstRates: -2286.02
+[dbg] optimize SubstRates: -2261.65
+[dbg] optimize Alpha: -2512.63
+[dbg] fix branches -2286.02
+[dbg] optimize BranchLengths: -2286.02
+[dbg] optimize FixedFrequencies: -2286.02
+[dbg] fix branches -2261.64
+[dbg] optimize BranchLengths: -2261.64
+[dbg] optimize OptFrequencies: -2261.64
+[dbg] optimize Alpha: -2286.02
+[dbg] optimize SubstRates: -2286.02
+[dbg] model done: [0.01/0.05]: -2286.02
+[dbg] Model optimization done: -2286.02
+[dbg] optimize Alpha: -2261.64
+   37/88   TIM1ef+G4      0h:00:00   0h:00:03           -2286.0211  0.8490       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2501.06
+[dbg] Initial log likelihood: -2501.06
+[dbg] final parameter optimization: -2501.06
+[dbg] optimize SubstRates: -2261.64
+[dbg] model done: [0.01/0.05]: -2261.64
+[dbg] Model optimization done: -2261.64
+   35/88   HKY+G4         0h:00:00   0h:00:03           -2261.6361  0.7081       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2512.36
+[dbg] Initial log likelihood: -2512.36
+[dbg] final parameter optimization: -2512.36
+[dbg] fix branches -2290.88
+[dbg] optimize BranchLengths: -2290.88
+[dbg] optimize FixedFrequencies: -2290.88
+[dbg] fix branches -2279.62
+[dbg] optimize BranchLengths: -2279.62
+[dbg] optimize Alpha: -2290.3
+[dbg] optimize SubstRates: -2504.93
+[dbg] optimize SubstRates: -2285.5
+[dbg] optimize OptFrequencies: -2274.23
+[dbg] fix branches -2284.64
+[dbg] optimize BranchLengths: -2284.64
+[dbg] optimize FixedFrequencies: -2284.64
+[dbg] optimize Alpha: -2284.62
+[dbg] fix branches -2287.35
+[dbg] optimize BranchLengths: -2287.35
+[dbg] optimize FixedFrequencies: -2287.35
+[dbg] optimize Alpha: -2272.26
+[dbg] optimize SubstRates: -2272.26
+[dbg] optimize Alpha: -2285.16
+[dbg] optimize SubstRates: -2284.6
+[dbg] fix branches -2270.86
+[dbg] optimize BranchLengths: -2270.86
+[dbg] fix branches -2284.57
+[dbg] optimize BranchLengths: -2284.57
+[dbg] optimize FixedFrequencies: -2284.57
+[dbg] optimize Alpha: -2284.57
+[dbg] optimize SubstRates: -2284.57
+[dbg] fix branches -2284.56
+[dbg] optimize BranchLengths: -2284.56
+[dbg] optimize FixedFrequencies: -2284.56
+[dbg] optimize Alpha: -2284.56
+[dbg] optimize OptFrequencies: -2270.8
+[dbg] optimize SubstRates: -2284.56
+[dbg] model done: [0.01/0.05]: -2284.56
+[dbg] Model optimization done: -2284.56
+   40/88   TPM3+G4        0h:00:00   0h:00:03           -2284.5592  0.8289       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2512.88
+[dbg] Initial log likelihood: -2512.88
+[dbg] final parameter optimization: -2512.88
+[dbg] optimize Alpha: -2270.45
+[dbg] optimize SubstRates: -2270.45
+[dbg] optimize SubstRates: -2284.77
+[dbg] fix branches -2270.34
+[dbg] optimize BranchLengths: -2270.34
+[dbg] fix branches -2291.25
+[dbg] optimize BranchLengths: -2291.25
+[dbg] optimize FixedFrequencies: -2291.25
+[dbg] optimize Alpha: -2290.58
+[dbg] fix branches -2283.61
+[dbg] optimize BranchLengths: -2283.61
+[dbg] optimize FixedFrequencies: -2283.61
+[dbg] optimize OptFrequencies: -2270.33
+[dbg] optimize Alpha: -2283.36
+[dbg] optimize Alpha: -2270.23
+[dbg] optimize SubstRates: -2270.23
+[dbg] optimize SubstRates: -2290.46
+[dbg] fix branches -2270.16
+[dbg] optimize BranchLengths: -2270.16
+[dbg] fix branches -2289.68
+[dbg] optimize BranchLengths: -2289.68
+[dbg] optimize FixedFrequencies: -2289.68
+[dbg] optimize Alpha: -2289.66
+[dbg] optimize OptFrequencies: -2270.15
+[dbg] optimize SubstRates: -2283.34
+[dbg] optimize Alpha: -2270.15
+[dbg] optimize SubstRates: -2270.15
+[dbg] fix branches -2270.15
+[dbg] optimize BranchLengths: -2270.15
+[dbg] optimize SubstRates: -2289.66
+[dbg] fix branches -2283.18
+[dbg] optimize BranchLengths: -2283.18
+[dbg] optimize FixedFrequencies: -2283.18
+[dbg] fix branches -2289.64
+[dbg] optimize BranchLengths: -2289.64
+[dbg] optimize FixedFrequencies: -2289.64
+[dbg] optimize OptFrequencies: -2270.15
+[dbg] optimize Alpha: -2289.64
+[dbg] optimize Alpha: -2283.18
+[dbg] optimize Alpha: -2270.15
+[dbg] optimize SubstRates: -2270.15
+[dbg] model done: [0.01/0.05]: -2270.15
+[dbg] Model optimization done: -2270.15
+   39/88   F81+G4         0h:00:00   0h:00:03           -2270.1508  0.7550       -
+[dbg] optimize SubstRates: -2289.64
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2516.91
+[dbg] Initial log likelihood: -2516.91
+[dbg] fix branches -2289.64
+[dbg] optimize BranchLengths: -2289.64
+[dbg] optimize FixedFrequencies: -2289.64
+[dbg] final parameter optimization: -2516.91
+[dbg] optimize Alpha: -2289.64
+[dbg] optimize SubstRates: -2289.64
+[dbg] model done: [0.01/0.05]: -2289.64
+[dbg] Model optimization done: -2289.64
+   41/88   TPM2+G4        0h:00:00   0h:00:03           -2289.6375  0.8247       -
+[dbg] optimize SubstRates: -2283.17
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2512.22
+[dbg] Initial log likelihood: -2512.22
+[dbg] final parameter optimization: -2512.22
+[dbg] fix branches -2283.17
+[dbg] optimize BranchLengths: -2283.17
+[dbg] optimize FixedFrequencies: -2283.17
+[dbg] optimize Alpha: -2283.17
+[dbg] fix branches -2295.03
+[dbg] optimize BranchLengths: -2295.03
+[dbg] optimize FixedFrequencies: -2295.03
+[dbg] optimize SubstRates: -2283.17
+[dbg] model done: [0.01/0.05]: -2283.17
+[dbg] Model optimization done: -2283.17
+   38/88   TIM3ef+G4      0h:00:00   0h:00:03           -2283.1678  0.8653       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2518.1
+[dbg] Initial log likelihood: -2518.1
+[dbg] final parameter optimization: -2518.1
+[dbg] optimize Alpha: -2294.31
+[dbg] fix branches -2292.5
+[dbg] optimize BranchLengths: -2292.5
+[dbg] optimize FixedFrequencies: -2292.5
+[dbg] optimize Alpha: -2292.08
+[dbg] fix branches -2298.17
+[dbg] optimize BranchLengths: -2298.17
+[dbg] optimize FixedFrequencies: -2298.17
+[dbg] optimize Alpha: -2297.61
+[dbg] optimize SubstRates: -2289.15
+[dbg] fix branches -2288.29
+[dbg] optimize BranchLengths: -2288.29
+[dbg] optimize FixedFrequencies: -2288.29
+[dbg] optimize Alpha: -2288.25
+[dbg] optimize SubstRates: -2288.88
+[dbg] optimize SubstRates: -2288.23
+[dbg] optimize SubstRates: -2291
+[dbg] fix branches -2288.16
+[dbg] optimize BranchLengths: -2288.16
+[dbg] optimize FixedFrequencies: -2288.16
+[dbg] optimize Alpha: -2288.16
+[dbg] fix branches -2287.85
+[dbg] optimize BranchLengths: -2287.85
+[dbg] optimize FixedFrequencies: -2287.85
+[dbg] optimize Alpha: -2287.85
+[dbg] optimize SubstRates: -2288.16
+[dbg] fix branches -2288.15
+[dbg] optimize BranchLengths: -2288.15
+[dbg] optimize FixedFrequencies: -2288.15
+[dbg] fix branches -2289.89
+[dbg] optimize BranchLengths: -2289.89
+[dbg] optimize FixedFrequencies: -2289.89
+[dbg] optimize Alpha: -2288.15
+[dbg] optimize Alpha: -2289.86
+[dbg] optimize SubstRates: -2288.15
+[dbg] model done: [0.01/0.05]: -2288.15
+[dbg] Model optimization done: -2288.15
+   43/88   TrNef+G4       0h:00:00   0h:00:03           -2288.1528  0.8468       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2513.08
+[dbg] Initial log likelihood: -2513.08
+[dbg] final parameter optimization: -2513.08
+[dbg] optimize SubstRates: -2287.83
+[dbg] optimize SubstRates: -2289.82
+[dbg] fix branches -2287.82
+[dbg] optimize BranchLengths: -2287.82
+[dbg] optimize FixedFrequencies: -2287.82
+[dbg] fix branches -2289.78
+[dbg] optimize BranchLengths: -2289.78
+[dbg] optimize FixedFrequencies: -2289.78
+[dbg] optimize Alpha: -2287.82
+[dbg] fix branches -2292.82
+[dbg] optimize BranchLengths: -2292.82
+[dbg] optimize FixedFrequencies: -2292.82
+[dbg] optimize Alpha: -2289.78
+[dbg] optimize Alpha: -2292.23
+[dbg] optimize SubstRates: -2292.23
+[dbg] fix branches -2291.52
+[dbg] optimize BranchLengths: -2291.52
+[dbg] optimize FixedFrequencies: -2291.52
+[dbg] optimize SubstRates: -2287.82
+[dbg] model done: [0.01/0.05]: -2287.82
+[dbg] Model optimization done: -2287.82
+   42/88   TPM1+G4        0h:00:00   0h:00:03           -2287.8204  0.8647       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2671.58
+[dbg] Initial log likelihood: -2671.58
+[dbg] final parameter optimization: -2671.58
+[dbg] optimize Alpha: -2291.51
+[dbg] optimize SubstRates: -2289.78
+[dbg] optimize SubstRates: -2291.51
+[dbg] fix branches -2291.49
+[dbg] optimize BranchLengths: -2291.49
+[dbg] optimize FixedFrequencies: -2291.49
+[dbg] fix branches -2289.78
+[dbg] optimize BranchLengths: -2289.78
+[dbg] optimize FixedFrequencies: -2289.78
+[dbg] optimize Alpha: -2291.49
+[dbg] optimize SubstRates: -2291.49
+[dbg] fix branches -2291.48
+[dbg] optimize BranchLengths: -2291.48
+[dbg] optimize FixedFrequencies: -2291.48
+[dbg] optimize Alpha: -2289.78
+[dbg] fix branches -2471.06
+[dbg] optimize BranchLengths: -2471.06
+[dbg] optimize Alpha: -2291.48
+[dbg] optimize SubstRates: -2291.48
+[dbg] model done: [0.01/0.05]: -2291.48
+[dbg] Model optimization done: -2291.48
+   45/88   JC+G4          0h:00:00   0h:00:03           -2291.4829  0.8298       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2675.46
+[dbg] Initial log likelihood: -2675.46
+[dbg] final parameter optimization: -2675.46
+[dbg] optimize P-inv: -2470.49
+[dbg] optimize SubstRates: -2289.78
+[dbg] model done: [0.01/0.05]: -2289.78
+[dbg] Model optimization done: -2289.78
+   44/88   K80+G4         0h:00:00   0h:00:03           -2289.7762  0.8309       -
+[dbg] fix branches -2475.09
+[dbg] optimize BranchLengths: -2475.09
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.72
+[dbg] Initial log likelihood: -2654.72
+[dbg] final parameter optimization: -2654.72
+[dbg] optimize P-inv: -2474.52
+[dbg] fix branches -2458.1
+[dbg] optimize BranchLengths: -2458.1
+[dbg] optimize OptFrequencies: -2442.6
+[dbg] optimize Alpha: -2442.6
+[dbg] optimize OptFrequencies: -2439.17
+[dbg] optimize Alpha: -2439.17
+[dbg] optimize P-inv: -2457.53
+[dbg] optimize SubstRates: -2437.83
+[dbg] fix branches -2432.73
+[dbg] optimize BranchLengths: -2432.73
+[dbg] optimize OptFrequencies: -2434.51
+[dbg] optimize Alpha: -2434.51
+[dbg] optimize P-inv: -2432.73
+[dbg] optimize SubstRates: -2432.03
+[dbg] optimize OptFrequencies: -2432.24
+[dbg] optimize Alpha: -2432.24
+[dbg] fix branches -2427.01
+[dbg] optimize BranchLengths: -2427.01
+[dbg] optimize P-inv: -2427.01
+[dbg] optimize SubstRates: -2428.69
+[dbg] optimize SubstRates: -2432.18
+[dbg] optimize OptFrequencies: -2425.07
+[dbg] optimize Alpha: -2425.07
+[dbg] fix branches -2432
+[dbg] optimize BranchLengths: -2432
+[dbg] fix branches -2425.23
+[dbg] optimize BranchLengths: -2425.23
+[dbg] optimize P-inv: -2432
+[dbg] optimize P-inv: -2425.23
+[dbg] optimize OptFrequencies: -2431.94
+[dbg] optimize Alpha: -2431.94
+[dbg] optimize OptFrequencies: -2424.13
+[dbg] optimize Alpha: -2424.13
+[dbg] optimize SubstRates: -2431.92
+[dbg] fix branches -2431.88
+[dbg] optimize BranchLengths: -2431.88
+[dbg] optimize SubstRates: -2424.19
+[dbg] optimize P-inv: -2431.88
+[dbg] optimize OptFrequencies: -2431.85
+[dbg] optimize Alpha: -2431.85
+[dbg] fix branches -2423.92
+[dbg] optimize BranchLengths: -2423.92
+[dbg] optimize P-inv: -2423.92
+[dbg] optimize SubstRates: -2423.58
+[dbg] optimize SubstRates: -2431.84
+[dbg] fix branches -2423.34
+[dbg] optimize BranchLengths: -2423.34
+[dbg] fix branches -2431.82
+[dbg] optimize BranchLengths: -2431.82
+[dbg] optimize P-inv: -2431.82
+[dbg] optimize P-inv: -2423.34
+[dbg] optimize OptFrequencies: -2423.3
+[dbg] optimize Alpha: -2423.3
+[dbg] optimize OptFrequencies: -2431.81
+[dbg] optimize Alpha: -2431.81
+[dbg] optimize SubstRates: -2431.81
+[dbg] fix branches -2431.8
+[dbg] optimize BranchLengths: -2431.8
+[dbg] optimize OptFrequencies: -2422.94
+[dbg] optimize Alpha: -2422.94
+[dbg] optimize P-inv: -2431.8
+[dbg] optimize OptFrequencies: -2431.8
+[dbg] optimize Alpha: -2431.8
+[dbg] optimize SubstRates: -2431.79
+[dbg] fix branches -2431.79
+[dbg] optimize BranchLengths: -2431.79
+[dbg] optimize SubstRates: -2422.74
+[dbg] optimize P-inv: -2431.79
+[dbg] optimize SubstRates: -2422.94
+[dbg] fix branches -2422.64
+[dbg] optimize BranchLengths: -2422.64
+[dbg] optimize OptFrequencies: -2431.79
+[dbg] optimize Alpha: -2431.79
+[dbg] fix branches -2422.84
+[dbg] optimize BranchLengths: -2422.84
+[dbg] optimize P-inv: -2422.64
+[dbg] optimize SubstRates: -2431.78
+[dbg] model done: [0.01/0.05]: -2431.78
+[dbg] Model optimization done: -2431.78
+   47/88   TVM+I          0h:00:00   0h:00:03           -2431.7847       -  0.0000
+[dbg] optimize P-inv: -2422.84
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2672.55
+[dbg] Initial log likelihood: -2672.55
+[dbg] final parameter optimization: -2672.55
+[dbg] optimize OptFrequencies: -2422.47
+[dbg] optimize Alpha: -2422.47
+[dbg] fix branches -2475.82
+[dbg] optimize BranchLengths: -2475.82
+[dbg] optimize OptFrequencies: -2422.57
+[dbg] optimize Alpha: -2422.57
+[dbg] optimize P-inv: -2475.26
+[dbg] optimize OptFrequencies: -2454.84
+[dbg] optimize Alpha: -2454.84
+[dbg] optimize SubstRates: -2422.38
+[dbg] fix branches -2422.33
+[dbg] optimize BranchLengths: -2422.33
+[dbg] optimize P-inv: -2422.33
+[dbg] optimize SubstRates: -2422.42
+[dbg] optimize SubstRates: -2449.55
+[dbg] fix branches -2422.34
+[dbg] optimize BranchLengths: -2422.34
+[dbg] fix branches -2447.13
+[dbg] optimize BranchLengths: -2447.13
+[dbg] optimize P-inv: -2447.13
+[dbg] optimize OptFrequencies: -2422.24
+[dbg] optimize Alpha: -2422.24
+[dbg] optimize P-inv: -2422.34
+[dbg] optimize OptFrequencies: -2446.38
+[dbg] optimize Alpha: -2446.38
+[dbg] optimize OptFrequencies: -2422.21
+[dbg] optimize Alpha: -2422.21
+[dbg] optimize SubstRates: -2445.94
+[dbg] optimize SubstRates: -2422.19
+[dbg] fix branches -2445.78
+[dbg] optimize BranchLengths: -2445.78
+[dbg] fix branches -2422.15
+[dbg] optimize BranchLengths: -2422.15
+[dbg] optimize P-inv: -2445.78
+[dbg] optimize P-inv: -2422.15
+[dbg] optimize OptFrequencies: -2445.5
+[dbg] optimize Alpha: -2445.5
+[dbg] optimize OptFrequencies: -2422.1
+[dbg] optimize Alpha: -2422.1
+[dbg] optimize SubstRates: -2422.13
+[dbg] optimize SubstRates: -2445.33
+[dbg] fix branches -2445.24
+[dbg] optimize BranchLengths: -2445.24
+[dbg] fix branches -2421.94
+[dbg] optimize BranchLengths: -2421.94
+[dbg] optimize P-inv: -2445.24
+[dbg] optimize SubstRates: -2422.07
+[dbg] optimize P-inv: -2421.94
+[dbg] optimize OptFrequencies: -2445.13
+[dbg] optimize Alpha: -2445.13
+[dbg] fix branches -2421.91
+[dbg] optimize BranchLengths: -2421.91
+[dbg] optimize OptFrequencies: -2421.85
+[dbg] optimize Alpha: -2421.85
+[dbg] optimize P-inv: -2421.91
+[dbg] optimize SubstRates: -2445.07
+[dbg] fix branches -2445.05
+[dbg] optimize BranchLengths: -2445.05
+[dbg] optimize P-inv: -2445.05
+[dbg] optimize OptFrequencies: -2421.86
+[dbg] optimize Alpha: -2421.86
+[dbg] optimize OptFrequencies: -2445.01
+[dbg] optimize Alpha: -2445.01
+[dbg] optimize SubstRates: -2421.78
+[dbg] optimize SubstRates: -2444.99
+[dbg] optimize SubstRates: -2421.84
+[dbg] fix branches -2421.76
+[dbg] optimize BranchLengths: -2421.76
+[dbg] fix branches -2444.98
+[dbg] optimize BranchLengths: -2444.98
+[dbg] fix branches -2421.83
+[dbg] optimize BranchLengths: -2421.83
+[dbg] optimize P-inv: -2421.76
+[dbg] optimize P-inv: -2444.98
+[dbg] optimize P-inv: -2421.83
+[dbg] optimize OptFrequencies: -2421.71
+[dbg] optimize Alpha: -2421.71
+[dbg] optimize OptFrequencies: -2421.8
+[dbg] optimize Alpha: -2421.8
+[dbg] optimize OptFrequencies: -2444.97
+[dbg] optimize Alpha: -2444.97
+[dbg] optimize SubstRates: -2444.97
+[dbg] optimize SubstRates: -2421.79
+[dbg] fix branches -2444.96
+[dbg] optimize BranchLengths: -2444.96
+[dbg] fix branches -2421.78
+[dbg] optimize BranchLengths: -2421.78
+[dbg] optimize P-inv: -2444.96
+[dbg] optimize P-inv: -2421.78
+[dbg] optimize SubstRates: -2421.68
+[dbg] fix branches -2421.67
+[dbg] optimize BranchLengths: -2421.67
+[dbg] optimize OptFrequencies: -2444.96
+[dbg] optimize Alpha: -2444.96
+[dbg] optimize OptFrequencies: -2421.77
+[dbg] optimize Alpha: -2421.77
+[dbg] optimize P-inv: -2421.67
+[dbg] optimize SubstRates: -2444.95
+[dbg] fix branches -2444.95
+[dbg] optimize BranchLengths: -2444.95
+[dbg] optimize OptFrequencies: -2421.65
+[dbg] optimize Alpha: -2421.65
+[dbg] optimize P-inv: -2444.95
+[dbg] optimize SubstRates: -2421.76
+[dbg] fix branches -2421.76
+[dbg] optimize BranchLengths: -2421.76
+[dbg] optimize OptFrequencies: -2444.95
+[dbg] optimize Alpha: -2444.95
+[dbg] optimize P-inv: -2421.76
+[dbg] optimize SubstRates: -2444.95
+[dbg] optimize SubstRates: -2421.63
+[dbg] model done: [0.01/0.05]: -2444.95
+[dbg] Model optimization done: -2444.95
+   49/88   TIM2+I         0h:00:00   0h:00:03           -2444.9511       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.84
+[dbg] Initial log likelihood: -2654.84
+[dbg] final parameter optimization: -2654.84
+[dbg] fix branches -2421.63
+[dbg] optimize BranchLengths: -2421.63
+[dbg] optimize OptFrequencies: -2421.75
+[dbg] optimize Alpha: -2421.75
+[dbg] optimize P-inv: -2421.63
+[dbg] fix branches -2461.8
+[dbg] optimize BranchLengths: -2461.8
+[dbg] optimize P-inv: -2461.24
+[dbg] optimize OptFrequencies: -2421.62
+[dbg] optimize Alpha: -2421.62
+[dbg] optimize SubstRates: -2421.75
+[dbg] fix branches -2421.75
+[dbg] optimize BranchLengths: -2421.75
+[dbg] optimize OptFrequencies: -2450.74
+[dbg] optimize Alpha: -2450.74
+[dbg] optimize P-inv: -2421.75
+[dbg] optimize OptFrequencies: -2421.74
+[dbg] optimize Alpha: -2421.74
+[dbg] optimize SubstRates: -2446.31
+[dbg] optimize SubstRates: -2421.61
+[dbg] fix branches -2421.61
+[dbg] optimize BranchLengths: -2421.61
+[dbg] optimize SubstRates: -2421.74
+[dbg] model done: [0.01/0.05]: -2421.74
+[dbg] Model optimization done: -2421.74
+   48/88   TIM3+I         0h:00:00   0h:00:03           -2421.7418       -  0.0000
+[dbg] fix branches -2444.69
+[dbg] optimize BranchLengths: -2444.69
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2656.47
+[dbg] Initial log likelihood: -2656.47
+[dbg] final parameter optimization: -2656.47
+[dbg] optimize P-inv: -2421.61
+[dbg] optimize P-inv: -2444.69
+[dbg] optimize OptFrequencies: -2444.38
+[dbg] optimize Alpha: -2444.38
+[dbg] optimize OptFrequencies: -2421.6
+[dbg] optimize Alpha: -2421.6
+[dbg] fix branches -2461.6
+[dbg] optimize BranchLengths: -2461.6
+[dbg] optimize SubstRates: -2421.59
+[dbg] optimize P-inv: -2461.04
+[dbg] fix branches -2421.59
+[dbg] optimize BranchLengths: -2421.59
+[dbg] optimize SubstRates: -2444.16
+[dbg] fix branches -2444.09
+[dbg] optimize BranchLengths: -2444.09
+[dbg] optimize P-inv: -2421.59
+[dbg] optimize P-inv: -2444.09
+[dbg] optimize OptFrequencies: -2444
+[dbg] optimize Alpha: -2444
+[dbg] optimize OptFrequencies: -2421.59
+[dbg] optimize Alpha: -2421.59
+[dbg] optimize OptFrequencies: -2442.28
+[dbg] optimize Alpha: -2442.28
+[dbg] optimize SubstRates: -2443.97
+[dbg] optimize SubstRates: -2421.59
+[dbg] model done: [0.01/0.05]: -2421.59
+[dbg] Model optimization done: -2421.59
+   46/88   GTR+I          0h:00:00   0h:00:03           -2421.5886       -  0.0000
+[dbg] fix branches -2443.95
+[dbg] optimize BranchLengths: -2443.95
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.66
+[dbg] Initial log likelihood: -2654.66
+[dbg] final parameter optimization: -2654.66
+[dbg] optimize P-inv: -2443.95
+[dbg] optimize OptFrequencies: -2443.93
+[dbg] optimize Alpha: -2443.93
+[dbg] fix branches -2461.77
+[dbg] optimize BranchLengths: -2461.77
+[dbg] optimize SubstRates: -2436.31
+[dbg] optimize SubstRates: -2443.93
+[dbg] optimize P-inv: -2461.21
+[dbg] fix branches -2443.92
+[dbg] optimize BranchLengths: -2443.92
+[dbg] optimize P-inv: -2443.92
+[dbg] fix branches -2433.86
+[dbg] optimize BranchLengths: -2433.86
+[dbg] optimize OptFrequencies: -2443.92
+[dbg] optimize Alpha: -2443.92
+[dbg] optimize P-inv: -2433.86
+[dbg] optimize OptFrequencies: -2451.66
+[dbg] optimize Alpha: -2451.66
+[dbg] optimize SubstRates: -2443.91
+[dbg] fix branches -2443.91
+[dbg] optimize BranchLengths: -2443.91
+[dbg] optimize P-inv: -2443.91
+[dbg] optimize OptFrequencies: -2433.3
+[dbg] optimize Alpha: -2433.3
+[dbg] optimize OptFrequencies: -2443.91
+[dbg] optimize Alpha: -2443.91
+[dbg] optimize SubstRates: -2443.91
+[dbg] model done: [0.01/0.05]: -2443.91
+[dbg] Model optimization done: -2443.91
+   50/88   TIM1+I         0h:00:00   0h:00:03           -2443.9084       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2658.25
+[dbg] Initial log likelihood: -2658.25
+[dbg] final parameter optimization: -2658.25
+[dbg] optimize SubstRates: -2447.49
+[dbg] optimize SubstRates: -2433.18
+[dbg] fix branches -2465.37
+[dbg] optimize BranchLengths: -2465.37
+[dbg] fix branches -2433.02
+[dbg] optimize BranchLengths: -2433.02
+[dbg] optimize P-inv: -2464.81
+[dbg] fix branches -2445.85
+[dbg] optimize BranchLengths: -2445.85
+[dbg] optimize P-inv: -2433.02
+[dbg] optimize P-inv: -2445.85
+[dbg] optimize OptFrequencies: -2456.2
+[dbg] optimize Alpha: -2456.2
+[dbg] optimize OptFrequencies: -2432.94
+[dbg] optimize Alpha: -2432.94
+[dbg] optimize OptFrequencies: -2445.55
+[dbg] optimize Alpha: -2445.55
+[dbg] optimize SubstRates: -2445.32
+[dbg] optimize SubstRates: -2451.87
+[dbg] optimize SubstRates: -2432.91
+[dbg] fix branches -2432.89
+[dbg] optimize BranchLengths: -2432.89
+[dbg] fix branches -2445.24
+[dbg] optimize BranchLengths: -2445.24
+[dbg] fix branches -2450.59
+[dbg] optimize BranchLengths: -2450.59
+[dbg] optimize P-inv: -2432.89
+[dbg] optimize P-inv: -2450.59
+[dbg] optimize P-inv: -2445.24
+[dbg] optimize OptFrequencies: -2432.87
+[dbg] optimize Alpha: -2432.87
+[dbg] optimize OptFrequencies: -2450.22
+[dbg] optimize Alpha: -2450.22
+[dbg] optimize OptFrequencies: -2445.15
+[dbg] optimize Alpha: -2445.15
+[dbg] optimize SubstRates: -2432.86
+[dbg] optimize SubstRates: -2450.17
+[dbg] fix branches -2432.86
+[dbg] optimize BranchLengths: -2432.86
+[dbg] fix branches -2450.13
+[dbg] optimize BranchLengths: -2450.13
+[dbg] optimize SubstRates: -2445.12
+[dbg] optimize P-inv: -2450.13
+[dbg] fix branches -2445.1
+[dbg] optimize BranchLengths: -2445.1
+[dbg] optimize P-inv: -2432.86
+[dbg] optimize OptFrequencies: -2450.12
+[dbg] optimize Alpha: -2450.12
+[dbg] optimize P-inv: -2445.1
+[dbg] optimize OptFrequencies: -2432.85
+[dbg] optimize Alpha: -2432.85
+[dbg] optimize SubstRates: -2450.11
+[dbg] fix branches -2450.1
+[dbg] optimize BranchLengths: -2450.1
+[dbg] optimize P-inv: -2450.1
+[dbg] optimize OptFrequencies: -2445.09
+[dbg] optimize Alpha: -2445.09
+[dbg] optimize SubstRates: -2432.85
+[dbg] optimize OptFrequencies: -2450.1
+[dbg] optimize Alpha: -2450.1
+[dbg] fix branches -2432.85
+[dbg] optimize BranchLengths: -2432.85
+[dbg] optimize SubstRates: -2450.1
+[dbg] optimize P-inv: -2432.85
+[dbg] fix branches -2450.09
+[dbg] optimize BranchLengths: -2450.09
+[dbg] optimize P-inv: -2450.09
+[dbg] optimize SubstRates: -2445.08
+[dbg] optimize OptFrequencies: -2450.09
+[dbg] optimize Alpha: -2450.09
+[dbg] fix branches -2445.08
+[dbg] optimize BranchLengths: -2445.08
+[dbg] optimize OptFrequencies: -2432.85
+[dbg] optimize Alpha: -2432.85
+[dbg] optimize SubstRates: -2450.09
+[dbg] model done: [0.01/0.05]: -2450.09
+[dbg] Model optimization done: -2450.09
+   53/88   TPM1uf+I       0h:00:00   0h:00:03           -2450.0925       -  0.0000
+[dbg] optimize P-inv: -2445.08
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2655.73
+[dbg] Initial log likelihood: -2655.73
+[dbg] final parameter optimization: -2655.73
+[dbg] optimize SubstRates: -2432.85
+[dbg] model done: [0.01/0.05]: -2432.85
+[dbg] Model optimization done: -2432.85
+   51/88   TPM3uf+I       0h:00:00   0h:00:03           -2432.8491       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2635.97
+[dbg] Initial log likelihood: -2635.97
+[dbg] final parameter optimization: -2635.97
+[dbg] optimize OptFrequencies: -2445.08
+[dbg] optimize Alpha: -2445.08
+[dbg] fix branches -2462.59
+[dbg] optimize BranchLengths: -2462.59
+[dbg] optimize P-inv: -2462.03
+[dbg] fix branches -2435.57
+[dbg] optimize BranchLengths: -2435.57
+[dbg] optimize SubstRates: -2445.07
+[dbg] model done: [0.01/0.05]: -2445.07
+[dbg] Model optimization done: -2445.07
+   52/88   TrN+I          0h:00:00   0h:00:03           -2445.0748       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2638.91
+[dbg] Initial log likelihood: -2638.91
+[dbg] final parameter optimization: -2638.91
+[dbg] optimize OptFrequencies: -2452.35
+[dbg] optimize Alpha: -2452.35
+[dbg] optimize P-inv: -2435.01
+[dbg] optimize FixedFrequencies: -2435.01
+[dbg] optimize Alpha: -2435.01
+[dbg] optimize SubstRates: -2452.2
+[dbg] fix branches -2438.72
+[dbg] optimize BranchLengths: -2438.72
+[dbg] fix branches -2451.1
+[dbg] optimize BranchLengths: -2451.1
+[dbg] optimize P-inv: -2438.15
+[dbg] optimize FixedFrequencies: -2438.15
+[dbg] optimize Alpha: -2438.15
+[dbg] optimize P-inv: -2451.1
+[dbg] optimize OptFrequencies: -2450.93
+[dbg] optimize Alpha: -2450.93
+[dbg] optimize SubstRates: -2430.17
+[dbg] fix branches -2429.57
+[dbg] optimize BranchLengths: -2429.57
+[dbg] optimize SubstRates: -2450.84
+[dbg] optimize P-inv: -2429.57
+[dbg] optimize FixedFrequencies: -2429.57
+[dbg] optimize Alpha: -2429.57
+[dbg] fix branches -2450.77
+[dbg] optimize BranchLengths: -2450.77
+[dbg] optimize P-inv: -2450.77
+[dbg] optimize SubstRates: -2434.67
+[dbg] optimize SubstRates: -2429.54
+[dbg] optimize OptFrequencies: -2450.72
+[dbg] optimize Alpha: -2450.72
+[dbg] fix branches -2429.51
+[dbg] optimize BranchLengths: -2429.51
+[dbg] fix branches -2434.19
+[dbg] optimize BranchLengths: -2434.19
+[dbg] optimize P-inv: -2429.51
+[dbg] optimize FixedFrequencies: -2429.51
+[dbg] optimize Alpha: -2429.51
+[dbg] optimize P-inv: -2434.19
+[dbg] optimize SubstRates: -2450.69
+[dbg] optimize FixedFrequencies: -2434.19
+[dbg] optimize Alpha: -2434.19
+[dbg] fix branches -2450.68
+[dbg] optimize BranchLengths: -2450.68
+[dbg] optimize P-inv: -2450.68
+[dbg] optimize SubstRates: -2429.51
+[dbg] fix branches -2429.5
+[dbg] optimize BranchLengths: -2429.5
+[dbg] optimize SubstRates: -2434.17
+[dbg] optimize OptFrequencies: -2450.66
+[dbg] optimize Alpha: -2450.66
+[dbg] optimize P-inv: -2429.5
+[dbg] fix branches -2434.16
+[dbg] optimize BranchLengths: -2434.16
+[dbg] optimize FixedFrequencies: -2429.5
+[dbg] optimize Alpha: -2429.5
+[dbg] optimize P-inv: -2434.16
+[dbg] optimize FixedFrequencies: -2434.16
+[dbg] optimize Alpha: -2434.16
+[dbg] optimize SubstRates: -2429.5
+[dbg] optimize SubstRates: -2450.65
+[dbg] fix branches -2450.64
+[dbg] optimize BranchLengths: -2450.64
+[dbg] fix branches -2429.49
+[dbg] optimize BranchLengths: -2429.49
+[dbg] optimize SubstRates: -2434.16
+[dbg] optimize P-inv: -2450.64
+[dbg] optimize P-inv: -2429.49
+[dbg] optimize FixedFrequencies: -2429.49
+[dbg] optimize Alpha: -2429.49
+[dbg] fix branches -2434.15
+[dbg] optimize BranchLengths: -2434.15
+[dbg] optimize SubstRates: -2429.49
+[dbg] model done: [0.01/0.05]: -2429.49
+[dbg] Model optimization done: -2429.49
+   55/88   SYM+I          0h:00:00   0h:00:03           -2429.4911       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize OptFrequencies: -2450.63
+[dbg] optimize Alpha: -2450.63
+[dbg] Initial score: -2666.18
+[dbg] Initial log likelihood: -2666.18
+[dbg] final parameter optimization: -2666.18
+[dbg] optimize P-inv: -2434.15
+[dbg] optimize FixedFrequencies: -2434.15
+[dbg] optimize Alpha: -2434.15
+[dbg] optimize SubstRates: -2450.63
+[dbg] optimize SubstRates: -2434.15
+[dbg] model done: [0.01/0.05]: -2434.15
+[dbg] Model optimization done: -2434.15
+   56/88   TVMef+I        0h:00:00   0h:00:03           -2434.1548       -  0.0000
+[dbg] fix branches -2450.62
+[dbg] optimize BranchLengths: -2450.62
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2652.11
+[dbg] Initial log likelihood: -2652.11
+[dbg] final parameter optimization: -2652.11
+[dbg] optimize P-inv: -2450.62
+[dbg] fix branches -2473.27
+[dbg] optimize BranchLengths: -2473.27
+[dbg] optimize OptFrequencies: -2450.62
+[dbg] optimize Alpha: -2450.62
+[dbg] optimize P-inv: -2472.71
+[dbg] fix branches -2454.36
+[dbg] optimize BranchLengths: -2454.36
+[dbg] optimize SubstRates: -2450.62
+[dbg] fix branches -2450.61
+[dbg] optimize BranchLengths: -2450.61
+[dbg] optimize P-inv: -2453.79
+[dbg] optimize FixedFrequencies: -2453.79
+[dbg] optimize Alpha: -2453.79
+[dbg] optimize P-inv: -2450.61
+[dbg] optimize OptFrequencies: -2460.85
+[dbg] optimize Alpha: -2460.85
+[dbg] optimize OptFrequencies: -2450.61
+[dbg] optimize Alpha: -2450.61
+[dbg] optimize SubstRates: -2449.16
+[dbg] optimize SubstRates: -2450.6
+[dbg] fix branches -2450.6
+[dbg] optimize BranchLengths: -2450.6
+[dbg] fix branches -2448.62
+[dbg] optimize BranchLengths: -2448.62
+[dbg] optimize P-inv: -2450.6
+[dbg] optimize P-inv: -2448.62
+[dbg] optimize FixedFrequencies: -2448.62
+[dbg] optimize Alpha: -2448.62
+[dbg] optimize SubstRates: -2453.17
+[dbg] optimize OptFrequencies: -2450.6
+[dbg] optimize Alpha: -2450.6
+[dbg] optimize SubstRates: -2450.6
+[dbg] model done: [0.01/0.05]: -2450.6
+[dbg] Model optimization done: -2450.6
+[dbg] fix branches -2451.43
+[dbg] optimize BranchLengths: -2451.43
+   54/88   TPM2uf+I       0h:00:01   0h:00:04           -2450.5973       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2648.33
+[dbg] Initial log likelihood: -2648.33
+[dbg] optimize SubstRates: -2448.6
+[dbg] final parameter optimization: -2648.33
+[dbg] fix branches -2448.58
+[dbg] optimize BranchLengths: -2448.58
+[dbg] optimize P-inv: -2451.43
+[dbg] optimize P-inv: -2448.58
+[dbg] optimize FixedFrequencies: -2448.58
+[dbg] optimize Alpha: -2448.58
+[dbg] optimize SubstRates: -2448.58
+[dbg] fix branches -2452.45
+[dbg] optimize BranchLengths: -2452.45
+[dbg] fix branches -2448.56
+[dbg] optimize BranchLengths: -2448.56
+[dbg] optimize OptFrequencies: -2451.34
+[dbg] optimize Alpha: -2451.34
+[dbg] optimize P-inv: -2448.56
+[dbg] optimize FixedFrequencies: -2448.56
+[dbg] optimize Alpha: -2448.56
+[dbg] optimize P-inv: -2451.88
+[dbg] optimize FixedFrequencies: -2451.88
+[dbg] optimize Alpha: -2451.88
+[dbg] optimize SubstRates: -2448.56
+[dbg] fix branches -2448.56
+[dbg] optimize BranchLengths: -2448.56
+[dbg] optimize P-inv: -2448.56
+[dbg] optimize FixedFrequencies: -2448.56
+[dbg] optimize Alpha: -2448.56
+[dbg] optimize SubstRates: -2451.31
+[dbg] fix branches -2451.29
+[dbg] optimize BranchLengths: -2451.29
+[dbg] optimize SubstRates: -2448.56
+[dbg] model done: [0.01/0.05]: -2448.56
+[dbg] Model optimization done: -2448.56
+   58/88   TIM2ef+I       0h:00:01   0h:00:04           -2448.5565       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2634.54
+[dbg] Initial log likelihood: -2634.54
+[dbg] final parameter optimization: -2634.54
+[dbg] optimize P-inv: -2451.29
+[dbg] optimize SubstRates: -2448.27
+[dbg] fix branches -2436.63
+[dbg] optimize BranchLengths: -2436.63
+[dbg] optimize OptFrequencies: -2451.29
+[dbg] optimize Alpha: -2451.29
+[dbg] optimize P-inv: -2436.06
+[dbg] optimize FixedFrequencies: -2436.06
+[dbg] optimize Alpha: -2436.06
+[dbg] fix branches -2447.91
+[dbg] optimize BranchLengths: -2447.91
+[dbg] optimize SubstRates: -2451.29
+[dbg] fix branches -2451.28
+[dbg] optimize BranchLengths: -2451.28
+[dbg] optimize P-inv: -2447.91
+[dbg] optimize FixedFrequencies: -2447.91
+[dbg] optimize Alpha: -2447.91
+[dbg] optimize P-inv: -2451.28
+[dbg] optimize SubstRates: -2432.78
+[dbg] optimize OptFrequencies: -2451.28
+[dbg] optimize Alpha: -2451.28
+[dbg] fix branches -2432.32
+[dbg] optimize BranchLengths: -2432.32
+[dbg] optimize P-inv: -2432.32
+[dbg] optimize FixedFrequencies: -2432.32
+[dbg] optimize Alpha: -2432.32
+[dbg] optimize SubstRates: -2447.9
+[dbg] optimize SubstRates: -2451.28
+[dbg] fix branches -2447.89
+[dbg] model done: [0.01/0.05]: -2451.28
+[dbg] optimize BranchLengths: -2447.89
+[dbg] Model optimization done: -2451.28
+   57/88   HKY+I          0h:00:01   0h:00:04           -2451.2776       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize SubstRates: -2432.3
+[dbg] Initial score: -2657.87
+[dbg] Initial log likelihood: -2657.87
+[dbg] final parameter optimization: -2657.87
+[dbg] fix branches -2432.28
+[dbg] optimize BranchLengths: -2432.28
+[dbg] optimize P-inv: -2447.89
+[dbg] optimize FixedFrequencies: -2447.89
+[dbg] optimize Alpha: -2447.89
+[dbg] optimize P-inv: -2432.28
+[dbg] optimize FixedFrequencies: -2432.28
+[dbg] optimize Alpha: -2432.28
+[dbg] optimize SubstRates: -2432.28
+[dbg] fix branches -2432.27
+[dbg] optimize BranchLengths: -2432.27
+[dbg] optimize SubstRates: -2447.89
+[dbg] optimize P-inv: -2432.27
+[dbg] optimize FixedFrequencies: -2432.27
+[dbg] optimize Alpha: -2432.27
+[dbg] fix branches -2447.88
+[dbg] optimize BranchLengths: -2447.88
+[dbg] optimize SubstRates: -2432.27
+[dbg] fix branches -2465.24
+[dbg] optimize BranchLengths: -2465.24
+[dbg] fix branches -2432.26
+[dbg] optimize BranchLengths: -2432.26
+[dbg] optimize P-inv: -2432.26
+[dbg] optimize P-inv: -2447.88
+[dbg] optimize FixedFrequencies: -2432.26
+[dbg] optimize FixedFrequencies: -2447.88
+[dbg] optimize Alpha: -2447.88
+[dbg] optimize Alpha: -2432.26
+[dbg] optimize SubstRates: -2447.88
+[dbg] model done: [0.01/0.05]: -2447.88
+[dbg] Model optimization done: -2447.88
+   59/88   TIM1ef+I       0h:00:00   0h:00:04           -2447.8802       -  0.0000
+[dbg] optimize P-inv: -2464.68
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2638.64
+[dbg] Initial log likelihood: -2638.64
+[dbg] final parameter optimization: -2638.64
+[dbg] optimize SubstRates: -2432.26
+[dbg] model done: [0.01/0.05]: -2432.26
+[dbg] Model optimization done: -2432.26
+   60/88   TIM3ef+I       0h:00:00   0h:00:04           -2432.2590       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2652.84
+[dbg] Initial log likelihood: -2652.84
+[dbg] final parameter optimization: -2652.84
+[dbg] fix branches -2442.02
+[dbg] optimize BranchLengths: -2442.02
+[dbg] fix branches -2456.76
+[dbg] optimize BranchLengths: -2456.76
+[dbg] optimize OptFrequencies: -2454.08
+[dbg] optimize Alpha: -2454.08
+[dbg] optimize P-inv: -2456.19
+[dbg] optimize FixedFrequencies: -2456.19
+[dbg] optimize Alpha: -2456.19
+[dbg] optimize SubstRates: -2454.08
+[dbg] optimize P-inv: -2441.46
+[dbg] optimize FixedFrequencies: -2441.46
+[dbg] optimize Alpha: -2441.46
+[dbg] fix branches -2452.93
+[dbg] optimize BranchLengths: -2452.93
+[dbg] optimize SubstRates: -2453.92
+[dbg] fix branches -2453.72
+[dbg] optimize BranchLengths: -2453.72
+[dbg] optimize P-inv: -2452.93
+[dbg] optimize P-inv: -2453.72
+[dbg] optimize FixedFrequencies: -2453.72
+[dbg] optimize Alpha: -2453.72
+[dbg] optimize SubstRates: -2453.71
+[dbg] optimize SubstRates: -2437.11
+[dbg] fix branches -2453.7
+[dbg] optimize BranchLengths: -2453.7
+[dbg] optimize OptFrequencies: -2452.88
+[dbg] optimize Alpha: -2452.88
+[dbg] optimize SubstRates: -2452.88
+[dbg] fix branches -2452.86
+[dbg] optimize BranchLengths: -2452.86
+[dbg] optimize P-inv: -2453.7
+[dbg] optimize FixedFrequencies: -2453.7
+[dbg] optimize Alpha: -2453.7
+[dbg] fix branches -2436.83
+[dbg] optimize BranchLengths: -2436.83
+[dbg] optimize SubstRates: -2453.7
+[dbg] optimize P-inv: -2452.86
+[dbg] fix branches -2453.7
+[dbg] optimize BranchLengths: -2453.7
+[dbg] optimize P-inv: -2436.83
+[dbg] optimize FixedFrequencies: -2436.83
+[dbg] optimize Alpha: -2436.83
+[dbg] optimize P-inv: -2453.7
+[dbg] optimize FixedFrequencies: -2453.7
+[dbg] optimize Alpha: -2453.7
+[dbg] optimize OptFrequencies: -2452.86
+[dbg] optimize Alpha: -2452.86
+[dbg] optimize SubstRates: -2452.86
+[dbg] optimize SubstRates: -2453.7
+[dbg] model done: [0.01/0.05]: -2453.7
+[dbg] Model optimization done: -2453.7
+   63/88   TPM2+I         0h:00:00   0h:00:04           -2453.6951       -  0.0000
+[dbg] fix branches -2452.85
+[dbg] optimize BranchLengths: -2452.85
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2657.48
+[dbg] Initial log likelihood: -2657.48
+[dbg] final parameter optimization: -2657.48
+[dbg] optimize SubstRates: -2436.82
+[dbg] fix branches -2436.82
+[dbg] optimize BranchLengths: -2436.82
+[dbg] optimize P-inv: -2452.85
+[dbg] optimize P-inv: -2436.82
+[dbg] optimize FixedFrequencies: -2436.82
+[dbg] optimize Alpha: -2436.82
+[dbg] fix branches -2461.36
+[dbg] optimize BranchLengths: -2461.36
+[dbg] optimize OptFrequencies: -2452.85
+[dbg] optimize Alpha: -2452.85
+[dbg] optimize SubstRates: -2452.85
+[dbg] model done: [0.01/0.05]: -2452.85
+[dbg] Model optimization done: -2452.85
+   61/88   F81+I          0h:00:00   0h:00:04           -2452.8493       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2649.96
+[dbg] Initial log likelihood: -2649.96
+[dbg] final parameter optimization: -2649.96
+[dbg] optimize P-inv: -2460.79
+[dbg] optimize FixedFrequencies: -2460.79
+[dbg] optimize Alpha: -2460.79
+[dbg] optimize SubstRates: -2436.82
+[dbg] model done: [0.01/0.05]: -2436.82
+[dbg] Model optimization done: -2436.82
+   62/88   TPM3+I         0h:00:00   0h:00:04           -2436.8160       -  0.0000
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2658.14
+[dbg] Initial log likelihood: -2658.14
+[dbg] final parameter optimization: -2658.14
+[dbg] fix branches -2454.09
+[dbg] optimize BranchLengths: -2454.09
+[dbg] optimize SubstRates: -2453.26
+[dbg] fix branches -2462.21
+[dbg] optimize BranchLengths: -2462.21
+[dbg] optimize P-inv: -2453.52
+[dbg] optimize FixedFrequencies: -2453.52
+[dbg] optimize Alpha: -2453.52
+[dbg] fix branches -2452.93
+[dbg] optimize BranchLengths: -2452.93
+[dbg] optimize P-inv: -2452.93
+[dbg] optimize FixedFrequencies: -2452.93
+[dbg] optimize Alpha: -2452.93
+[dbg] optimize P-inv: -2461.65
+[dbg] optimize FixedFrequencies: -2461.65
+[dbg] optimize Alpha: -2461.65
+[dbg] optimize SubstRates: -2452.93
+[dbg] fix branches -2452.92
+[dbg] optimize BranchLengths: -2452.92
+[dbg] optimize P-inv: -2452.92
+[dbg] optimize FixedFrequencies: -2452.92
+[dbg] optimize Alpha: -2452.92
+[dbg] optimize SubstRates: -2452.92
+[dbg] model done: [0.01/0.05]: -2452.92
+[dbg] Model optimization done: -2452.92
+   64/88   TPM1+I         0h:00:00   0h:00:04           -2452.9187       -  0.0000
+[dbg] optimize SubstRates: -2451.04
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2652.65
+[dbg] Initial log likelihood: -2652.65
+[dbg] final parameter optimization: -2652.65
+[dbg] optimize SubstRates: -2456.08
+[dbg] fix branches -2450.7
+[dbg] optimize BranchLengths: -2450.7
+[dbg] fix branches -2457.01
+[dbg] optimize BranchLengths: -2457.01
+[dbg] optimize P-inv: -2450.7
+[dbg] optimize FixedFrequencies: -2450.7
+[dbg] optimize Alpha: -2450.7
+[dbg] fix branches -2455.73
+[dbg] optimize BranchLengths: -2455.73
+[dbg] optimize P-inv: -2456.44
+[dbg] optimize FixedFrequencies: -2456.44
+[dbg] optimize Alpha: -2456.44
+[dbg] optimize SubstRates: -2456.44
+[dbg] fix branches -2456.31
+[dbg] optimize BranchLengths: -2456.31
+[dbg] optimize P-inv: -2455.73
+[dbg] optimize FixedFrequencies: -2455.73
+[dbg] optimize Alpha: -2455.73
+[dbg] optimize P-inv: -2456.31
+[dbg] optimize FixedFrequencies: -2456.31
+[dbg] optimize Alpha: -2456.31
+[dbg] optimize SubstRates: -2456.31
+[dbg] fix branches -2456.3
+[dbg] optimize BranchLengths: -2456.3
+[dbg] optimize SubstRates: -2450.69
+[dbg] optimize P-inv: -2456.3
+[dbg] optimize FixedFrequencies: -2456.3
+[dbg] optimize Alpha: -2456.3
+[dbg] optimize SubstRates: -2456.3
+[dbg] model done: [0.01/0.05]: -2456.3
+[dbg] Model optimization done: -2456.3
+   67/88   JC+I           0h:00:00   0h:00:04           -2456.2960       -  0.0000
+[dbg] fix branches -2450.67
+[dbg] optimize BranchLengths: -2450.67
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2671.33
+[dbg] Initial log likelihood: -2671.33
+[dbg] final parameter optimization: -2671.33
+[dbg] optimize SubstRates: -2455.72
+[dbg] optimize P-inv: -2450.67
+[dbg] optimize FixedFrequencies: -2450.67
+[dbg] optimize Alpha: -2450.67
+[dbg] fix branches -2455.71
+[dbg] optimize BranchLengths: -2455.71
+[dbg] fix branches -2470.45
+[dbg] optimize BranchLengths: -2470.45
+[dbg] optimize P-inv: -2455.71
+[dbg] optimize FixedFrequencies: -2455.71
+[dbg] optimize Alpha: -2455.71
+[dbg] optimize SubstRates: -2450.67
+[dbg] fix branches -2450.66
+[dbg] optimize BranchLengths: -2450.66
+[dbg] optimize SubstRates: -2455.71
+[dbg] model done: [0.01/0.05]: -2455.71
+[dbg] Model optimization done: -2455.71
+   66/88   K80+I          0h:00:00   0h:00:04           -2455.7124       -  0.0000
+[dbg] optimize OptFrequencies: -2439.66
+[dbg] optimize Alpha: -2439.66
+[dbg] optimize P-inv: -2450.66
+[dbg] optimize FixedFrequencies: -2450.66
+[dbg] optimize Alpha: -2450.66
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2675.19
+[dbg] Initial log likelihood: -2675.19
+[dbg] final parameter optimization: -2675.19
+[dbg] optimize SubstRates: -2450.66
+[dbg] fix branches -2450.65
+[dbg] optimize BranchLengths: -2450.65
+[dbg] fix branches -2474.5
+[dbg] optimize BranchLengths: -2474.5
+[dbg] optimize P-inv: -2450.65
+[dbg] optimize FixedFrequencies: -2450.65
+[dbg] optimize Alpha: -2450.65
+[dbg] optimize SubstRates: -2450.65
+[dbg] model done: [0.01/0.05]: -2450.65
+[dbg] Model optimization done: -2450.65
+   65/88   TrNef+I        0h:00:00   0h:00:04           -2450.6532       -  0.0000
+[dbg] optimize SubstRates: -2432.37
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.47
+[dbg] Initial log likelihood: -2654.47
+[dbg] final parameter optimization: -2654.47
+[dbg] fix branches -2427.09
+[dbg] optimize BranchLengths: -2427.09
+[dbg] optimize OptFrequencies: -2425.09
+[dbg] optimize Alpha: -2425.09
+[dbg] fix branches -2457.51
+[dbg] optimize BranchLengths: -2457.51
+[dbg] optimize OptFrequencies: -2443.13
+[dbg] optimize Alpha: -2443.13
+[dbg] optimize SubstRates: -2424.21
+[dbg] fix branches -2423.93
+[dbg] optimize BranchLengths: -2423.93
+[dbg] optimize OptFrequencies: -2434.88
+[dbg] optimize Alpha: -2434.88
+[dbg] optimize OptFrequencies: -2423.3
+[dbg] optimize Alpha: -2423.3
+[dbg] optimize SubstRates: -2438.21
+[dbg] optimize SubstRates: -2422.94
+[dbg] fix branches -2422.85
+[dbg] optimize BranchLengths: -2422.85
+[dbg] fix branches -2432.81
+[dbg] optimize BranchLengths: -2432.81
+[dbg] optimize SubstRates: -2429.03
+[dbg] optimize OptFrequencies: -2422.58
+[dbg] optimize Alpha: -2422.58
+[dbg] fix branches -2425.32
+[dbg] optimize BranchLengths: -2425.32
+[dbg] optimize OptFrequencies: -2432.28
+[dbg] optimize Alpha: -2432.28
+[dbg] optimize SubstRates: -2422.42
+[dbg] fix branches -2422.35
+[dbg] optimize BranchLengths: -2422.35
+[dbg] optimize OptFrequencies: -2424.18
+[dbg] optimize Alpha: -2424.18
+[dbg] optimize OptFrequencies: -2422.21
+[dbg] optimize Alpha: -2422.21
+[dbg] optimize SubstRates: -2432.21
+[dbg] fix branches -2432.03
+[dbg] optimize BranchLengths: -2432.03
+[dbg] optimize SubstRates: -2423.63
+[dbg] optimize SubstRates: -2422.13
+[dbg] fix branches -2423.37
+[dbg] optimize BranchLengths: -2423.37
+[dbg] fix branches -2421.95
+[dbg] optimize BranchLengths: -2421.95
+[dbg] optimize OptFrequencies: -2431.96
+[dbg] optimize Alpha: -2431.96
+[dbg] optimize OptFrequencies: -2421.85
+[dbg] optimize Alpha: -2421.85
+[dbg] optimize OptFrequencies: -2422.97
+[dbg] optimize Alpha: -2422.97
+[dbg] optimize SubstRates: -2421.79
+[dbg] fix branches -2421.76
+[dbg] optimize BranchLengths: -2421.76
+[dbg] optimize SubstRates: -2431.93
+[dbg] optimize OptFrequencies: -2421.71
+[dbg] optimize Alpha: -2421.71
+[dbg] fix branches -2431.89
+[dbg] optimize BranchLengths: -2431.89
+[dbg] optimize SubstRates: -2422.76
+[dbg] fix branches -2422.66
+[dbg] optimize BranchLengths: -2422.66
+[dbg] optimize OptFrequencies: -2431.86
+[dbg] optimize Alpha: -2431.86
+[dbg] optimize SubstRates: -2421.68
+[dbg] fix branches -2421.67
+[dbg] optimize BranchLengths: -2421.67
+[dbg] optimize OptFrequencies: -2422.48
+[dbg] optimize Alpha: -2422.48
+[dbg] optimize OptFrequencies: -2421.65
+[dbg] optimize Alpha: -2421.65
+[dbg] optimize SubstRates: -2421.63
+[dbg] fix branches -2421.63
+[dbg] optimize BranchLengths: -2421.63
+[dbg] optimize OptFrequencies: -2421.62
+[dbg] optimize Alpha: -2421.62
+[dbg] optimize SubstRates: -2431.85
+[dbg] fix branches -2431.83
+[dbg] optimize BranchLengths: -2431.83
+[dbg] optimize SubstRates: -2422.39
+[dbg] fix branches -2422.33
+[dbg] optimize BranchLengths: -2422.33
+[dbg] optimize SubstRates: -2421.61
+[dbg] optimize OptFrequencies: -2431.82
+[dbg] optimize Alpha: -2431.82
+[dbg] fix branches -2421.6
+[dbg] optimize BranchLengths: -2421.6
+[dbg] optimize OptFrequencies: -2421.6
+[dbg] optimize Alpha: -2421.6
+[dbg] optimize OptFrequencies: -2422.23
+[dbg] optimize Alpha: -2422.23
+[dbg] optimize SubstRates: -2431.82
+[dbg] optimize SubstRates: -2421.59
+[dbg] fix branches -2421.59
+[dbg] optimize BranchLengths: -2421.59
+[dbg] fix branches -2431.8
+[dbg] optimize BranchLengths: -2431.8
+[dbg] optimize OptFrequencies: -2421.59
+[dbg] optimize Alpha: -2421.59
+[dbg] optimize OptFrequencies: -2431.8
+[dbg] optimize Alpha: -2431.8
+[dbg] optimize SubstRates: -2421.59
+[dbg] model done: [0.01/0.05]: -2421.59
+[dbg] Model optimization done: -2421.59
+   68/88   GTR            0h:00:00   0h:00:04           -2421.5885       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2672.28
+[dbg] Initial log likelihood: -2672.28
+[dbg] final parameter optimization: -2672.28
+[dbg] optimize SubstRates: -2431.8
+[dbg] optimize SubstRates: -2422.19
+[dbg] fix branches -2475.22
+[dbg] optimize BranchLengths: -2475.22
+[dbg] fix branches -2431.79
+[dbg] optimize BranchLengths: -2431.79
+[dbg] fix branches -2422.14
+[dbg] optimize BranchLengths: -2422.14
+[dbg] optimize OptFrequencies: -2431.79
+[dbg] optimize Alpha: -2431.79
+[dbg] optimize OptFrequencies: -2455.03
+[dbg] optimize Alpha: -2455.03
+[dbg] optimize OptFrequencies: -2422.08
+[dbg] optimize Alpha: -2422.08
+[dbg] optimize SubstRates: -2431.79
+[dbg] fix branches -2431.78
+[dbg] optimize BranchLengths: -2431.78
+[dbg] optimize SubstRates: -2449.57
+[dbg] fix branches -2447.09
+[dbg] optimize BranchLengths: -2447.09
+[dbg] optimize OptFrequencies: -2431.78
+[dbg] optimize Alpha: -2431.78
+[dbg] optimize SubstRates: -2422.05
+[dbg] optimize OptFrequencies: -2446.33
+[dbg] optimize Alpha: -2446.33
+[dbg] fix branches -2421.91
+[dbg] optimize BranchLengths: -2421.91
+[dbg] optimize SubstRates: -2431.78
+[dbg] model done: [0.01/0.05]: -2431.78
+[dbg] Model optimization done: -2431.78
+   69/88   TVM            0h:00:00   0h:00:04           -2431.7811       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.57
+[dbg] Initial log likelihood: -2654.57
+[dbg] final parameter optimization: -2654.57
+[dbg] optimize SubstRates: -2445.91
+[dbg] optimize OptFrequencies: -2421.86
+[dbg] optimize Alpha: -2421.86
+[dbg] fix branches -2445.75
+[dbg] optimize BranchLengths: -2445.75
+[dbg] fix branches -2461.2
+[dbg] optimize BranchLengths: -2461.2
+[dbg] optimize OptFrequencies: -2445.47
+[dbg] optimize Alpha: -2445.47
+[dbg] optimize SubstRates: -2421.84
+[dbg] fix branches -2421.82
+[dbg] optimize BranchLengths: -2421.82
+[dbg] optimize SubstRates: -2445.31
+[dbg] fix branches -2445.22
+[dbg] optimize BranchLengths: -2445.22
+[dbg] optimize OptFrequencies: -2450.72
+[dbg] optimize Alpha: -2450.72
+[dbg] optimize OptFrequencies: -2421.8
+[dbg] optimize Alpha: -2421.8
+[dbg] optimize OptFrequencies: -2445.12
+[dbg] optimize Alpha: -2445.12
+[dbg] optimize SubstRates: -2445.06
+[dbg] fix branches -2445.04
+[dbg] optimize BranchLengths: -2445.04
+[dbg] optimize SubstRates: -2421.79
+[dbg] optimize OptFrequencies: -2445.01
+[dbg] optimize Alpha: -2445.01
+[dbg] fix branches -2421.78
+[dbg] optimize BranchLengths: -2421.78
+[dbg] optimize SubstRates: -2446.27
+[dbg] optimize OptFrequencies: -2421.77
+[dbg] optimize Alpha: -2421.77
+[dbg] optimize SubstRates: -2444.99
+[dbg] fix branches -2444.69
+[dbg] optimize BranchLengths: -2444.69
+[dbg] fix branches -2444.98
+[dbg] optimize BranchLengths: -2444.98
+[dbg] optimize OptFrequencies: -2444.97
+[dbg] optimize Alpha: -2444.97
+[dbg] optimize SubstRates: -2421.76
+[dbg] optimize OptFrequencies: -2444.38
+[dbg] optimize Alpha: -2444.38
+[dbg] fix branches -2421.76
+[dbg] optimize BranchLengths: -2421.76
+[dbg] optimize SubstRates: -2444.96
+[dbg] fix branches -2444.96
+[dbg] optimize BranchLengths: -2444.96
+[dbg] optimize OptFrequencies: -2421.75
+[dbg] optimize Alpha: -2421.75
+[dbg] optimize OptFrequencies: -2444.95
+[dbg] optimize Alpha: -2444.95
+[dbg] optimize SubstRates: -2444.95
+[dbg] fix branches -2444.95
+[dbg] optimize BranchLengths: -2444.95
+[dbg] optimize SubstRates: -2421.75
+[dbg] optimize OptFrequencies: -2444.95
+[dbg] optimize Alpha: -2444.95
+[dbg] optimize SubstRates: -2444.16
+[dbg] fix branches -2421.75
+[dbg] optimize BranchLengths: -2421.75
+[dbg] fix branches -2444.08
+[dbg] optimize BranchLengths: -2444.08
+[dbg] optimize SubstRates: -2444.95
+[dbg] model done: [0.01/0.05]: -2444.95
+[dbg] Model optimization done: -2444.95
+   71/88   TIM2           0h:00:00   0h:00:04           -2444.9510       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2656.21
+[dbg] Initial log likelihood: -2656.21
+[dbg] final parameter optimization: -2656.21
+[dbg] optimize OptFrequencies: -2421.74
+[dbg] optimize Alpha: -2421.74
+[dbg] optimize OptFrequencies: -2444
+[dbg] optimize Alpha: -2444
+[dbg] fix branches -2461.01
+[dbg] optimize BranchLengths: -2461.01
+[dbg] optimize SubstRates: -2421.74
+[dbg] model done: [0.01/0.05]: -2421.74
+[dbg] Model optimization done: -2421.74
+   70/88   TIM3           0h:00:00   0h:00:04           -2421.7416       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2654.4
+[dbg] Initial log likelihood: -2654.4
+[dbg] final parameter optimization: -2654.4
+[dbg] optimize OptFrequencies: -2442.5
+[dbg] optimize Alpha: -2442.5
+[dbg] fix branches -2461.17
+[dbg] optimize BranchLengths: -2461.17
+[dbg] optimize SubstRates: -2443.97
+[dbg] fix branches -2443.95
+[dbg] optimize BranchLengths: -2443.95
+[dbg] optimize SubstRates: -2436.56
+[dbg] optimize OptFrequencies: -2443.93
+[dbg] optimize Alpha: -2443.93
+[dbg] fix branches -2433.93
+[dbg] optimize BranchLengths: -2433.93
+[dbg] optimize OptFrequencies: -2451.63
+[dbg] optimize Alpha: -2451.63
+[dbg] optimize OptFrequencies: -2433.34
+[dbg] optimize Alpha: -2433.34
+[dbg] optimize SubstRates: -2443.93
+[dbg] fix branches -2443.92
+[dbg] optimize BranchLengths: -2443.92
+[dbg] optimize SubstRates: -2433.2
+[dbg] fix branches -2433.04
+[dbg] optimize BranchLengths: -2433.04
+[dbg] optimize SubstRates: -2447.43
+[dbg] optimize OptFrequencies: -2443.92
+[dbg] optimize Alpha: -2443.92
+[dbg] optimize OptFrequencies: -2432.95
+[dbg] optimize Alpha: -2432.95
+[dbg] fix branches -2445.85
+[dbg] optimize BranchLengths: -2445.85
+[dbg] optimize SubstRates: -2432.92
+[dbg] optimize SubstRates: -2443.91
+[dbg] fix branches -2432.89
+[dbg] optimize BranchLengths: -2432.89
+[dbg] fix branches -2443.91
+[dbg] optimize BranchLengths: -2443.91
+[dbg] optimize OptFrequencies: -2432.87
+[dbg] optimize Alpha: -2432.87
+[dbg] optimize OptFrequencies: -2445.54
+[dbg] optimize Alpha: -2445.54
+[dbg] optimize OptFrequencies: -2443.91
+[dbg] optimize Alpha: -2443.91
+[dbg] optimize SubstRates: -2432.87
+[dbg] fix branches -2432.86
+[dbg] optimize BranchLengths: -2432.86
+[dbg] optimize SubstRates: -2443.91
+[dbg] model done: [0.01/0.05]: -2443.91
+[dbg] Model optimization done: -2443.91
+   72/88   TIM1           0h:00:00   0h:00:04           -2443.9083       -       -
+[dbg] optimize OptFrequencies: -2432.85
+[dbg] optimize Alpha: -2432.85
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2658
+[dbg] Initial log likelihood: -2658
+[dbg] final parameter optimization: -2658
+[dbg] optimize SubstRates: -2445.31
+[dbg] fix branches -2445.23
+[dbg] optimize BranchLengths: -2445.23
+[dbg] optimize SubstRates: -2432.85
+[dbg] fix branches -2432.85
+[dbg] optimize BranchLengths: -2432.85
+[dbg] fix branches -2464.77
+[dbg] optimize BranchLengths: -2464.77
+[dbg] optimize OptFrequencies: -2432.85
+[dbg] optimize Alpha: -2432.85
+[dbg] optimize OptFrequencies: -2445.15
+[dbg] optimize Alpha: -2445.15
+[dbg] optimize SubstRates: -2432.85
+[dbg] model done: [0.01/0.05]: -2432.85
+[dbg] Model optimization done: -2432.85
+   73/88   TPM3uf         0h:00:00   0h:00:04           -2432.8492       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2655.47
+[dbg] Initial log likelihood: -2655.47
+[dbg] final parameter optimization: -2655.47
+[dbg] fix branches -2461.99
+[dbg] optimize BranchLengths: -2461.99
+[dbg] optimize OptFrequencies: -2456.17
+[dbg] optimize Alpha: -2456.17
+[dbg] optimize SubstRates: -2445.12
+[dbg] fix branches -2445.1
+[dbg] optimize BranchLengths: -2445.1
+[dbg] optimize OptFrequencies: -2452.33
+[dbg] optimize Alpha: -2452.33
+[dbg] optimize SubstRates: -2452.19
+[dbg] optimize OptFrequencies: -2445.09
+[dbg] optimize Alpha: -2445.09
+[dbg] fix branches -2451.11
+[dbg] optimize BranchLengths: -2451.11
+[dbg] optimize SubstRates: -2451.86
+[dbg] optimize OptFrequencies: -2450.94
+[dbg] optimize Alpha: -2450.94
+[dbg] optimize SubstRates: -2445.08
+[dbg] fix branches -2445.08
+[dbg] optimize BranchLengths: -2445.08
+[dbg] fix branches -2450.6
+[dbg] optimize BranchLengths: -2450.6
+[dbg] optimize SubstRates: -2450.84
+[dbg] fix branches -2450.78
+[dbg] optimize BranchLengths: -2450.78
+[dbg] optimize OptFrequencies: -2445.08
+[dbg] optimize Alpha: -2445.08
+[dbg] optimize OptFrequencies: -2450.73
+[dbg] optimize Alpha: -2450.73
+[dbg] optimize OptFrequencies: -2450.23
+[dbg] optimize Alpha: -2450.23
+[dbg] optimize SubstRates: -2445.07
+[dbg] model done: [0.01/0.05]: -2445.07
+[dbg] Model optimization done: -2445.07
+   74/88   TrN            0h:00:00   0h:00:04           -2445.0747       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] optimize SubstRates: -2450.7
+[dbg] Initial score: -2635.25
+[dbg] Initial log likelihood: -2635.25
+[dbg] final parameter optimization: -2635.25
+[dbg] fix branches -2450.68
+[dbg] optimize BranchLengths: -2450.68
+[dbg] optimize OptFrequencies: -2450.66
+[dbg] optimize Alpha: -2450.66
+[dbg] fix branches -2434.97
+[dbg] optimize BranchLengths: -2434.97
+[dbg] optimize FixedFrequencies: -2434.97
+[dbg] optimize Alpha: -2434.97
+[dbg] optimize SubstRates: -2450.17
+[dbg] optimize SubstRates: -2450.65
+[dbg] fix branches -2450.64
+[dbg] optimize BranchLengths: -2450.64
+[dbg] fix branches -2450.13
+[dbg] optimize BranchLengths: -2450.13
+[dbg] optimize OptFrequencies: -2450.63
+[dbg] optimize Alpha: -2450.63
+[dbg] optimize OptFrequencies: -2450.12
+[dbg] optimize Alpha: -2450.12
+[dbg] optimize SubstRates: -2450.63
+[dbg] fix branches -2450.62
+[dbg] optimize BranchLengths: -2450.62
+[dbg] optimize OptFrequencies: -2450.62
+[dbg] optimize Alpha: -2450.62
+[dbg] optimize SubstRates: -2450.11
+[dbg] optimize SubstRates: -2430.07
+[dbg] fix branches -2450.1
+[dbg] optimize BranchLengths: -2450.1
+[dbg] optimize SubstRates: -2450.62
+[dbg] fix branches -2450.61
+[dbg] optimize BranchLengths: -2450.61
+[dbg] optimize OptFrequencies: -2450.61
+[dbg] optimize Alpha: -2450.61
+[dbg] optimize OptFrequencies: -2450.1
+[dbg] optimize Alpha: -2450.1
+[dbg] fix branches -2429.56
+[dbg] optimize BranchLengths: -2429.56
+[dbg] optimize FixedFrequencies: -2429.56
+[dbg] optimize Alpha: -2429.56
+[dbg] optimize SubstRates: -2450.61
+[dbg] optimize SubstRates: -2450.1
+[dbg] fix branches -2450.6
+[dbg] optimize BranchLengths: -2450.6
+[dbg] fix branches -2450.09
+[dbg] optimize BranchLengths: -2450.09
+[dbg] optimize SubstRates: -2429.54
+[dbg] optimize OptFrequencies: -2450.6
+[dbg] optimize Alpha: -2450.6
+[dbg] fix branches -2429.51
+[dbg] optimize BranchLengths: -2429.51
+[dbg] optimize FixedFrequencies: -2429.51
+[dbg] optimize Alpha: -2429.51
+[dbg] optimize OptFrequencies: -2450.09
+[dbg] optimize Alpha: -2450.09
+[dbg] optimize SubstRates: -2450.6
+[dbg] model done: [0.01/0.05]: -2450.6
+[dbg] Model optimization done: -2450.6
+   76/88   TPM2uf         0h:00:00   0h:00:04           -2450.5975       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2638.18
+[dbg] Initial log likelihood: -2638.18
+[dbg] final parameter optimization: -2638.18
+[dbg] optimize SubstRates: -2429.51
+[dbg] optimize SubstRates: -2450.09
+[dbg] model done: [0.01/0.05]: -2450.09
+[dbg] Model optimization done: -2450.09
+   75/88   TPM1uf         0h:00:00   0h:00:04           -2450.0925       -       -
+[dbg] fix branches -2429.5
+[dbg] optimize BranchLengths: -2429.5
+[dbg] optimize FixedFrequencies: -2429.5
+[dbg] optimize Alpha: -2429.5
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2665.92
+[dbg] Initial log likelihood: -2665.92
+[dbg] final parameter optimization: -2665.92
+[dbg] fix branches -2438.12
+[dbg] optimize BranchLengths: -2438.12
+[dbg] optimize FixedFrequencies: -2438.12
+[dbg] optimize Alpha: -2438.12
+[dbg] optimize SubstRates: -2429.5
+[dbg] fix branches -2429.49
+[dbg] optimize BranchLengths: -2429.49
+[dbg] optimize FixedFrequencies: -2429.49
+[dbg] optimize Alpha: -2429.49
+[dbg] optimize SubstRates: -2429.49
+[dbg] model done: [0.01/0.05]: -2429.49
+[dbg] Model optimization done: -2429.49
+   77/88   SYM            0h:00:00   0h:00:04           -2429.4910       -       -
+[dbg] fix branches -2472.67
+[dbg] optimize BranchLengths: -2472.67
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2651.56
+[dbg] Initial log likelihood: -2651.56
+[dbg] final parameter optimization: -2651.56
+[dbg] optimize SubstRates: -2434.57
+[dbg] fix branches -2434.18
+[dbg] optimize BranchLengths: -2434.18
+[dbg] optimize FixedFrequencies: -2434.18
+[dbg] optimize Alpha: -2434.18
+[dbg] fix branches -2453.76
+[dbg] optimize BranchLengths: -2453.76
+[dbg] optimize FixedFrequencies: -2453.76
+[dbg] optimize Alpha: -2453.76
+[dbg] optimize OptFrequencies: -2460.85
+[dbg] optimize Alpha: -2460.85
+[dbg] optimize SubstRates: -2434.17
+[dbg] fix branches -2434.16
+[dbg] optimize BranchLengths: -2434.16
+[dbg] optimize FixedFrequencies: -2434.16
+[dbg] optimize Alpha: -2434.16
+[dbg] optimize SubstRates: -2434.16
+[dbg] fix branches -2434.15
+[dbg] optimize BranchLengths: -2434.15
+[dbg] optimize FixedFrequencies: -2434.15
+[dbg] optimize Alpha: -2434.15
+[dbg] optimize SubstRates: -2434.15
+[dbg] model done: [0.01/0.05]: -2434.15
+[dbg] Model optimization done: -2434.15
+   78/88   TVMef          0h:00:00   0h:00:04           -2434.1548       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2647.95
+[dbg] Initial log likelihood: -2647.95
+[dbg] final parameter optimization: -2647.95
+[dbg] optimize SubstRates: -2449.05
+[dbg] fix branches -2451.85
+[dbg] optimize BranchLengths: -2451.85
+[dbg] optimize FixedFrequencies: -2451.85
+[dbg] optimize Alpha: -2451.85
+[dbg] optimize SubstRates: -2453.16
+[dbg] fix branches -2448.61
+[dbg] optimize BranchLengths: -2448.61
+[dbg] optimize FixedFrequencies: -2448.61
+[dbg] optimize Alpha: -2448.61
+[dbg] optimize SubstRates: -2448.22
+[dbg] fix branches -2451.42
+[dbg] optimize BranchLengths: -2451.42
+[dbg] fix branches -2447.91
+[dbg] optimize BranchLengths: -2447.91
+[dbg] optimize FixedFrequencies: -2447.91
+[dbg] optimize Alpha: -2447.91
+[dbg] optimize SubstRates: -2448.6
+[dbg] optimize SubstRates: -2447.9
+[dbg] fix branches -2448.58
+[dbg] optimize BranchLengths: -2448.58
+[dbg] optimize FixedFrequencies: -2448.58
+[dbg] optimize Alpha: -2448.58
+[dbg] optimize OptFrequencies: -2451.33
+[dbg] optimize Alpha: -2451.33
+[dbg] fix branches -2447.89
+[dbg] optimize BranchLengths: -2447.89
+[dbg] optimize FixedFrequencies: -2447.89
+[dbg] optimize Alpha: -2447.89
+[dbg] optimize SubstRates: -2447.89
+[dbg] fix branches -2447.88
+[dbg] optimize BranchLengths: -2447.88
+[dbg] optimize FixedFrequencies: -2447.88
+[dbg] optimize Alpha: -2447.88
+[dbg] optimize SubstRates: -2447.88
+[dbg] model done: [0.01/0.05]: -2447.88
+[dbg] Model optimization done: -2447.88
+   81/88   TIM1ef         0h:00:00   0h:00:04           -2447.8801       -       -
+[dbg] optimize SubstRates: -2448.58
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2633.99
+[dbg] Initial log likelihood: -2633.99
+[dbg] final parameter optimization: -2633.99
+[dbg] fix branches -2448.56
+[dbg] optimize BranchLengths: -2448.56
+[dbg] optimize FixedFrequencies: -2448.56
+[dbg] optimize Alpha: -2448.56
+[dbg] optimize SubstRates: -2451.31
+[dbg] fix branches -2451.29
+[dbg] optimize BranchLengths: -2451.29
+[dbg] fix branches -2436.03
+[dbg] optimize BranchLengths: -2436.03
+[dbg] optimize FixedFrequencies: -2436.03
+[dbg] optimize Alpha: -2436.03
+[dbg] optimize SubstRates: -2448.56
+[dbg] fix branches -2448.56
+[dbg] optimize BranchLengths: -2448.56
+[dbg] optimize FixedFrequencies: -2448.56
+[dbg] optimize Alpha: -2448.56
+[dbg] optimize OptFrequencies: -2451.29
+[dbg] optimize Alpha: -2451.29
+[dbg] optimize SubstRates: -2448.56
+[dbg] model done: [0.01/0.05]: -2448.56
+[dbg] Model optimization done: -2448.56
+   80/88   TIM2ef         0h:00:00   0h:00:04           -2448.5564       -       -
+[dbg] optimize SubstRates: -2451.29
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2657.61
+[dbg] Initial log likelihood: -2657.61
+[dbg] final parameter optimization: -2657.61
+[dbg] optimize SubstRates: -2432.72
+[dbg] fix branches -2451.28
+[dbg] optimize BranchLengths: -2451.28
+[dbg] fix branches -2432.31
+[dbg] optimize BranchLengths: -2432.31
+[dbg] optimize FixedFrequencies: -2432.31
+[dbg] optimize Alpha: -2432.31
+[dbg] optimize OptFrequencies: -2451.28
+[dbg] optimize Alpha: -2451.28
+[dbg] optimize SubstRates: -2432.3
+[dbg] fix branches -2464.64
+[dbg] optimize BranchLengths: -2464.64
+[dbg] optimize SubstRates: -2451.28
+[dbg] model done: [0.01/0.05]: -2451.28
+[dbg] fix branches -2432.28
+[dbg] Model optimization done: -2451.28
+[dbg] optimize BranchLengths: -2432.28
+[dbg] optimize FixedFrequencies: -2432.28
+[dbg] optimize Alpha: -2432.28
+   79/88   HKY            0h:00:00   0h:00:04           -2451.2776       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2638.12
+[dbg] Initial log likelihood: -2638.12
+[dbg] final parameter optimization: -2638.12
+[dbg] optimize SubstRates: -2432.28
+[dbg] fix branches -2432.27
+[dbg] optimize BranchLengths: -2432.27
+[dbg] optimize FixedFrequencies: -2432.27
+[dbg] optimize Alpha: -2432.27
+[dbg] optimize SubstRates: -2432.27
+[dbg] fix branches -2432.26
+[dbg] optimize BranchLengths: -2432.26
+[dbg] optimize FixedFrequencies: -2432.26
+[dbg] optimize Alpha: -2432.26
+[dbg] optimize SubstRates: -2432.26
+[dbg] model done: [0.01/0.05]: -2432.26
+[dbg] Model optimization done: -2432.26
+   82/88   TIM3ef         0h:00:00   0h:00:04           -2432.2591       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2652.46
+[dbg] Initial log likelihood: -2652.46
+[dbg] final parameter optimization: -2652.46
+[dbg] fix branches -2441.42
+[dbg] optimize BranchLengths: -2441.42
+[dbg] optimize FixedFrequencies: -2441.42
+[dbg] optimize Alpha: -2441.42
+[dbg] optimize OptFrequencies: -2454.07
+[dbg] optimize Alpha: -2454.07
+[dbg] optimize SubstRates: -2454.07
+[dbg] fix branches -2456.16
+[dbg] optimize BranchLengths: -2456.16
+[dbg] optimize FixedFrequencies: -2456.16
+[dbg] optimize Alpha: -2456.16
+[dbg] fix branches -2452.93
+[dbg] optimize BranchLengths: -2452.93
+[dbg] optimize SubstRates: -2453.98
+[dbg] fix branches -2453.72
+[dbg] optimize BranchLengths: -2453.72
+[dbg] optimize FixedFrequencies: -2453.72
+[dbg] optimize Alpha: -2453.72
+[dbg] optimize OptFrequencies: -2452.88
+[dbg] optimize Alpha: -2452.88
+[dbg] optimize SubstRates: -2452.88
+[dbg] optimize SubstRates: -2437.09
+[dbg] optimize SubstRates: -2453.71
+[dbg] fix branches -2452.86
+[dbg] optimize BranchLengths: -2452.86
+[dbg] fix branches -2453.7
+[dbg] optimize BranchLengths: -2453.7
+[dbg] optimize FixedFrequencies: -2453.7
+[dbg] optimize Alpha: -2453.7
+[dbg] optimize SubstRates: -2453.7
+[dbg] fix branches -2436.83
+[dbg] optimize BranchLengths: -2436.83
+[dbg] optimize FixedFrequencies: -2436.83
+[dbg] fix branches -2453.7
+[dbg] optimize BranchLengths: -2453.7
+[dbg] optimize Alpha: -2436.83
+[dbg] optimize FixedFrequencies: -2453.7
+[dbg] optimize Alpha: -2453.7
+[dbg] optimize OptFrequencies: -2452.86
+[dbg] optimize Alpha: -2452.86
+[dbg] optimize SubstRates: -2452.86
+[dbg] optimize SubstRates: -2453.7
+[dbg] model done: [0.01/0.05]: -2453.7
+[dbg] Model optimization done: -2453.7
+   85/88   TPM2           0h:00:00   0h:00:04           -2453.6950       -       -
+[dbg] fix branches -2452.85
+[dbg] optimize BranchLengths: -2452.85
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2657.1
+[dbg] Initial log likelihood: -2657.1
+[dbg] final parameter optimization: -2657.1
+[dbg] optimize OptFrequencies: -2452.85
+[dbg] optimize Alpha: -2452.85
+[dbg] optimize SubstRates: -2452.85
+[dbg] model done: [0.01/0.05]: -2452.85
+[dbg] Model optimization done: -2452.85
+   83/88   F81            0h:00:00   0h:00:04           -2452.8493       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2649.59
+[dbg] Initial log likelihood: -2649.59
+[dbg] final parameter optimization: -2649.59
+[dbg] optimize SubstRates: -2436.82
+[dbg] fix branches -2436.82
+[dbg] optimize BranchLengths: -2436.82
+[dbg] optimize FixedFrequencies: -2436.82
+[dbg] optimize Alpha: -2436.82
+[dbg] fix branches -2460.76
+[dbg] optimize BranchLengths: -2460.76
+[dbg] optimize FixedFrequencies: -2460.76
+[dbg] optimize Alpha: -2460.76
+[dbg] fix branches -2453.49
+[dbg] optimize BranchLengths: -2453.49
+[dbg] optimize FixedFrequencies: -2453.49
+[dbg] optimize Alpha: -2453.49
+[dbg] optimize SubstRates: -2436.82
+[dbg] model done: [0.01/0.05]: -2436.82
+[dbg] Model optimization done: -2436.82
+   84/88   TPM3           0h:00:00   0h:00:04           -2436.8161       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] Initial score: -2657.77
+[dbg] Initial log likelihood: -2657.77
+[dbg] final parameter optimization: -2657.77
+[dbg] fix branches -2461.61
+[dbg] optimize BranchLengths: -2461.61
+[dbg] optimize FixedFrequencies: -2461.61
+[dbg] optimize Alpha: -2461.61
+[dbg] optimize SubstRates: -2451
+[dbg] optimize SubstRates: -2453.23
+[dbg] fix branches -2450.69
+[dbg] optimize BranchLengths: -2450.69
+[dbg] optimize FixedFrequencies: -2450.69
+[dbg] optimize Alpha: -2450.69
+[dbg] fix branches -2452.93
+[dbg] optimize BranchLengths: -2452.93
+[dbg] optimize FixedFrequencies: -2452.93
+[dbg] optimize Alpha: -2452.93
+[dbg] optimize SubstRates: -2456.06
+[dbg] optimize SubstRates: -2450.69
+[dbg] fix branches -2450.67
+[dbg] optimize BranchLengths: -2450.67
+[dbg] optimize FixedFrequencies: -2450.67
+[dbg] optimize Alpha: -2450.67
+[dbg] fix branches -2455.73
+[dbg] optimize BranchLengths: -2455.73
+[dbg] optimize FixedFrequencies: -2455.73
+[dbg] optimize Alpha: -2455.73
+[dbg] optimize SubstRates: -2452.93
+[dbg] fix branches -2452.92
+[dbg] optimize BranchLengths: -2452.92
+[dbg] optimize FixedFrequencies: -2452.92
+[dbg] optimize Alpha: -2452.92
+[dbg] optimize SubstRates: -2452.92
+[dbg] model done: [0.01/0.05]: -2452.92
+[dbg] Model optimization done: -2452.92
+[dbg] optimize SubstRates: -2450.67
+   86/88   TPM1           0h:00:00   0h:00:04           -2452.9187       -       -
+[dbg] Building parameters and computing initial lk score
+[dbg] fix branches -2450.66
+[dbg] optimize BranchLengths: -2450.66
+[dbg] optimize FixedFrequencies: -2450.66
+[dbg] optimize Alpha: -2450.66
+[dbg] Initial score: -2652.27
+[dbg] Initial log likelihood: -2652.27
+[dbg] final parameter optimization: -2652.27
+[dbg] optimize SubstRates: -2455.72
+[dbg] fix branches -2455.71
+[dbg] optimize BranchLengths: -2455.71
+[dbg] optimize FixedFrequencies: -2455.71
+[dbg] optimize Alpha: -2455.71
+[dbg] optimize SubstRates: -2450.66
+[dbg] fix branches -2456.41
+[dbg] optimize BranchLengths: -2456.41
+[dbg] optimize FixedFrequencies: -2456.41
+[dbg] optimize Alpha: -2456.41
+[dbg] optimize SubstRates: -2456.41
+[dbg] fix branches -2450.65
+[dbg] optimize BranchLengths: -2450.65
+[dbg] optimize FixedFrequencies: -2450.65
+[dbg] optimize Alpha: -2450.65
+[dbg] fix branches -2456.31
+[dbg] optimize BranchLengths: -2456.31
+[dbg] optimize FixedFrequencies: -2456.31
+[dbg] optimize Alpha: -2456.31
+[dbg] optimize SubstRates: -2456.31
+[dbg] optimize SubstRates: -2450.65
+[dbg] model done: [0.01/0.05]: -2450.65
+[dbg] Model optimization done: -2450.65
+[dbg] optimize SubstRates: -2455.71
+   87/88   TrNef          [dbg] model done: [0.01/0.05]: -2455.71
+0h:00:000h:00:04           -2450.6531       -       -
+[dbg] Model optimization done: -2455.71
+   88/88   K80            0h:00:00   0h:00:04           -2455.7124       -       -
+[dbg] fix branches -2456.3
+[dbg] optimize BranchLengths: -2456.3
+[dbg] optimize FixedFrequencies: -2456.3
+[dbg] optimize Alpha: -2456.3
+[dbg] optimize SubstRates: -2456.3
+[dbg] model done: [0.01/0.05]: -2456.3
+[dbg] Model optimization done: -2456.3
+   89/88   JC             0h:00:00   0h:00:04           -2456.2960       -       -
+ ----ID---  ----MODEL---- ---Time--- -Elapsed--- -------LnL------- -Alpha- -P-inv-
+
+Computation of likelihood scores completed. It took 0h:00:04
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TPM2uf+G4          6     -2247.8699      4978.6144         0.0000    0.4874
+       2  TVM+G4             8     -2244.3351      4979.7992         1.1847    0.2695
+       3  TIM2+G4            7     -2247.5905      4982.1828         3.5684    0.0818
+       4  TPM2uf+I+G4        7     -2247.8731      4982.7480         4.1335    0.0617
+       5  GTR+G4             9     -2244.2129      4983.6820         5.0676    0.0387
+       6  TVM+I+G4           9     -2244.3437      4983.9435         5.3291    0.0339
+       7  TIM2+I+G4          8     -2247.5957      4986.3203         7.7059    0.0103
+       8  TPM1uf+G4          6     -2251.8673      4986.6094         7.9949    0.0089
+       9  GTR+I+G4          10     -2244.2148      4987.8128         9.1984    0.0049
+      10  TPM1uf+I+G4        7     -2251.8664      4990.7347        12.1203    0.0011
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              TPM2uf+G4
+lnL:                -2247.8699
+Frequencies:        0.1530 0.3096 0.3812 0.1562
+Subst. Rates:       3.0056 3.2628 3.0056 1.0000 3.2628 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.6300
+Score:              4978.6144
+Weight:             0.4874
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.8878
+Gamma-Inv:          0.1122
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0000
+Alpha:              0.6115
+Alpha-P.Inv:        0.6123
+P.Inv-Alpha:        0.0000
+Frequencies:        0.1531 0.3161 0.3783 0.1525 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m 010212 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta --model TPM2uf+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m TPM2uf+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TVM+G4             8     -2244.3351      4726.6702         0.0000    0.4205
+       2  GTR+G4             9     -2244.2129      4728.4259         1.7557    0.1748
+       3  TVM+I+G4           9     -2244.3437      4728.6874         2.0172    0.1534
+       4  TPM2uf+G4          6     -2247.8699      4729.7397         3.0695    0.0906
+       5  GTR+I+G4          10     -2244.2148      4730.4296         3.7594    0.0642
+       6  TIM2+G4            7     -2247.5905      4731.1809         4.5108    0.0441
+       7  TPM2uf+I+G4        7     -2247.8731      4731.7461         5.0759    0.0332
+       8  TIM2+I+G4          8     -2247.5957      4733.1914         6.5212    0.0161
+       9  TPM1uf+G4          6     -2251.8673      4737.7346        11.0645    0.0017
+      10  TPM1uf+I+G4        7     -2251.8664      4739.7328        13.0627    0.0006
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              TVM+G4
+lnL:                -2244.3351
+Frequencies:        0.1534 0.3262 0.3760 0.1443
+Subst. Rates:       1.5785 1.9168 1.7122 0.4110 1.9168 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.5820
+Score:              4726.6702
+Weight:             0.4205
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.7323
+Gamma-Inv:          0.2677
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0000
+Alpha:              0.5885
+Alpha-P.Inv:        0.5894
+P.Inv-Alpha:        0.0000
+Frequencies:        0.1531 0.3242 0.3755 0.1472 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m 012314 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta --model TVM+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m TVM+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  JC                 0     -2456.2960     29998.5920         0.0000    1.0000
+       2  JC+G4              1     -2291.4829     30118.9659       120.3739    0.0000
+       3  K80                1     -2455.7124     30447.4249       448.8329    0.0000
+       4  JC+I               1     -2456.2960     30448.5919       449.9999    0.0000
+       5  K80+G4             2     -2289.7762     30569.5523       570.9604    0.0000
+       6  JC+I+G4            2     -2291.4847     30572.9695       574.3775    0.0000
+       7  TPM3               2     -2436.8161     30863.6322       865.0403    0.0000
+       8  TrNef              2     -2450.6531     30891.3063       892.7143    0.0000
+       9  TPM1               2     -2452.9187     30895.8374       897.2454    0.0000
+      10  TPM2               2     -2453.6950     30897.3901       898.7981    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              JC
+lnL:                -2456.2960
+Frequencies:        0.2500 0.2500 0.2500 0.2500
+Subst. Rates:       1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 
+Inv. sites prop:    -
+Gamma shape:        -
+Score:              29998.5920
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.0000
+Gamma-Inv:          0.0000
+Frequencies:        0.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0000
+Alpha:              0.8298
+Alpha-P.Inv:        0.8290
+P.Inv-Alpha:        0.0000
+Frequencies:        0.2305 0.2606 0.2942 0.2148 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m 000000 -f 0.25,0.25,0.25,0.25 -v 0 -a 0 -c 1 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -c 1 -m GTRCAT --JC69 -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta --model JC
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.10.ribosomal_protein_S7_aligned.fasta -m JC
+Summary:
+
+Partition 1/1:
+                         Model         Score        Weight
+----------------------------------------------------------
+       BIC           TPM2uf+G4     4978.6144        0.4874
+       AIC              TVM+G4     4726.6702        0.4205
+      AICc                  JC    29998.5920        1.0000
+
+Execution results written to /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.out
+Starting tree written to /home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/test.fasta.tree

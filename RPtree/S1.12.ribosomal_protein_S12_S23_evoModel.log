@@ -1,0 +1,207 @@
+Physical cores: 2
+Logical cores:  4
+Memory:         7.68GB
+Extensions:     AVX
+
+WARNING: Partition DATA: Sequences S1.12.ribosomal_protein_S12_S23:SPAdes-S03.4 and S1.12.ribosomal_protein_S12_S23:SPAdes-S04.19 are identical
+WARNING: Partition DATA: Sequences S1.12.ribosomal_protein_S12_S23:SPAdes-S04.8 and S1.12.ribosomal_protein_S12_S23:SPAdesHybrid-SUB.25 are identical
+Creating new checkpoint file: S1.12.ribosomal_protein_S12_S23_evoModel.ckp
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7
+
+Input data:
+  MSA:        /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            60
+  #sites:           71
+  #patterns:        67
+  Max. thread mem:  1 MB
+
+Output:
+  Log:           S1.12.ribosomal_protein_S12_S23_evoModel.log
+  Starting tree: S1.12.ribosomal_protein_S12_S23_evoModel.tree
+  Results:       S1.12.ribosomal_protein_S12_S23_evoModel.out
+
+Selection options:
+  # dna schemes:      11
+  # dna models:       88
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     true
+    estimated freqs: true
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        very low
+  threads:          3/2
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+modeltest-ng was called as follows: 
+>> modeltest-ng -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -d nt -o S1.12.ribosomal_protein_S12_S23_evoModel -p 3 -T phyml 
+
+
+Partition 1/1
+
+ ----ID---  ----MODEL---- ---Time--- -Elapsed--- -------LnL------- -Alpha- -P-inv-
+
+Computation of likelihood scores completed. It took 0h:00:04
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  HKY+G4             5     -1722.3764      3964.7998         0.0000    0.3159
+       2  TrN+G4             6     -1720.8007      3965.9110         1.1112    0.1812
+       3  HKY+I+G4           6     -1721.5518      3967.4132         2.6134    0.0855
+       4  TPM2uf+G4          6     -1721.6332      3967.5760         2.7762    0.0788
+       5  TPM1uf+G4          6     -1721.7317      3967.7730         2.9732    0.0714
+       6  TrN+I+G4           7     -1719.8370      3968.2464         3.4466    0.0564
+       7  TIM1+G4            7     -1720.0945      3968.7612         3.9614    0.0436
+       8  TPM3uf+G4          6     -1722.3204      3968.9504         4.1506    0.0397
+       9  TIM2+G4            7     -1720.6905      3969.9533         5.1534    0.0240
+      10  TIM3+G4            7     -1720.7339      3970.0400         5.2402    0.0230
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              HKY+G4
+lnL:                -1722.3764
+Frequencies:        0.1578 0.3609 0.2999 0.1814
+Subst. Rates:       1.0000 2.2521 1.0000 1.0000 2.2521 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.5025
+Score:              3964.7998
+Weight:             0.3159
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.7830
+Gamma-Inv:          0.2170
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0976
+Alpha:              0.4972
+Alpha-P.Inv:        0.6028
+P.Inv-Alpha:        0.0722
+Frequencies:        0.1626 0.3569 0.3035 0.1770 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m 010010 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta --model HKY+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m HKY+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TrN+G4             6     -1720.8007      3687.6014         0.0000    0.1127
+       2  TrN+I+G4           7     -1719.8370      3687.6741         0.0727    0.1087
+       3  TIM1+G4            7     -1720.0945      3688.1889         0.5875    0.0840
+       4  TIM1+I+G4          8     -1719.2152      3688.4304         0.8290    0.0745
+       5  HKY+G4             5     -1722.3764      3688.7529         1.1515    0.0634
+       6  HKY+I+G4           6     -1721.5518      3689.1036         1.5022    0.0532
+       7  TIM3+I+G4          8     -1719.6258      3689.2516         1.6502    0.0494
+       8  TPM2uf+G4          6     -1721.6332      3689.2664         1.6650    0.0490
+       9  TIM2+G4            7     -1720.6905      3689.3809         1.7796    0.0463
+      10  TPM1uf+G4          6     -1721.7317      3689.4634         1.8620    0.0444
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              TrN+G4
+lnL:                -1720.8007
+Frequencies:        0.1719 0.3497 0.3102 0.1683
+Subst. Rates:       1.0000 1.7078 1.0000 1.0000 2.9117 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.4865
+Score:              3687.6014
+Weight:             0.1127
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.5265
+Gamma-Inv:          0.4735
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0977
+Alpha:              0.4891
+Alpha-P.Inv:        0.6025
+P.Inv-Alpha:        0.0725
+Frequencies:        0.1673 0.3540 0.3052 0.1736 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m 010020 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta --model TrN+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m TrN+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  JC                 0     -1938.2405     31722.4810         0.0000    1.0000
+       2  JC+G4              1     -1760.6341     31841.2681       118.7872    0.0000
+       3  JC+I               1     -1904.8707     32129.7414       407.2604    0.0000
+       4  K80                1     -1933.2237     32186.4474       463.9664    0.0000
+       5  K80+G4             2     -1753.7792     32305.5583       583.0773    0.0000
+       6  JC+I+G4            2     -1760.9827     32319.9655       597.4845    0.0000
+       7  K80+I              2     -1899.6075     32597.2149       874.7339    0.0000
+       8  TPM2               2     -1921.0717     32640.1433       917.6624    0.0000
+       9  TPM1               2     -1924.7315     32647.4630       924.9820    0.0000
+      10  TPM3               2     -1925.3249     32648.6497       926.1687    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              JC
+lnL:                -1938.2405
+Frequencies:        0.2500 0.2500 0.2500 0.2500
+Subst. Rates:       1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 
+Inv. sites prop:    -
+Gamma shape:        -
+Score:              31722.4810
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.0000
+Gamma-Inv:          0.0000
+Frequencies:        0.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0978
+Alpha:              0.4505
+Alpha-P.Inv:        0.4973
+P.Inv-Alpha:        0.0220
+Frequencies:        0.2118 0.3250 0.2458 0.2174 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m 000000 -f 0.25,0.25,0.25,0.25 -v 0 -a 0 -c 1 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -c 1 -m GTRCAT --JC69 -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta --model JC
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta -m JC
+Summary:
+
+Partition 1/1:
+                         Model         Score        Weight
+----------------------------------------------------------
+       BIC              HKY+G4     3964.7998        0.3159
+       AIC              TrN+G4     3687.6014        0.1127
+      AICc                  JC    31722.4810        1.0000
+
+Execution results written to S1.12.ribosomal_protein_S12_S23_evoModel.out
+Starting tree written to S1.12.ribosomal_protein_S12_S23_evoModel.tree

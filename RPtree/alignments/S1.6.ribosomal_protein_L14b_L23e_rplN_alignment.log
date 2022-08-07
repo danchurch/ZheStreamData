@@ -1,0 +1,3 @@
+Started Sun Aug  7 15:59:05 2022
+muscle -in /home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/S1.6.ribosomal_protein_L14b_L23e_rplN.fasta -log /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.6.ribosomal_protein_L14b_L23e_rplN_alignment.log -out /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.6.ribosomal_protein_L14b_L23e_rplN_aligned.fasta 
+Finished Sun Aug  7 15:59:05 2022

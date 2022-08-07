@@ -1973,6 +1973,8 @@ head otu_MAGs_diamond_example.csv
 ## make a copy to work with to avoid destroying data
 cp otu_MAGs_diamond_example.csv ribProts.csv
 
+S1.10.ribosomal_protein_S7  SPAdesHybrid-SD.18
+
 ## we only need the first three columns
 
 ## labels
@@ -1982,6 +1984,9 @@ sed -i 's/^/>/' labels.txt
 cut -f 3 ribProts.csv | tail -n +2 > sequences.txt 
 paste -d '\n' labels.txt sequences.txt > zheAllMagsAllRibProts.fasta
 
+## but downstream programs are detecting duplicate headers. see below.
+
+
 ## while we're at it, let's make a set of the protein names:
 cut -f 1 ribProts.csv | tail -n +2  | sort -u > ribProtList.txt
 
@@ -1990,20 +1995,59 @@ cut -f 1 ribProts.csv | tail -n +2  | sort -u > ribProtList.txt
 python3
 
 from Bio import SeqIO
+import pandas as pd
+import re
 
-fastaFolder='/home/daniel/Documents/analyses/zheSpat/ribProtFastas/'
+##fastaFolder='/home/daniel/Documents/analyses/zheSpat/ribProtFastas/'
+fastaFolder='/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/'
+
+## looks like there are sometimes multiple versions of each ribosomoal 
+## protein sequence from the same mags... this is a problem.
+## some of these are triplicate, even. 
+## shoot.
+## so how to add this information into our labels?
 
 with open('ribProtList.txt', 'r') as list:
     for i in list:
-        print('')
-        print(i.strip())
-        fileName = (fastaFolder + i.strip() + ".fasta")
+        i = i.strip()
+        print(i)
+        fileName = (fastaFolder + i + ".fasta")
         recList = []
+        dupList = []
         for seq_record in SeqIO.parse("zheAllMagsAllRibProts.fasta", "fasta"):
-             if seq_record.id.__contains__(i.strip()):
+           if seq_record.id.__contains__(i):
+                print(seq_record.id)
+                dupList.append(seq_record.id)
+                ## get the duplicate number, if any
+                matches = (pd.Series(dupList) == seq_record.id).sum()
+                if matches == 1: repNu = None
+                elif matches > 1 : 
+                    repNu = matches
+                    seq_record.id = (seq_record.id + "_" + str(repNu))
+                print(seq_record.id)
+                ## proceed with fasta assembly
                 seq_record.description, seq_record.name = '',''
                 recList.append(seq_record)
         SeqIO.write(recList, fileName, 'fasta')
+
+
+
+## let's see if that worked, below with modeltest-ng:
+
+################################################################################
+## ## original 
+## with open('ribProtList.txt', 'r') as list:
+##     for i in list:
+##         print('')
+##         print(i.strip())
+##         fileName = (fastaFolder + i.strip() + ".fasta")
+##         recList = []
+##         for seq_record in SeqIO.parse("zheAllMagsAllRibProts.fasta", "fasta"):
+##              if seq_record.id.__contains__(i.strip()):
+##                 seq_record.description, seq_record.name = '',''
+##                 recList.append(seq_record)
+##         SeqIO.write(recList, fileName, 'fasta')
+################################################################################
 
 ## put back onto denbi
 
@@ -2019,5 +2063,137 @@ cd /emic/Zhe/Assembly_MAGs/MAGs/ribProtFastas
 ## but I do not see anything missing... hmm...
 
 ## let's put it up there and see if Zhe can do a few sanity checks on it.
+
+## I think the steps would be something like:
+
+## align individual genes
+## run evolutionary model
+## concatenate
+## partitioning
+## tree construction
+
+## alignments should be simple, 
+
+## to do one:
+ribProtFolder="/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/"
+ribProtFasta_i="S1.10.ribosomal_protein_S7.fasta"
+ribProt_i=$(basename $ribProtFasta_i .fasta)
+outAlignFolder="/home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/"
+alignOutFasta_i=$ribProt_i"_aligned.fasta"
+alignOutLog_i=$ribProt_i"_alignment.log"
+
+## check these...
+echo $ribProtFolder
+echo $ribProtFasta_i
+echo $ribProt_i
+echo $outAlignFolder
+echo $alignOutFasta_i
+echo $alignOutLog_i
+
+
+muscle -in $ribProtFolder$ribProtFasta_i -log $outAlignFolder$alignOutLog_i -out $outAlignFolder$alignOutFasta_i
+
+
+## to do them all:
+ribProtFolder="/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/"
+outAlignFolder="/home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/"
+
+for ribProtFasta_i in $ribProtFolder*; do
+    ribProt_i=$(basename $ribProtFasta_i .fasta)
+    alignOutFasta_i=$ribProt_i"_aligned.fasta"
+    alignOutLog_i=$ribProt_i"_alignment.log"
+    muscle -in $ribProtFasta_i -log $outAlignFolder$alignOutLog_i -out $outAlignFolder$alignOutFasta_i
+    echo $ribProt_i
+done
+
+## next we need an evolutionary model for them
+## to be totally correct, we should even check these 
+## individual genes for differential rates of evolution,
+## make partitions within them.
+## for now let's assume each gene has its own model, across the 
+## whole sequence, and not try to find the partitions within. 
+
+## I will leave this up to Zhe, if he wants we can pursue 
+## partitions
+
+## for finding the models
+## looks like the tool of interest would be:
+https://github.com/ddarriba/modeltest
+
+## dependencies:
+
+sudo apt-get install flex bison
+
+## they have binaries for linux, try it out
+
+
+
+
+ls $alignmentFolder
+ls $alignment_i
+
+## to find the evolution model for one alignment:
+
+evoModelFolder="/home/daniel/Documents/analyses/ZheStreamData/RPtree/evoModels/"
+alignmentFolder="/home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/"
+alignment_i="S1.10.ribosomal_protein_S7_aligned.fasta"
+
+ls $alignmentFolder$alignment_i
+
+modeltest-ng --help
+
+modeltest-ng \
+    -i $alignmentFolder$alignment_i \
+    -d nt \
+    -o $evoModelFolder"test.fasta" \
+    -p 3 \
+    -v &> testlog.txt
+
+## for all alignments:
+for i in $alignmentFolder/*.fasta; do
+    j=$(basename $i)
+    ls $alignmentFolder$j 
+    echo $evoModelFolder$j
+    modeltest-ng \
+        -i $alignmentFolder$j \
+        -d nt \
+        -o ${j/_aligned.fasta/_evoModel} \
+        -p 3 \
+        -T phyml ## since I like phyml. can change
+done
+
+#####
+## but model test is detecting duplicate headers. For instance,
+## S1.10.ribosomal_protein_S7:SPAdesHybrid-SD.18:
+
+grep "S1.10.ribosomal_protein_S7:SPAdesHybrid-SD.18" zheAllMagsAllRibProts.fasta -A 1
+
+## these are not the same sequence, so we can't throw them out. 
+
+## what do we do with these?
+
+## Zhe's problem. For the moment, give them names that reflect their duplicate label status 
+
+## okay, fixed in the individual fastas that are divided up by gene:
+
+ribProtFolder="/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/"
+grep "S1.10.ribosomal_protein_S7:SPAdesHybrid-SD.18" -R -A 1  $ribProtFolder
+
+## repeat the above alignment 
+
+## great, seems to be working. How do we use this output? and how do 
+## concatenate a matrix for phyml?
+
+## first, can we install modeltest-ng on de.nbi for zhe?
+
+denbiDinosaur
+
+conda install modeltest-ng
+
+conda create -n modeltest-ng -c bioconda modeltest-ng
+
+## looks great.
+
+## now, how do we concatenate?
 
 

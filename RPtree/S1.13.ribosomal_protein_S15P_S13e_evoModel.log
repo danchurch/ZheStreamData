@@ -1,0 +1,218 @@
+Physical cores: 2
+Logical cores:  4
+Memory:         7.68GB
+Extensions:     AVX
+
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S04.14 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S06.2 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S04.8 and S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SUB.25 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SUB.50 and S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.53 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S05.2 and S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SUB.53 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S03.4 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S04.19 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.32 and S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SUB.37 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.62 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S03.21 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.62 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S02.12 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.62 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S05.12 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.62 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S04.23 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S03.12 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S06.11 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdes-S06.6 and S1.13.ribosomal_protein_S15P_S13e:SPAdes-S04.16 are identical
+WARNING: Partition DATA: Sequences S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SA.137 and S1.13.ribosomal_protein_S15P_S13e:SPAdesHybrid-SD.6 are identical
+Creating new checkpoint file: S1.13.ribosomal_protein_S15P_S13e_evoModel.ckp
+--------------------------------------------------------------------------------
+ModelTest-NG v0.1.7
+
+Input data:
+  MSA:        /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            71
+  #sites:           60
+  #patterns:        59
+  Max. thread mem:  2 MB
+
+Output:
+  Log:           S1.13.ribosomal_protein_S15P_S13e_evoModel.log
+  Starting tree: S1.13.ribosomal_protein_S15P_S13e_evoModel.tree
+  Results:       S1.13.ribosomal_protein_S15P_S13e_evoModel.out
+
+Selection options:
+  # dna schemes:      11
+  # dna models:       88
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     true
+    estimated freqs: true
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        very low
+  threads:          3/2
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+modeltest-ng was called as follows: 
+>> modeltest-ng -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -d nt -o S1.13.ribosomal_protein_S15P_S13e_evoModel -p 3 -T phyml 
+
+
+Partition 1/1
+
+ ----ID---  ----MODEL---- ---Time--- -Elapsed--- -------LnL------- -Alpha- -P-inv-
+
+Computation of likelihood scores completed. It took 0h:00:04
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TPM2uf+G4          6     -2312.6909      5219.0617         0.0000    0.6143
+       2  TPM2uf+I+G4        7     -2312.0058      5221.7858         2.7241    0.1573
+       3  TIM2+G4            7     -2312.7349      5223.2440         4.1823    0.0759
+       4  TPM3+G4            3     -2321.3331      5224.0631         5.0014    0.0504
+       5  TIM2+I+G4          8     -2311.8765      5225.6216         6.5599    0.0231
+       6  TIM3ef+G4          4     -2320.1498      5225.7908         6.7291    0.0212
+       7  TVM+G4             8     -2312.2534      5226.3754         7.3137    0.0159
+       8  HKY+G4             5     -2318.9919      5227.5694         8.5077    0.0087
+       9  TPM3+I+G4          4     -2321.2935      5228.0783         9.0166    0.0068
+      10  TPM3uf+G4          6     -2317.5377      5228.7554         9.6937    0.0048
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              TPM2uf+G4
+lnL:                -2312.6909
+Frequencies:        0.1744 0.3275 0.3099 0.1882
+Subst. Rates:       3.3310 4.1717 3.3310 1.0000 4.1717 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.6360
+Score:              5219.0617
+Weight:             0.6143
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.8025
+Gamma-Inv:          0.1975
+Frequencies:        0.9161
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0455
+Alpha:              0.6532
+Alpha-P.Inv:        0.6991
+P.Inv-Alpha:        0.0305
+Frequencies:        0.1757 0.3281 0.3068 0.1894 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m 010212 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta --model TPM2uf+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m TPM2uf+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  TPM2uf+G4          6     -2312.6909      4915.3818         0.0000    0.3369
+       2  TPM2uf+I+G4        7     -2312.0058      4916.0115         0.6298    0.2459
+       3  TIM2+G4            7     -2312.7349      4917.4697         2.0880    0.1186
+       4  TIM2+I+G4          8     -2311.8765      4917.7530         2.3712    0.1029
+       5  TVM+G4             8     -2312.2534      4918.5068         3.1250    0.0706
+       6  TVM+I+G4           9     -2311.5294      4919.0588         3.6770    0.0536
+       7  GTR+G4             9     -2312.0443      4920.0886         4.7068    0.0320
+       8  GTR+I+G4          10     -2311.3856      4920.7711         5.3894    0.0228
+       9  TPM3uf+G4          6     -2317.5377      4925.0755         9.6937    0.0026
+      10  HKY+G4             5     -2318.9919      4925.9838        10.6021    0.0017
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              TPM2uf+G4
+lnL:                -2312.6909
+Frequencies:        0.1744 0.3275 0.3099 0.1882
+Subst. Rates:       3.3310 4.1717 3.3310 1.0000 4.1717 1.0000 
+Inv. sites prop:    -
+Gamma shape:        0.6360
+Score:              4915.3818
+Weight:             0.3369
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.5705
+Gamma-Inv:          0.4295
+Frequencies:        0.9957
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0456
+Alpha:              0.6443
+Alpha-P.Inv:        0.6881
+P.Inv-Alpha:        0.0304
+Frequencies:        0.1748 0.3284 0.3059 0.1909 
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m 010212 -f m -v 0 -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m GTRGAMMAX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta --model TPM2uf+G4
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m TPM2uf+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  JC                 0     -2506.2005     44210.4010         0.0000    1.0000
+       2  JC+G4              1     -2335.7411     44431.4822       221.0812    0.0000
+       3  JC+I               1     -2482.1542     44724.3085       513.9074    0.0000
+       4  K80                1     -2499.2929     44758.5859       548.1848    0.0000
+       5  K80+G4             2     -2327.8780     44981.7560       771.3550    0.0000
+       6  JC+I+G4            2     -2335.7401     44997.4802       787.0792    0.0000
+       7  K80+I              2     -2475.1768     45276.3535      1065.9525    0.0000
+       8  TPM3               2     -2478.1036     45282.2071      1071.8061    0.0000
+       9  TrNef              2     -2498.0355     45322.0710      1111.6700    0.0000
+      10  TPM1               2     -2498.9928     45323.9857      1113.5847    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              JC
+lnL:                -2506.2005
+Frequencies:        0.2500 0.2500 0.2500 0.2500
+Subst. Rates:       1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 
+Inv. sites prop:    -
+Gamma shape:        -
+Score:              44210.4010
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              0.0000
+Gamma:              0.0000
+Gamma-Inv:          0.0000
+Frequencies:        -
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              0.0456
+Alpha:              0.7315
+Alpha-P.Inv:        0.7811
+P.Inv-Alpha:        0.0221
+Frequencies:        -
+
+Commands:
+  > phyml  -i /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m 000000 -f 0.25,0.25,0.25,0.25 -v 0 -a 0 -c 1 -o tlr
+  > raxmlHPC-SSE3 -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -c 1 -m GTRCAT --JC69 -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta --model JC
+  > paup -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta
+  > iqtree -s /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.13.ribosomal_protein_S15P_S13e_aligned.fasta -m JC
+Summary:
+
+Partition 1/1:
+                         Model         Score        Weight
+----------------------------------------------------------
+       BIC           TPM2uf+G4     5219.0617        0.6143
+       AIC           TPM2uf+G4     4915.3818        0.3369
+      AICc                  JC    44210.4010        1.0000
+
+Execution results written to S1.13.ribosomal_protein_S15P_S13e_evoModel.out
+Starting tree written to S1.13.ribosomal_protein_S15P_S13e_evoModel.tree

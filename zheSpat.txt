@@ -2196,4 +2196,18 @@ conda create -n modeltest-ng -c bioconda modeltest-ng
 
 ## now, how do we concatenate?
 
+cd RPtree/alignments
+
+
+FASconCAT-G_v1.05.1.pl -o 
+
+FASconCAT-G_v1.05.1.pl
+
+## this seems to work, in a directory of fasta alignment files:
+
+FASconCAT-G_v1.05.1.pl -o -o -p -s
+
+## not sure if this what we want, but this 
+
+phyml -i FcC_supermatrix.phy -b 100
 

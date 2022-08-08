@@ -2111,6 +2111,7 @@ done
 ## individual genes for differential rates of evolution,
 ## make partitions within them.
 ## for now let's assume each gene has its own model, across the 
+
 ## whole sequence, and not try to find the partitions within. 
 
 ## I will leave this up to Zhe, if he wants we can pursue 
@@ -2119,6 +2120,10 @@ done
 ## for finding the models
 ## looks like the tool of interest would be:
 https://github.com/ddarriba/modeltest
+
+## they have a 64-bit linux binary here:
+
+wget https://github.com/ddarriba/modeltest/files/6192913/modeltest-ng-0.1.7-static.tar.gz
 
 ## dependencies:
 
@@ -2196,6 +2201,11 @@ conda create -n modeltest-ng -c bioconda modeltest-ng
 
 ## now, how do we concatenate?
 
+## let's try FASconCAT:
+https://github.com/PatrickKueck/FASconCAT-G
+
+
+
 cd RPtree/alignments
 
 
@@ -2207,8 +2217,59 @@ FASconCAT-G_v1.05.1.pl
 
 FASconCAT-G_v1.05.1.pl -o -o -p -s
 
-## not sure if this what we want, but this 
+## not sure if this what we want, but this returns no errors
 
 phyml -i FcC_supermatrix.phy -b 100
 
-## fails:
+## fails. It looks to me like the alignments are being kept separate, not 
+## concatenated
+
+## as in, there are ~850 lines in this supermatrix. 
+
+## let's simplify, and try just two files:
+
+cd RPtree/toyRibProtAlignments
+
+FASconCAT-G_v1.05.1.pl -s
+## yeah, it just sort of interleaves the files. 
+## I guess  this makes sense, the original alignments 
+## are not the same size, due to missing data
+## how could we expect FASconCAT to know what to line up to to what?
+## so, do we need to rename these to have the same fasta record headers,
+## so the software knows what to concat?
+## the fasconcat doesn't say much about how it creates rows, 
+## whether by order or by seq ID...
+
+
+alignDir="/home/daniel/Documents/analyses/zheSpat/RPtree/alignments/"
+toyDir="/home/daniel/Documents/analyses/zheSpat/RPtree/toyRibProtAlignments/"
+
+cd $toyDir
+##head -n 12 $alignDir"S1.10.ribosomal_protein_S7_aligned.fasta" > alignment1.fasta
+##head -n 12 $alignDir"S1.1.ribosomal_protein_L2_rplB_aligned.fasta"  > alignment2.fasta
+
+cp $alignDir"S1.10.ribosomal_protein_S7_aligned.fasta" alignment1.fasta
+cp $alignDir"S1.1.ribosomal_protein_L2_rplB_aligned.fasta" alignment2.fasta
+
+rm FcC_*
+
+cat alignment1.fasta
+
+sed -i "s/>.*:/\>/" alignment1.fasta
+sed -i "s/>.*:/\>/" alignment2.fasta
+
+FASconCAT-G_v1.05.1.pl -s
+
+## that looks better...
+
+## try that on all the alignments:
+
+cp -r $alignDir supMatrix/
+
+cd supMatrix
+
+sed -i "s/>.*:/\>/"  *
+
+FASconCAT-G_v1.05.1.pl -s
+
+## let's put this on the de.nbi

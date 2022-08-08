@@ -1,3 +1,0 @@
-Started Sun Aug  7 15:59:04 2022
-muscle -in /home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/S1.12.ribosomal_protein_S12_S23.fasta -log /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_alignment.log -out /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.12.ribosomal_protein_S12_S23_aligned.fasta 
-Finished Sun Aug  7 15:59:04 2022

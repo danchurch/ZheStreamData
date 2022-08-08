@@ -1,3 +1,0 @@
-Started Sun Aug  7 15:59:05 2022
-muscle -in /home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/S1.1.ribosomal_protein_L2_rplB.fasta -log /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.1.ribosomal_protein_L2_rplB_alignment.log -out /home/daniel/Documents/analyses/ZheStreamData/RPtree/alignments/S1.1.ribosomal_protein_L2_rplB_aligned.fasta 
-Finished Sun Aug  7 15:59:05 2022

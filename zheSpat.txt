@@ -2310,12 +2310,22 @@ phyml [ sequences data_type format data_sets bootstrap_sets model
 
 phyml FcC_supermatrix.phy 0 s 1 100 HKY e e 1 e BIONJ y y
 
+## can we do this in a way that we don't need to be on the computer?
+
+## how about a script?
+
+################
+#!/usr/bin/env bash
+
+cd /emic/Zhe/danAdditions/RPtree
+phyml FcC_supermatrix.phy 0 s 1 100 HKY e e 1 e BIONJ y y 2>&1> phymlLog080822.txt
+
+###############
+
+chmod 777 danPhyml080822.sh
 
 
-phyml FcC_supermatrix.phy 
+ssh -Y -p 30022 -i /home/daniel/.ssh/ssh_emic emic@134.176.27.78 bash danPhyml080822.sh
 
-
-
-
-
+## that worked. 
 

@@ -2266,10 +2266,56 @@ FASconCAT-G_v1.05.1.pl -s
 
 cp -r $alignDir supMatrix/
 
-cd supMatrix
+cd RPtree/supMatrix
 
 sed -i "s/>.*:/\>/"  *
 
-FASconCAT-G_v1.05.1.pl -s
+#FASconCAT-G_v1.05.1.pl -s
+
+FASconCAT-G_v1.05.1.pl -o -o -p -p -s ## to get phylip format, not strict, for phyml
 
 ## let's put this on the de.nbi
+
+scp -P 30022 \
+    -i /home/daniel/.ssh/ssh_emic \
+    /home/daniel/Documents/analyses/zheSpat/RPtree/supMatrix/FcC_supermatrix.phy \
+    emic@134.176.27.78:/emic/Zhe/danAdditions/RPtree
+
+
+## on emic
+
+cd /emic/Zhe/danAdditions/RPtree
+
+
+phyml FcC_supermatrix.phy 
+
+## as far as evo models, not sure how to vary these among the 
+## genes. I think we need make a partition file, and 
+## not sure if phyml accepts this.
+
+## the deafult model for phyml, HKY is a good model for most of 
+## of the genes, but not S1.10.ribosomal_protein_S7. 
+
+## TPM1uf+G4 also seems to work most but not S1.14.ribosomal_protein_S19_rpsS
+## TPM3 is in all somewhere, + uf+G4 is in most. 
+
+## not sure how to get these more complex models...
+
+## for the moment, let's run HKY alone on the supermatrix, for simplicity
+
+## here is the template:
+phyml [ sequences data_type format data_sets bootstrap_sets model
+        [kappa] invar nb_categ alpha tree opt_topology opt_lengths ]
+
+
+phyml FcC_supermatrix.phy 0 s 1 100 HKY e e 1 e BIONJ y y
+
+
+
+phyml FcC_supermatrix.phy 
+
+
+
+
+
+

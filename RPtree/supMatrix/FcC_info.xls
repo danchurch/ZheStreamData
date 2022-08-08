@@ -1,6 +1,6 @@
 FASconCAT INFO:
 SUPERMATRIX FILE	P CODING CHARACTERS [%]	P MISSING DATA [?] [%]	P INDELS [%]	P AMBIGUITIES [%]	P PARSIMONY INFORMATIVE SITES [%]	P GC CONTENT [%]	PRINTED AS FASTA	PRINTED AS NEXUS	PRINTED AS PHYLIP
-supermatrix	48.015	0	3.768	48.216	72.597	30.002	YES	NO	NO
+supermatrix	48.015	0	3.768	48.216	72.597	30.002	YES	NO	YES
 
 FILE	START POSITION SUPERMATRIX	END POSITION SUPERMATRIX	N SEQUENCES	SEQUENCE TYPE	N CHARACTERS	N MISSING DATA [?]	N INDELS	N AMBIGUITIES	N PARSIMONY INFORMATIVE SITES	N GC CONTENT	N CODING CHARACTERS	A	C	G	T	U	N	Y	R	W	S	K	M	D	V	H	B	F	L	I	P	Q	E
 S1.1.ribosomal_protein_L2_rplB_aligned.fasta	1	62	60	nu	3720	0	123	60	3537	2363	45	671	997	1366	503	0	60	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -19,125 +19,141 @@ S1.8.ribosomal_protein_S2_rpsB_aligned.fasta	784	843	65	nu	3900	0	0	0	3900	2331	
 S1.9.ribosomal_protein_S5_aligned.fasta	844	905	62	nu	3844	0	124	0	3720	2628	45	486	1024	1604	606	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 supermatrix	1	905	117	nu	105885	0	3990	51054	50841	31768	657	9918	15419	16349	9155	0	51054	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 
+File	L SEQUENCE [bp]	CONVERTED TO FASTA	CONVERTED TO NEXUS	CONVERTED TO PHYLIP
+S1.1.ribosomal_protein_L2_rplB_aligned.fasta	62	YES	NO	YES
+S1.10.ribosomal_protein_S7_aligned.fasta	62	YES	NO	YES
+S1.11.ribosomal_protein_S10_rpsJ_aligned.fasta	74	YES	NO	YES
+S1.12.ribosomal_protein_S12_S23_aligned.fasta	71	YES	NO	YES
+S1.13.ribosomal_protein_S15P_S13e_aligned.fasta	60	YES	NO	YES
+S1.14.ribosomal_protein_S19_rpsS_aligned.fasta	64	YES	NO	YES
+S1.2.ribosomal_protein_L3_rplC_aligned.fasta	60	YES	NO	YES
+S1.3.ribosomal_protein_L5_rplE_aligned.fasta	60	YES	NO	YES
+S1.4.ribosomal_protein_L6_rplF_aligned.fasta	60	YES	NO	YES
+S1.5.ribosomal_protein_L11_rplK_aligned.fasta	60	YES	NO	YES
+S1.6.ribosomal_protein_L14b_L23e_rplN_aligned.fasta	78	YES	NO	YES
+S1.7.ribosomal_protein_L16_L10E_rplP_aligned.fasta	72	YES	NO	YES
+S1.8.ribosomal_protein_S2_rpsB_aligned.fasta	60	YES	NO	YES
+S1.9.ribosomal_protein_S5_aligned.fasta	62	YES	NO	YES
+
 Taxon check
 Taxon	N CONCATENATED SEQs	N INFORMATIVE SEQs	N MISSING SEQs
-SPAdes-S05.2	14	11	3
-SPAdesHybrid-SA.38	14	5	9
-SPAdesHybrid-SUB.53	14	13	1
+SPAdesHybrid-SUB.40_2	14	1	13
+SPAdesHybrid-SUB.50	14	13	1
+SPAdesHybrid-SA.79	14	13	1
 SPAdesHybrid-SA.74	14	9	5
-SPAdesHybrid-SD.34	14	14	0
-SPAdesHybrid-SA.137_2	14	1	13
-SPAdesHybrid-SA.74_2	14	2	12
-SPAdesHybrid-SUB.40	14	14	0
-SPAdesHybrid-SD.13_3	14	1	13
+SPAdes-S03.21	14	2	12
+SPAdes-S04.4	14	9	5
+SPAdes-S06.6	14	3	11
+SPAdes-S03.17	14	4	10
+SPAdesHybrid-SA.62	14	11	3
+SPAdes-S05.13_2	14	3	11
+SPAdesHybrid-SUB.26	14	12	2
+SPAdes-S02.12	14	5	9
+SPAdes-S04.16	14	12	2
 SPAdesHybrid-SA.104_2	14	1	13
-SPAdes-S04.5	14	14	0
-SPAdes-S05.12	14	3	11
-SPAdesHybrid-SD.36	14	14	0
-SPAdesHybrid-SA.95_2	14	1	13
-SPAdes-S03.12	14	10	4
-SPAdesHybrid-SUB.26_3	14	1	13
+SPAdesHybrid-SA.35_2	14	3	11
+SPAdesHybrid-SA.125	14	14	0
+SPAdesHybrid-SD.34	14	14	0
 SPAdes-S06.2	14	14	0
-SPAdesHybrid-SD.41	14	10	4
-SPAdes-S02.12_2	14	1	13
-SPAdesHybrid-SUB.37_2	14	1	13
-SPAdesHybrid-SUB.10_2	14	1	13
-SPAdes-S04.23_2	14	1	13
-SPAdesHybrid-SA.95	14	14	0
-SPAdesHybrid-SUB.26_2	14	5	9
+SPAdesHybrid-SA.137_2	14	1	13
+SPAdesHybrid-SD.6_2	14	1	13
+SPAdesHybrid-SD.39	14	7	7
+SPAdesHybrid-SUB.64	14	13	1
 SPAdes-S05.13	14	11	3
-SPAdes-S06.5_2	14	1	13
-SPAdesHybrid-SUB.35	14	11	3
-SPAdesHybrid-SUB.29_3	14	1	13
-SPAdes-S04.22	14	13	1
+SPAdes-S02.12_2	14	1	13
+SPAdes-S04.16_2	14	1	13
 SPAdesHybrid-SA.4	14	6	8
-SPAdesHybrid-SA.30	14	13	1
-SPAdesHybrid-SUB.25	14	14	0
-SPAdes-S04.1	14	3	11
+SPAdesHybrid-SD.19	14	10	4
+SPAdesHybrid-SUB.9	14	14	0
+SPAdes-S03.4	14	14	0
 SPAdesHybrid-SD.32	14	14	0
-SPAdesHybrid-SUB.29_2	14	4	10
+SPAdesHybrid-SA.95_2	14	1	13
+SPAdes-S04.5	14	14	0
+SPAdesHybrid-SUB.10_2	14	1	13
+SPAdes-S05.6	14	6	8
+SPAdesHybrid-SUB.29_3	14	1	13
+SPAdesHybrid-SA.113	14	9	5
+SPAdesHybrid-SD.2	14	9	5
+SPAdesHybrid-SUB.10	14	12	2
+SPAdesHybrid-SA.70	14	13	1
+SPAdesHybrid-SA.137	14	11	3
+SPAdesHybrid-SA.125_2	14	1	13
+SPAdesHybrid-SD.47_2	14	3	11
+SPAdesHybrid-SD.43_2	14	1	13
+SPAdesHybrid-SD.20	14	6	8
+SPAdesHybrid-SUB.64_2	14	4	10
 SPAdesHybrid-SA.73	14	14	0
-SPAdesHybrid-SA.32	14	13	1
+SPAdesHybrid-SD.18	14	12	2
+SPAdes-S05.12	14	3	11
+SPAdesHybrid-SA.104	14	14	0
+SPAdesHybrid-SUB.26_2	14	5	9
+SPAdes-S05.2	14	11	3
+SPAdesHybrid-SD.13	14	12	2
+SPAdesHybrid-SD.17	14	7	7
+SPAdes-S06.5_2	14	1	13
+SPAdesHybrid-SA.82	14	12	2
+SPAdesHybrid-SUB.50_2	14	1	13
+SPAdesHybrid-SUB.40	14	14	0
+SPAdesHybrid-SD.37	14	12	2
+SPAdesHybrid-SUB.9_2	14	5	9
+SPAdes-S04.23	14	1	13
+SPAdesHybrid-SUB.9_3	14	1	13
+SPAdes-S04.29	14	8	6
+SPAdesHybrid-SA.54	14	14	0
+SPAdes-S06.17	14	10	4
+SPAdesHybrid-SA.95	14	14	0
+SPAdesHybrid-SD.41	14	10	4
+SPAdesHybrid-SUB.25_2	14	1	13
+SPAdesHybrid-SUB.37	14	11	3
+SPAdesHybrid-SA.35	14	8	6
+SPAdesHybrid-SD.6	14	11	3
 SPAdes-S04.8	14	6	8
 SPAdes-S06.5	14	8	6
-SPAdes-S04.23	14	1	13
-SPAdesHybrid-SD.6	14	11	3
-SPAdes-S05.13_2	14	3	11
-SPAdesHybrid-SUB.9_2	14	5	9
-SPAdesHybrid-SA.70_2	14	1	13
-SPAdesHybrid-SD.37_2	14	4	10
-SPAdesHybrid-SD.19_2	14	2	12
-SPAdesHybrid-SA.125	14	14	0
-SPAdes-S04.19	14	13	1
-SPAdesHybrid-SUB.50_2	14	1	13
-SPAdesHybrid-SD.2	14	9	5
-SPAdesHybrid-SD.4	14	8	6
-SPAdesHybrid-SUB.64_2	14	4	10
-SPAdes-S04.29	14	8	6
-SPAdesHybrid-SD.18_3	14	1	13
-SPAdesHybrid-SA.70	14	13	1
-SPAdesHybrid-SUB.9	14	14	0
-SPAdes-S02.12	14	5	9
-SPAdesHybrid-SD.37	14	12	2
-SPAdesHybrid-SD.19	14	10	4
-SPAdesHybrid-SA.113	14	9	5
-SPAdesHybrid-SUB.29	14	13	1
-SPAdesHybrid-SA.82_2	14	1	13
-SPAdes-S06.17_2	14	1	13
-SPAdesHybrid-SD.43	14	14	0
-SPAdesHybrid-SD.17	14	7	7
-SPAdesHybrid-SD.39	14	7	7
-SPAdesHybrid-SUB.39	14	12	2
-SPAdes-S05.6	14	6	8
-SPAdesHybrid-SA.79	14	13	1
-SPAdesHybrid-SA.35	14	8	6
-SPAdesHybrid-SUB.25_2	14	1	13
-SPAdesHybrid-SA.82	14	12	2
-SPAdesHybrid-SD.43_2	14	1	13
-SPAdesHybrid-SUB.35_2	14	3	11
-SPAdesHybrid-SA.35_2	14	3	11
-SPAdesHybrid-SA.79_2	14	1	13
-SPAdes-S03.4	14	14	0
-SPAdesHybrid-SD.20	14	6	8
-SPAdesHybrid-SA.62	14	11	3
-SPAdes-S06.11	14	12	2
-SPAdesHybrid-SUB.64	14	13	1
-SPAdes-S04.16	14	12	2
-SPAdes-S06.6	14	3	11
-SPAdesHybrid-SA.125_2	14	1	13
-SPAdesHybrid-SD.47	14	13	1
-SPAdesHybrid-SUB.50	14	13	1
-SPAdesHybrid-SD.13	14	12	2
-SPAdesHybrid-SA.54	14	14	0
-SPAdes-S03.21	14	2	12
-SPAdesHybrid-SD.20_2	14	1	13
-SPAdesHybrid-SA.62_2	14	2	12
-SPAdesHybrid-SA.17	14	4	10
-SPAdesHybrid-SD.13_2	14	5	9
-SPAdesHybrid-SD.47_2	14	3	11
-SPAdesHybrid-SUB.9_3	14	1	13
-SPAdesHybrid-SD.18	14	12	2
-SPAdesHybrid-SD.37_3	14	1	13
-SPAdesHybrid-SA.104	14	14	0
-SPAdes-S04.4	14	9	5
-SPAdes-S03.17	14	4	10
-SPAdesHybrid-SUB.40_2	14	1	13
-SPAdesHybrid-SA.137	14	11	3
-SPAdes-S05.6_2	14	1	13
-SPAdesHybrid-SD.18_2	14	10	4
-SPAdes-S06.17	14	10	4
-SPAdesHybrid-SA.126	14	14	0
 SPAdes-S04.14	14	7	7
-SPAdesHybrid-SUB.26	14	12	2
+SPAdesHybrid-SD.19_2	14	2	12
+SPAdesHybrid-SUB.29	14	13	1
+SPAdes-S05.6_2	14	1	13
+SPAdesHybrid-SA.62_2	14	2	12
+SPAdesHybrid-SA.38	14	5	9
+SPAdesHybrid-SA.30	14	13	1
+SPAdes-S03.12	14	10	4
+SPAdesHybrid-SA.79_2	14	1	13
+SPAdes-S04.23_2	14	1	13
+SPAdesHybrid-SA.74_2	14	2	12
+SPAdesHybrid-SA.17	14	4	10
+SPAdesHybrid-SUB.35	14	11	3
+SPAdes-S06.17_2	14	1	13
+SPAdesHybrid-SD.13_3	14	1	13
+SPAdesHybrid-SA.126	14	14	0
+SPAdesHybrid-SD.13_2	14	5	9
+SPAdesHybrid-SA.82_2	14	1	13
+SPAdes-S04.1	14	3	11
+SPAdesHybrid-SD.37_3	14	1	13
+SPAdesHybrid-SD.37_2	14	4	10
+SPAdesHybrid-SUB.35_2	14	3	11
+SPAdes-S04.22	14	13	1
+SPAdes-S04.19	14	13	1
+SPAdesHybrid-SD.18_2	14	10	4
+SPAdesHybrid-SUB.29_2	14	4	10
+SPAdesHybrid-SD.18_3	14	1	13
+SPAdesHybrid-SUB.53	14	13	1
 SPAdesHybrid-SA.53	14	14	0
-SPAdesHybrid-SUB.10	14	12	2
-SPAdesHybrid-SD.6_2	14	1	13
-SPAdesHybrid-SUB.37	14	11	3
+SPAdes-S03.4_2	14	1	13
+SPAdes-S06.11	14	12	2
+SPAdesHybrid-SUB.39	14	12	2
 SPAdes-S06.6_2	14	1	13
 SPAdes-S04.30	14	8	6
+SPAdesHybrid-SD.4	14	8	6
+SPAdesHybrid-SD.47	14	13	1
+SPAdesHybrid-SD.20_2	14	1	13
+SPAdesHybrid-SD.43	14	14	0
 SPAdes-S06.11_2	14	8	6
-SPAdes-S03.4_2	14	1	13
-SPAdes-S04.16_2	14	1	13
+SPAdesHybrid-SD.36	14	14	0
+SPAdesHybrid-SUB.25	14	14	0
+SPAdesHybrid-SUB.37_2	14	1	13
+SPAdesHybrid-SA.32	14	13	1
+SPAdesHybrid-SA.70_2	14	1	13
+SPAdesHybrid-SUB.26_3	14	1	13
 
 
 ------------------------------------------------------------
@@ -145,7 +161,7 @@ Defined Options:
 -----------------
 READ IN ALL files:	YES
 READ IN SINGLE files:	NO
-FILE HANDLING:	Supermatrix
+FILE HANDLING:	Supermatrix/Convert
 SEQUENCE TRANSLATION	NO
 EXCLUDING 3rd POSITION	Remain
 RY CODING	NO
@@ -155,7 +171,7 @@ ABSENT SEQUENCE CODING	Missing
 
 -----------------
 OUTPUT FORMAT:
-PHYLIP:	NO
+PHYLIP:	RELAXED
 NEXUS:	NO
 FASTA:	YES
 PARTITION:	NO

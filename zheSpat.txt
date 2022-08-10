@@ -2325,7 +2325,71 @@ phyml FcC_supermatrix.phy 0 s 1 100 HKY e e 1 e BIONJ y y 2>&1> phymlLog080822.t
 chmod 777 danPhyml080822.sh
 
 
-ssh -Y -p 30022 -i /home/daniel/.ssh/ssh_emic emic@134.176.27.78 bash danPhyml080822.sh
+ssh -p 30022 -i /home/daniel/.ssh/ssh_emic emic@134.176.27.78 bash danPhyml080822.sh
 
-## that worked. 
+## that worked, looks like ~4 hours on denbi
+
+## get tree file local, try it out on our existing d3 code:
+
+
+## zhe meeting 
+
+## 
+## add column of csv file with information about duplicates, sorted 
+## once we decide about the duplicates, rerun the tree-building pipeline
+## install fasConcat on emik
+  
+
+#### 1. add dup information to zhe's spreadsheet
+
+## zhe's spreadsheet of the ribosomal proteins is here:
+
+/home/daniel/Documents/analyses/zheSpat/otu_MAGs_diamond_example.csv
+
+## we're going to want python for this:
+
+python3
+
+from Bio import SeqIO
+import pandas as pd
+import os
+
+zheData = pd.read_csv("otu_MAGs_diamond_example.csv", sep="\t")
+
+zheData.shape
+
+fastaFolder='/home/daniel/Documents/analyses/zheSpat/ribProtFastas/'
+##fastaFolder='/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/'
+os.listdir(fastaFolder)
+
+## looks like there are sometimes multiple versions of each ribosomoal 
+## protein sequence from the same mags... this is a problem.
+## some of these are triplicate, even. 
+## shoot.
+## so how to add this information into our labels?
+
+masterDupList=[]
+with open('ribProtList.txt', 'r') as list:
+    for i in list:
+        i = i.strip()
+        print(i)
+        dupList = []
+        nameList = []
+        for seq_record in SeqIO.parse("zheAllMagsAllRibProts.fasta", "fasta"):
+           if seq_record.id.__contains__(i):
+                print(seq_record.id)
+                dupList.append(seq_record.id)
+                ## get the duplicate number, if any
+                matches = (pd.Series(dupList) == seq_record.id).sum()
+                nameList.append(seq_record.id + ":" + str(matches))
+        masterDupList += nameList
+
+masterDupSeries = pd.Series(masterDupList)
+dupData = masterDupSeries.str.split(':', expand=True)
+dupData.columns = ['gene','sample','dup']
+## can we merge on two columns?
+aa = pd.merge(zheData, dupData, on=['gene','sample'])
+aa.to_csv('dupData.csv', index=False)
+
+
 

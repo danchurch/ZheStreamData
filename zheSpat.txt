@@ -2356,7 +2356,6 @@ import os
 
 zheData = pd.read_csv("otu_MAGs_diamond_example.csv", sep="\t")
 
-zheData.shape
 
 fastaFolder='/home/daniel/Documents/analyses/zheSpat/ribProtFastas/'
 ##fastaFolder='/home/daniel/Documents/analyses/ZheStreamData/ribProtFastas/'
@@ -2384,12 +2383,42 @@ with open('ribProtList.txt', 'r') as list:
                 nameList.append(seq_record.id + ":" + str(matches))
         masterDupList += nameList
 
+
 masterDupSeries = pd.Series(masterDupList)
 dupData = masterDupSeries.str.split(':', expand=True)
 dupData.columns = ['gene','sample','dup']
+dupData['dup'] = dupData['dup'].astype('int')
+
 ## can we merge on two columns?
+
 aa = pd.merge(zheData, dupData, on=['gene','sample'])
-aa.to_csv('dupData.csv', index=False)
+
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+    print(dupData)
+
+aa.duplicated().any()
+
+## ah, so the join is causing extra rows to be created.
+
+## maybe better to sort them, and concatenate.
+
+dupData.columns = ['gene','sample','dup']
+
+zheData_sorted = zheData.sort_values(['gene','sample']).reset_index(drop=True)
+dupData_sorted = dupData.sort_values(['gene','sample']).reset_index(drop=True)
 
 
+cc = pd.concat([zheData_sorted,dupData_sorted], axis='columns')
+cc.columns = ['gene', 'sample', 'sequence', 'num_hits', 'coverage', 'taxonomy', 'dupgene', 'dupsample', 'dupNum']
+## sanity check
+(cc['gene'] == cc['dupgene']).all()
+(cc['sample'] == cc['dupsample']).all()
+## looks good. 
+## drop extra columns
+cc.drop(columns=['dupgene', 'dupsample'], inplace=True)
 
+
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+    print(cc)
+
+cc.to_csv('dupData.csv', index=False)

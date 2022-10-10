@@ -2215,6 +2215,12 @@ FASconCAT-G_v1.05.1.pl
 
 ## this seems to work, in a directory of fasta alignment files:
 
+## for zhe, let's put this on the emik denbi instance
+
+ln -s /emic/Zhe/danAdditions/FASconCAT-G/FASconCAT-G_v1.05.1.pl /home/emic/.local/bin/FASconCAT-G
+
+FASconCAT-G
+
 FASconCAT-G_v1.05.1.pl -o -o -p -s
 
 ## not sure if this what we want, but this returns no errors
@@ -2422,3 +2428,57 @@ with pd.option_context('display.max_rows', None, 'display.max_columns', None):
     print(cc)
 
 cc.to_csv('dupData.csv', index=False)
+
+####### new tree for zhe #####
+
+## we need an easier tree to read. Not circular.
+
+import pandas as pd
+import matplotlib.pyplot as plt; plt.ion()
+import re
+from Bio import Phylo
+
+## to start, we just need to relabel the existing tree
+
+## the newick file is here:
+treeRaw="/home/daniel/Documents/analyses/zheSpat/RPtree/phymlOut/FcC_supermatrix.phy_phyml_tree.txt"
+## newick is a single line
+with open(treeRaw) as f: newick = f.readlines()[0]
+
+## Zhe's relabeling data is here
+MAGnamesFile="/home/daniel/Documents/analyses/zheSpat/MAGnames.csv"
+MAGnames = pd.read_csv(MAGnamesFile, sep="\t")
+## get rid of file extension in mag names
+MAGnames['GenomeBin'] = MAGnames['GenomeBin'].str.replace("\.fa", "")
+## parentheses and colons are going to cause big problems in a newick file.
+taxLevel = re.compile("\s*\(.+?\):*\s*")
+MAGnames['full lineage names'] = MAGnames['full lineage names'].str.replace(taxLevel, "")
+confLevel = re.compile("[01]\.[0-9]{2}")
+MAGnames['full lineage names'] = MAGnames['full lineage names'].str.replace(confLevel, "")
+MAGnames.to_csv('magnamescheck.csv')
+
+MAGnames['full lineage names'][0]
+
+
+
+
+
+newick
+
+
+aa = newick
+for i,j in MAGnames.iterrows():
+    p = re.compile(j['GenomeBin'])
+    aa = p.sub(j['full lineage names'], aa)
+
+
+treeDir="/home/daniel/Documents/analyses/zheSpat/RPtree/visualizations/myTreeRectangular/"
+with open((treeDir+'myMAGtreeRelabeledWithZhePhylogeny.nwk'), 'w') as fout:
+    fout.write(aa)
+
+## draw it:
+
+fig, ax = plt.subplots(figsize=(15,20))
+tree = Phylo.read((treeDir+'myMAGtreeRelabeledWithZhePhylogeny.nwk'), 'newick')
+
+Phylo.draw(tree, axes=ax)

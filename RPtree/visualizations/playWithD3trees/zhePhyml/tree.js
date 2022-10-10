@@ -3,6 +3,7 @@ window.addEventListener('load',makePlantTree );
 function makePlantTree(){
 
   d3.text("FcC_supermatrix.phy_phyml_tree.txt").then(function(nwk){
+  //d3.text("myMAGtreeRelabeledWithZhePhylogeny.nwk").then(function(nwk){
 
 
   data = parseNewick(nwk);

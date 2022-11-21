@@ -2,7 +2,7 @@ window.addEventListener('load',makePlantTree );
 
 function makePlantTree(){
 
-  d3.text("zheV2MAGtreeRelabeledWithZhePhylogeny2.nwk").then(function(nwk){
+  d3.text("gtdbtk.backbone.bac120.classify.tree").then(function(nwk){
   //d3.text("phyml_tree_ZheV2.txt").then(function(nwk){
   //d3.text("zheV2MAGtreeRelabeledWithZhePhylogeny.nwk").then(function(nwk){
   //d3.text("FcC_supermatrix.phy_phyml_tree.txt").then(function(nwk){

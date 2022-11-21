@@ -1,0 +1,9 @@
+un the command download-db.sh to automatically download to:
+        /ext/anaconda3/envs/gtdbtk/share/gtdbtk-1.0.2/db/
+
+     2. Manually download the latest reference data:
+        https://github.com/Ecogenomics/GTDBTk#gtdb-tk-reference-data
+
+     2b. Set the GTDBTK_DATA_PATH environment variable in the file:
+         /ext/anaconda3/envs/gtdbtk/etc/conda/activate.d
+
